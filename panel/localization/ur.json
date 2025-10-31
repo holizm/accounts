@@ -1,0 +1,23 @@
+{
+    "AccountsAccounts": "اکاؤنٹس",
+    "AccountsAddFromUsers": "صارفین سے شامل کریں۔",
+    "AccountsAnonymous": "گمنام",
+    "AccountsChangePassword": "پاس ورڈ تبدیل کریں",
+    "AccountsCreateUserForPerson": "فرد کے لیے صارف بنائیں",
+    "AccountsFirstName": "پہلا نام",
+    "AccountsForPerson": "شخص کے لیے",
+    "AccountsLastName": "آخری نام",
+    "AccountsLastSyncDate": "مطابقت پذیری کی آخری تاریخ",
+    "AccountsManageRoles": "کرداروں کا نظم کریں۔",
+    "AccountsPassword": "پاس ورڈ",
+    "AccountsPasswordChanged": "پاس ورڈ بدل گیا۔",
+    "AccountsPasswordConfirmation": "پاسورڈ کی تو ثیق",
+    "AccountsRoleName": "کردار کا نام",
+    "AccountsSync": "مطابقت پذیری",
+    "AccountsUser": "صارف",
+    "AccountsUserName": "صارف کا نام",
+    "AccountsUserNameAToZ": "صارف نام A-Z",
+    "AccountsUserNameZToA": "صارف نام Z-A",
+    "AccountsUsers": "صارفین",
+    "AccountsUsersAreSynced": "صارفین مطابقت پذیر ہیں۔"
+}

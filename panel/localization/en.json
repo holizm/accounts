@@ -1,0 +1,23 @@
+{
+    "AccountsAccounts": "Accounts",
+    "AccountsAddFromUsers": "Add From Users",
+    "AccountsAnonymous": "Anonymous",
+    "AccountsChangePassword": "Change password",
+    "AccountsCreateUserForPerson": "Create user for person",
+    "AccountsFirstName": "First name",
+    "AccountsForPerson": "For person",
+    "AccountsLastName": "Last name",
+    "AccountsLastSyncDate": "Last sync date",
+    "AccountsManageRoles": "Manage roles",
+    "AccountsPassword": "Password",
+    "AccountsPasswordChanged": "Password changed",
+    "AccountsPasswordConfirmation": "Password confirmation",
+    "AccountsRoleName": "Role name",
+    "AccountsSync": "Sync",
+    "AccountsUser": "User",
+    "AccountsUserName": "Username",
+    "AccountsUserNameAToZ": "Username A-Z",
+    "AccountsUserNameZToA": "Username Z-A",
+    "AccountsUsers": "Users",
+    "AccountsUsersAreSynced": "Users are synched"
+}

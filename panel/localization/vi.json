@@ -1,0 +1,23 @@
+{
+    "AccountsAccounts": "Tài khoản",
+    "AccountsAddFromUsers": "Thêm từ người dùng",
+    "AccountsAnonymous": "Vô danh",
+    "AccountsChangePassword": "Đổi mật khẩu",
+    "AccountsCreateUserForPerson": "Tạo người dùng cho người",
+    "AccountsFirstName": "Tên đầu tiên",
+    "AccountsForPerson": "Dành cho người",
+    "AccountsLastName": "Họ",
+    "AccountsLastSyncDate": "Ngày đồng bộ hóa lần cuối",
+    "AccountsManageRoles": "Quản lý vai trò",
+    "AccountsPassword": "Mật khẩu",
+    "AccountsPasswordChanged": "mật khẩu đã được thay đổi",
+    "AccountsPasswordConfirmation": "xác nhận mật khẩu",
+    "AccountsRoleName": "Tên vai trò",
+    "AccountsSync": "Đồng bộ hóa",
+    "AccountsUser": "Người dùng",
+    "AccountsUserName": "Tên tài khoản",
+    "AccountsUserNameAToZ": "Tên người dùng A-Z",
+    "AccountsUserNameZToA": "Tên người dùng Z-A",
+    "AccountsUsers": "Người dùng",
+    "AccountsUsersAreSynced": "Người dùng được đồng bộ hóa"
+}

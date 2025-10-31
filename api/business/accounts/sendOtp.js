@@ -1,0 +1,69 @@
+import crypto from "crypto"
+import { totp as TotpGenerator } from "otplib"
+import {
+    clientError,
+    ensure,
+    error,
+    pascalize,
+    providers,
+    settings,
+} from "Core"
+import { sendTextMessage } from "Notifications"
+import { getUserByPhone } from "../User/GetByPhone.js"
+import { getKey } from "../Key/GetKey.js"
+import { changePassword } from "../User/ChangePassword.js"
+
+export const sendOtp = async params => {
+    let {
+        phone,
+        otp,
+    } = params
+    ensure(phone).isSomething("PhoneIsEmpty")
+    const user = await getUserByPhone(phone)
+    const { value } = await getKey(user.id)
+    if (!otp) {
+        const totp = createTotp(value)
+        otp = totp.generate(value)
+    }
+    const password = makePasswordFromOtp(otp)
+    await changePassword({
+        ...params,
+        password,
+        user: user.id,
+    })
+    error(`OTP => ${phone} - ${otp}`)
+    const template = `${pascalize(providers.tenant)}SignInCode`
+
+    await sendTextMessage({
+        item: user.id,
+        phone,
+        template,
+        tokens: { otp }
+    })
+
+    const result = {
+        sent: true,
+        otpLength: otp.length,
+    }
+    if (settings.isDeveloping) {
+        result.otp = otp
+    }
+    return result
+}
+
+const createTotp = () => {
+    const seconds = 60 // parseInt(InfraConfig.getSetting("OtpLifetimeInSeconds") || "60", 10)
+    const length = 5 // parseInt(InfraConfig.getSetting("OtpLength") || "5", 10)
+    TotpGenerator.options = {
+        algorithm: "sha512",
+        digits: length,
+        step: seconds,
+    }
+    return TotpGenerator
+}
+
+const makePasswordFromOtp = otp => {
+    const hash = crypto.createHash("sha256").update(otp, "utf8").digest("hex")
+    const alphanumericHash = hash.replace(/[^a-zA-Z0-9]/g, "")
+    return alphanumericHash
+}

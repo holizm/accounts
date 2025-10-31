@@ -1,0 +1,22 @@
+{
+    "AccountsChangePhone": "Изменять",
+    "AccountsDashboardWelcomeMessage": "Добро пожаловать!",
+    "AccountsEditProfile": "Измените свой профиль",
+    "AccountsEmptyOtp": "Код не может быть пустым",
+    "AccountsEmptyPhone": "Номер телефона не может быть пустым",
+    "AccountsInvalidOtp": "Код недействителен",
+    "AccountsInvalidPhone": "Номер телефона недействителен",
+    "AccountsOtp": "Код",
+    "AccountsOtpLabel": "Пожалуйста, введите полученный код",
+    "AccountsOtpSent": "Код отправлен на этот номер",
+    "AccountsPhone": "Номер телефона",
+    "AccountsPhoneLabel": "Пожалуйста, введите свой номер телефона",
+    "AccountsProfile": "Профиль",
+    "AccountsRegisterOrSignIn": "Зарегистрируйтесь или войдите в систему",
+    "AccountsResend": "Отправить",
+    "AccountsSendOtp": "Отправить код",
+    "AccountsSendingOtp": "Отправка",
+    "AccountsSignIn": "Войти",
+    "AccountsSignOut": "выход",
+    "AccountsSigningIn": "Вхожу сейчас"
+}

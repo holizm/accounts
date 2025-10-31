@@ -1,0 +1,23 @@
+{
+    "AccountsAccounts": "Hesaplar",
+    "AccountsAddFromUsers": "Kullanıcılardan Ekle",
+    "AccountsAnonymous": "Anonim",
+    "AccountsChangePassword": "Şifre değiştir",
+    "AccountsCreateUserForPerson": "Kişiye göre kullanıcı oluştur",
+    "AccountsFirstName": "İlk adı",
+    "AccountsForPerson": "Kişi için",
+    "AccountsLastName": "Soy isim",
+    "AccountsLastSyncDate": "Son senkronizasyon tarihi",
+    "AccountsManageRoles": "Rolleri yönet",
+    "AccountsPassword": "Şifre",
+    "AccountsPasswordChanged": "şifre değişti",
+    "AccountsPasswordConfirmation": "Şifre onayı",
+    "AccountsRoleName": "Rol ismi",
+    "AccountsSync": "Senkronizasyon",
+    "AccountsUser": "Kullanıcı",
+    "AccountsUserName": "Kullanıcı adı",
+    "AccountsUserNameAToZ": "Kullanıcı adı A'dan Z'ye",
+    "AccountsUserNameZToA": "Kullanıcı adı Z-A",
+    "AccountsUsers": "Kullanıcılar",
+    "AccountsUsersAreSynced": "Kullanıcılar senkronize edildi"
+}

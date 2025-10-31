@@ -1,0 +1,22 @@
+{
+    "AccountsChangePhone": "تبدیلی",
+    "AccountsDashboardWelcomeMessage": "خوش آمدید!",
+    "AccountsEditProfile": "اپنے پروفائل میں ترمیم کریں",
+    "AccountsEmptyOtp": "کوڈ خالی نہیں ہو سکتا",
+    "AccountsEmptyPhone": "فون نمبر خالی نہیں ہو سکتا",
+    "AccountsInvalidOtp": "کوڈ درست نہیں ہے۔",
+    "AccountsInvalidPhone": "فون نمبر درست نہیں ہے۔",
+    "AccountsOtp": "کوڈ",
+    "AccountsOtpLabel": "براہ کرم آپ کو موصول ہونے والا کوڈ درج کریں۔",
+    "AccountsOtpSent": "اس نمبر کے لیے کوڈ بھیجا گیا ہے۔",
+    "AccountsPhone": "فون نمبر",
+    "AccountsPhoneLabel": "براہ کرم اپنا فون نمبر درج کریں۔",
+    "AccountsProfile": "پروفائل",
+    "AccountsRegisterOrSignIn": "رجسٹر یا سائن ان کریں۔",
+    "AccountsResend": "دوبارہ بھیجیں۔",
+    "AccountsSendOtp": "کوڈ بھیجیں۔",
+    "AccountsSendingOtp": "بھیج رہا ہے۔",
+    "AccountsSignIn": "سائن ان",
+    "AccountsSignOut": "سائن آؤٹ",
+    "AccountsSigningIn": "ابھی داخل ہو رہا ہے۔"
+}

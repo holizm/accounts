@@ -1,0 +1,22 @@
+{
+    "AccountsChangePhone": "Thay đổi",
+    "AccountsDashboardWelcomeMessage": "Chào mừng!",
+    "AccountsEditProfile": "Chỉnh sửa hồ sơ của bạn",
+    "AccountsEmptyOtp": "Mã không được để trống",
+    "AccountsEmptyPhone": "Số điện thoại không được để trống",
+    "AccountsInvalidOtp": "Mã không hợp lệ",
+    "AccountsInvalidPhone": "Số điện thoại không hợp lệ",
+    "AccountsOtp": "Mã số",
+    "AccountsOtpLabel": "Vui lòng nhập mã bạn nhận được",
+    "AccountsOtpSent": "Mã được gửi cho số này",
+    "AccountsPhone": "Số điện thoại",
+    "AccountsPhoneLabel": "Xin vui lòng điền số điện thoại của bạn",
+    "AccountsProfile": "Hồ sơ",
+    "AccountsRegisterOrSignIn": "Đăng ký hoặc đăng nhập",
+    "AccountsResend": "Gửi lại",
+    "AccountsSendOtp": "Gửi mã",
+    "AccountsSendingOtp": "Gửi",
+    "AccountsSignIn": "Đăng nhập",
+    "AccountsSignOut": "Đăng xuất",
+    "AccountsSigningIn": "Đang vào"
+}

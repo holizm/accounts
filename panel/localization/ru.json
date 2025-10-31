@@ -1,0 +1,23 @@
+{
+    "AccountsAccounts": "Счета",
+    "AccountsAddFromUsers": "Добавить от пользователей",
+    "AccountsAnonymous": "Анонимный",
+    "AccountsChangePassword": "Изменить пароль",
+    "AccountsCreateUserForPerson": "Создать пользователя для человека",
+    "AccountsFirstName": "Имя",
+    "AccountsForPerson": "Для человека",
+    "AccountsLastName": "Фамилия",
+    "AccountsLastSyncDate": "Дата последней синхронизации",
+    "AccountsManageRoles": "Управление ролями",
+    "AccountsPassword": "Пароль",
+    "AccountsPasswordChanged": "пароль изменен",
+    "AccountsPasswordConfirmation": "Подтверждение пароля",
+    "AccountsRoleName": "Имя роли",
+    "AccountsSync": "Синхронизировать",
+    "AccountsUser": "Пользователь",
+    "AccountsUserName": "Имя пользователя",
+    "AccountsUserNameAToZ": "Имя пользователя от А до Я",
+    "AccountsUserNameZToA": "Имя пользователя Z-A",
+    "AccountsUsers": "Пользователи",
+    "AccountsUsersAreSynced": "Пользователи синхронизированы"
+}

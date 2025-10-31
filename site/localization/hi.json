@@ -1,0 +1,22 @@
+{
+    "AccountsChangePhone": "परिवर्तन",
+    "AccountsDashboardWelcomeMessage": "स्वागत!",
+    "AccountsEditProfile": "अपनी प्रोफ़ाइल को संपादित करें",
+    "AccountsEmptyOtp": "कोड खाली नहीं हो सकता",
+    "AccountsEmptyPhone": "फ़ोन नंबर खाली नहीं हो सकता",
+    "AccountsInvalidOtp": "कोड मान्य नहीं है",
+    "AccountsInvalidPhone": "फ़ोन नंबर मान्य नहीं है",
+    "AccountsOtp": "कोड",
+    "AccountsOtpLabel": "कृपया आपको प्राप्त कोड दर्ज करें",
+    "AccountsOtpSent": "इस नंबर के लिए कोड भेजा जाता है",
+    "AccountsPhone": "फ़ोन नंबर",
+    "AccountsPhoneLabel": "कृपया अपना फोन नंबर दर्ज करें",
+    "AccountsProfile": "प्रोफ़ाइल",
+    "AccountsRegisterOrSignIn": "रजिस्टर या साइन-इन करें",
+    "AccountsResend": "पुन: भेजें",
+    "AccountsSendOtp": "कोड भेजो",
+    "AccountsSendingOtp": "भेजना",
+    "AccountsSignIn": "दाखिल करना",
+    "AccountsSignOut": "साइन आउट",
+    "AccountsSigningIn": "अब प्रवेश कर रहा हूँ"
+}

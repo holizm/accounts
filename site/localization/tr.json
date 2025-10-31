@@ -1,0 +1,22 @@
+{
+    "AccountsChangePhone": "Değiştirmek",
+    "AccountsDashboardWelcomeMessage": "Hoş geldin!",
+    "AccountsEditProfile": "Profilinizi Düzenle",
+    "AccountsEmptyOtp": "Kod boş olamaz",
+    "AccountsEmptyPhone": "Telefon numarası boş olamaz",
+    "AccountsInvalidOtp": "Kod geçerli değil",
+    "AccountsInvalidPhone": "Telefon numarası geçerli değil",
+    "AccountsOtp": "Kod",
+    "AccountsOtpLabel": "Lütfen aldığınız kodu girin",
+    "AccountsOtpSent": "Bu numaraya kod gönderildi",
+    "AccountsPhone": "Telefon numarası",
+    "AccountsPhoneLabel": "Lütfen telefon numaranızı girin",
+    "AccountsProfile": "Profil",
+    "AccountsRegisterOrSignIn": "Kayıt olun veya oturum açın",
+    "AccountsResend": "Yeniden gönder",
+    "AccountsSendOtp": "Kodu gönder",
+    "AccountsSendingOtp": "Gönderiliyor",
+    "AccountsSignIn": "Kayıt olmak",
+    "AccountsSignOut": "oturumu Kapat",
+    "AccountsSigningIn": "Şimdi giriliyor"
+}

@@ -1,0 +1,23 @@
+{
+    "AccountsAccounts": "الحسابات",
+    "AccountsAddFromUsers": "إضافة من المستخدمين",
+    "AccountsAnonymous": "مجهول",
+    "AccountsChangePassword": "تغيير كلمة المرور",
+    "AccountsCreateUserForPerson": "إنشاء مستخدم للشخص",
+    "AccountsFirstName": "الاسم الأول",
+    "AccountsForPerson": "للشخص",
+    "AccountsLastName": "اسم العائلة",
+    "AccountsLastSyncDate": "تاريخ آخر مزامنة",
+    "AccountsManageRoles": "إدارة الأدوار",
+    "AccountsPassword": "كلمة المرور",
+    "AccountsPasswordChanged": "تم تغيير كلمة السر",
+    "AccountsPasswordConfirmation": "تأكيد كلمة المرور",
+    "AccountsRoleName": "اسم الدور",
+    "AccountsSync": "مزامنة",
+    "AccountsUser": "مستخدم",
+    "AccountsUserName": "اسم المستخدم",
+    "AccountsUserNameAToZ": "اسم المستخدم أ-ي",
+    "AccountsUserNameZToA": "اسم المستخدم Z-A",
+    "AccountsUsers": "المستخدمين",
+    "AccountsUsersAreSynced": "تتم مزامنة المستخدمين"
+}

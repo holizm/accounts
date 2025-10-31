@@ -1,0 +1,22 @@
+{
+    "AccountsChangePhone": "மாற்றவும்",
+    "AccountsDashboardWelcomeMessage": "வரவேற்பு!",
+    "AccountsEditProfile": "உங்கள் சுயவிவரத்தைத் திருத்தவும்",
+    "AccountsEmptyOtp": "குறியீடு காலியாக இருக்கக்கூடாது",
+    "AccountsEmptyPhone": "ஃபோன் எண் காலியாக இருக்கக்கூடாது",
+    "AccountsInvalidOtp": "குறியீடு செல்லுபடியாகாது",
+    "AccountsInvalidPhone": "தொலைபேசி எண் தவறானது",
+    "AccountsOtp": "குறியீடு",
+    "AccountsOtpLabel": "நீங்கள் பெற்ற குறியீட்டை உள்ளிடவும்",
+    "AccountsOtpSent": "இந்த எண்ணுக்கு குறியீடு அனுப்பப்பட்டுள்ளது",
+    "AccountsPhone": "தொலைபேசி எண்",
+    "AccountsPhoneLabel": "உங்கள் தொலைபேசி எண்ணை உள்ளிடவும்",
+    "AccountsProfile": "சுயவிவரம்",
+    "AccountsRegisterOrSignIn": "பதிவு செய்யவும் அல்லது உள்நுழையவும்",
+    "AccountsResend": "மீண்டும் அனுப்பு",
+    "AccountsSendOtp": "குறியீட்டை அனுப்பவும்",
+    "AccountsSendingOtp": "அனுப்புகிறது",
+    "AccountsSignIn": "உள்நுழைக",
+    "AccountsSignOut": "வெளியேறு",
+    "AccountsSigningIn": "இப்போது நுழைகிறது"
+}

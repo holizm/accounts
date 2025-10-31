@@ -1,0 +1,23 @@
+{
+    "AccountsAccounts": "계정",
+    "AccountsAddFromUsers": "사용자로부터 추가",
+    "AccountsAnonymous": "익명의",
+    "AccountsChangePassword": "비밀번호 변경",
+    "AccountsCreateUserForPerson": "개인에 대한 사용자 생성",
+    "AccountsFirstName": "이름",
+    "AccountsForPerson": "사람을 위한",
+    "AccountsLastName": "성",
+    "AccountsLastSyncDate": "마지막 동기화 날짜",
+    "AccountsManageRoles": "역할 관리",
+    "AccountsPassword": "비밀번호",
+    "AccountsPasswordChanged": "비밀번호가 변경되었습니다.",
+    "AccountsPasswordConfirmation": "비밀번호 확인",
+    "AccountsRoleName": "역할 이름",
+    "AccountsSync": "동조",
+    "AccountsUser": "사용자",
+    "AccountsUserName": "사용자 이름",
+    "AccountsUserNameAToZ": "사용자 이름 A-Z",
+    "AccountsUserNameZToA": "사용자 이름 Z-A",
+    "AccountsUsers": "사용자",
+    "AccountsUsersAreSynced": "사용자가 동기화되었습니다."
+}

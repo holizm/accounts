@@ -1,0 +1,22 @@
+{
+    "AccountsChangePhone": "変化",
+    "AccountsDashboardWelcomeMessage": "いらっしゃいませ！",
+    "AccountsEditProfile": "プロフィールを編集します",
+    "AccountsEmptyOtp": "コードを空にすることはできません",
+    "AccountsEmptyPhone": "電話番号を空白にすることはできません",
+    "AccountsInvalidOtp": "コードが無効です",
+    "AccountsInvalidPhone": "電話番号が無効です",
+    "AccountsOtp": "コード",
+    "AccountsOtpLabel": "受け取ったコードを入力してください",
+    "AccountsOtpSent": "この番号にコードが送信されます",
+    "AccountsPhone": "電話番号",
+    "AccountsPhoneLabel": "電話番号を入力してください",
+    "AccountsProfile": "プロフィール",
+    "AccountsRegisterOrSignIn": "登録またはサインイン",
+    "AccountsResend": "再送信",
+    "AccountsSendOtp": "コードを送信する",
+    "AccountsSendingOtp": "送信",
+    "AccountsSignIn": "サインイン",
+    "AccountsSignOut": "サインアウト",
+    "AccountsSigningIn": "今すぐ入力します"
+}

@@ -1,0 +1,22 @@
+{
+    "AccountsChangePhone": "تغییر",
+    "AccountsDashboardWelcomeMessage": "خوش آمدید!",
+    "AccountsEditProfile": "ویرایش پروفایل",
+    "AccountsEmptyOtp": "کد نمی تواند خالی باشد",
+    "AccountsEmptyPhone": "شماره تلفن نمی تواند خالی باشد",
+    "AccountsInvalidOtp": "کد معتبر نیست",
+    "AccountsInvalidPhone": "شماره تلفن معتبر نیست",
+    "AccountsOtp": "کد",
+    "AccountsOtpLabel": "لطفا کد دریافتی خود را وارد کنید",
+    "AccountsOtpSent": "کد برای این شماره ارسال شد",
+    "AccountsPhone": "شماره تلفن",
+    "AccountsPhoneLabel": "لطفا شماره تلفن خود را وارد کنید",
+    "AccountsProfile": "پروفایل",
+    "AccountsRegisterOrSignIn": "ثبت نام یا ورود",
+    "AccountsResend": "ارسال مجدد",
+    "AccountsSendOtp": "ارسال کد",
+    "AccountsSendingOtp": "در حال ارسال",
+    "AccountsSignIn": "ورود",
+    "AccountsSignOut": "خروج",
+    "AccountsSigningIn": "در حال ورود"
+}

@@ -1,0 +1,23 @@
+{
+    "AccountsAccounts": "アカウント",
+    "AccountsAddFromUsers": "ユーザーから追加",
+    "AccountsAnonymous": "匿名",
+    "AccountsChangePassword": "パスワードを変更する",
+    "AccountsCreateUserForPerson": "個人のユーザーを作成する",
+    "AccountsFirstName": "ファーストネーム",
+    "AccountsForPerson": "人向け",
+    "AccountsLastName": "苗字",
+    "AccountsLastSyncDate": "最終同期日",
+    "AccountsManageRoles": "役割の管理",
+    "AccountsPassword": "パスワード",
+    "AccountsPasswordChanged": "パスワード変更済み",
+    "AccountsPasswordConfirmation": "パスワードの確認",
+    "AccountsRoleName": "役割名",
+    "AccountsSync": "同期",
+    "AccountsUser": "ユーザー",
+    "AccountsUserName": "ユーザー名",
+    "AccountsUserNameAToZ": "ユーザー名 A ～ Z",
+    "AccountsUserNameZToA": "ユーザー名 Z-A",
+    "AccountsUsers": "ユーザー",
+    "AccountsUsersAreSynced": "ユーザーは同期されています"
+}

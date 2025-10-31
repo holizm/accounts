@@ -1,1 +1,8 @@
-accounts
+Users
+    Uuid
+    Username
+    LastSyncDate
+    Person
+Keys
+    User Unique
+    Value

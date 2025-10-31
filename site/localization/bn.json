@@ -1,0 +1,22 @@
+{
+    "AccountsChangePhone": "পরিবর্তন",
+    "AccountsDashboardWelcomeMessage": "স্বাগত!",
+    "AccountsEditProfile": "আপনার প্রোফাইল সম্পাদনা করুন",
+    "AccountsEmptyOtp": "কোড খালি হতে পারে না",
+    "AccountsEmptyPhone": "ফোন নম্বর খালি করা যাবে না",
+    "AccountsInvalidOtp": "কোড বৈধ নয়",
+    "AccountsInvalidPhone": "ফোন নম্বর বৈধ নয়",
+    "AccountsOtp": "কোড",
+    "AccountsOtpLabel": "আপনি প্রাপ্ত কোড লিখুন দয়া করে",
+    "AccountsOtpSent": "এই নম্বরের জন্য কোড পাঠানো হয়",
+    "AccountsPhone": "ফোন নম্বর",
+    "AccountsPhoneLabel": "অনুগ্রহ করে আপনার ফোন নাম্বারটি প্রদান করুন",
+    "AccountsProfile": "প্রোফাইল",
+    "AccountsRegisterOrSignIn": "নিবন্ধন করুন বা সাইন ইন করুন",
+    "AccountsResend": "আবার পাঠান",
+    "AccountsSendOtp": "সংকেত পাঠাও",
+    "AccountsSendingOtp": "পাঠানো হচ্ছে",
+    "AccountsSignIn": "সাইন ইন করুন",
+    "AccountsSignOut": "সাইন আউট",
+    "AccountsSigningIn": "এখন প্রবেশ করছে"
+}

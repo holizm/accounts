@@ -1,0 +1,22 @@
+{
+    "AccountsChangePhone": "يتغير",
+    "AccountsDashboardWelcomeMessage": "مرحباً!",
+    "AccountsEditProfile": "تحرير ملفك الشخصي",
+    "AccountsEmptyOtp": "لا يمكن أن يكون الرمز فارغًا",
+    "AccountsEmptyPhone": "لا يمكن أن يكون رقم الهاتف فارغاً",
+    "AccountsInvalidOtp": "الرمز غير صالح",
+    "AccountsInvalidPhone": "رقم الهاتف غير صالح",
+    "AccountsOtp": "شفرة",
+    "AccountsOtpLabel": "الرجاء إدخال الرمز الذي تلقيته",
+    "AccountsOtpSent": "يتم إرسال الرمز لهذا الرقم",
+    "AccountsPhone": "رقم التليفون",
+    "AccountsPhoneLabel": "يرجى إدخال رقم الهاتف الخاص بك",
+    "AccountsProfile": "حساب تعريفي",
+    "AccountsRegisterOrSignIn": "التسجيل أو تسجيل الدخول",
+    "AccountsResend": "إعادة إرسال",
+    "AccountsSendOtp": "إرسال الرمز",
+    "AccountsSendingOtp": "إرسال",
+    "AccountsSignIn": "تسجيل الدخول",
+    "AccountsSignOut": "تسجيل الخروج",
+    "AccountsSigningIn": "الدخول الآن"
+}

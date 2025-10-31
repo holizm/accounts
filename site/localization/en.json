@@ -1,0 +1,22 @@
+{
+    "AccountsChangePhone": "Change",
+    "AccountsDashboardWelcomeMessage": "Welcome!",
+    "AccountsEditProfile": "Edit your profile",
+    "AccountsEmptyOtp": "Code can not be empty",
+    "AccountsEmptyPhone": "Phone number can not be empty",
+    "AccountsInvalidOtp": "Code is not valid",
+    "AccountsInvalidPhone": "Phone number is not valid",
+    "AccountsOtp": "Code",
+    "AccountsOtpLabel": "Please enter the code you received",
+    "AccountsOtpSent": "Code is sent for this number",
+    "AccountsPhone": "Phone number",
+    "AccountsPhoneLabel": "Please enter your phone number",
+    "AccountsProfile": "Profile",
+    "AccountsRegisterOrSignIn": "Register or sign-in",
+    "AccountsResend": "Resend",
+    "AccountsSendOtp": "Send code",
+    "AccountsSendingOtp": "Sending",
+    "AccountsSignIn": "Sign in",
+    "AccountsSignOut": "Sign out",
+    "AccountsSigningIn": "Signing in"
+}

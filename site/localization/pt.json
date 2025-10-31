@@ -1,0 +1,22 @@
+{
+    "AccountsChangePhone": "Mudar",
+    "AccountsDashboardWelcomeMessage": "Bem-vindo!",
+    "AccountsEditProfile": "Edite seu perfil",
+    "AccountsEmptyOtp": "O código não pode ficar vazio",
+    "AccountsEmptyPhone": "O número de telefone não pode ficar vazio",
+    "AccountsInvalidOtp": "O código não é válido",
+    "AccountsInvalidPhone": "O número de telefone não é válido",
+    "AccountsOtp": "Código",
+    "AccountsOtpLabel": "Por favor insira o código que você recebeu",
+    "AccountsOtpSent": "O código é enviado para este número",
+    "AccountsPhone": "Número de telefone",
+    "AccountsPhoneLabel": "Por favor, digite seu número de telefone",
+    "AccountsProfile": "Perfil",
+    "AccountsRegisterOrSignIn": "Registre-se ou faça login",
+    "AccountsResend": "Reenviar",
+    "AccountsSendOtp": "Enviar código",
+    "AccountsSendingOtp": "Enviando",
+    "AccountsSignIn": "Entrar",
+    "AccountsSignOut": "sair",
+    "AccountsSigningIn": "Entrando agora"
+}

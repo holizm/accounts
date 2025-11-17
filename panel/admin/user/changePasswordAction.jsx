@@ -1,5 +1,5 @@
 import { EntityAction } from 'list'
-import ChangePasswordDialog from "./ChangePasswordDialog"
+import ChangePasswordDialog from "./changePasswordDialog"
 
 const ChangePasswordAction = props => <EntityAction
     {...props}

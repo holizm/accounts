@@ -4,7 +4,7 @@ import {
     useComputed$,
     useSignal,
     useStyles,
-} from "@builder.io/qwik"
+} from "builder.io/qwik"
 import { post } from "base"
 import { useSeo } from "seo"
 import {

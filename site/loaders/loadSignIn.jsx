@@ -1,4 +1,4 @@
-import { routeLoader$ } from "@builder.io/qwik-city"
+import { routeLoader$ } from "builder.io/qwikCity"
 import { useAsync } from "base"
 import { getPage } from "contents"
 import {

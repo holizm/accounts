@@ -1,5 +1,5 @@
 import { List } from 'list'
-import RoleForm from "./Form"
+import RoleForm from "./form"
 
 const headers = <>
     <th>Role Name</th>

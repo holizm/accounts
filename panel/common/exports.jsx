@@ -1,5 +1,5 @@
-import UserChip from "./User/Chip"
-import UserChips from "./User/Chips"
+import UserChip from "./user/chip"
+import UserChips from "./user/chips"
 
 export { UserChip }
 export { UserChips }

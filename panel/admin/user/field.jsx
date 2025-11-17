@@ -1,7 +1,7 @@
 import { Browse } from 'form'
-import filters from "./Filters"
-import headers from "./Headers"
-import row from "./Row"
+import filters from "./filters"
+import headers from "./headers"
+import row from "./row"
 
 const UserField = ({
     choose,

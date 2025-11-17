@@ -7,10 +7,10 @@ import {
     Text,
     ValueWithTitle,
 } from 'list'
-import UserForm from "./Form"
-import ManageRoles from "../Role/Manage"
-import ChangePasswordAction from "./ChangePasswordAction"
-import CreateUserForPersonDialog from "./CreateUserForPersonDialog"
+import UserForm from "./form"
+import ManageRoles from "../role/manage"
+import ChangePasswordAction from "./changePasswordAction"
+import CreateUserForPersonDialog from "./createUserForPersonDialog"
 
 const listActions = () => {
 

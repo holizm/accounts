@@ -1,4 +1,4 @@
-import configure from "../../Business/Accounts/Configure.js"
+import configure from "../../business/accounts/configure.js"
 
 export default {
     configureOnPost: configure

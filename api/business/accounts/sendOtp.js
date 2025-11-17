@@ -9,9 +9,9 @@ import {
     settings,
 } from 'core'
 import { sendTextMessage } from "notifications"
-import { getUserByPhone } from "../User/GetByPhone.js"
-import { getKey } from "../Key/GetKey.js"
-import { changePassword } from "../User/ChangePassword.js"
+import { getUserByPhone } from "../user/getByPhone.js"
+import { getKey } from "../key/getKey.js"
+import { changePassword } from "../user/changePassword.js"
 
 export const sendOtp = async params => {
     let {

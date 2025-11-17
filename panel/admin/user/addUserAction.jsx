@@ -4,7 +4,7 @@ import { ListAction } from 'list'
 import {
     DialogForm
 } from 'form'
-import UserField from "./Field"
+import UserField from "./field"
 
 const AddUserAction = props => {
 

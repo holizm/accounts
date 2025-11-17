@@ -1,4 +1,4 @@
-import { kcPut } from "../Keycloak.js"
+import { kcPut } from "../keycloak.js"
 
 export const changePassword = async params => {
     const {

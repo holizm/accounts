@@ -1,7 +1,7 @@
 import {
     component$,
     useVisibleTask$,
-} from "@builder.io/qwik"
+} from "builder.io/qwik"
 import {
     loadDashboard,
     syncUser,

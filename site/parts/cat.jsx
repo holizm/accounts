@@ -1,4 +1,4 @@
-import { component$ } from "@builder.io/qwik"
+import { component$ } from "builder.io/qwik"
 import { merge } from "base"
 
 const Cta = component$(({

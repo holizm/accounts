@@ -3,8 +3,8 @@ import {
     component$,
     Slot,
     useSignal,
-} from "@builder.io/qwik"
-import { Form } from "@builder.io/qwik-city"
+} from "builder.io/qwik"
+import { Form } from "builder.io/qwikCity"
 import { useSignIn } from "accounts"
 
 const SignIn = component$(({

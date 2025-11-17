@@ -1,5 +1,5 @@
-import { component$, useVisibleTask$ } from "@builder.io/qwik"
-import { useLocation } from "@builder.io/qwik-city"
+import { component$, useVisibleTask$ } from "builder.io/qwik"
+import { useLocation } from "builder.io/qwikCity"
 import { useSignIn } from "accounts"
 
 export default component$(() => {

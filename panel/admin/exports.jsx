@@ -1,9 +1,9 @@
-import AddUserAction from "./User/AddUserAction"
-import ChangePasswordAction from "./User/ChangePasswordAction"
-import ChangePasswordDialog from "./User/ChangePasswordDialog"
-import UserField from "./User/Field"
-import UserInputs from "./User/Inputs"
-import UserNameTd from "./User/NameTd"
+import AddUserAction from "./user/addUserAction"
+import ChangePasswordAction from "./user/changePasswordAction"
+import ChangePasswordDialog from "./user/changePasswordDialog"
+import UserField from "./user/field"
+import UserInputs from "./user/inputs"
+import UserNameTd from "./user/nameTd"
 
 export { AddUserAction }
 export { ChangePasswordAction }

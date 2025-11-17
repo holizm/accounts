@@ -1,5 +1,5 @@
 import { EntityAction } from 'list'
-import RolesDialog from "./Dialog"
+import RolesDialog from "./dialog"
 
 const ManageRoles = <EntityAction
     title="AccountsManageRoles"

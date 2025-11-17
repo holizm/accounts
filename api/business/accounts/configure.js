@@ -10,7 +10,7 @@ import {
     kcGet,
     kcPost,
     kcPut,
-} from "../Keycloak.js"
+} from "../keycloak.js"
 
 const getRedirectUrls = ({
     baseDomain,

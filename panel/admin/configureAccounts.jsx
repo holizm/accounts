@@ -1,9 +1,9 @@
 import { isDevOrSuperAdmin } from 'app'
-import HeaderAction from "headerAction"
+import AppAction from "appAction"
 
 export default () => {
 
-    return isDevOrSuperAdmin() && <HeaderAction
+    return isDevOrSuperAdmin() && <AppAction
         icon="Security"
         post="/accounts/configure"
         title="AccountsConfigure"

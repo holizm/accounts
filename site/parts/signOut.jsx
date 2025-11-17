@@ -4,7 +4,7 @@ import {
     Slot,
     useSignal,
 } from "@builder.io/qwik"
-import { useSignOut } from "Accounts"
+import { useSignOut } from "accounts"
 
 const SignOut = component$(({
     progress: ProgressComponent,

@@ -1,5 +1,5 @@
 import { component$ } from "@builder.io/qwik"
-import { useSession } from "Accounts"
+import { useSession } from "accounts"
 
 const UserTab = component$(() => {
 

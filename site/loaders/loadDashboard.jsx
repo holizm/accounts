@@ -2,12 +2,12 @@ import { routeLoader$ } from "@builder.io/qwik-city"
 import {
     getFromCacheOrApi,
     useAsync
-} from "Base"
-import { getLayout } from "Contents"
+} from "base"
+import { getLayout } from "contents"
 import {
     getGlobalization,
     applyGranularity,
-} from "Globalization"
+} from "globalization"
 
 const loadDashboard = routeLoader$(async props => {
 

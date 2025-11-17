@@ -7,8 +7,8 @@ import {
     pascalize,
     providers,
     settings,
-} from "Core"
-import { sendTextMessage } from "Notifications"
+} from 'core'
+import { sendTextMessage } from "notifications"
 import { getUserByPhone } from "../User/GetByPhone.js"
 import { getKey } from "../Key/GetKey.js"
 import { changePassword } from "../User/ChangePassword.js"

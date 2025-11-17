@@ -1,4 +1,4 @@
-import { post } from "Base"
+import { post } from "base"
 
 const syncUser = (session) => {
     return post("user/syncByGuid", {

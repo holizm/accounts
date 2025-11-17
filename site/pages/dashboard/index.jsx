@@ -6,7 +6,7 @@ import {
     loadDashboard,
     syncUser,
     useSession,
-} from "Accounts"
+} from "accounts"
 
 const Index = component$(() => {
 

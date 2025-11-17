@@ -1,7 +1,7 @@
 import {
     deriveKey,
     getOrCreateAndGet,
-} from "Core"
+} from 'core'
 
 export const getKey = async user => {
     const value = deriveKey(user)

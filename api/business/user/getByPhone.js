@@ -1,5 +1,5 @@
-import { createOnPost } from "Core"
-import { createPerson } from "Contacts"
+import { createOnPost } from 'core'
+import { createPerson } from "contacts"
 import { getUserByUsername } from "./GetByUsername.js"
 
 export const getUserByPhone = async phone => {

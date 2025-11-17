@@ -6,7 +6,7 @@ import {
     getTenant,
     pascalize,
     post,
-} from "Base";
+} from "base";
 import fs from "fs";
 import path from "path";
 

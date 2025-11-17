@@ -1,4 +1,4 @@
-import { useSession } from "Accounts"
+import { useSession } from "accounts"
 
 const useAccounts = session => {
     if (!session) {

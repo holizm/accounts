@@ -1,5 +1,5 @@
 import { component$ } from "@builder.io/qwik"
-import { merge } from "Base"
+import { merge } from "base"
 
 const Cta = component$(({
     class: internalClass,

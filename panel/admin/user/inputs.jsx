@@ -3,7 +3,7 @@ import {
     Email,
     Text,
 } from 'form'
-import { useDefaultPersonType } from "ContactsCommon"
+import { useDefaultPersonType } from "contactsCommon"
 
 const UserInputs = personType => {
 

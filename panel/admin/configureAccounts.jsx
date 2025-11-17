@@ -1,5 +1,5 @@
 import { isDevOrSuperAdmin } from 'app'
-import HeaderAction from "HeaderAction"
+import HeaderAction from "headerAction"
 
 export default () => {
 

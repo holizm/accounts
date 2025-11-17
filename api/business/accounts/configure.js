@@ -4,7 +4,7 @@ import {
     ok,
     pascalize,
     settings,
-} from "Core"
+} from 'core'
 import {
     kcDelete,
     kcGet,

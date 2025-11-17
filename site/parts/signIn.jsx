@@ -5,7 +5,7 @@ import {
     useSignal,
 } from "@builder.io/qwik"
 import { Form } from "@builder.io/qwik-city"
-import { useSignIn } from "Accounts"
+import { useSignIn } from "accounts"
 
 const SignIn = component$(({
     content,

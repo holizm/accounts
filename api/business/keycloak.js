@@ -7,7 +7,7 @@ import {
     httpPut,
     pascalize,
     settings,
-} from "Core"
+} from 'core'
 
 const baseUrl = settings.accounts.url.replace(/\/$/, "")
 

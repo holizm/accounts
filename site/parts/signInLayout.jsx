@@ -1,4 +1,4 @@
-import { Cta } from "Accounts"
+import { Cta } from "accounts"
 
 const Layout = props => {
 

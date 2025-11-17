@@ -7,8 +7,8 @@ import {
     checkLogin,
     loadDashboard,
     SignOut,
-} from "Accounts"
-import { Menu } from "Dashboard"
+} from "accounts"
+import { Menu } from "dashboard"
 
 export const onRequest = event => {
     checkLogin(event)

@@ -5,14 +5,14 @@ import {
     useSignal,
     useStyles,
 } from "@builder.io/qwik"
-import { post } from "Base"
-import { useSeo } from "Seo"
+import { post } from "base"
+import { useSeo } from "seo"
 import {
     loadSignIn,
     SignInLayout,
-} from "Accounts"
-import { loadSignIn as runnableLoader } from "Loaders"
-import { Layout as RunnableLayout } from "SignInParts"
+} from "accounts"
+import { loadSignIn as runnableLoader } from "loaders"
+import { Layout as RunnableLayout } from "signInParts"
 
 const Index = component$(() => {
     const data = loadSignIn().value

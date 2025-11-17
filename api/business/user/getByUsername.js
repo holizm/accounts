@@ -1,4 +1,4 @@
-import { getByFilter } from "Core"
+import { getByFilter } from 'core'
 
 export const getUserByUsername = async username => {
     const user = await getByFilter(

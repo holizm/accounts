@@ -1,7 +1,7 @@
 import {
     createOnPost,
     parseId,
-} from "Core"
+} from 'core'
 
 export const createUser = async params => {
     const naturalPerson = await createOnPost({

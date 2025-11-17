@@ -1,10 +1,10 @@
 import { routeLoader$ } from "@builder.io/qwik-city"
-import { useAsync } from "Base"
-import { getPage } from "Contents"
+import { useAsync } from "base"
+import { getPage } from "contents"
 import {
     getGlobalization,
     applyGranularityInBatch,
-} from "Globalization"
+} from "globalization"
 
 const loadSignIn = routeLoader$(async props => {
     const [

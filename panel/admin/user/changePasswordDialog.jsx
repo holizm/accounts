@@ -1,8 +1,8 @@
-import { post } from "App"
+import { post } from 'app'
 import {
     DialogForm,
     Password,
-} from "Form"
+} from 'form'
 
 const inputs = <>
     <Password

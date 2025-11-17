@@ -1,4 +1,4 @@
-import { TitleSubtitle } from "List"
+import { TitleSubtitle } from 'list'
 
 const UserNameTd = ({ user }) =>
     <TitleSubtitle

@@ -1,4 +1,4 @@
-import { post } from "App"
+import { post } from 'app'
 import {
     DateTime,
     Image,
@@ -6,7 +6,7 @@ import {
     ListAction,
     Text,
     ValueWithTitle,
-} from "List"
+} from 'list'
 import UserForm from "./Form"
 import ManageRoles from "../Role/Manage"
 import ChangePasswordAction from "./ChangePasswordAction"

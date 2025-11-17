@@ -1,9 +1,9 @@
 import { useState } from "react"
-import { DialogContext } from "Contexts"
-import { ListAction } from "List"
+import { DialogContext } from 'contexts'
+import { ListAction } from 'list'
 import {
     DialogForm
-} from "Form"
+} from 'form'
 import UserField from "./Field"
 
 const AddUserAction = props => {

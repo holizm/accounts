@@ -1,8 +1,8 @@
-import Icons from "Icons"
+import Icons from 'icons'
 import {
     Email,
     Text,
-} from "Form"
+} from 'form'
 import { useDefaultPersonType } from "ContactsCommon"
 
 const UserInputs = personType => {

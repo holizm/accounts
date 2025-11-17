@@ -1,7 +1,7 @@
 import {
     DialogForm,
     Text,
-} from "Form"
+} from 'form'
 import { PersonField } from "Contacts"
 
 const CreateUserForPersonDialog = () => {

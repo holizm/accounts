@@ -1,4 +1,4 @@
-import { EntityAction } from "List"
+import { EntityAction } from 'list'
 import RolesDialog from "./Dialog"
 
 const ManageRoles = <EntityAction

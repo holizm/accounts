@@ -1,4 +1,4 @@
-import { isDevOrSuperAdmin } from "App"
+import { isDevOrSuperAdmin } from 'app'
 import HeaderAction from "HeaderAction"
 
 export default () => {

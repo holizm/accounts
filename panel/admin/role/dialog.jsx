@@ -1,8 +1,8 @@
-import { url } from "App"
+import { url } from 'app'
 import {
     Checks,
     DialogForm,
-} from "Form"
+} from 'form'
 
 const RolesDialog = ({
     entity,

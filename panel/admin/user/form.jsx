@@ -5,7 +5,7 @@ const stack = new Error()
     .join("\n")
 console.log(stack)
 
-import { DialogForm } from "Form"
+import { DialogForm } from 'form'
 import UserInputs from "./Inputs"
 
 const UserForm = () => {

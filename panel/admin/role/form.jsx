@@ -1,7 +1,7 @@
 import {
     DialogForm,
     Text,
-} from "Form"
+} from 'form'
 
 const inputs = <>
     <Text

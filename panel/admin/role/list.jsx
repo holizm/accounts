@@ -1,4 +1,4 @@
-import { List } from "List"
+import { List } from 'list'
 import RoleForm from "./Form"
 
 const headers = <>

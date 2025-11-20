@@ -79,12 +79,14 @@ const addMapperToClient = async (params, clientUuid, clientId) => {
         protocolMapper: "oidc-usermodel-realm-role-mapper",
         consentRequired: false,
         config: {
-            "id.token.claim": "true",
             "access.token.claim": "true",
             "claim.name": "roles",
+            "id.token.claim": "true",
+            "introspection.token.claim": "true",
             "jsonType.label": "String",
+            "lightweight.claim": "true",
             "multivalued": "true",
-            "userinfo.token.claim": "true"
+            "userinfo.token.claim": "true",
         }
     }
 

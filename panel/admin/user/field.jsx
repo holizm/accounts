@@ -9,21 +9,21 @@ const UserField = ({
     property,
     ...rest
 }) => {
-    const handleChoose = entity => {
+    const handleChoose = item => {
         if (choose) {
-            return choose(entity)
+            return choose(item)
         }
-        return entity.id
+        return item.id
     }
     return <Browse
-        choose={entity => handleChoose(entity)}
-        entityType="User"
+        choose={item => handleChoose(item)}
+        type="User"
         filters={filters}
         headers={headers}
         placeholder={placeholder ?? "AccountsUser"}
         property={property ?? "UserGuid"}
         row={row}
-        show={entity => entity.userName || entity.naturalPersonName}
+        show={item => item.userName || item.naturalPersonName}
         {...rest}
     />
 }

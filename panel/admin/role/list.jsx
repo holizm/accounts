@@ -5,10 +5,10 @@ const headers = <>
     <th>Role Name</th>
 </>
 
-const row = entity => {
+const row = item => {
     return <>
         <td>
-            {entity.name}
+            {item.name}
         </td>
     </>
 }
@@ -16,7 +16,7 @@ const row = entity => {
 const Roles = () => {
     return <List
         title="Roles"
-        entityType="Role"
+        type="Role"
         headers={headers}
         row={row}
         create={RoleForm}

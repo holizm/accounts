@@ -14,7 +14,7 @@ const inputs = <>
 </>
 
 const ChangePasswordDialog = ({
-    entity,
+    item,
     reloadEntity,
 }) => {
     const changePassword = ({
@@ -24,11 +24,11 @@ const ChangePasswordDialog = ({
         success,
     }) => {
         setProgress(true)
-        post(`/adminUser/changePassword?personGuid=${entity.personGuid}`, data)
+        post(`/adminUser/changePassword?personGuid=${item.personGuid}`, data)
             .then(data => {
                 setProgress(false)
                 success("AccountsPasswordChanged")
-                reloadEntity(entity)
+                reloadEntity(item)
             }, e => {
                 setProgress(false)
                 error(e)
@@ -36,7 +36,7 @@ const ChangePasswordDialog = ({
     }
 
     return <DialogForm
-        entityType="AdminUser"
+        type="AdminUser"
         inputs={inputs}
         okAction={changePassword}
         title="AccountsChangePassword"

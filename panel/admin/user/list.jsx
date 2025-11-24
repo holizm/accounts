@@ -73,20 +73,20 @@ const headers = <>
     <th>AccountsLastSyncDate</th>
 </>
 
-const row = entity => <>
+const row = item => <>
     <Image />
     <td>
         <ValueWithTitle
-            value={entity.userName}
-            title={entity.guid}
+            value={item.userName}
+            title={item.guid}
         />
     </td>
     <DateTime
-        date={entity.lastSyncUtcDate}
+        date={item.lastSyncUtcDate}
     />
 </>
 
-const entityActions = entity => <>
+const itemActions = item => <>
     {ManageRoles}
     <ChangePasswordAction />
 </>
@@ -94,8 +94,8 @@ const entityActions = entity => <>
 const Users = () => {
     return <List
         create={UserForm}
-        entityActions={entityActions}
-        entityType="AdminUser"
+        itemActions={itemActions}
+        type="AdminUser"
         filters={filters}
         hasDelete
         headers={headers}

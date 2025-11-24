@@ -1,8 +1,8 @@
 const UserChips = ({
-    entity,
+    item,
     usersPropertyName
 }) => {
-    const relatedItems = entity.relatedItems || entity
+    const relatedItems = item || item
 
     return <div className="flex gap-2">
         {
@@ -12,7 +12,7 @@ const UserChips = ({
             >
                 <img
                     className="w-8 h-8 rounded-full object-cover"
-                    src={user.relatedItems.personImageUrl || user.relatedItems.imageUrl}
+                    src={user.personImageUrl || user.imageUrl}
                     title={user.naturalPersonName}
                 />
             </span>

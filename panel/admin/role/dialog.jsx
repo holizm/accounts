@@ -5,32 +5,32 @@ import {
 } from 'form'
 
 const RolesDialog = ({
-    entity,
+    item,
     reloadEntity,
     ...rest
 }) => {
 
     const inputs = <>
         <Checks
-            checkedItemsUrl={`/role/assigned?userId=${entity.id || ""}`}
-            choose={entity => entity.name}
+            checkedItemsUrl={`/role/assigned?userId=${item.id || ""}`}
+            choose={item => item.name}
             itemsUrl={`/role/all`}
             property="Roles"
-            show={entity => entity.name}
+            show={item => item.name}
         />
     </>
 
     const apiUrl = url({
         path: "/role/assign",
         query: {
-            userId: entity.id
+            userId: item.id
         }
     })
 
     return <DialogForm
         {...rest}
         disableAutomaticEntityLoading
-        entityType="Role"
+        type="Role"
         inputs={inputs}
         submitTo={apiUrl}
         title="AccountsManageRoles"

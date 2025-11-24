@@ -1,5 +1,5 @@
-const row = entity => <>
-    <td>{(entity.naturalPersonName || entity.juridicalPersonName) || entity.userName}</td>
+const row = item => <>
+    <td>{(item.naturalPersonName || item.juridicalPersonName) || item.userName}</td>
 </>
 
 export default row

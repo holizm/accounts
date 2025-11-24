@@ -14,7 +14,7 @@ const inputs = <>
 const RoleForm = () => {
     return <DialogForm
         title="Role"
-        entityType="role"
+        type="role"
         inputs={inputs}
     />
 }

@@ -1,8 +1,8 @@
-Users
-    Uuid
-    Username
-    LastSyncDate
-    Person
-Keys
-    User Unique
-    Value
+users
+    uuid
+    username
+    lastSyncDate
+    person
+keys
+    user unique
+    value

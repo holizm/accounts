@@ -24,7 +24,7 @@ const listActions = () => {
         post("/adminUser/syncAll").then(data => {
             reloadList()
             setProgress(false)
-            success("InfraDone")
+            success("CoreDone")
         }, e => {
             setProgress(false)
             error(e)

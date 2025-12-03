@@ -26,7 +26,7 @@ const UserInputs = personType => {
     const juridicalFields = <>
         <Text
             property="Name"
-            placeholder="InfraName"
+            placeholder="CoreName"
             required
         />
     </>
@@ -41,7 +41,7 @@ const UserInputs = personType => {
         />
         <Email
             property="Email"
-            placeholder="InfraEmail"
+            placeholder="CoreEmail"
             required
         />
         {

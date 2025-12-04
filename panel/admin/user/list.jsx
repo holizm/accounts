@@ -69,8 +69,8 @@ const sorts = [
 
 const headers = <>
     <th></th>
-    <th>AccountsUserName</th>
-    <th>AccountsLastSyncDate</th>
+    <th>accountsUserName</th>
+    <th>accountsLastSyncDate</th>
 </>
 
 const row = item => <>

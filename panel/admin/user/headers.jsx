@@ -1,5 +1,5 @@
 const headers = <>
-    <th>AccountsUserName</th>
+    <th>accountsUserName</th>
 </>
 
 export default headers

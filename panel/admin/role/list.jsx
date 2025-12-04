@@ -2,7 +2,7 @@ import { List } from 'list'
 import RoleForm from "./form"
 
 const headers = <>
-    <th>Role Name</th>
+    <th>role Name</th>
 </>
 
 const row = item => {

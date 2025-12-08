@@ -1,7 +1,7 @@
-import { EntityAction } from 'list'
+import { ItemAction } from 'list'
 import RolesDialog from "./dialog"
 
-const ManageRoles = <EntityAction
+const ManageRoles = <ItemAction
     title="AccountsManageRoles"
     icon="AdminPanelSettings"
     dialog={RolesDialog}

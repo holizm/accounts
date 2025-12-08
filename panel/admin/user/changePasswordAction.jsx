@@ -1,7 +1,7 @@
-import { EntityAction } from 'list'
+import { ItemAction } from 'list'
 import ChangePasswordDialog from "./changePasswordDialog"
 
-const ChangePasswordAction = props => <EntityAction
+const ChangePasswordAction = props => <ItemAction
     {...props}
     title="AccountsChangePassword"
     icon="Password"

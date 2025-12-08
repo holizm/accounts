@@ -17,7 +17,7 @@ const UserForm = () => {
     console.log(stack)
     return <DialogForm
         type="AdminUser"
-        humanReadableEntityType="AccountsUser"
+        humanReadableItemType="AccountsUser"
         inputs={UserInputs()}
     />
 }

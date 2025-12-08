@@ -6,7 +6,7 @@ import {
 
 const RolesDialog = ({
     item,
-    reloadEntity,
+    reloadItem,
     ...rest
 }) => {
 
@@ -29,7 +29,7 @@ const RolesDialog = ({
 
     return <DialogForm
         {...rest}
-        disableAutomaticEntityLoading
+        disableAutomaticItemLoading
         type="Role"
         inputs={inputs}
         submitTo={apiUrl}

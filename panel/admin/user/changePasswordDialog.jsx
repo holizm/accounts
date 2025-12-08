@@ -15,7 +15,7 @@ const inputs = <>
 
 const ChangePasswordDialog = ({
     item,
-    reloadEntity,
+    reloadItem,
 }) => {
     const changePassword = ({
         data,
@@ -28,7 +28,7 @@ const ChangePasswordDialog = ({
             .then(data => {
                 setProgress(false)
                 success("AccountsPasswordChanged")
-                reloadEntity(item)
+                reloadItem(item)
             }, e => {
                 setProgress(false)
                 error(e)

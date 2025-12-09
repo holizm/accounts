@@ -36,7 +36,7 @@ const listActions = () => {
             title="AccountsSync"
             icon="SyncAlt"
             onClick={params => syncUsers(params)}
-            notApplicableToEntities
+            notApplicableToItems
             superAdmin
         />
         <ListAction

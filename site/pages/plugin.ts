@@ -28,32 +28,30 @@ const getParams = (env, url) => {
 
     const params = {
         accountsClient,
-        accountsRealm: globalThis.settings?.NodeApi ? pascalize(tenant.Id) : accountsRealm,
+        accountsRealm: pascalize(tenant.Id),
         accountsUrl,
         authSecret,
         host,
         keycloakClientSecret,
-        siteUrl: globalThis.settings?.NodeApi ? tenant.ProdDomain : siteUrl,
+        siteUrl: tenant.ProdDomain,
     };
 
-    if (globalThis.settings?.NodeApi) {
-        let tenantSettings;
-        if (globalThis.settings.IsDeveloping) {
-            tenantSettings = globalThis.settings.Production?.Site?.KeycloakClientSecrets?.find(
-                i => i.Domain === tenant.ProdDomain
-            );
-        } else {
-            const filePath = path.resolve(process.cwd(), "PrivateSettings.json");
-            console.log(filePath)
-            const privateSettings = JSON.parse(fs.readFileSync(filePath, "utf-8"));
-            console.log(privateSettings)
-            tenantSettings = privateSettings?.KeycloakClientSecrets?.find(
-                i => i.Domain === tenant.ProdDomain
-            );
-        }
-        if (tenantSettings) {
-            params.keycloakClientSecret = tenantSettings.Secret;
-        }
+    let tenantSettings;
+    if (globalThis.settings.IsDeveloping) {
+        tenantSettings = globalThis.settings.Production?.Site?.KeycloakClientSecrets?.find(
+            i => i.Domain === tenant.ProdDomain
+        );
+    } else {
+        const filePath = path.resolve(process.cwd(), "PrivateSettings.json");
+        console.log(filePath)
+        const privateSettings = JSON.parse(fs.readFileSync(filePath, "utf-8"));
+        console.log(privateSettings)
+        tenantSettings = privateSettings?.KeycloakClientSecrets?.find(
+            i => i.Domain === tenant.ProdDomain
+        );
+    }
+    if (tenantSettings) {
+        params.keycloakClientSecret = tenantSettings.Secret;
     }
 
     paramsCache[host] = params;

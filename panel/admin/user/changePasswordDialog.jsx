@@ -13,7 +13,7 @@ const inputs = <>
     />
 </>
 
-const ChangePasswordDialog = ({
+export default ({
     item,
     reloadItem,
 }) => {
@@ -42,5 +42,3 @@ const ChangePasswordDialog = ({
         title="AccountsChangePassword"
     />
 }
-
-export default ChangePasswordDialog

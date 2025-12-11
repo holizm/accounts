@@ -8,7 +8,7 @@ import {
     useSession,
 } from "accounts"
 
-const Index = component$(() => {
+export default component$(() => {
 
     const data = loadDashboard().value
     const { translations } = data
@@ -24,5 +24,3 @@ const Index = component$(() => {
         <span>{translations.dashboardWelcomeMessage}</span>
     </div>
 })
-
-export default Index

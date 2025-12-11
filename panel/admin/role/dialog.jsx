@@ -4,7 +4,7 @@ import {
     DialogForm,
 } from 'form'
 
-const RolesDialog = ({
+export default ({
     item,
     reloadItem,
     ...rest
@@ -36,5 +36,3 @@ const RolesDialog = ({
         title="AccountsManageRoles"
     />
 }
-
-export default RolesDialog

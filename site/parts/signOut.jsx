@@ -6,7 +6,7 @@ import {
 } from "builder.io/qwik"
 import { useSignOut } from "accounts"
 
-const SignOut = component$(({
+export default component$(({
     progress: ProgressComponent,
     returnTo,
 }) => {
@@ -37,5 +37,3 @@ const SignOut = component$(({
             </div>
         </div>
 })
-
-export default SignOut

@@ -8,7 +8,7 @@ console.log(stack)
 import { DialogForm } from 'form'
 import UserInputs from "./inputs"
 
-const UserForm = () => {
+export default () => {
     const stack = new Error()
         .stack
         .split("\n")
@@ -21,5 +21,3 @@ const UserForm = () => {
         inputs={UserInputs()}
     />
 }
-
-export default UserForm

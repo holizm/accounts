@@ -1,9 +1,7 @@
 import { TitleSubtitle } from 'list'
 
-const UserNameTd = ({ user }) =>
+export default ({ user }) =>
     <TitleSubtitle
         title={user?.naturalPersonName || user?.juridicalPersonName || "AccountsAnonymous"}
         subtitle={user?.userName}
     />
-
-export default UserNameTd

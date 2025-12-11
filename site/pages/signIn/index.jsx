@@ -14,7 +14,7 @@ import {
 import { loadSignIn as runnableLoader } from "loaders"
 import { Layout as RunnableLayout } from "signInParts"
 
-const Index = component$(() => {
+export default component$(() => {
     const data = loadSignIn().value
     const extraData = runnableLoader().value
     const phonePattern = /^\+?[0-9]{1,3}\s?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$/
@@ -196,7 +196,6 @@ const Index = component$(() => {
         <SignInLayout {...props} />
 })
 
-export default Index
 
 export { loadSignIn }
 

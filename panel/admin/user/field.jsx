@@ -3,7 +3,7 @@ import filters from "./filters"
 import headers from "./headers"
 import row from "./row"
 
-const UserField = ({
+export default ({
     choose,
     placeholder,
     property,
@@ -27,5 +27,3 @@ const UserField = ({
         {...rest}
     />
 }
-
-export default UserField

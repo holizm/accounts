@@ -5,7 +5,7 @@ import {
 } from 'form'
 import { useDefaultPersonType } from "contactsCommon"
 
-const UserInputs = personType => {
+export default personType => {
 
     const defaultPersonType = useDefaultPersonType()
     const { isJuridical, isNatural } = defaultPersonType
@@ -62,5 +62,3 @@ const UserInputs = personType => {
         }
     </>
 }
-
-export default UserInputs

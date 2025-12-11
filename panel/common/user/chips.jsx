@@ -1,4 +1,4 @@
-const UserChips = ({
+export default ({
     item,
     usersPropertyName
 }) => {
@@ -20,5 +20,3 @@ const UserChips = ({
         }
     </div>
 }
-
-export default UserChips

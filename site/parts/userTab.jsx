@@ -1,7 +1,7 @@
 import { component$ } from "builder.io/qwik"
 import { useSession } from "accounts"
 
-const UserTab = component$(() => {
+export default component$(() => {
 
     const session = useSession()
 
@@ -16,5 +16,3 @@ const UserTab = component$(() => {
         </div>
     </div>
 })
-
-export default UserTab

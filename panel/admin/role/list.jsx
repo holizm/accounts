@@ -13,7 +13,7 @@ const row = item => {
     </>
 }
 
-const Roles = () => {
+export default () => {
     return <List
         title="Roles"
         type="Role"
@@ -22,5 +22,3 @@ const Roles = () => {
         create={RoleForm}
     />
 }
-
-export default Roles

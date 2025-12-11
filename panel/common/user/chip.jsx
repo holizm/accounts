@@ -1,4 +1,4 @@
-const UserChip = ({ item }) => {
+export default ({ item }) => {
     return <div className="flex gap-4 items-start">
         <img
             src={item.personImageUrl || item.imageUrl}
@@ -9,5 +9,3 @@ const UserChip = ({ item }) => {
         </span>
     </div>
 }
-
-export default UserChip

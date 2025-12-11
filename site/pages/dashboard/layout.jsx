@@ -14,7 +14,7 @@ export const onRequest = event => {
     checkLogin(event)
 }
 
-const Layout = component$(({ }) => {
+export default component$(({ }) => {
 
     const data = loadDashboard().value
     const { translations } = data
@@ -49,6 +49,5 @@ const Layout = component$(({ }) => {
     </div>
 })
 
-export default Layout
 
 export { loadDashboard }

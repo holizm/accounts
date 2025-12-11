@@ -7,7 +7,7 @@ import {
 import { Form } from "builder.io/qwikCity"
 import { useSignIn } from "accounts"
 
-const SignIn = component$(({
+export default component$(({
     content,
     progress: ProgressComponent,
     returnTo,
@@ -50,5 +50,3 @@ const SignIn = component$(({
             </div>
         </div>
 })
-
-export default SignIn

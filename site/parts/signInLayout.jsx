@@ -1,6 +1,6 @@
 import { Cta } from "accounts"
 
-const Layout = props => {
+export default props => {
 
     const {
         changePhoneProps,
@@ -126,5 +126,3 @@ const Layout = props => {
         </div>
     </div>
 }
-
-export default Layout

@@ -11,12 +11,10 @@ const inputs = <>
     />
 </>
 
-const RoleForm = () => {
+export default () => {
     return <DialogForm
         title="Role"
         type="role"
         inputs={inputs}
     />
 }
-
-export default RoleForm

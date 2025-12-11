@@ -4,7 +4,7 @@ import {
 } from 'form'
 import { PersonField } from "contacts"
 
-const CreateUserForPersonDialog = () => {
+export default () => {
 
     const inputs = <>
         <PersonField
@@ -22,5 +22,3 @@ const CreateUserForPersonDialog = () => {
         submitTo="/adminUser/createForPerson"
     />
 }
-
-export default CreateUserForPersonDialog

@@ -1,7 +1,7 @@
 import { component$ } from "builder.io/qwik"
 import { merge } from "base"
 
-const Cta = component$(({
+export default component$(({
     class: internalClass,
     hasClickHandler,
     large,
@@ -49,5 +49,3 @@ const Cta = component$(({
 
     </>
 })
-
-export default Cta

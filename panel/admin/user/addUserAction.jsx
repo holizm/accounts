@@ -6,7 +6,7 @@ import {
 } from 'form'
 import UserField from "./field"
 
-const AddUserAction = props => {
+export default props => {
 
     const [open, setOpen] = useState(false)
 
@@ -37,5 +37,3 @@ const AddUserAction = props => {
         />
     </DialogContext.Provider>
 }
-
-export default AddUserAction

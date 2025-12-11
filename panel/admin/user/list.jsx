@@ -91,7 +91,7 @@ const itemActions = item => <>
     <ChangePasswordAction />
 </>
 
-const Users = () => {
+export default () => {
     return <List
         create={UserForm}
         itemActions={itemActions}
@@ -105,5 +105,3 @@ const Users = () => {
         title="AccountsUsers"
     />
 }
-
-export default Users

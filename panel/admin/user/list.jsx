@@ -9,7 +9,7 @@ import {
 } from 'list'
 import UserForm from "./form"
 import ManageRoles from "../role/manage"
-import ChangePasswordAction from "./changePasswordAction"
+import AccountsUserChangePasswordAction from "./changePasswordAction"
 import CreateUserForPersonDialog from "./createUserForPersonDialog"
 
 const listActions = () => {
@@ -88,7 +88,7 @@ const row = item => <>
 
 const itemActions = item => <>
     {ManageRoles}
-    <ChangePasswordAction />
+    <AccountsUserChangePasswordAction />
 </>
 
 export default () => {

@@ -2,12 +2,12 @@ import {
     DialogForm,
     Text,
 } from 'form'
-import { PersonField } from "contacts"
+import { ContactsPersonField } from "contacts"
 
 export default () => {
 
     const inputs = <>
-        <PersonField
+        <ContactsPersonField
             property="PersonGuid"
         />
         <Text

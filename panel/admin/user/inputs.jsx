@@ -3,7 +3,7 @@ import {
     Email,
     Text,
 } from 'form'
-import { useDefaultPersonType } from "contactsCommon"
+import { useDefaultPersonType } from "contacts"
 
 export default personType => {
 

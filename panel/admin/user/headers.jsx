@@ -1,5 +1,3 @@
-const headers = <>
+export default <>
     <th>accountsUserName</th>
 </>
-
-export default headers

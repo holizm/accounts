@@ -1,6 +1,6 @@
 import { useSession } from "accounts"
 
-const useAccounts = session => {
+export default session => {
     if (!session) {
         session = useSession()
     }
@@ -15,5 +15,3 @@ const useAccounts = session => {
         user: session?.value?.user
     }
 }
-
-export default useAccounts

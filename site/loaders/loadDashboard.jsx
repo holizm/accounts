@@ -9,7 +9,7 @@ import {
     applyGranularity,
 } from "globalization"
 
-const loadDashboard = routeLoader$(async props => {
+export default routeLoader$(async props => {
 
     const newUrl = "/dashboard"
 
@@ -37,5 +37,3 @@ const loadDashboard = routeLoader$(async props => {
         ...globalization,
     }
 })
-
-export default loadDashboard

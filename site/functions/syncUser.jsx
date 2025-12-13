@@ -1,9 +1,7 @@
 import { post } from "base"
 
-const syncUser = (session) => {
+export default (session) => {
     return post("user/syncByGuid", {
         "userGuid": session?.value?.user?.guid
     })
 }
-
-export default syncUser

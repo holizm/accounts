@@ -6,7 +6,7 @@ import {
     applyGranularityInBatch,
 } from "globalization"
 
-const loadSignIn = routeLoader$(async props => {
+export default routeLoader$(async props => {
     const [
         globalization,
         page,
@@ -39,5 +39,3 @@ const loadSignIn = routeLoader$(async props => {
         ...page
     }
 })
-
-export default loadSignIn

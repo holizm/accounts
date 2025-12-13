@@ -3,11 +3,11 @@ import {
     Email,
     Text,
 } from 'form'
-import { useDefaultPersonType } from "contacts"
+import { useContactsHooksUseDefaultPersonType } from "contacts"
 
 export default personType => {
 
-    const defaultPersonType = useDefaultPersonType()
+    const defaultPersonType = useContactsHooksUseDefaultPersonType()
     const { isJuridical, isNatural } = defaultPersonType
 
     const naturalFields = <>

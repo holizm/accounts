@@ -1,10 +1,8 @@
 import { Text } from 'list'
 
-const filters = <>
+export default <>
     <Text
         property="UserName"
         placeholder="AccountsUserName"
     />
 </>
-
-export default filters

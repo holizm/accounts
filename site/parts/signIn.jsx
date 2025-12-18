@@ -4,7 +4,7 @@ import {
     Slot,
     useSignal,
 } from "builder.io/qwik"
-import { Form } from "builder.io/qwikCity"
+import { Form } from "builder.io/qwik-city"
 import { useSignIn } from "accounts"
 
 export default component$(({

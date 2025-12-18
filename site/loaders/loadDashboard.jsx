@@ -1,4 +1,4 @@
-import { routeLoader$ } from "builder.io/qwikCity"
+import { routeLoader$ } from "builder.io/qwik-city"
 import {
     getFromCacheOrApi,
     useAsync

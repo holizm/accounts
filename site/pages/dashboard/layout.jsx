@@ -2,7 +2,7 @@ import {
     component$,
     Slot,
 } from "builder.io/qwik"
-import { useLocation } from "builder.io/qwikCity"
+import { useLocation } from "builder.io/qwik-city"
 import {
     checkLogin,
     loadDashboard,

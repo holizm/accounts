@@ -5,7 +5,7 @@ import {
     useSignal,
     useStyles,
 } from "builder.io/qwik"
-import { post } from "base"
+import { post } from "core"
 import { useSeo } from "seo"
 import {
     loadSignIn,

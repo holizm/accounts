@@ -1,5 +1,5 @@
 import { component$ } from "builder.io/qwik"
-import { merge } from "base"
+import { merge } from "core"
 
 export default component$(({
     class: internalClass,

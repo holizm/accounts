@@ -2,7 +2,7 @@ import { routeLoader$ } from "builder.io/qwik-city"
 import {
     getFromCacheOrApi,
     useAsync
-} from "base"
+} from "core"
 import { getLayout } from "contents"
 import {
     getGlobalization,

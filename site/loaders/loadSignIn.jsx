@@ -1,5 +1,5 @@
 import { routeLoader$ } from "builder.io/qwik-city"
-import { useAsync } from "base"
+import { useAsync } from "core"
 import { getPage } from "contents"
 import {
     getGlobalization,

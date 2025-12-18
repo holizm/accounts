@@ -1,4 +1,4 @@
-import { post } from "base"
+import { post } from "core"
 
 export default (session) => {
     return post("user/syncByGuid", {

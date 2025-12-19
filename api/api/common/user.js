@@ -1,4 +1,4 @@
-export const api = {
+export default {
     syncOnPost: () => { },
     syncByUuidOnPost: () => { },
     current: () => { }

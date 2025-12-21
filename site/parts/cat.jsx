@@ -1,4 +1,4 @@
-import { component$ } from "builder.io/qwik"
+import { component$ } from "@builder.io/qwik"
 import { merge } from "core"
 
 export default component$(({

@@ -3,7 +3,7 @@ import {
     component$,
     Slot,
     useSignal,
-} from "builder.io/qwik"
+} from "@builder.io/qwik"
 import { useSignOut } from "accounts"
 
 export default component$(({

@@ -38,20 +38,20 @@ const getParams = (env, url) => {
 
     let tenantSettings;
     if (globalThis.settings.isDeveloping) {
-        tenantSettings = globalThis.settings.Production?.Site?.KeycloakClientSecrets?.find(
-            i => i.Domain === tenant.prodDomain
+        tenantSettings = globalThis.settings.production?.site?.keycloakClientSecrets?.find(
+            i => i.domain === tenant.prodDomain
         );
     } else {
         const filePath = path.resolve(process.cwd(), "privateSettings.json");
         console.log(filePath)
         const privateSettings = JSON.parse(fs.readFileSync(filePath, "utf-8"));
         console.log(privateSettings)
-        tenantSettings = privateSettings?.KeycloakClientSecrets?.find(
-            i => i.Domain === tenant.prodDomain
+        tenantSettings = privateSettings?.keycloakClientSecrets?.find(
+            i => i.domain === tenant.prodDomain
         );
     }
     if (tenantSettings) {
-        params.keycloakClientSecret = tenantSettings.Secret;
+        params.keycloakClientSecret = tenantSettings.secret;
     }
 
     paramsCache[host] = params;

@@ -28,7 +28,7 @@ const getParams = (env, url) => {
 
     const params = {
         accountsClient,
-        accountsRealm: pascalize(tenant.Id),
+        accountsRealm: pascalize(tenant.id),
         accountsUrl,
         authSecret,
         host,
@@ -37,7 +37,6 @@ const getParams = (env, url) => {
     };
 
     let tenantSettings;
-    console.log('accounts plugin =>>>>>>>>>>>>>>>>>>', globalThis.settings)
     if (globalThis.settings.isDeveloping) {
         tenantSettings = globalThis.settings.production?.site?.keycloakClientSecrets?.find(
             i => i.domain === tenant.prodDomain

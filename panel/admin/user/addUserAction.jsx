@@ -13,7 +13,7 @@ export default props => {
     const inputs = <>
         <UserField
             choose={i => i.personGuid}
-            property="Person"
+            property="person"
         />
         {
             props.inputs && props.inputs

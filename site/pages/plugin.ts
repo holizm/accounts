@@ -37,6 +37,7 @@ const getParams = (env, url) => {
     };
 
     let tenantSettings;
+    console.log('accounts plugin =>>>>>>>>>>>>>>>>>>', globalThis.settings)
     if (globalThis.settings.isDeveloping) {
         tenantSettings = globalThis.settings.production?.site?.keycloakClientSecrets?.find(
             i => i.domain === tenant.prodDomain

@@ -19,12 +19,12 @@ const getParams = (env, url) => {
     }
 
     const tenant = getTenant(host);
-    const accountsUrl = globalThis.settings.AccountsUrl || globalThis.settings.Accounts?.Url;
-    const accountsRealm = globalThis.settings.AccountsRealm || globalThis.settings.Accounts?.Realm || "Development";
-    const keycloakClientSecret = globalThis.settings.KeycloakClientSecret || env.get("KEYCLOAK_CLIENT_SECRET");
-    const authSecret = globalThis.settings.AuthSecret || env.get("AUTH_SECRET");
-    const siteUrl = globalThis.settings.SiteUrl;
-    const accountsClient = globalThis.settings.AccountsClient ?? "Site";
+    const accountsUrl = globalThis.settings.accounts?.url;
+    const accountsRealm = globalThis.settings.accounts?.realm || "dev";
+    const keycloakClientSecret = globalThis.settings.keycloakClientSecret || env.get("KEYCLOAK_CLIENT_SECRET");
+    const authSecret = globalThis.settings.authSecret || env.get("AUTH_SECRET");
+    const siteUrl = globalThis.settings.siteUrl;
+    const accountsClient = globalThis.settings.accounts?.client ?? "site";
 
     const params = {
         accountsClient,
@@ -33,21 +33,21 @@ const getParams = (env, url) => {
         authSecret,
         host,
         keycloakClientSecret,
-        siteUrl: tenant.ProdDomain,
+        siteUrl: tenant.prodDomain,
     };
 
     let tenantSettings;
-    if (globalThis.settings.IsDeveloping) {
+    if (globalThis.settings.isDeveloping) {
         tenantSettings = globalThis.settings.Production?.Site?.KeycloakClientSecrets?.find(
-            i => i.Domain === tenant.ProdDomain
+            i => i.Domain === tenant.prodDomain
         );
     } else {
-        const filePath = path.resolve(process.cwd(), "PrivateSettings.json");
+        const filePath = path.resolve(process.cwd(), "privateSettings.json");
         console.log(filePath)
         const privateSettings = JSON.parse(fs.readFileSync(filePath, "utf-8"));
         console.log(privateSettings)
         tenantSettings = privateSettings?.KeycloakClientSecrets?.find(
-            i => i.Domain === tenant.ProdDomain
+            i => i.Domain === tenant.prodDomain
         );
     }
     if (tenantSettings) {

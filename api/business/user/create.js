@@ -6,14 +6,14 @@ import {
 export const createUser = async params => {
     const naturalPerson = await createOnPost({
         ...params,
-        part: "Contacts",
-        type: "NaturalPerson",
+        part: 'contacts',
+        type: 'naturalPerson',
     })
     const parsedId = parseId(naturalPerson.id)
     const user = await createOnPost({
         ...params,
-        part: "Accounts",
-        type: "User",
+        part: 'accounts',
+        type: 'user',
         meaning: parsedId.meaning,
         person: naturalPerson.person,
     })

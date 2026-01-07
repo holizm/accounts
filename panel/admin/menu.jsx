@@ -1,7 +1,7 @@
 export default [
     {
-        title: "AccountsUsers",
-        icon: "PeopleAlt",
+        title: 'accountsUsers',
+        icon: 'peopleAlt',
         path: "/accounts/user/list"
     }
 ]

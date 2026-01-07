@@ -39,6 +39,6 @@ export default ({
         type="AdminUser"
         inputs={inputs}
         okAction={changePassword}
-        title="AccountsChangePassword"
+        title='accountsChangePassword'
     />
 }

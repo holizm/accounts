@@ -31,8 +31,8 @@ export default props => {
             inputs={inputs}
         />
         <ListAction
-            title="AccountsAddFromUsers"
-            icon="PeopleAlt"
+            title='accountsAddFromUsers'
+            icon='peopleAlt'
             onClick={() => setOpen(true)}
         />
     </DialogContext.Provider>

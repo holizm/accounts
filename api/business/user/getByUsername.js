@@ -3,8 +3,8 @@ import { getByFilter } from 'core'
 export const getUserByUsername = async username => {
     const user = await getByFilter(
         {
-            part: "Accounts",
-            type: "User",
+            part: 'accounts',
+            type: 'user',
             doNotThrow: true,
         },
         {

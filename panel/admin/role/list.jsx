@@ -15,7 +15,7 @@ const row = item => {
 
 export default () => {
     return <List
-        title="Roles"
+        title='roles'
         type="Role"
         headers={headers}
         row={row}

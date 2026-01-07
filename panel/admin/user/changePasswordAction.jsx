@@ -3,7 +3,7 @@ import ChangePasswordDialog from "./changePasswordDialog"
 
 export default props => <ItemAction
     {...props}
-    title="AccountsChangePassword"
-    icon="Password"
+    title='accountsChangePassword'
+    icon='password'
     dialog={ChangePasswordDialog}
 />

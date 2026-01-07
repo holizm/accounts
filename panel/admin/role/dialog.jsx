@@ -33,6 +33,6 @@ export default ({
         type="Role"
         inputs={inputs}
         submitTo={apiUrl}
-        title="AccountsManageRoles"
+        title='accountsManageRoles'
     />
 }

@@ -9,8 +9,8 @@ export const getUserByPhone = async phone => {
             meaning: phone
         })
         await createOnPost({
-            part: "Accounts",
-            type: "User",
+            part: 'accounts',
+            type: 'user',
             username: phone,
             lastSyncUtcDate: new Date(),
             person: person.id,

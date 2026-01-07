@@ -4,8 +4,8 @@ import AppAction from "appAction"
 export default () => {
 
     return isDevOrSuperAdmin() && <AppAction
-        icon="Security"
+        icon='security'
         post="/accounts/configure"
-        title="AccountsConfigure"
+        title='accountsConfigure'
     />
 }

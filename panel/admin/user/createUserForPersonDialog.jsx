@@ -17,7 +17,7 @@ export default () => {
     </>
 
     return <DialogForm
-        title="AccountsCreateUserForPerson"
+        title='accountsCreateUserForPerson'
         inputs={inputs}
         submitTo="/adminUser/createForPerson"
     />

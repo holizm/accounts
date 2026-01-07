@@ -33,15 +33,15 @@ const listActions = () => {
 
     return <>
         <ListAction
-            title="AccountsSync"
-            icon="SyncAlt"
+            title='accountsSync'
+            icon='syncAlt'
             onClick={params => syncUsers(params)}
             notApplicableToItems
             superAdmin
         />
         <ListAction
-            title="AccountsForPerson"
-            icon="PersonAdd"
+            title='accountsForPerson'
+            icon='personAdd'
             dialog={CreateUserForPersonDialog}
         />
     </>
@@ -102,6 +102,6 @@ export default () => {
         listActions={listActions}
         row={row}
         sorts={sorts}
-        title="AccountsUsers"
+        title='accountsUsers'
     />
 }

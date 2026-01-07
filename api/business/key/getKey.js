@@ -6,8 +6,8 @@ import {
 export const getKey = async user => {
     const value = deriveKey(user)
     const key = await getOrCreateAndGet({
-        part: "Accounts",
-        type: "Key",
+        part: 'accounts',
+        type: 'key',
         query: {
             user
         },

@@ -16,7 +16,7 @@ export default () => {
         .join("\n")
     console.log(stack)
     return <DialogForm
-        type="AdminUser"
+
         humanReadableItemType="AccountsUser"
         inputs={UserInputs()}
     />

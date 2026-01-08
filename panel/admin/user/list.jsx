@@ -95,7 +95,7 @@ export default () => {
     return <List
         create={UserForm}
         itemActions={itemActions}
-        type="AdminUser"
+
         filters={filters}
         hasDelete
         headers={headers}

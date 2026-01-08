@@ -30,7 +30,7 @@ export default ({
     return <DialogForm
         {...rest}
         disableAutomaticItemLoading
-        type="Role"
+
         inputs={inputs}
         submitTo={apiUrl}
         title='accountsManageRoles'

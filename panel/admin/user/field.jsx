@@ -17,7 +17,7 @@ export default ({
     }
     return <Browse
         choose={item => handleChoose(item)}
-        type="User"
+
         filters={filters}
         headers={headers}
         placeholder={placeholder ?? "AccountsUser"}

@@ -1,5 +1,5 @@
 import { List } from 'list'
-import RoleForm from "./form"
+import Form from "./form"
 
 const headers = <>
     <th>role Name</th>
@@ -13,12 +13,8 @@ const row = item => {
     </>
 }
 
-export default () => {
-    return <List
-        title='roles'
-
-        headers={headers}
-        row={row}
-        create={RoleForm}
-    />
-}
+export default <List
+    headers={headers}
+    row={row}
+    create={Form}
+/>

@@ -91,17 +91,13 @@ const itemActions = item => <>
     <AccountsUserChangePasswordAction />
 </>
 
-export default () => {
-    return <List
-        create={UserForm}
-        itemActions={itemActions}
-
-        filters={filters}
-        hasDelete
-        headers={headers}
-        listActions={listActions}
-        row={row}
-        sorts={sorts}
-        title='accountsUsers'
-    />
-}
+export default <List
+    create={UserForm}
+    itemActions={itemActions}
+    filters={filters}
+    hasDelete
+    headers={headers}
+    listActions={listActions}
+    row={row}
+    sorts={sorts}
+/>

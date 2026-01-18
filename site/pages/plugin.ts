@@ -116,10 +116,10 @@ export const {
             },
             async signIn({ profile }) {
                 const userUuid = profile.sub;
-                await post("/user/syncByGuid", {
-                    userGuid: userUuid,
+                await post("/user/syncByUuid", {
+                    userUuid: userUuid,
                 }, { url });
-                console.log(`syncByGuid`);
+                console.log(`syncByUuid`);
             },
         },
         callbacks: {
@@ -150,7 +150,7 @@ export const {
                 if (!token.access_token) {
                     return null;
                 }
-                session.user.guid = token.userUUID;
+                session.user.id = token.userUUID;
                 session.user.accessToken = token.access_token;
                 return session;
             },

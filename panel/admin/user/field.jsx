@@ -21,7 +21,7 @@ export default ({
         filters={filters}
         headers={headers}
         placeholder={placeholder ?? "AccountsUser"}
-        property={property ?? "UserGuid"}
+        property={property ?? "UserUuid"}
         row={row}
         show={item => item.userName || item.naturalPersonName}
         {...rest}

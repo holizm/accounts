@@ -12,7 +12,7 @@ export default props => {
 
     const inputs = <>
         <UserField
-            choose={i => i.personGuid}
+            choose={i => i.personUuid}
             property="person"
         />
         {

@@ -24,7 +24,7 @@ export default ({
         success,
     }) => {
         setProgress(true)
-        post(`/adminUser/changePassword?personGuid=${item.personGuid}`, data)
+        post(`/adminUser/changePassword?personUuid=${item.personUuid}`, data)
             .then(data => {
                 setProgress(false)
                 success("AccountsPasswordChanged")

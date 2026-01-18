@@ -78,7 +78,7 @@ const row = item => <>
     <td>
         <ValueWithTitle
             value={item.userName}
-            title={item.guid}
+            title={item.id}
         />
     </td>
     <DateTime

@@ -8,7 +8,7 @@ export default () => {
 
     const inputs = <>
         <ContactsPersonField
-            property="personGuid"
+            property="personUuid"
         />
         <Text
             property="userName"

@@ -15,7 +15,7 @@ export default component$(() => {
     const session = useSession()
 
     useVisibleTask$(async () => {
-        if (session?.value?.user?.guid) {
+        if (session?.value?.user?.id) {
             await syncUser(session)
         }
     })

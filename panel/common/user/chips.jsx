@@ -2,11 +2,9 @@ export default ({
     item,
     usersPropertyName
 }) => {
-    const relatedItems = item || item
-
     return <div className="flex gap-2">
         {
-            relatedItems[usersPropertyName || "users"]?.map(user => <span
+            item[usersPropertyName || "users"]?.map(user => <span
                 className="px-2 py-0.5 rounded-sm"
                 key={user.id}
             >

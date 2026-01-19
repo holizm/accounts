@@ -12,36 +12,36 @@ export default personType => {
 
     const naturalFields = <>
         <Text
-            property="firstName"
-            placeholder="accountsFirstName"
+            property='firstName'
+            placeholder='accountsFirstName'
             required
         />
         <Text
-            property="lastName"
-            placeholder="accountsLastName"
+            property='lastName'
+            placeholder='accountsLastName'
             required
         />
     </>
 
     const juridicalFields = <>
         <Text
-            property="name"
-            placeholder="coreName"
+            property='name'
+            placeholder='coreName'
             required
         />
     </>
 
     return <>
         <Text
-            property="userName"
-            placeholder="accountsUserName"
+            property='userName'
+            placeholder='accountsUserName'
             required
             dir="ltr"
             startIcon={Icons.AccountCircle}
         />
         <Email
-            property="email"
-            placeholder="coreEmail"
+            property='email'
+            placeholder='coreEmail'
             required
         />
         {

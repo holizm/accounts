@@ -49,8 +49,8 @@ const listActions = () => {
 
 const filters = <>
     <Text
-        property="userName"
-        placeholder="accountsUserName"
+        property='userName'
+        placeholder='accountsUserName'
     />
 </>
 

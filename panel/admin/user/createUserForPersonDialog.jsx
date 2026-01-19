@@ -8,11 +8,11 @@ export default () => {
 
     const inputs = <>
         <ContactsPersonField
-            property="personUuid"
+            property='personUuid'
         />
         <Text
-            property="userName"
-            placeholder="accountsUserName"
+            property='userName'
+            placeholder='accountsUserName'
         />
     </>
 

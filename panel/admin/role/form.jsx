@@ -5,7 +5,7 @@ import {
 
 const inputs = <>
     <Text
-        property="name"
+        property='name'
         required
         dir="ltr"
     />

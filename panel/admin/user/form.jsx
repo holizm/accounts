@@ -17,7 +17,6 @@ export default () => {
     console.log(stack)
     return <DialogForm
 
-        humanReadableItemType="AccountsUser"
         inputs={UserInputs()}
     />
 }

@@ -8,8 +8,8 @@ const inputs = <>
     <Password
         confirm
         confirmationPlaceholder="AccountsPasswordConfirmation"
-        placeholder="accountsPassword"
-        property="password"
+        placeholder='accountsPassword'
+        property='password'
     />
 </>
 

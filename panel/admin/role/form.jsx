@@ -13,8 +13,6 @@ const inputs = <>
 
 export default () => {
     return <DialogForm
-        title='role'
-
         inputs={inputs}
     />
 }

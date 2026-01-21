@@ -1,22 +1,6 @@
-const stack = new Error()
-    .stack
-    .split("\n")
-    .filter(i => !/^.*(\.vite|\.main\.jsx).*/.test(i))
-    .join("\n")
-console.log(stack)
-
 import { DialogForm } from 'form'
-import UserInputs from "./inputs"
+import UserInputs from './inputs'
 
-export default () => {
-    const stack = new Error()
-        .stack
-        .split("\n")
-        .filter(i => !/^.*(\.vite|\.main\.jsx).*/.test(i))
-        .join("\n")
-    console.log(stack)
-    return <DialogForm
-
-        inputs={UserInputs()}
-    />
-}
+export default <DialogForm
+    inputs={UserInputs()}
+/>

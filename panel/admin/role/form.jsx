@@ -11,8 +11,6 @@ const inputs = <>
     />
 </>
 
-export default () => {
-    return <DialogForm
-        inputs={inputs}
-    />
-}
+export default <DialogForm
+    inputs={inputs}
+/>

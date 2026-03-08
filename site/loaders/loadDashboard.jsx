@@ -3,7 +3,7 @@ import {
     getFromCacheOrApi,
     useAsync
 } from "core"
-import { getLayout } from "contents"
+import { getValues } from "contents"
 import {
     getGlobalization,
     applyGranularity,
@@ -26,7 +26,7 @@ export default routeLoader$(async props => {
         globalization,
     ] = await useAsync([
         getFromCacheOrApi(newUrl, props),
-        getLayout("dashboard", props),
+        getValues("dashboard", props),
         getGlobalization(props),
     ])
     globalization.translations.dashboardWelcomeMessage = applyGranularity(globalization.translations, "DashboardWelcomeMessage", "Accounts")

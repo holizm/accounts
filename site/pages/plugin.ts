@@ -43,9 +43,7 @@ const getParams = (env, url) => {
         );
     } else {
         const filePath = path.resolve(process.cwd(), "privateSettings.json");
-        console.log(filePath)
         const privateSettings = JSON.parse(fs.readFileSync(filePath, "utf-8"));
-        console.log(privateSettings)
         tenantSettings = privateSettings?.keycloakClientSecrets?.find(
             i => i.domain === tenant.prodDomain
         );
@@ -111,7 +109,6 @@ export const {
         trustHost: true,
         events: {
             async signOut(message) {
-                console.log(`Signout URL: ${idpSignoutUrl}`);
                 await fetch(idpSignoutUrl);
             },
             async signIn({ profile }) {
@@ -119,7 +116,6 @@ export const {
                 await post("/user/syncByUuid", {
                     userUuid: userUuid,
                 }, { url });
-                console.log(`syncByUuid`);
             },
         },
         callbacks: {
@@ -133,9 +129,7 @@ export const {
                     token.userUUID = profile.sub;
                 } else {
                     if (nowTimeStamp > token.expires_at) {
-                        console.log("Getting Refresh Token .......");
                         const result = await refreshAccessToken(token, env, url);
-                        console.log("Got refresh token:", result);
                         if (!result.access_token) {
                             return null;
                         }

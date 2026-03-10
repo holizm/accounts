@@ -3,7 +3,7 @@ import {
     Email,
     Text,
 } from 'form'
-import { useContactsHooksUseDefaultPersonType } from "contacts"
+import { useContactsHooksUseDefaultPersonType } from 'contacts'
 
 export default personType => {
 
@@ -36,7 +36,7 @@ export default personType => {
             property='userName'
             placeholder='accountsUserName'
             required
-            dir="ltr"
+            dir='ltr'
             startIcon={Icons.AccountCircle}
         />
         <Email
@@ -45,9 +45,9 @@ export default personType => {
             required
         />
         {
-            typeof personType === "string"
+            typeof personType === 'string'
                 ?
-                personType === "Juridical"
+                personType === 'Juridical'
                     ?
                     juridicalFields
                     :

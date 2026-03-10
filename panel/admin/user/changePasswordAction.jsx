@@ -1,5 +1,5 @@
 import { ItemAction } from 'list'
-import ChangePasswordDialog from "./changePasswordDialog"
+import ChangePasswordDialog from './changePasswordDialog'
 
 export default props => <ItemAction
     {...props}

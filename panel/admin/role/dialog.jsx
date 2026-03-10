@@ -12,7 +12,7 @@ export default ({
 
     const inputs = <>
         <Checks
-            checkedItemsUrl={`/role/assigned?userId=${item.id || ""}`}
+            checkedItemsUrl={`/role/assigned?userId=${item.id || ''}`}
             choose={item => item.name}
             itemsUrl={`/role/all`}
             property='roles'
@@ -21,7 +21,7 @@ export default ({
     </>
 
     const apiUrl = url({
-        path: "/role/assign",
+        path: '/role/assign',
         query: {
             userId: item.id
         }

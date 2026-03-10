@@ -7,7 +7,7 @@ import {
 const inputs = <>
     <Password
         confirm
-        confirmationPlaceholder="AccountsPasswordConfirmation"
+        confirmationPlaceholder='AccountsPasswordConfirmation'
         placeholder='accountsPassword'
         property='password'
     />
@@ -27,7 +27,7 @@ export default ({
         post(`/adminUser/changePassword?personUuid=${item.personUuid}`, data)
             .then(data => {
                 setProgress(false)
-                success("AccountsPasswordChanged")
+                success('AccountsPasswordChanged')
                 reloadItem(item)
             }, e => {
                 setProgress(false)

@@ -2,7 +2,7 @@ import {
     DialogForm,
     Text,
 } from 'form'
-import { ContactsPersonField } from "contacts"
+import { ContactsPersonField } from 'contacts'
 
 export default () => {
 
@@ -19,6 +19,6 @@ export default () => {
     return <DialogForm
         title='accountsCreateUserForPerson'
         inputs={inputs}
-        submitTo="/adminUser/createForPerson"
+        submitTo='/adminUser/createForPerson'
     />
 }

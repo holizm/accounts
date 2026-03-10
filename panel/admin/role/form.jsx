@@ -7,7 +7,7 @@ const inputs = <>
     <Text
         property='name'
         required
-        dir="ltr"
+        dir='ltr'
     />
 </>
 

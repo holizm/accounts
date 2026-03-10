@@ -7,10 +7,10 @@ import {
     Text,
     ValueWithTitle,
 } from 'list'
-import UserForm from "./form"
-import ManageRoles from "../role/manage"
-import AccountsUserChangePasswordAction from "./changePasswordAction"
-import CreateUserForPersonDialog from "./createUserForPersonDialog"
+import UserForm from './form'
+import ManageRoles from '../role/manage'
+import AccountsUserChangePasswordAction from './changePasswordAction'
+import CreateUserForPersonDialog from './createUserForPersonDialog'
 
 const listActions = () => {
 
@@ -21,10 +21,10 @@ const listActions = () => {
         success,
     }) => {
         setProgress(true)
-        post("/adminUser/syncAll").then(data => {
+        post('/adminUser/syncAll').then(data => {
             reloadList()
             setProgress(false)
-            success("CoreDone")
+            success('CoreDone')
         }, e => {
             setProgress(false)
             error(e)
@@ -56,14 +56,14 @@ const filters = <>
 
 const sorts = [
     {
-        caption: "AccountsUserNameAToZ",
-        direction: "asc",
-        property: "UserName",
+        caption: 'AccountsUserNameAToZ',
+        direction: 'asc',
+        property: 'UserName',
     },
     {
-        caption: "AccountsUserNameZToA",
-        property: "UserName",
-        direction: "desc",
+        caption: 'AccountsUserNameZToA',
+        property: 'UserName',
+        direction: 'desc',
     }
 ]
 

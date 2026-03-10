@@ -1,7 +1,7 @@
 import { Browse } from 'form'
-import filters from "./filters"
-import headers from "./headers"
-import row from "./row"
+import filters from './filters'
+import headers from './headers'
+import row from './row'
 
 export default ({
     choose,
@@ -20,8 +20,8 @@ export default ({
 
         filters={filters}
         headers={headers}
-        placeholder={placeholder ?? "AccountsUser"}
-        property={property ?? "UserUuid"}
+        placeholder={placeholder ?? 'AccountsUser'}
+        property={property ?? 'UserUuid'}
         row={row}
         show={item => item.userName || item.naturalPersonName}
         {...rest}

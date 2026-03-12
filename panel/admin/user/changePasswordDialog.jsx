@@ -27,7 +27,7 @@ export default ({
         post(`/adminUser/changePassword?personUuid=${item.personUuid}`, data)
             .then(data => {
                 setProgress(false)
-                success('AccountsPasswordChanged')
+                success('accountsPasswordChanged')
                 reloadItem(item)
             }, e => {
                 setProgress(false)

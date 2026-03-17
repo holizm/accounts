@@ -24,7 +24,7 @@ const getRealm = params => {
         )
     if (!tenantSettings) throw `Missing Keycloak client secret for tenant ${tenant.prodDomain}`
     return {
-        realm: pascalize(tenant.id),
+        realm: tenant.id,
         tenant,
         tenantSettings,
     }

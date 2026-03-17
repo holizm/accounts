@@ -1,51 +1,14 @@
-import { post } from 'app'
 import {
     DateTime,
     Image,
     List,
-    ListAction,
     Text,
     ValueWithTitle,
 } from 'list'
 import UserForm from './form'
 import ManageRoles from '../role/manage'
 import AccountsUserChangePasswordAction from './changePasswordAction'
-import CreateUserForPersonDialog from './createUserForPersonDialog'
-
-const listActions = () => {
-
-    const syncUsers = ({
-        error,
-        reloadList,
-        setProgress,
-        success,
-    }) => {
-        setProgress(true)
-        post('/adminUser/syncAll').then(data => {
-            reloadList()
-            setProgress(false)
-            success('coreDone')
-        }, e => {
-            setProgress(false)
-            error(e)
-        })
-    }
-
-    return <>
-        <ListAction
-            title='accountsSync'
-            icon='syncAlt'
-            onClick={params => syncUsers(params)}
-            notApplicableToItems
-            superAdmin
-        />
-        <ListAction
-            title='accountsForPerson'
-            icon='personAdd'
-            dialog={CreateUserForPersonDialog}
-        />
-    </>
-}
+import listActions from './listActions'
 
 const filters = <>
     <Text

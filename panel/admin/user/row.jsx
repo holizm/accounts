@@ -1,3 +1,18 @@
+import {
+    DateTime,
+    Image,
+    ValueWithTitle,
+} from 'list'
+
 export default item => <>
-    <td>{(item.naturalPersonName || item.juridicalPersonName) || item.userName}</td>
+    <Image />
+    <td>
+        <ValueWithTitle
+            value={(item.naturalPersonName || item.juridicalPersonName) || item.username}
+            title={item.id}
+        />
+    </td>
+    <DateTime
+        date={item.lastSyncUtcDate}
+    />
 </>

@@ -4,6 +4,9 @@ import {
     ok,
     pascalize,
     settings,
+    success,
+    info,
+    warning,
 } from 'core'
 import {
     kcDelete,
@@ -101,7 +104,7 @@ const addMapperToClient = async (params, clientUuid, clientId) => {
             ...params,
             onFailed: () => null
         })
-        console.log("Added realm role mapper to client:", clientId)
+        success("Added realm role mapper to client:", clientId)
     }
 }
 
@@ -110,16 +113,16 @@ const createOrUpdateClients = async (params, clients, existingClients) => {
         const existing = existingClients.find(x => x.clientId === client.clientId)
         if (!existing) {
             const created = await kcPost(`clients`, client, params)
-            console.log("Created client:", client.clientId)
+            success("Created client:", client.clientId)
             await addMapperToClient(params, created.id, client.clientId)
         }
         else if (needsUpdate(existing, client)) {
             await kcPut(`clients/${existing.id}`, client, params)
-            console.log("Updated client:", client.clientId)
+            success("Updated client:", client.clientId)
             await addMapperToClient(params, existing.id, client.clientId)
         }
         else {
-            console.log("Client exists:", client.clientId)
+            info("Client exists:", client.clientId)
             await addMapperToClient(params, existing.id, client.clientId)
         }
     }
@@ -140,9 +143,9 @@ const createOrUpdateRealmRoles = async (params, tenant) => {
         const exists = existingRoles.some(r => r.name === roleName)
         if (!exists) {
             await kcPost(`roles`, { name: roleName }, params)
-            console.log("Created realm role:", roleName)
+            success("Created realm role:", roleName)
         } else {
-            console.log("Realm role exists:", roleName)
+            info("Realm role exists:", roleName)
         }
     }
 
@@ -152,7 +155,7 @@ const createOrUpdateRealmRoles = async (params, tenant) => {
             !realmRoles.includes(role.name)
         ) {
             await kcDelete(`roles/${encodeURIComponent(role.name)}`, null, params)
-            console.log("Deleted realm role:", role.name)
+            warning("Deleted realm role:", role.name)
         }
     }
 }

@@ -1,8 +1,8 @@
-users
+user
     uuid
     username
     lastSyncDate
     person
-keys
+key
     user unique
     value

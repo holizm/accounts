@@ -4,15 +4,15 @@ import {
     useComputed$,
     useSignal,
     useStyles,
-} from "@builder.io/qwik"
-import { post } from "core"
-import { useSeo } from "seo"
+} from '@builder.io/qwik'
+import { post } from 'core'
+import { useSeo } from 'seo'
 import {
     loadSignIn,
     SignInLayout,
-} from "accounts"
-import { loadSignIn as runnableLoader } from "loaders"
-import { Layout as RunnableLayout } from "signInParts"
+} from 'accounts'
+import { loadSignIn as runnableLoader } from 'loaders'
+import { Layout as RunnableLayout } from 'signInParts'
 
 export default component$(() => {
     const data = loadSignIn().value
@@ -20,12 +20,12 @@ export default component$(() => {
     const phonePattern = /^\+?[0-9]{1,3}\s?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$/
     const otpLength = useSignal(1)
     const otpPattern = new RegExp(`^\d{${otpLength.value}}$`)
-    const phoneToBeChanged = useSignal("")
-    const phone = useSignal("")
+    const phoneToBeChanged = useSignal('')
+    const phone = useSignal('')
     const visiblePhone = useSignal(true)
     const phoneDirty = useSignal(false)
     const emptyPhone = useComputed$(() => {
-        if (phoneDirty.value === true && phone.value?.trim() === "") {
+        if (phoneDirty.value === true && phone.value?.trim() === '') {
             return true
         }
         return false
@@ -40,19 +40,19 @@ export default component$(() => {
     const timer = useComputed$(() => {
         const minutes = Math.floor(otpTimer.value / 60)
         const seconds = otpTimer.value % 60
-        const formattedMinutes = String(minutes).padStart(2, "0")
-        const formattedSeconds = String(seconds).padStart(2, "0")
+        const formattedMinutes = String(minutes).padStart(2, '0')
+        const formattedSeconds = String(seconds).padStart(2, '0')
         if (minutes === 0 && seconds === 0) {
             return null
         }
-        return formattedMinutes + ":" + formattedSeconds
+        return formattedMinutes + ':' + formattedSeconds
     })
     const sendingOtp = useSignal(false)
     const visibleOtp = useSignal(false)
-    const otp = useSignal("")
+    const otp = useSignal('')
     const otpDirty = useSignal(false)
     const emptyOtp = useComputed$(() => {
-        if (otpDirty.value === true && otp.value?.trim() === "") {
+        if (otpDirty.value === true && otp.value?.trim() === '') {
             return true
         }
         return false
@@ -135,9 +135,9 @@ export default component$(() => {
     })
     const phoneProps = {
         autofocus: true,
-        dir: "ltr",
+        dir: 'ltr',
         disabled: sendingOtp.value,
-        id: "accountsPhone",
+        id: 'accountsPhone',
         onClick$: $(e => visiblePhone.value != visiblePhone.value),
         onInput$: $(e => {
             phone.value = e.target.value
@@ -146,9 +146,9 @@ export default component$(() => {
         value: phone.value,
     }
     const otpProps = {
-        dir: "ltr",
+        dir: 'ltr',
         disabled: signingIn.value,
-        id: "accountsOtp",
+        id: 'accountsOtp',
         onClick$: $(e => visibleOtp.value != visibleOtp.value),
         onInput$: $(e => otp.value = e.target.value),
         value: otp.value,

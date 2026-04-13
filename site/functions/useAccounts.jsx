@@ -1,4 +1,4 @@
-import { useSession } from "accounts"
+import { useSession } from 'accounts'
 
 export default session => {
     if (!session) {

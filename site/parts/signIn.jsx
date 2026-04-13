@@ -3,9 +3,9 @@ import {
     component$,
     Slot,
     useSignal,
-} from "@builder.io/qwik"
-import { Form } from "@builder.io/qwik-city"
-import { useSignIn } from "accounts"
+} from '@builder.io/qwik'
+import { Form } from '@builder.io/qwik-city'
+import { useSignIn } from 'accounts'
 
 export default component$(({
     content,
@@ -19,9 +19,9 @@ export default component$(({
     const handleClick = $(() => {
         progress.value = true
         signIn.submit({
-            providerId: "keycloak",
+            providerId: 'keycloak',
             options: {
-                callbackUrl: returnTo || "/"
+                callbackUrl: returnTo || '/'
             }
         })
     })
@@ -36,14 +36,14 @@ export default component$(({
         :
         <div action={signIn}>
             <input
-                type="hidden"
-                name="providerId"
-                value="keycloak"
+                type='hidden'
+                name='providerId'
+                value='keycloak'
             />
             <input
-                type="hidden"
-                name="options.callbackUrl"
-                value={returnTo || "/"}
+                type='hidden'
+                name='options.callbackUrl'
+                value={returnTo || '/'}
             />
             <div onClick$={handleClick}>
                 <Slot />

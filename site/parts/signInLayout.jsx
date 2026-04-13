@@ -1,4 +1,4 @@
-import { Cta } from "accounts"
+import { Cta } from 'accounts'
 
 export default props => {
 
@@ -21,19 +21,19 @@ export default props => {
         visiblePhone,
     } = props
 
-    const container = "relative"
-    const field = "border px-4 py-2 font-medium text-base text-neutral-800 outline-none"
-    const label = "bg-neutral-200 text-neutral-900 px-5 py-2 "
-    const error = "text-red-600 animate-pulse text-md start-0 end-0 font-medium my-2 absolute"
+    const container = 'relative'
+    const field = 'border px-4 py-2 font-medium text-base text-neutral-800 outline-none'
+    const label = 'bg-neutral-200 text-neutral-900 px-5 py-2 '
+    const error = 'text-red-600 animate-pulse text-md start-0 end-0 font-medium my-2 absolute'
 
-    return <div class="text-center my-10">
-        <h2 class="mb-10 text-3xl font-semibold text-neutral-900">{translations.registerOrSignIn}</h2>
+    return <div class='text-center my-10'>
+        <h2 class='mb-10 text-3xl font-semibold text-neutral-900'>{translations.registerOrSignIn}</h2>
         {
             visibleOtp &&
-            <div class="mb-4 max-w-lg mx-auto">
-                <div class="flex flex-col md:flex-row items-center justify-between text-sm text-neutral-700">
+            <div class='mb-4 max-w-lg mx-auto'>
+                <div class='flex flex-col md:flex-row items-center justify-between text-sm text-neutral-700'>
                     {translations.otpSent}
-                    <span class="text-lg font-semibold text-neutral-900 my-1">{phone}</span>
+                    <span class='text-lg font-semibold text-neutral-900 my-1'>{phone}</span>
                     {/* <Cta
                         {...changePhoneProps}
                         text={translations.changePhone}
@@ -42,7 +42,7 @@ export default props => {
                 </div>
             </div>
         }
-        <div class="mx-auto max-w-lg h-96 grid place-items-center border ">
+        <div class='mx-auto max-w-lg h-96 grid place-items-center border '>
             {
                 visiblePhone &&
                 <div class={container}>
@@ -101,7 +101,7 @@ export default props => {
                         progress={signingIn}
                         text={signingIn ? translations.signingIn : translations.signIn}
                     />
-                    <div class="absolute start-0 end-0 mt-4 text-sm">
+                    <div class='absolute start-0 end-0 mt-4 text-sm'>
                         {
                             timer
                                 ?
@@ -109,13 +109,13 @@ export default props => {
                                 :
                                 sendingOtp
                                     ?
-                                    <div class="flex items-center gap-3 justify-center text-xs">
+                                    <div class='flex items-center gap-3 justify-center text-xs'>
                                         {translations.sendingOtp}
                                     </div>
                                     :
                                     <a
                                         {...sendOtpProps}
-                                        class="cursor-pointer"
+                                        class='cursor-pointer'
                                     >
                                         {translations.resend}
                                     </a>

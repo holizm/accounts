@@ -3,8 +3,8 @@ import {
     component$,
     Slot,
     useSignal,
-} from "@builder.io/qwik"
-import { useSignOut } from "accounts"
+} from '@builder.io/qwik'
+import { useSignOut } from 'accounts'
 
 export default component$(({
     progress: ProgressComponent,
@@ -15,7 +15,7 @@ export default component$(({
     const progress = useSignal(false)
     const handleClick = $(() => {
         progress.value = true
-        signOut.submit({ redirectTo: returnTo || "/" })
+        signOut.submit({ redirectTo: returnTo || '/' })
     })
 
     return progress.value
@@ -28,9 +28,9 @@ export default component$(({
         :
         <div>
             <input
-                type="hidden"
-                name="callbackUrl"
-                value={returnTo || "/"}
+                type='hidden'
+                name='callbackUrl'
+                value={returnTo || '/'}
             />
             <div onClick$={handleClick}>
                 <Slot />

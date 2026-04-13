@@ -1,12 +1,12 @@
 import {
     component$,
     useVisibleTask$,
-} from "@builder.io/qwik"
+} from '@builder.io/qwik'
 import {
     loadDashboard,
     syncUser,
     useSession,
-} from "accounts"
+} from 'accounts'
 
 export default component$(() => {
 
@@ -20,7 +20,7 @@ export default component$(() => {
         }
     })
 
-    return <div class={"flex flex-col sm:flex-row max-w-6xl mx-auto bg-gray-100 rounded-md my-10 justify-center item-center text-center"}>
+    return <div class={'flex flex-col sm:flex-row max-w-6xl mx-auto bg-gray-100 rounded-md my-10 justify-center item-center text-center'}>
         <span>{translations.dashboardWelcomeMessage}</span>
     </div>
 })

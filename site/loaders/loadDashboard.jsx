@@ -1,17 +1,17 @@
-import { routeLoader$ } from "@builder.io/qwik-city"
+import { routeLoader$ } from '@builder.io/qwik-city'
 import {
     getFromCacheOrApi,
     useAsync
-} from "core"
-import { getValues } from "contents"
+} from 'core'
+import { getValues } from 'contents'
 import {
     getGlobalization,
     applyGranularity,
-} from "globalization"
+} from 'globalization'
 
 export default routeLoader$(async props => {
 
-    const newUrl = "/dashboard"
+    const newUrl = '/dashboard'
 
     const {
         fail,
@@ -26,10 +26,10 @@ export default routeLoader$(async props => {
         globalization,
     ] = await useAsync([
         getFromCacheOrApi(newUrl, props),
-        getValues("dashboard", props),
+        getValues('dashboard', props),
         getGlobalization(props),
     ])
-    globalization.translations.dashboardWelcomeMessage = applyGranularity(globalization.translations, "DashboardWelcomeMessage", "Accounts")
+    globalization.translations.dashboardWelcomeMessage = applyGranularity(globalization.translations, 'DashboardWelcomeMessage', 'Accounts')
 
     return {
         ...data,

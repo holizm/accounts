@@ -1,7 +1,7 @@
-import { post } from "core"
+import { post } from 'core'
 
 export default (session) => {
-    return post("user/syncByUuid", {
-        "userUuid": session?.value?.user?.id
+    return post('user/syncByUuid', {
+        'userUuid': session?.value?.user?.id
     })
 }

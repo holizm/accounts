@@ -13,7 +13,7 @@ import {
     kcGet,
     kcPost,
     kcPut,
-} from "../keycloak.js"
+} from '../keycloak.js'
 
 const getRedirectUrls = ({
     baseDomain,
@@ -22,17 +22,17 @@ const getRedirectUrls = ({
     isSite,
 }) => {
     if (isSite) return [`https://${baseDomain}/*`]
-    if (isApi && baseName === "Site") return [`https://api.${baseDomain}/*`]
+    if (isApi && baseName === 'Site') return [`https://api.${baseDomain}/*`]
     if (isApi) return [`https://api.${baseName}.${baseDomain}/*`]
     return [`https://${baseName}.${baseDomain}/*`]
 }
 
 const getClientNames = tenant => {
     const baseClients = [
-        "AdminApi",
-        "AdminPanel",
-        "Site",
-        "SiteApi",
+        'AdminApi',
+        'AdminPanel',
+        'Site',
+        'SiteApi',
     ]
     if (tenant.roles?.length) {
         tenant.roles.forEach(role => {
@@ -44,14 +44,14 @@ const getClientNames = tenant => {
 }
 
 const buildClientConfig = (name, baseDomain) => {
-    const isApi = name.endsWith("Api")
-    const isPanel = name.endsWith("Panel")
-    const isSite = name === "Site"
-    const baseName = name.replace(/Api$/, "").replace(/Panel$/, "").toLowerCase()
+    const isApi = name.endsWith('Api')
+    const isPanel = name.endsWith('Panel')
+    const isSite = name === 'Site'
+    const baseName = name.replace(/Api$/, '').replace(/Panel$/, '').toLowerCase()
     const client = {
         clientId: name,
         publicClient: isPanel,
-        serviceAccountsEnabled: name === "AdminApi",
+        serviceAccountsEnabled: name === 'AdminApi',
         standardFlowEnabled: !isApi,
         directAccessGrantsEnabled: isApi,
         redirectUris: getRedirectUrls({
@@ -61,14 +61,14 @@ const buildClientConfig = (name, baseDomain) => {
             isSite,
         }),
     }
-    client.webOrigins = client.redirectUris.map(i => i.replace("/*", ""))
+    client.webOrigins = client.redirectUris.map(i => i.replace('/*', ''))
     return client
 }
 
 const needsUpdate = (existing, desired) => {
     for (let key in desired) {
         if (Array.isArray(desired[key]) && Array.isArray(existing[key])) {
-            if (desired[key].join(",") !== existing[key].join(",")) return true
+            if (desired[key].join(',') !== existing[key].join(',')) return true
         }
         else if (existing[key] !== desired[key]) return true
     }
@@ -77,19 +77,19 @@ const needsUpdate = (existing, desired) => {
 
 const addMapperToClient = async (params, clientUuid, clientId) => {
     const realmRoleMapper = {
-        name: "roles",
-        protocol: "openid-connect",
-        protocolMapper: "oidc-usermodel-realm-role-mapper",
+        name: 'roles',
+        protocol: 'openid-connect',
+        protocolMapper: 'oidc-usermodel-realm-role-mapper',
         consentRequired: false,
         config: {
-            "access.token.claim": "true",
-            "claim.name": "roles",
-            "id.token.claim": "true",
-            "introspection.token.claim": "true",
-            "jsonType.label": "String",
-            "lightweight.claim": "true",
-            "multivalued": "true",
-            "userinfo.token.claim": "true",
+            'access.token.claim': 'true',
+            'claim.name': 'roles',
+            'id.token.claim': 'true',
+            'introspection.token.claim': 'true',
+            'jsonType.label': 'String',
+            'lightweight.claim': 'true',
+            'multivalued': 'true',
+            'userinfo.token.claim': 'true',
         }
     }
 
@@ -98,13 +98,13 @@ const addMapperToClient = async (params, clientUuid, clientId) => {
         onFailed: () => []
     })
 
-    const hasRolesMapper = existingMappers?.some(m => m.name === "roles")
+    const hasRolesMapper = existingMappers?.some(m => m.name === 'roles')
     if (!hasRolesMapper) {
         await kcPost(`clients/${clientUuid}/protocol-mappers/models`, realmRoleMapper, {
             ...params,
             onFailed: () => null
         })
-        success("Added realm role mapper to client:", clientId)
+        success('Added realm role mapper to client:', clientId)
     }
 }
 
@@ -113,23 +113,23 @@ const createOrUpdateClients = async (params, clients, existingClients) => {
         const existing = existingClients.find(x => x.clientId === client.clientId)
         if (!existing) {
             const created = await kcPost(`clients`, client, params)
-            success("Created client:", client.clientId)
+            success('Created client:', client.clientId)
             await addMapperToClient(params, created.id, client.clientId)
         }
         else if (needsUpdate(existing, client)) {
             await kcPut(`clients/${existing.id}`, client, params)
-            success("Updated client:", client.clientId)
+            success('Updated client:', client.clientId)
             await addMapperToClient(params, existing.id, client.clientId)
         }
         else {
-            info("Client exists:", client.clientId)
+            info('Client exists:', client.clientId)
             await addMapperToClient(params, existing.id, client.clientId)
         }
     }
 }
 
 const createOrUpdateRealmRoles = async (params, tenant) => {
-    const realmRoles = ["Admin", "SuperAdmin"]
+    const realmRoles = ['Admin', 'SuperAdmin']
 
     if (tenant.roles?.length) {
         tenant.roles.forEach(role => {
@@ -143,9 +143,9 @@ const createOrUpdateRealmRoles = async (params, tenant) => {
         const exists = existingRoles.some(r => r.name === roleName)
         if (!exists) {
             await kcPost(`roles`, { name: roleName }, params)
-            success("Created realm role:", roleName)
+            success('Created realm role:', roleName)
         } else {
-            info("Realm role exists:", roleName)
+            info('Realm role exists:', roleName)
         }
     }
 
@@ -155,13 +155,13 @@ const createOrUpdateRealmRoles = async (params, tenant) => {
             !realmRoles.includes(role.name)
         ) {
             await kcDelete(`roles/${encodeURIComponent(role.name)}`, null, params)
-            warning("Deleted realm role:", role.name)
+            warning('Deleted realm role:', role.name)
         }
     }
 }
 
 export default async params => {
-    if (!settings.isDeveloping) clientError("NotAvailableInProduction")
+    if (!settings.isDeveloping) clientError('NotAvailableInProduction')
     const tenant = getTenant(params.host)
     await createOrUpdateRealmRoles(params, tenant)
     const existingClients = await kcGet(`clients`, params)

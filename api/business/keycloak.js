@@ -9,7 +9,7 @@ import {
     settings,
 } from 'core'
 
-const baseUrl = settings.accounts.url.replace(/\/$/, "")
+const baseUrl = settings.accounts.url.replace(/\/$/, '')
 
 const tokenCache = {}
 
@@ -46,8 +46,8 @@ export const getAdminToken = async params => {
 
     const url = `${baseUrl}/realms/${realm}/protocol/openid-connect/token`
     const form = {
-        grant_type: "client_credentials",
-        client_id: "AdminApi",
+        grant_type: 'client_credentials',
+        client_id: 'AdminApi',
         client_secret: tenantSettings.secret,
     }
 
@@ -71,15 +71,15 @@ const kcApi = async (method, path, data, options) => {
     options.headers = { Authorization: `Bearer ${token}` }
 
     switch (method) {
-        case "GET": return httpGet(url, options)
-        case "POST": return httpPost(url, data, options)
-        case "PUT": return httpPut(url, data, options)
-        case "DELETE": return httpDelete(url, data, options)
+        case 'GET': return httpGet(url, options)
+        case 'POST': return httpPost(url, data, options)
+        case 'PUT': return httpPut(url, data, options)
+        case 'DELETE': return httpDelete(url, data, options)
         default: throw `Unsupported method: ${method}`
     }
 }
 
-export const kcGet = (path, options) => kcApi("GET", path, null, options)
-export const kcPost = (path, data, options) => kcApi("POST", path, data, options)
-export const kcPut = (path, data, options) => kcApi("PUT", path, data, options)
-export const kcDelete = (path, data, options) => kcApi("DELETE", path, data, options)
+export const kcGet = (path, options) => kcApi('GET', path, null, options)
+export const kcPost = (path, data, options) => kcApi('POST', path, data, options)
+export const kcPut = (path, data, options) => kcApi('PUT', path, data, options)
+export const kcDelete = (path, data, options) => kcApi('DELETE', path, data, options)

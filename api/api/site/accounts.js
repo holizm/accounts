@@ -1,4 +1,4 @@
-import { sendOtp } from "../../business/accounts/sendOtp.js"
+import { sendOtp } from '../../business/accounts/sendOtp.js'
 
 export default {
     sendOtpOnPost: sendOtp

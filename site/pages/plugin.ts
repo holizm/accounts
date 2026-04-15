@@ -1,14 +1,14 @@
 // @ts-nocheck
-import { QwikAuth$ } from "@auth/qwik";
-import type { Provider } from "@auth/auth/providers"
-import Keycloak from "@auth/qwik/providers/keycloak"
+import { QwikAuth$ } from '@auth/qwik';
+import type { Provider } from '@auth/auth/providers'
+import Keycloak from '@auth/qwik/providers/keycloak'
 import {
     getTenant,
     pascalize,
     post,
-} from "core";
-import fs from "fs";
-import path from "path";
+} from 'core';
+import fs from 'fs';
+import path from 'path';
 
 const paramsCache: Record<string, any> = {};
 
@@ -20,11 +20,11 @@ const getParams = (env, url) => {
 
     const tenant = getTenant(host);
     const accountsUrl = globalThis.settings.accounts?.url;
-    const accountsRealm = globalThis.settings.accounts?.realm || "dev";
-    const keycloakClientSecret = globalThis.settings.keycloakClientSecret || env.get("KEYCLOAK_CLIENT_SECRET");
-    const authSecret = globalThis.settings.authSecret || env.get("AUTH_SECRET");
+    const accountsRealm = globalThis.settings.accounts?.realm || 'dev';
+    const keycloakClientSecret = globalThis.settings.keycloakClientSecret || env.get('KEYCLOAK_CLIENT_SECRET');
+    const authSecret = globalThis.settings.authSecret || env.get('AUTH_SECRET');
     const siteUrl = globalThis.settings.siteUrl;
-    const accountsClient = globalThis.settings.accounts?.client ?? "site";
+    const accountsClient = globalThis.settings.accounts?.client ?? 'site';
 
     const params = {
         accountsClient,
@@ -42,8 +42,8 @@ const getParams = (env, url) => {
             i => i.domain === tenant.prodDomain
         );
     } else {
-        const filePath = path.resolve(process.cwd(), "privateSettings.json");
-        const privateSettings = JSON.parse(fs.readFileSync(filePath, "utf-8"));
+        const filePath = path.resolve(process.cwd(), 'privateSettings.json');
+        const privateSettings = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
         tenantSettings = privateSettings?.keycloakClientSecrets?.find(
             i => i.domain === tenant.prodDomain
         );
@@ -66,14 +66,14 @@ const refreshAccessToken = async (token, env, url) => {
     const tokenUrl = `${accountsUrl}/realms/${accountsRealm}/protocol/openid-connect/token`;
 
     const resp = await fetch(tokenUrl, {
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: new URLSearchParams({
             client_id: accountsClient,
             client_secret: keycloakClientSecret,
-            grant_type: "refresh_token",
+            grant_type: 'refresh_token',
             refresh_token: token.refresh_token,
         }),
-        method: "POST",
+        method: 'POST',
     });
     const refreshToken = await resp.json();
     return {
@@ -113,7 +113,7 @@ export const {
             },
             async signIn({ profile }) {
                 const userUuid = profile.sub;
-                await post("/user/syncByUuid", {
+                await post('/user/syncByUuid', {
                     userUuid: userUuid,
                 }, { url });
             },

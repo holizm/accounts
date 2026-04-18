@@ -34,13 +34,14 @@ const getClientNames = tenant => {
         'site',
         'siteApi',
     ]
+    const allClients = [...baseClients]
     if (tenant.roles?.length) {
         tenant.roles.forEach(role => {
             const roleCapitalized = role.charAt(0).toUpperCase() + role.slice(1)
-            baseClients.push(`${roleCapitalized}Panel`, `${roleCapitalized}Api`)
+            allClients.push(`${roleCapitalized}Panel`, `${roleCapitalized}Api`)
         })
     }
-    return baseClients
+    return allClients
 }
 
 const buildClientConfig = (name, baseDomain) => {
@@ -161,7 +162,7 @@ const createOrUpdateRealmRoles = async (params, tenant) => {
 }
 
 export default async params => {
-    if (!settings.isDeveloping) clientError('NotAvailableInProduction')
+    if (!settings.isDeveloping) clientError('notAvailableInProduction')
     const tenant = getTenant(params.host)
     await createOrUpdateRealmRoles(params, tenant)
     const existingClients = await kcGet(`clients`, params)

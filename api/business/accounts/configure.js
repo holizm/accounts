@@ -22,17 +22,17 @@ const getRedirectUrls = ({
     isSite,
 }) => {
     if (isSite) return [`https://${baseDomain}/*`]
-    if (isApi && baseName === 'Site') return [`https://api.${baseDomain}/*`]
+    if (isApi && baseName === 'site') return [`https://api.${baseDomain}/*`]
     if (isApi) return [`https://api.${baseName}.${baseDomain}/*`]
     return [`https://${baseName}.${baseDomain}/*`]
 }
 
 const getClientNames = tenant => {
     const baseClients = [
-        'AdminApi',
-        'AdminPanel',
-        'Site',
-        'SiteApi',
+        'adminApi',
+        'adminPanel',
+        'site',
+        'siteApi',
     ]
     if (tenant.roles?.length) {
         tenant.roles.forEach(role => {

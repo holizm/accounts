@@ -19,5 +19,6 @@
     "accountsUserNameAToZ": "Username A-Z",
     "accountsUserNameZToA": "Username Z-A",
     "accountsUsers": "Users",
-    "accountsUsersAreSynced": "Users are synched"
+    "accountsUsersAreSynced": "Users are synched",
+    "accountsConfigure": "Configure accounts"
 }

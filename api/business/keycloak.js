@@ -1,4 +1,5 @@
 import {
+    clientError,
     getTenant,
     httpDelete,
     httpForm,
@@ -6,11 +7,13 @@ import {
     httpPost,
     httpPut,
     settings,
+    warning,
 } from 'core'
 
 const baseUrl = settings.accounts.url.replace(/\/$/, '')
 
 const tokenCache = {}
+const realmValidationCache = {}
 
 const getRealm = params => {
     const tenant = getTenant(params.host)
@@ -61,8 +64,29 @@ export const getAdminToken = async params => {
     return tokenCache[tenantKey].accessToken
 }
 
+const verifyRealmOnce = async params => {
+    const { realm } = getRealm(params)
+    const cacheKey = realm
+    if (realmValidationCache[cacheKey]) {
+        return
+    }
+    const url = `${baseUrl}/admin/realms/${realm}`
+    const { responseJson } = await httpGet(url, {
+        headers: {
+            Authorization: `Bearer ${await getAdminToken(params)}`
+        }
+    })
+    const actualRealm = responseJson?.realm
+    if (actualRealm !== realm) {
+        warning(`Invalid realm name. Expected ${realm}, got ${actualRealm}`)
+        clientError('invalidRealmName')
+    }
+    realmValidationCache[cacheKey] = true
+}
+
 const kcApi = async (method, path, data, options) => {
     const token = await getAdminToken(options)
+    await verifyRealmOnce(options)
     const { realm } = getRealm(options)
     const url = `${baseUrl}/admin/realms/${realm}/${path}`
 

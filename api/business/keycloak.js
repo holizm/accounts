@@ -5,7 +5,6 @@ import {
     httpGet,
     httpPost,
     httpPut,
-    pascalize,
     settings,
 } from 'core'
 

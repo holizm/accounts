@@ -1,11 +1,11 @@
 import {
+    camelize,
     clientError,
     getTenant,
+    info,
     ok,
-    pascalize,
     settings,
     success,
-    info,
     warning,
 } from 'core'
 import {
@@ -37,8 +37,9 @@ const getClientNames = tenant => {
     const allClients = [...baseClients]
     if (tenant.roles?.length) {
         tenant.roles.forEach(role => {
-            const roleCapitalized = role.charAt(0).toUpperCase() + role.slice(1)
-            allClients.push(`${roleCapitalized}Panel`, `${roleCapitalized}Api`)
+            const camelizedRole = camelize(role)
+            allClients.push(`${camelizedRole}Api`)
+            allClients.push(`${camelizedRole}Panel`)
         })
     }
     return allClients
@@ -129,42 +130,52 @@ const createOrUpdateClients = async (params, clients, existingClients) => {
     }
 }
 
-const createOrUpdateRealmRoles = async (params, tenant) => {
-    const realmRoles = ['admin', 'superAdmin']
-
+const getTenantRoles = tenant => {
+    const tenantRoles = ['admin', 'superAdmin']
     if (tenant.roles?.length) {
         tenant.roles.forEach(role => {
-            realmRoles.push(camelize(role))
+            tenantRoles.push(camelize(role))
         })
     }
+    return tenantRoles
+}
 
+const upsertNewOrExistingRoles = async (tenantRoles, existingRoles, params) => {
+    for (let runnableRole of tenantRoles) {
+        const exists = existingRoles.some(r => r.name === runnableRole)
+
+        if (!exists) {
+            await kcPost(`roles`, { name: runnableRole }, params)
+            success('Created realm role:', runnableRole)
+        } else {
+            info('Realm role exists:', runnableRole)
+        }
+    }
+}
+
+const deleteNonExistingRoles = async (tenantRoles, existingRoles, params) => {
+    for (let existingRole of existingRoles) {
+        const isSystemRole = /[-_]/.test(existingRole.name)
+
+        if (!isSystemRole && !tenantRoles.includes(existingRole.name)) {
+            await kcDelete(`roles/${encodeURIComponent(existingRole.name)}`, null, params)
+            warning('Deleted realm role:', existingRole.name)
+        }
+    }
+}
+
+const syncRealmRoles = async (params, tenant) => {
+    const tenantRoles = getTenantRoles(tenant)
     const existingRoles = await kcGet(`roles`, params)
 
-    for (let roleName of realmRoles) {
-        const exists = existingRoles.some(r => r.name === roleName)
-        if (!exists) {
-            await kcPost(`roles`, { name: roleName }, params)
-            success('Created realm role:', roleName)
-        } else {
-            info('Realm role exists:', roleName)
-        }
-    }
-
-    for (let role of existingRoles) {
-        if (
-            /-_/.test(role.name) &&
-            !realmRoles.includes(role.name)
-        ) {
-            await kcDelete(`roles/${encodeURIComponent(role.name)}`, null, params)
-            warning('Deleted realm role:', role.name)
-        }
-    }
+    await upsertNewOrExistingRoles(tenantRoles, existingRoles, params)
+    await deleteNonExistingRoles(tenantRoles, existingRoles, params)
 }
 
 export default async params => {
     if (!settings.isDeveloping) clientError('notAvailableInProduction')
     const tenant = getTenant(params.host)
-    await createOrUpdateRealmRoles(params, tenant)
+    await syncRealmRoles(params, tenant)
     const existingClients = await kcGet(`clients`, params)
     const baseDomain = tenant.prodDomain
     const clientNames = getClientNames(tenant)

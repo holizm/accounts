@@ -134,7 +134,7 @@ const createOrUpdateRealmRoles = async (params, tenant) => {
 
     if (tenant.roles?.length) {
         tenant.roles.forEach(role => {
-            realmRoles.push(pascalize(role))
+            realmRoles.push(camelize(role))
         })
     }
 
@@ -152,7 +152,7 @@ const createOrUpdateRealmRoles = async (params, tenant) => {
 
     for (let role of existingRoles) {
         if (
-            /^[A-Z]/.test(role.name) &&
+            /-_/.test(role.name) &&
             !realmRoles.includes(role.name)
         ) {
             await kcDelete(`roles/${encodeURIComponent(role.name)}`, null, params)

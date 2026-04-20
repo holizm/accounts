@@ -47,12 +47,12 @@ const getClientNames = tenant => {
 const buildClientConfig = (name, baseDomain) => {
     const isApi = name.endsWith('Api')
     const isPanel = name.endsWith('Panel')
-    const isSite = name === 'Site'
+    const isSite = name === 'site'
     const baseName = name.replace(/Api$/, '').replace(/Panel$/, '').toLowerCase()
     const client = {
         clientId: name,
         publicClient: isPanel,
-        serviceAccountsEnabled: name === 'AdminApi',
+        serviceAccountsEnabled: name === 'adminApi',
         standardFlowEnabled: !isApi,
         directAccessGrantsEnabled: isApi,
         redirectUris: getRedirectUrls({
@@ -130,7 +130,7 @@ const createOrUpdateClients = async (params, clients, existingClients) => {
 }
 
 const createOrUpdateRealmRoles = async (params, tenant) => {
-    const realmRoles = ['Admin', 'SuperAdmin']
+    const realmRoles = ['admin', 'superAdmin']
 
     if (tenant.roles?.length) {
         tenant.roles.forEach(role => {

@@ -111,19 +111,22 @@ const addMapperToClient = async (params, clientUuid, clientId) => {
 }
 
 const createOrUpdateClients = async (params, clients, existingClients) => {
+    const existingClientMap = new Map(
+        existingClients.map(c => [c.clientId, c])
+    )
+
     for (let client of clients) {
-        const existing = existingClients.find(x => x.clientId === client.clientId)
+        const existing = existingClientMap.get(client.clientId)
+
         if (!existing) {
             const created = await kcPost(`clients`, client, params)
             success('Created client:', client.clientId)
             await addMapperToClient(params, created.id, client.clientId)
-        }
-        else if (needsUpdate(existing, client)) {
+        } else if (needsUpdate(existing, client)) {
             await kcPut(`clients/${existing.id}`, client, params)
             success('Updated client:', client.clientId)
             await addMapperToClient(params, existing.id, client.clientId)
-        }
-        else {
+        } else {
             info('Client exists:', client.clientId)
             await addMapperToClient(params, existing.id, client.clientId)
         }

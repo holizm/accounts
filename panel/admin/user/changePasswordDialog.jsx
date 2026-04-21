@@ -7,7 +7,7 @@ import {
 const inputs = <>
     <Password
         confirm
-        confirmationPlaceholder='AccountsPasswordConfirmation'
+        confirmationPlaceholder='accountsPasswordConfirmation'
         placeholder='accountsPassword'
         property='password'
     />

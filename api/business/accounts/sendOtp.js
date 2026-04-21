@@ -18,7 +18,7 @@ export const sendOtp = async params => {
         phone,
         otp,
     } = params
-    ensure(phone).isSomething('PhoneIsEmpty')
+    ensure(phone).isSomething('phoneIsEmpty')
     const user = await getUserByPhone(phone)
     const { value } = await getKey(user.id)
     if (!otp) {
@@ -52,8 +52,8 @@ export const sendOtp = async params => {
 }
 
 const createTotp = () => {
-    const seconds = 60 // parseInt(CoreConfig.getSetting('OtpLifetimeInSeconds') || '60', 10)
-    const length = 5 // parseInt(CoreConfig.getSetting('OtpLength') || '5', 10)
+    const seconds = 60 // parseInt(CoreConfig.getSetting('otpLifetimeInSeconds') || '60', 10)
+    const length = 5 // parseInt(CoreConfig.getSetting('otpLength') || '5', 10)
     TotpGenerator.options = {
         algorithm: 'sha512',
         digits: length,

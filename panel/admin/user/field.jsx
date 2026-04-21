@@ -20,8 +20,8 @@ export default ({
 
         filters={filters}
         headers={headers}
-        placeholder={placeholder ?? 'AccountsUser'}
-        property={property ?? 'UserUuid'}
+        placeholder={placeholder ?? 'accountsUser'}
+        property={property ?? 'userUuid'}
         row={row}
         show={item => item.userName || item.naturalPersonName}
         {...rest}

@@ -29,7 +29,7 @@ export default routeLoader$(async props => {
         getValues('dashboard', props),
         getGlobalization(props),
     ])
-    globalization.translations.dashboardWelcomeMessage = applyGranularity(globalization.translations, 'DashboardWelcomeMessage', 'Accounts')
+    globalization.translations.dashboardWelcomeMessage = applyGranularity(globalization.translations, 'dashboardWelcomeMessage', 'accounts')
 
     return {
         ...data,

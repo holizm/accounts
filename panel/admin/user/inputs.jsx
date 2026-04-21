@@ -47,7 +47,7 @@ export default personType => {
         {
             typeof personType === 'string'
                 ?
-                personType === 'Juridical'
+                personType === 'juridical'
                     ?
                     juridicalFields
                     :

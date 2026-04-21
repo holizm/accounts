@@ -16,23 +16,23 @@ export default routeLoader$(async props => {
     ])
 
     applyGranularityInBatch(globalization.translations, [
-        'ChangePhone',
-        'EmptyOtp',
-        'EmptyPhone',
-        'InvalidOtp',
-        'InvalidPhone',
-        'Otp',
-        'OtpLabel',
-        'OtpSent',
-        'Phone',
-        'PhoneLabel',
-        'RegisterOrSignIn',
-        'Resend',
-        'SendingOtp',
-        'SendOtp',
-        'SignIn',
-        'SigningIn',
-    ], 'Accounts')
+        'changePhone',
+        'emptyOtp',
+        'emptyPhone',
+        'invalidOtp',
+        'invalidPhone',
+        'otp',
+        'otpLabel',
+        'otpSent',
+        'phone',
+        'phoneLabel',
+        'registerOrSignIn',
+        'resend',
+        'sendingOtp',
+        'sendOtp',
+        'signIn',
+        'signingIn',
+    ], 'accounts')
 
     return {
         ...globalization,

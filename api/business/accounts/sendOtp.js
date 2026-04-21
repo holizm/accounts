@@ -22,8 +22,7 @@ export const sendOtp = async params => {
     const user = await getUserByPhone(phone)
     const { value } = await getKey(user.id)
     if (!otp) {
-        const totp = createTotp(value)
-        otp = totp.generate(value)
+        otp = createTotp(value)
     }
     const password = makePasswordFromOtp(otp)
     await changePassword({
@@ -51,7 +50,7 @@ export const sendOtp = async params => {
     return result
 }
 
-const createTotp = () => {
+const createTotp = userKey => {
     const seconds = 60 // parseInt(CoreConfig.getSetting('otpLifetimeInSeconds') || '60', 10)
     const length = 5 // parseInt(CoreConfig.getSetting('otpLength') || '5', 10)
     TotpGenerator.options = {
@@ -59,7 +58,7 @@ const createTotp = () => {
         digits: length,
         step: seconds,
     }
-    return TotpGenerator
+    return TotpGenerator.generate(userKey)
 }
 
 const makePasswordFromOtp = otp => {

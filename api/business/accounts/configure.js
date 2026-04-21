@@ -132,17 +132,21 @@ const createOrUpdateClients = async (params, clients, existingClients) => {
 
 const getTenantRoles = tenant => {
     const tenantRoles = ['admin', 'superAdmin']
+
     if (tenant.roles?.length) {
         tenant.roles.forEach(role => {
             tenantRoles.push(camelize(role))
         })
     }
+
     return tenantRoles
 }
 
 const upsertNewOrExistingRoles = async (tenantRoles, existingRoles, params) => {
+    const existingRoleSet = new Set(existingRoles.map(r => r.name))
+
     for (let runnableRole of tenantRoles) {
-        const exists = existingRoles.some(r => r.name === runnableRole)
+        const exists = existingRoleSet.has(runnableRole)
 
         if (!exists) {
             await kcPost(`roles`, { name: runnableRole }, params)
@@ -154,10 +158,12 @@ const upsertNewOrExistingRoles = async (tenantRoles, existingRoles, params) => {
 }
 
 const deleteNonExistingRoles = async (tenantRoles, existingRoles, params) => {
+    const tenantRoleSet = new Set(tenantRoles)
+
     for (let existingRole of existingRoles) {
         const isSystemRole = /[-_]/.test(existingRole.name)
 
-        if (!isSystemRole && !tenantRoles.includes(existingRole.name)) {
+        if (!isSystemRole && !tenantRoleSet.has(existingRole.name)) {
             await kcDelete(`roles/${encodeURIComponent(existingRole.name)}`, null, params)
             warning('Deleted realm role:', existingRole.name)
         }

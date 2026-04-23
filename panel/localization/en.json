@@ -3,6 +3,7 @@
     "accountsAddFromUsers": "Add From Users",
     "accountsAnonymous": "Anonymous",
     "accountsChangePassword": "Change password",
+    "accountsConfigure": "Configure accounts",
     "accountsCreateUserForPerson": "Create user for person",
     "accountsFirstName": "First name",
     "accountsForPerson": "For person",
@@ -19,6 +20,5 @@
     "accountsUserNameAToZ": "Username A-Z",
     "accountsUserNameZToA": "Username Z-A",
     "accountsUsers": "Users",
-    "accountsUsersAreSynced": "Users are synched",
-    "accountsConfigure": "Configure accounts"
+    "accountsUsersAreSynced": "Users are synched"
 }

@@ -1,4 +1,4 @@
-import { kcPut } from '../keycloak.js'
+import { iamPut } from '../iam.js'
 
 export const changePassword = async params => {
     const {
@@ -10,5 +10,5 @@ export const changePassword = async params => {
         type: 'password',
         value: password,
     }
-    kcPut(`users/${user}/reset-password`, parameters, params)
+    iamPut(`users/${user}/reset-password`, parameters, params)
 }

@@ -20,11 +20,11 @@ const getRealm = params => {
     const tenantSettings = settings.
         production?.
         adminApi?.
-        keycloakClientSecrets?.
+        iamClientSecrets?.
         find(
             i => i.domain === tenant.prodDomain
         )
-    if (!tenantSettings) throw `Missing Keycloak client secret for tenant ${tenant.prodDomain}`
+    if (!tenantSettings) throw `Missing IAM client secret for tenant ${tenant.prodDomain}`
     return {
         realm: tenant.id,
         tenant,
@@ -84,7 +84,7 @@ const verifyRealmOnce = async params => {
     realmValidationCache[cacheKey] = true
 }
 
-const kcApi = async (method, path, data, options) => {
+const iamApi = async (method, path, data, options) => {
     const token = await getAdminToken(options)
     await verifyRealmOnce(options)
     const { realm } = getRealm(options)
@@ -102,7 +102,7 @@ const kcApi = async (method, path, data, options) => {
     }
 }
 
-export const kcGet = (path, options) => kcApi('get', path, null, options)
-export const kcPost = (path, data, options) => kcApi('post', path, data, options)
-export const kcPut = (path, data, options) => kcApi('put', path, data, options)
-export const kcDelete = (path, data, options) => kcApi('delete', path, data, options)
+export const iamGet = (path, options) => iamApi('get', path, null, options)
+export const iamPost = (path, data, options) => iamApi('post', path, data, options)
+export const iamPut = (path, data, options) => iamApi('put', path, data, options)
+export const iamDelete = (path, data, options) => iamApi('delete', path, data, options)

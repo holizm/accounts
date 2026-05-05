@@ -5,7 +5,6 @@ export const getUserByUsername = async username => {
         {
             part: 'accounts',
             type: 'user',
-            doNotThrow: true,
         },
         {
             username: username

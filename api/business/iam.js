@@ -24,7 +24,7 @@ const getRealm = params => {
         find(
             i => i.domain === tenant.prodDomain
         )
-    if (!tenantSettings) throw `Missing IAM client secret for tenant ${tenant.prodDomain}`
+    if (!tenantSettings) clientError(`Missing IAM client secret for tenant ${tenant.prodDomain}`)
     return {
         realm: tenant.id,
         tenant,

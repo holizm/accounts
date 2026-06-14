@@ -9,10 +9,10 @@ import {
     warning,
 } from 'core'
 import {
-    kcDelete,
-    kcGet,
-    kcPost,
-    kcPut,
+    iamDelete,
+    iamGet,
+    iamPost,
+    iamPut,
 } from '../iam.js'
 
 const getRedirectUrls = ({
@@ -95,14 +95,14 @@ const addMapperToClient = async (params, clientUuid, clientId) => {
         }
     }
 
-    const existingMappers = await kcGet(`clients/${clientUuid}/protocol-mappers/models`, {
+    const existingMappers = await iamGet(`clients/${clientUuid}/protocol-mappers/models`, {
         ...params,
         onFailed: () => []
     })
 
     const hasRolesMapper = existingMappers?.some(m => m.name === 'roles')
     if (!hasRolesMapper) {
-        await kcPost(`clients/${clientUuid}/protocol-mappers/models`, realmRoleMapper, {
+        await iamPost(`clients/${clientUuid}/protocol-mappers/models`, realmRoleMapper, {
             ...params,
             onFailed: () => null
         })
@@ -119,11 +119,11 @@ const createOrUpdateClients = async (params, clients, existingClients) => {
         const existing = existingClientMap.get(client.clientId)
 
         if (!existing) {
-            const created = await kcPost(`clients`, client, params)
+            const created = await iamPost(`clients`, client, params)
             success('Created client:', client.clientId)
             await addMapperToClient(params, created.id, client.clientId)
         } else if (needsUpdate(existing, client)) {
-            await kcPut(`clients/${existing.id}`, client, params)
+            await iamPut(`clients/${existing.id}`, client, params)
             success('Updated client:', client.clientId)
             await addMapperToClient(params, existing.id, client.clientId)
         } else {
@@ -152,7 +152,7 @@ const upsertNewOrExistingRoles = async (tenantRoles, existingRoles, params) => {
         const exists = existingRoleSet.has(runnableRole)
 
         if (!exists) {
-            await kcPost(`roles`, { name: runnableRole }, params)
+            await iamPost(`roles`, { name: runnableRole }, params)
             success('Created realm role:', runnableRole)
         } else {
             info('Realm role exists:', runnableRole)
@@ -167,7 +167,7 @@ const deleteNonExistingRoles = async (tenantRoles, existingRoles, params) => {
         const isSystemRole = /[-_]/.test(existingRole.name)
 
         if (!isSystemRole && !tenantRoleSet.has(existingRole.name)) {
-            await kcDelete(`roles/${encodeURIComponent(existingRole.name)}`, null, params)
+            await iamDelete(`roles/${encodeURIComponent(existingRole.name)}`, null, params)
             warning('Deleted realm role:', existingRole.name)
         }
     }
@@ -175,7 +175,7 @@ const deleteNonExistingRoles = async (tenantRoles, existingRoles, params) => {
 
 const syncRealmRoles = async (params, tenant) => {
     const tenantRoles = getTenantRoles(tenant)
-    const existingRoles = await kcGet(`roles`, params)
+    const existingRoles = await iamGet(`roles`, params)
 
     await upsertNewOrExistingRoles(tenantRoles, existingRoles, params)
     await deleteNonExistingRoles(tenantRoles, existingRoles, params)
@@ -185,11 +185,11 @@ export default async params => {
     if (!settings.isDeveloping) clientError('notAvailableInProduction')
     const tenant = getTenant(params.host)
     await syncRealmRoles(params, tenant)
-    const existingClients = await kcGet(`clients`, params)
+    const existingClients = await iamGet(`clients`, params)
     const baseDomain = tenant.prodDomain
     const clientNames = getClientNames(tenant)
     const clients = clientNames.map(name => buildClientConfig(name, baseDomain))
     await createOrUpdateClients(params, clients, existingClients)
-    const updatedClients = await kcGet(`clients`, params)
+    const updatedClients = await iamGet(`clients`, params)
     return ok({ data: updatedClients })
 }

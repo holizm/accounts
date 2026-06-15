@@ -1,7 +1,7 @@
 // @ts-nocheck
 import { QwikAuth$ } from '@auth/qwik';
 import type { Provider } from '@auth/auth/providers'
-import Keycloak from '@auth/qwik/providers/keycloak'
+import Keycloak from '@auth/qwik/providers/iam'
 import {
     getTenant,
     pascalize,
@@ -21,8 +21,8 @@ const getParams = (env, url) => {
     const tenant = getTenant(host);
     const accountsUrl = globalThis.settings.accounts?.url;
     const accountsRealm = globalThis.settings.accounts?.realm || 'dev';
-    const keycloakClientSecret = globalThis.settings.keycloakClientSecret || env.get('KEYCLOAK_CLIENT_SECRET');
-    const authSecret = globalThis.settings.authSecret || env.get('AUTH_SECRET');
+    const iamClientSecret = globalThis.settings.iamClientSecret || env.get('IAM_CLIENT_SECRET');
+    const authSecret = globalThis.settings.authSecret || env.get('authSecret');
     const siteUrl = globalThis.settings.siteUrl;
     const accountsClient = globalThis.settings.accounts?.client ?? 'site';
 
@@ -32,24 +32,24 @@ const getParams = (env, url) => {
         accountsUrl,
         authSecret,
         host,
-        keycloakClientSecret,
+        iamClientSecret,
         siteUrl: tenant.prodDomain,
     };
 
     let tenantSettings;
     if (globalThis.settings.isDeveloping) {
-        tenantSettings = globalThis.settings.production?.site?.keycloakClientSecrets?.find(
+        tenantSettings = globalThis.settings.production?.site?.iamClientSecrets?.find(
             i => i.domain === tenant.prodDomain
         );
     } else {
         const filePath = path.resolve(process.cwd(), 'privateSettings.json');
         const privateSettings = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
-        tenantSettings = privateSettings?.keycloakClientSecrets?.find(
+        tenantSettings = privateSettings?.iamClientSecrets?.find(
             i => i.domain === tenant.prodDomain
         );
     }
     if (tenantSettings) {
-        params.keycloakClientSecret = tenantSettings.secret;
+        params.iamClientSecret = tenantSettings.secret;
     }
 
     paramsCache[host] = params;
@@ -60,7 +60,7 @@ const refreshAccessToken = async (token, env, url) => {
     const {
         accountsRealm,
         accountsUrl,
-        keycloakClientSecret,
+        iamClientSecret,
         accountsClient
     } = getParams(env, url);
     const tokenUrl = `${accountsUrl}/realms/${accountsRealm}/protocol/openid-connect/token`;
@@ -69,7 +69,7 @@ const refreshAccessToken = async (token, env, url) => {
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: new URLSearchParams({
             client_id: accountsClient,
-            client_secret: keycloakClientSecret,
+            client_secret: iamClientSecret,
             grant_type: 'refresh_token',
             refresh_token: token.refresh_token,
         }),
@@ -98,7 +98,7 @@ export const {
         accountsRealm,
         accountsUrl,
         authSecret,
-        keycloakClientSecret,
+        iamClientSecret,
         siteUrl,
     } = getParams(env, url);
 
@@ -152,7 +152,7 @@ export const {
         providers: [
             Keycloak({
                 clientId: accountsClient,
-                clientSecret: keycloakClientSecret as string,
+                clientSecret: iamClientSecret as string,
                 issuer: `${accountsUrl}/realms/${accountsRealm}` as string,
             }),
         ] as Provider[],

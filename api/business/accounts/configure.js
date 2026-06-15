@@ -175,8 +175,7 @@ const deleteNonExistingRoles = async (tenantRoles, existingRoles, params) => {
 
 const syncRealmRoles = async (params, tenant) => {
     const tenantRoles = getTenantRoles(tenant)
-    const existingRoles = (await iamGet(`roles`, params)).responseJson || []
-    console.log('88888888888888888888888888', existingRoles)
+    const existingRoles = await iamGet(`roles`, params) || []
 
     await upsertNewOrExistingRoles(tenantRoles, existingRoles, params)
     await deleteNonExistingRoles(tenantRoles, existingRoles, params)
@@ -186,11 +185,11 @@ export default async params => {
     if (!settings.isDeveloping) clientError('notAvailableInProduction')
     const tenant = getTenant(params.host)
     await syncRealmRoles(params, tenant)
-    const existingClients = await iamGet(`clients`, params)
+    const existingClients = await iamGet(`clients`, params) || []
     const baseDomain = tenant.prodDomain
     const clientNames = getClientNames(tenant)
     const clients = clientNames.map(name => buildClientConfig(name, baseDomain))
     await createOrUpdateClients(params, clients, existingClients)
-    const updatedClients = await iamGet(`clients`, params)
+    const updatedClients = await iamGet(`clients`, params) || []
     return ok({ data: updatedClients })
 }

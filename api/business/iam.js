@@ -90,17 +90,26 @@ const iamApi = async (method, path, data, options) => {
     await verifyRealmOnce(options)
     const { realm } = getRealm(options)
     const url = `${baseUrl}/admin/realms/${realm}/${path}`
-
     options = options || {}
-    options.headers = { Authorization: `Bearer ${token}` }
-
+    options.headers = { Authorization: `Bearer ${token}`, ...options.headers }
+    let res
     switch (method) {
-        case 'get': return httpGet(url, options)
-        case 'post': return httpPost(url, data, options)
-        case 'put': return httpPut(url, data, options)
-        case 'delete': return httpDelete(url, data, options)
-        default: throw `Unsupported method: ${method}`
+        case 'get':
+            res = await httpGet(url, options)
+            break
+        case 'post':
+            res = await httpPost(url, data, options)
+            break
+        case 'put':
+            res = await httpPut(url, data, options)
+            break
+        case 'delete':
+            res = await httpDelete(url, data, options)
+            break
+        default:
+            throw `Unsupported method: ${method}`
     }
+    return res.responseJson
 }
 
 export const iamGet = (path, options) => iamApi('get', path, null, options)

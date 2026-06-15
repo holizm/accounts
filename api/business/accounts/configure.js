@@ -175,7 +175,8 @@ const deleteNonExistingRoles = async (tenantRoles, existingRoles, params) => {
 
 const syncRealmRoles = async (params, tenant) => {
     const tenantRoles = getTenantRoles(tenant)
-    const existingRoles = await iamGet(`roles`, params)
+    const existingRoles = (await iamGet(`roles`, params)).responseJson || []
+    console.log('88888888888888888888888888', existingRoles)
 
     await upsertNewOrExistingRoles(tenantRoles, existingRoles, params)
     await deleteNonExistingRoles(tenantRoles, existingRoles, params)

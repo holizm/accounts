@@ -79,6 +79,7 @@ const verifyRealmOnce = async params => {
     const actualRealm = responseJson?.realm
     if (actualRealm !== realm) {
         warning(`Invalid realm name. Expected ${realm}, got ${actualRealm}`)
+        warning(`Response was:`, responseJson)
         clientError('invalidRealmName')
     }
     realmValidationCache[cacheKey] = true

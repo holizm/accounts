@@ -1,7 +1,7 @@
 // @ts-nocheck
 import { QwikAuth$ } from '@auth/qwik';
 import type { Provider } from '@auth/auth/providers'
-import Keycloak from '@auth/qwik/providers/iam'
+import Keycloak from '@auth/qwik/providers/keycloak'
 import {
     getTenant,
     pascalize,

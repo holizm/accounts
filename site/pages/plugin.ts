@@ -50,7 +50,6 @@ const getParams = (env, url) => {
         if (privateSettings.authSecret) {
             params.authSecret = privateSettings.authSecret
         }
-        console.log(filePath, privateSettings, tenant, tenantSettings)
     }
     if (tenantSettings) {
         params.iamClientSecret = tenantSettings.secret;
@@ -161,6 +160,5 @@ export const {
             }),
         ] as Provider[],
     };
-    console.log(config, globalThis.settings)
     return config;
 });

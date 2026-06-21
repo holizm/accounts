@@ -21,7 +21,7 @@ const getParams = (env, url) => {
     const tenant = getTenant(host);
     const accountsUrl = globalThis.settings.accounts?.url;
     const accountsRealm = globalThis.settings.accounts?.realm || 'dev';
-    const iamClientSecret = globalThis.settings.iamClientSecret || env.get('IAM_CLIENT_SECRET');
+    const iamClientSecret = globalThis.settings.iamClientSecret || env.get('iamClientSecret');
     const authSecret = globalThis.settings.authSecret || env.get('authSecret');
     const siteUrl = globalThis.settings.siteUrl;
     const accountsClient = globalThis.settings.accounts?.client ?? 'site';
@@ -47,6 +47,10 @@ const getParams = (env, url) => {
         tenantSettings = privateSettings?.iamClientSecrets?.find(
             i => i.domain === tenant.prodDomain
         );
+        if (privateSettings.authSecret) {
+            params.authSecret = privateSettings.authSecret
+        }
+        console.log(filePath, privateSettings, tenant, tenantSettings)
     }
     if (tenantSettings) {
         params.iamClientSecret = tenantSettings.secret;
@@ -157,5 +161,6 @@ export const {
             }),
         ] as Provider[],
     };
+    console.log(config, globalThis.settings)
     return config;
 });

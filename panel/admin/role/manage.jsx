@@ -2,7 +2,7 @@ import { ItemAction } from 'list'
 import RolesDialog from './dialog'
 
 export default <ItemAction
-    title='accountsManageRoles'
+    title='accountsRoles'
     icon='adminPanelSettings'
     dialog={RolesDialog}
 />

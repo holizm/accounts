@@ -21,7 +21,7 @@ export default component$(({
         signIn.submit({
             providerId: 'keycloak',
             options: {
-                callbackUrl: returnTo || '/'
+                redirectTo: returnTo || '/'
             }
         })
     })
@@ -42,7 +42,7 @@ export default component$(({
             />
             <input
                 type='hidden'
-                name='options.callbackUrl'
+                name='options.redirectTo'
                 value={returnTo || '/'}
             />
             <div onClick$={handleClick}>

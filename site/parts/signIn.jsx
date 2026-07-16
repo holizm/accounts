@@ -21,7 +21,7 @@ export default component$(({
         signIn.submit({
             providerId: 'keycloak',
             options: {
-                redirectTo: returnTo || '/'
+                redirectTo: returnTo || '/dashboard'
             }
         })
     })
@@ -43,7 +43,7 @@ export default component$(({
             <input
                 type='hidden'
                 name='options.redirectTo'
-                value={returnTo || '/'}
+                value={returnTo || '/dashboard'}
             />
             <div onClick$={handleClick}>
                 <Slot />

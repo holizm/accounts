@@ -7,7 +7,7 @@ export default component$(() => {
     const signIn = useSignIn()
 
     useVisibleTask$(() => {
-        const redirectTo = loc.url.searchParams.get('redirectTo') || '/'
+        const redirectTo = loc.url.searchParams.get('redirectTo') || '/dashboard'
         signIn.submit({
             providerId: 'keycloak',
             options: { redirectTo }

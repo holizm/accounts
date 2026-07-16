@@ -126,7 +126,7 @@ export const {
                 const nowTimeStamp = Math.floor(Date.now() / 1000);
                 if (account) {
                     token.access_token = account.access_token;
-                    token.id_token = profile.id_token;
+                    token.id_token = account.id_token;
                     token.expires_at = account.expires_at;
                     token.refresh_token = account.refresh_token;
                     token.userUUID = profile.sub;
@@ -137,6 +137,7 @@ export const {
                             return null;
                         }
                         token.access_token = result?.access_token;
+                        token.id_token = result?.id_token ?? token.id_token;
                         token.expires_at = result?.expires_at;
                         token.refresh_token = result?.refresh_token;
                     }
@@ -149,6 +150,7 @@ export const {
                 }
                 session.user.id = token.userUUID;
                 session.user.accessToken = token.access_token;
+                session.user.idToken = token.id_token;
                 return session;
             },
         },

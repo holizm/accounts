@@ -18,21 +18,22 @@ const getParams = (env, url) => {
         return paramsCache[host];
     }
     const tenant = getTenant(host);
-    const accountsUrl = globalThis.settings.accounts?.url;
-    const accountsRealm = globalThis.settings.accounts?.realm || 'dev';
+    const currentTenant = globalThis.currentTenant
+    const accountsUrl = currentTenant?.accountsOrigin;
+    const accountsRealm = currentTenant.realm || 'dev';
     const iamClientSecret = globalThis.settings.iamClientSecret || env.get('iamClientSecret');
     const authSecret = globalThis.settings.authSecret || env.get('authSecret');
-    const siteUrl = globalThis.settings.siteUrl;
+    const siteUrl = currentTenant.prodDomain || currentTenant.devDomain;
     const accountsClient = globalThis.settings.accounts?.client ?? 'site';
 
     const params = {
         accountsClient,
-        accountsRealm: pascalize(tenant.id),
+        accountsRealm,
         accountsUrl,
         authSecret,
         host,
         iamClientSecret,
-        siteUrl: tenant.prodDomain,
+        siteUrl
     };
 
     let tenantSettings;

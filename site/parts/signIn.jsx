@@ -18,14 +18,12 @@ export default component$(({
 
     const handleClick = $(() => {
         progress.value = true
-
-        console.log(globalThis.currentTenant, "sssssss");
-        // signIn.submit({
-        //     providerId: 'keycloak',
-        //     options: {
-        //         redirectTo: returnTo || '/dashboard'
-        //     }
-        // })
+        signIn.submit({
+            providerId: 'keycloak',
+            options: {
+                redirectTo: returnTo || '/dashboard'
+            }
+        })
     })
 
     return progress.value

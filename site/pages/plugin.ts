@@ -3,27 +3,33 @@ import { QwikAuth$ } from '@auth/qwik';
 import type { Provider } from '@auth/auth/providers'
 import Keycloak from '@auth/qwik/providers/keycloak'
 import {
+    getFromCacheOrApi,
     getTenant,
     pascalize,
     post,
 } from 'core';
-import fs from 'fs';
-import path from 'path';
+import fs from 'fs'
+import path from 'path'
 
 const paramsCache: Record<string, any> = {};
 
-const getParams = (env, url) => {
+const getParams = async (env, url) => {
     const host = url.hostname;
     if (paramsCache[host]) {
         return paramsCache[host];
     }
     const tenant = getTenant(host);
-    const currentTenant = globalThis.currentTenant
+    let currentTenant = {}
+    if (!globalThis.currentTenant) {
+        currentTenant = await getFromCacheOrApi('/tenant', { url: { hostname: host } })
+    } else {
+        currentTenant = globalThis.currentTenant
+    }
     const accountsUrl = currentTenant?.accountsOrigin;
-    const accountsRealm = currentTenant.realm || 'dev';
+    const accountsRealm = currentTenant?.realm || 'dev';
     const iamClientSecret = globalThis.settings.iamClientSecret || env.get('iamClientSecret');
     const authSecret = globalThis.settings.authSecret || env.get('authSecret');
-    const siteUrl = currentTenant.prodDomain || currentTenant.devDomain;
+    const siteUrl = currentTenant?.prodDomain || currentTenant?.devDomain;
     const accountsClient = globalThis.settings.accounts?.client ?? 'site';
 
     const params = {
@@ -36,7 +42,7 @@ const getParams = (env, url) => {
         siteUrl
     };
 
-    let tenantSettings;
+    let tenantSettings
     if (globalThis.settings.isDeveloping) {
         tenantSettings = globalThis.settings.production?.site?.iamClientSecrets?.find(
             i => i.domain === tenant.prodDomain
@@ -92,7 +98,7 @@ export const {
     useSession,
     useSignIn,
     useSignOut,
-} = QwikAuth$(({
+} = QwikAuth$(async ({
     env,
     url,
 }) => {
@@ -103,7 +109,7 @@ export const {
         authSecret,
         iamClientSecret,
         siteUrl,
-    } = getParams(env, url);
+    } = await getParams(env, url);
 
     const idpSignoutUrl = `${accountsUrl}/realms/${accountsRealm}/protocol/openid-connect/logout?redirect_uri=${siteUrl}`;
 

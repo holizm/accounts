@@ -17,7 +17,6 @@ const getParams = (env, url) => {
     if (paramsCache[host]) {
         return paramsCache[host];
     }
-
     const tenant = getTenant(host);
     const accountsUrl = globalThis.settings.accounts?.url;
     const accountsRealm = globalThis.settings.accounts?.realm || 'dev';

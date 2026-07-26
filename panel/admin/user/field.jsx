@@ -17,13 +17,12 @@ export default ({
     }
     return <Browse
         choose={item => handleChoose(item)}
-
         filters={filters}
         headers={headers}
         placeholder={placeholder ?? 'accountsUser'}
         property={property ?? 'userUuid'}
         row={row}
-        show={item => item.userName || item.naturalPersonName}
+        display={item => item.userName || item.naturalPersonName}
         {...rest}
     />
 }

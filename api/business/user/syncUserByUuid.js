@@ -37,14 +37,15 @@ export const getOrCreateUser = async (uuid, defaultPersonType) => {
             }
         )
         if (!user) {
+            let contact
 
-            await createOnPost({
-                type: 'contacts',
-                part: 'naturalPerson'
-            })
-
-
-            return user;
+            // if (defaultPersonType == 'naturalPerson') {
+            //     contact = await createOnPost({
+            //         type: 'contacts',
+            //         part: 'naturalPerson'
+            //     })
+            // }
+            return user
         }
     })
 }

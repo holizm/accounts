@@ -14,18 +14,18 @@ import path from 'path'
 const paramsCache: Record<string, any> = {};
 
 const getParams = async (env, url) => {
-    const host = url.hostname;
+    const host = url.hostname
     if (paramsCache[host]) {
         return paramsCache[host];
     }
     const tenant = getTenant(host);
     const currentTenant = await getFromCacheOrApi('/tenant', { url: { hostname: host } })
-    const accountsUrl = currentTenant?.accountsOrigin;
-    const accountsRealm = currentTenant?.realm || 'dev';
-    const iamClientSecret = globalThis.settings.iamClientSecret || env.get('iamClientSecret');
-    const authSecret = globalThis.settings.authSecret || env.get('authSecret');
-    const siteUrl = currentTenant?.prodDomain || currentTenant?.devDomain;
-    const accountsClient = globalThis.settings.accounts?.client ?? 'site';
+    const accountsUrl = currentTenant?.accountsOrigin
+    const accountsRealm = currentTenant?.realm || 'dev'
+    const iamClientSecret = globalThis.settings.iamClientSecret || env.get('iamClientSecret')
+    const authSecret = globalThis.settings.authSecret || env.get('authSecret')
+    const siteUrl = currentTenant?.prodDomain || currentTenant?.devDomain
+    const accountsClient = globalThis.settings.accounts?.client ?? 'site'
 
     const params = {
         accountsClient,
@@ -52,13 +52,11 @@ const getParams = async (env, url) => {
             params.authSecret = privateSettings.authSecret
         }
     }
+
     if (tenantSettings) {
         params.iamClientSecret = tenantSettings.secret;
     }
-
     paramsCache[host] = params;
-    console.log(params, "sssss");
-
     return params;
 };
 
@@ -119,9 +117,7 @@ export const {
             },
             async signIn({ profile }) {
                 const userUuid = profile.sub;
-                await post('/accounts/user/syncByUuid', {
-                    userUuid: userUuid,
-                }, { url });
+                await post('/accounts/user/syncByUuid', { userUuid: userUuid, }, { url })
             },
         },
         callbacks: {

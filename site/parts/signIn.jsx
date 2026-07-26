@@ -4,7 +4,10 @@ import {
     Slot,
     useSignal,
 } from '@builder.io/qwik'
-import { Form } from '@builder.io/qwik-city'
+import {
+    useLocation,
+    Form
+} from '@builder.io/qwik-city'
 import { useSignIn } from 'accounts'
 
 export default component$(({
@@ -12,16 +15,15 @@ export default component$(({
     progress: ProgressComponent,
     returnTo,
 }) => {
-
+    const { url } = useLocation()
     const signIn = useSignIn()
     const progress = useSignal(false)
-
     const handleClick = $(() => {
         progress.value = true
         signIn.submit({
             providerId: 'keycloak',
             options: {
-                redirectTo: returnTo || '/dashboard'
+                redirectTo: returnTo || url?.pathname
             }
         })
     })

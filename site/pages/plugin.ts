@@ -57,6 +57,8 @@ const getParams = async (env, url) => {
     }
 
     paramsCache[host] = params;
+    console.log(params, "sssss");
+
     return params;
 };
 
@@ -117,7 +119,7 @@ export const {
             },
             async signIn({ profile }) {
                 const userUuid = profile.sub;
-                await post('/user/syncByUuid', {
+                await post('/accounts/user/syncByUuid', {
                     userUuid: userUuid,
                 }, { url });
             },

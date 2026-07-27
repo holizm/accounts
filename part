@@ -3,6 +3,8 @@ user
     username
     lastSyncDate
     person
+    contact
+    
 key
     user unique
     value

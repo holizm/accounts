@@ -6,11 +6,7 @@ import {
 
 export default async params => {
     const { userUuid } = params?.body
-
-    if (!user) {
-
-    }
-    return user
+    const user = await getOrCreateUser(userUuid)
 }
 
 const locks = new Map()
@@ -24,7 +20,7 @@ const getLock = key => {
     return mutex
 }
 
-export const getOrCreateUser = async (uuid, defaultPersonType) => {
+export const getOrCreateUser = async (uuid) => {
     const mutex = getLock(uuid)
     return mutex.runExclusive(async () => {
         let user = await getByFilter(
@@ -37,14 +33,22 @@ export const getOrCreateUser = async (uuid, defaultPersonType) => {
             }
         )
         if (!user) {
-            let contact
-
-            // if (defaultPersonType == 'naturalPerson') {
-            //     contact = await createOnPost({
-            //         type: 'contacts',
-            //         part: 'naturalPerson'
-            //     })
-            // }
+            let person = await createOnPost({
+                part: 'contacts',
+                type: 'person',
+            })
+            const { inherited, ...personData } = person;
+            const userModel = {
+                uuid: uuid,
+                userName: '',
+                contact: inherited,
+                person: personData
+            }
+            const user = await createOnPost({
+                part: 'accounts',
+                type: 'user',
+                ...userModel
+            })
             return user
         }
     })

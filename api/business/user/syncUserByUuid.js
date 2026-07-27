@@ -7,11 +7,8 @@ import {
 import { iamGet } from '../iam.js'
 
 export default async params => {
-    const {
-        uuid,
-        username,
-    } = params?.body
-    // const user = await iamGet(`users/${userUuid}`) todo
+    const { uuid } = params?.body
+    // const user = await iamGet(`users/${uuid}`) todo get
     const user = await getOrCreateAndGet(
         {
             part: 'accounts',
@@ -22,7 +19,6 @@ export default async params => {
         },
         {
             uuid: uuid,
-            username: username
         }
     )
     return user

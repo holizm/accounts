@@ -116,8 +116,15 @@ export const {
                 await fetch(idpSignoutUrl);
             },
             async signIn({ profile }) {
-                const userUuid = profile.sub;
-                await post('/accounts/user/syncByUuid', { userUuid: userUuid, }, { url })
+                const uuid = profile?.sub;
+                const username = profile?.preferred_username
+                await post('/accounts/user/syncByUuid',
+                    {
+                        username: username,
+                        uuid: uuid,
+                    },
+                    { url }
+                )
             },
         },
         callbacks: {

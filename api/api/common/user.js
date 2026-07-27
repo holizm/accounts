@@ -1,8 +1,8 @@
 import syncUserByUuid from '../../business/user/syncUserByUuid.js'
 
 const syncByUuidOnPost = async params => {
-    await syncUserByUuid(params)
-    return ""
+    const user = await syncUserByUuid(params)
+    return user
 }
 
 export default {

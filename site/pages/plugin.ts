@@ -56,7 +56,9 @@ const getParams = async (env, url) => {
     if (tenantSettings) {
         params.iamClientSecret = tenantSettings.secret;
     }
-    paramsCache[host] = params;
+    paramsCache[host] = params
+    console.log(currentTenant);
+
     return params;
 };
 

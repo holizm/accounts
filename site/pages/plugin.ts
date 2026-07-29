@@ -57,8 +57,6 @@ const getParams = async (env, url) => {
         params.iamClientSecret = tenantSettings.secret;
     }
     paramsCache[host] = params
-    console.log(currentTenant);
-
     return params;
 };
 
@@ -137,7 +135,7 @@ export const {
                     token.id_token = account.id_token;
                     token.expires_at = account.expires_at;
                     token.refresh_token = account.refresh_token;
-                    token.userUUID = profile.sub;
+                    token.userUuid = profile.sub;
                 } else {
                     if (nowTimeStamp > token.expires_at) {
                         const result = await refreshAccessToken(token, env, url);
@@ -156,7 +154,7 @@ export const {
                 if (!token.access_token) {
                     return null;
                 }
-                session.user.id = token.userUUID;
+                session.user.id = token.userUuid;
                 session.user.accessToken = token.access_token;
                 session.user.idToken = token.id_token;
                 return session;

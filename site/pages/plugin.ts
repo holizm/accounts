@@ -62,11 +62,15 @@ const getParams = async (env, url) => {
 
 const refreshAccessToken = async (token, env, url) => {
     const {
+        accountsClient,
         accountsRealm,
         accountsUrl,
+        authSecret,
         iamClientSecret,
-        accountsClient
-    } = getParams(env, url);
+        siteUrl,
+    } = await getParams(env, url);
+    console.log("bbbbbbbb");
+
     const tokenUrl = `${accountsUrl}/realms/${accountsRealm}/protocol/openid-connect/token`;
 
     const resp = await fetch(tokenUrl, {

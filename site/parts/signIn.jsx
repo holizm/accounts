@@ -26,6 +26,7 @@ export default component$(({
                 redirectTo: returnTo || url?.pathname
             }
         })
+        progress.value = false
     })
 
     return progress.value

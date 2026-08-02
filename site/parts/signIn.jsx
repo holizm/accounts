@@ -18,9 +18,9 @@ export default component$(({
     const { url } = useLocation()
     const signIn = useSignIn()
     const progress = useSignal(false)
-    const handleClick = $(() => {
+    const handleClick = $(async () => {
         progress.value = true
-        signIn.submit({
+        await signIn.submit({
             providerId: 'keycloak',
             options: {
                 redirectTo: returnTo || url?.pathname

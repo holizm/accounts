@@ -22,7 +22,8 @@ const getParams = async (env, url) => {
     const currentTenant = await getFromCacheOrApi('/tenant', { url: { hostname: host } })
     const accountsUrl = currentTenant?.accountsOrigin
     const accountsRealm = currentTenant?.realm || 'dev'
-    const iamClientSecret = globalThis.settings.iamClientSecret || env.get('iamClientSecret')
+    // const iamClientSecret = globalThis.settings.iamClientSecret || env.get('iamClientSecret')
+    const iamClientSecret = "BpfHQWcXpu5rIs0o005yyObwKP5ifRug"
     const authSecret = globalThis.settings.authSecret || env.get('authSecret')
     const siteUrl = currentTenant?.prodDomain || currentTenant?.devDomain
     const accountsClient = globalThis.settings.accounts?.client ?? 'site'
@@ -68,9 +69,7 @@ const refreshAccessToken = async (token, env, url) => {
         authSecret,
         iamClientSecret,
         siteUrl,
-    } = await getParams(env, url);
-    console.log("bbbbbbbb");
-
+    } = await getParams(env, url)
     const tokenUrl = `${accountsUrl}/realms/${accountsRealm}/protocol/openid-connect/token`;
 
     const resp = await fetch(tokenUrl, {
@@ -101,6 +100,8 @@ export const {
     env,
     url,
 }) => {
+    const params = await getParams(env, url);
+    console.log(params);
     const {
         accountsClient,
         accountsRealm,
@@ -108,7 +109,7 @@ export const {
         authSecret,
         iamClientSecret,
         siteUrl,
-    } = await getParams(env, url);
+    } = params
 
     const idpSignoutUrl = `${accountsUrl}/realms/${accountsRealm}/protocol/openid-connect/logout?redirect_uri=${siteUrl}`;
 

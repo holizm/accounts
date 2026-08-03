@@ -22,8 +22,7 @@ const getParams = async (env, url) => {
     const currentTenant = await getFromCacheOrApi('/tenant', { url: { hostname: host } })
     const accountsUrl = currentTenant?.accountsOrigin
     const accountsRealm = currentTenant?.realm || 'dev'
-    // const iamClientSecret = globalThis.settings.iamClientSecret || env.get('iamClientSecret')
-    const iamClientSecret = "BpfHQWcXpu5rIs0o005yyObwKP5ifRug"
+    const iamClientSecret = globalThis.settings.iamClientSecret || env.get('iamClientSecret')
     const authSecret = globalThis.settings.authSecret || env.get('authSecret')
     const siteUrl = currentTenant?.prodDomain || currentTenant?.devDomain
     const accountsClient = globalThis.settings.accounts?.client ?? 'site'

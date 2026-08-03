@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { QwikAuth$ } from '@auth/qwik';
+import { QwikAuth$ } from '@auth/qwik'
 import type { Provider } from '@auth/auth/providers'
 import Keycloak from '@auth/qwik/providers/keycloak'
 import {
@@ -7,18 +7,18 @@ import {
     getTenant,
     pascalize,
     post,
-} from 'core';
+} from 'core'
 import fs from 'fs'
 import path from 'path'
 
-const paramsCache: Record<string, any> = {};
+const paramsCache: Record<string, any> = {}
 
 const getParams = async (env, url) => {
     const host = url.hostname
     if (paramsCache[host]) {
-        return paramsCache[host];
+        return paramsCache[host]
     }
-    const tenant = getTenant(host);
+    const tenant = getTenant(host)
     const currentTenant = await getFromCacheOrApi('/tenant', { url: { hostname: host } })
     const accountsUrl = currentTenant?.accountsOrigin
     const accountsRealm = currentTenant?.realm || 'dev'
@@ -35,30 +35,30 @@ const getParams = async (env, url) => {
         host,
         iamClientSecret,
         siteUrl
-    };
+    }
 
     let tenantSettings
     if (globalThis.settings.isDeveloping) {
         tenantSettings = globalThis.settings.production?.site?.iamClientSecrets?.find(
             i => i.domain === tenant.prodDomain
-        );
+        )
     } else {
-        const filePath = path.resolve(process.cwd(), 'privateSettings.json');
-        const privateSettings = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+        const filePath = path.resolve(process.cwd(), 'privateSettings.json')
+        const privateSettings = JSON.parse(fs.readFileSync(filePath, 'utf-8'))
         tenantSettings = privateSettings?.iamClientSecrets?.find(
             i => i.domain === tenant.prodDomain
-        );
+        )
         if (privateSettings.authSecret) {
             params.authSecret = privateSettings.authSecret
         }
     }
 
     if (tenantSettings) {
-        params.iamClientSecret = tenantSettings.secret;
+        params.iamClientSecret = tenantSettings.secret
     }
     paramsCache[host] = params
-    return params;
-};
+    return params
+}
 
 const refreshAccessToken = async (token, env, url) => {
     const {
@@ -69,7 +69,7 @@ const refreshAccessToken = async (token, env, url) => {
         iamClientSecret,
         siteUrl,
     } = await getParams(env, url)
-    const tokenUrl = `${accountsUrl}/realms/${accountsRealm}/protocol/openid-connect/token`;
+    const tokenUrl = `${accountsUrl}/realms/${accountsRealm}/protocol/openid-connect/token`
 
     const resp = await fetch(tokenUrl, {
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -80,15 +80,15 @@ const refreshAccessToken = async (token, env, url) => {
             refresh_token: token.refresh_token,
         }),
         method: 'POST',
-    });
-    const refreshToken = await resp.json();
+    })
+    const refreshToken = await resp.json()
     return {
         access_token: refreshToken.access_token,
         id_token: refreshToken.id_token,
         expires_at: Math.floor(Date.now() / 1000) + refreshToken.expires_in,
         refresh_token: refreshToken.refresh_token,
-    };
-};
+    }
+}
 
 export const {
     onRequest,
@@ -99,8 +99,7 @@ export const {
     env,
     url,
 }) => {
-    const params = await getParams(env, url);
-    console.log(params);
+    const params = await getParams(env, url)
     const {
         accountsClient,
         accountsRealm,
@@ -110,17 +109,17 @@ export const {
         siteUrl,
     } = params
 
-    const idpSignoutUrl = `${accountsUrl}/realms/${accountsRealm}/protocol/openid-connect/logout?redirect_uri=${siteUrl}`;
+    const idpSignoutUrl = `${accountsUrl}/realms/${accountsRealm}/protocol/openid-connect/logout?redirect_uri=${siteUrl}`
 
     const config = {
         secret: authSecret,
         trustHost: true,
         events: {
             async signOut(message) {
-                await fetch(idpSignoutUrl);
+                await fetch(idpSignoutUrl)
             },
             async signIn({ profile }) {
-                const uuid = profile?.sub;
+                const uuid = profile?.sub
                 const username = profile?.preferred_username
                 await post('/accounts/user/syncByUuid',
                     {
@@ -133,35 +132,35 @@ export const {
         },
         callbacks: {
             async jwt({ token, account, profile }) {
-                const nowTimeStamp = Math.floor(Date.now() / 1000);
+                const nowTimeStamp = Math.floor(Date.now() / 1000)
                 if (account) {
-                    token.access_token = account.access_token;
-                    token.id_token = account.id_token;
-                    token.expires_at = account.expires_at;
-                    token.refresh_token = account.refresh_token;
-                    token.userUuid = profile.sub;
+                    token.access_token = account.access_token
+                    token.id_token = account.id_token
+                    token.expires_at = account.expires_at
+                    token.refresh_token = account.refresh_token
+                    token.userUuid = profile.sub
                 } else {
                     if (nowTimeStamp > token.expires_at) {
-                        const result = await refreshAccessToken(token, env, url);
+                        const result = await refreshAccessToken(token, env, url)
                         if (!result.access_token) {
-                            return null;
+                            return null
                         }
-                        token.access_token = result?.access_token;
-                        token.id_token = result?.id_token ?? token.id_token;
-                        token.expires_at = result?.expires_at;
-                        token.refresh_token = result?.refresh_token;
+                        token.access_token = result?.access_token
+                        token.id_token = result?.id_token ?? token.id_token
+                        token.expires_at = result?.expires_at
+                        token.refresh_token = result?.refresh_token
                     }
                 }
-                return token;
+                return token
             },
             async session({ session, token }) {
                 if (!token.access_token) {
-                    return null;
+                    return null
                 }
-                session.user.id = token.userUuid;
-                session.user.accessToken = token.access_token;
-                session.user.idToken = token.id_token;
-                return session;
+                session.user.id = token.userUuid
+                session.user.accessToken = token.access_token
+                session.user.idToken = token.id_token
+                return session
             },
         },
         providers: [
@@ -171,6 +170,6 @@ export const {
                 issuer: `${accountsUrl}/realms/${accountsRealm}` as string,
             }),
         ] as Provider[],
-    };
-    return config;
-});
+    }
+    return config
+})

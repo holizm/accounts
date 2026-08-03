@@ -4,7 +4,6 @@ import {
     getByFilter,
     getOrCreateAndGet
 } from 'core'
-import { iamGet } from '../iam.js'
 
 export default async params => {
     const { uuid } = params?.body

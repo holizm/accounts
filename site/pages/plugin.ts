@@ -90,12 +90,7 @@ const refreshAccessToken = async (token, env, url) => {
     }
 }
 
-export const {
-    onRequest,
-    useSession,
-    useSignIn,
-    useSignOut,
-} = QwikAuth$(async ({
+const auth = QwikAuth$(async ({
     env,
     url,
 }) => {
@@ -173,3 +168,8 @@ export const {
     }
     return config
 })
+
+export const onRequest = auth.onRequest
+export const useSession = auth.useSession
+export const useSignIn = auth.useSignIn
+export const useSignOut = auth.useSignOut

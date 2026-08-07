@@ -4,7 +4,6 @@ user
     lastSyncDate
     person
     contact
-    
 key
     user unique
     value

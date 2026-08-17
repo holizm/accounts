@@ -1,1 +1,19 @@
-{}
+{
+    "accountsAccounts": "계정",
+    "accountsAnonymous": "익명",
+    "accountsChangePassword": "비밀번호 변경",
+    "accountsFirstName": "이름",
+    "accountsLastName": "성",
+    "accountsOtp": "코드",
+    "accountsPassword": "비밀번호",
+    "accountsPasswordChanged": "비밀번호가 변경되었습니다.",
+    "accountsPasswordConfirmation": "비밀번호 확인",
+    "accountsPhone": "전화번호",
+    "accountsProfile": "프로필",
+    "accountsRoleName": "역할 이름",
+    "accountsSignIn": "로그인",
+    "accountsSignOut": "로그아웃",
+    "accountsUser": "사용자",
+    "accountsUserName": "사용자 이름",
+    "accountsUsers": "사용자"
+}

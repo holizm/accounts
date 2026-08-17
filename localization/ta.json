@@ -1,1 +1,19 @@
-{}
+{
+    "accountsAccounts": "கணக்குகள்",
+    "accountsAnonymous": "அநாமதேய",
+    "accountsChangePassword": "கடவுச்சொல்லை மாற்று",
+    "accountsFirstName": "முதல் பெயர்",
+    "accountsLastName": "கடைசி பெயர்",
+    "accountsOtp": "குறியீடு",
+    "accountsPassword": "கடவுச்சொல்",
+    "accountsPasswordChanged": "கடவுச்சொல் மாற்றப்பட்டது",
+    "accountsPasswordConfirmation": "கடவுச்சொல் உறுதிப்படுத்தல்",
+    "accountsPhone": "தொலைபேசி எண்",
+    "accountsProfile": "சுயவிவரம்",
+    "accountsRoleName": "பாத்திரத்தின் பெயர்",
+    "accountsSignIn": "உள்நுழைக",
+    "accountsSignOut": "வெளியேறு",
+    "accountsUser": "பயனர்",
+    "accountsUserName": "பயனர் பெயர்",
+    "accountsUsers": "பயனர்கள்"
+}

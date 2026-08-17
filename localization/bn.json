@@ -1,1 +1,19 @@
-{}
+{
+    "accountsAccounts": "অ্যাকাউন্টসমূহ",
+    "accountsAnonymous": "বেনামী",
+    "accountsChangePassword": "পাসওয়ার্ড পরিবর্তন করুন",
+    "accountsFirstName": "নামের প্রথম অংশ",
+    "accountsLastName": "নামের শেষাংশ",
+    "accountsOtp": "কোড",
+    "accountsPassword": "পাসওয়ার্ড",
+    "accountsPasswordChanged": "পাসওয়ার্ড পরিবর্তন করা হয়েছে",
+    "accountsPasswordConfirmation": "পাসওয়ার্ড নিশ্চিতকরণ",
+    "accountsPhone": "ফোন নম্বর",
+    "accountsProfile": "প্রোফাইল",
+    "accountsRoleName": "ভূমিকার নাম",
+    "accountsSignIn": "সাইন ইন করুন",
+    "accountsSignOut": "সাইন আউট",
+    "accountsUser": "ব্যবহারকারী",
+    "accountsUserName": "ব্যবহারকারীর নাম",
+    "accountsUsers": "ব্যবহারকারীরা"
+}

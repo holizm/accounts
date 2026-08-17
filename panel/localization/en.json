@@ -1,24 +1,12 @@
 {
-    "accountsAccounts": "Accounts",
     "accountsAddFromUsers": "Add From Users",
-    "accountsAnonymous": "Anonymous",
-    "accountsChangePassword": "Change password",
     "accountsConfigure": "Configure accounts",
     "accountsCreateUserForPerson": "Create user for person",
-    "accountsFirstName": "First name",
     "accountsForPerson": "For person",
-    "accountsLastName": "Last name",
     "accountsLastSyncDate": "Last sync date",
     "accountsManageRoles": "Manage roles",
-    "accountsPassword": "Password",
-    "accountsPasswordChanged": "Password changed",
-    "accountsPasswordConfirmation": "Password confirmation",
-    "accountsRoleName": "Role name",
     "accountsSync": "Sync",
-    "accountsUser": "User",
-    "accountsUserName": "Username",
     "accountsUserNameAToZ": "Username A-Z",
     "accountsUserNameZToA": "Username Z-A",
-    "accountsUsers": "Users",
-    "accountsUsersAreSynced": "Users are synched"
+    "accountsUsersAreSynced": "Users are synced"
 }

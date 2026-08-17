@@ -1,1 +1,19 @@
-{}
+{
+    "accountsAccounts": "Hesaplar",
+    "accountsAnonymous": "Anonim",
+    "accountsChangePassword": "Şifre değiştir",
+    "accountsFirstName": "Ad",
+    "accountsLastName": "Soyad",
+    "accountsOtp": "Kod",
+    "accountsPassword": "Şifre",
+    "accountsPasswordChanged": "Şifre değiştirildi",
+    "accountsPasswordConfirmation": "Şifre onayı",
+    "accountsPhone": "Telefon numarası",
+    "accountsProfile": "Profil",
+    "accountsRoleName": "Rol ismi",
+    "accountsSignIn": "Oturum aç",
+    "accountsSignOut": "Oturumu kapat",
+    "accountsUser": "Kullanıcı",
+    "accountsUserName": "Kullanıcı adı",
+    "accountsUsers": "Kullanıcılar"
+}

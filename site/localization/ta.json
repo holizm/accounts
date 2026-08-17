@@ -6,17 +6,12 @@
     "accountsEmptyPhone": "ஃபோன் எண் காலியாக இருக்கக்கூடாது",
     "accountsInvalidOtp": "குறியீடு செல்லுபடியாகாது",
     "accountsInvalidPhone": "தொலைபேசி எண் தவறானது",
-    "accountsOtp": "குறியீடு",
     "accountsOtpLabel": "நீங்கள் பெற்ற குறியீட்டை உள்ளிடவும்",
     "accountsOtpSent": "இந்த எண்ணுக்கு குறியீடு அனுப்பப்பட்டுள்ளது",
-    "accountsPhone": "தொலைபேசி எண்",
     "accountsPhoneLabel": "உங்கள் தொலைபேசி எண்ணை உள்ளிடவும்",
-    "accountsProfile": "சுயவிவரம்",
     "accountsRegisterOrSignIn": "பதிவு செய்யவும் அல்லது உள்நுழையவும்",
     "accountsResend": "மீண்டும் அனுப்பு",
     "accountsSendOtp": "குறியீட்டை அனுப்பவும்",
     "accountsSendingOtp": "அனுப்புகிறது",
-    "accountsSignIn": "உள்நுழைக",
-    "accountsSignOut": "வெளியேறு",
-    "accountsSigningIn": "இப்போது நுழைகிறது"
+    "accountsSigningIn": "உள்நுழைகிறது"
 }

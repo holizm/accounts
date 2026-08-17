@@ -1,1 +1,19 @@
-{}
+{
+    "accountsAccounts": "حساب‌ها",
+    "accountsAnonymous": "ناشناس",
+    "accountsChangePassword": "تغییر رمز عبور",
+    "accountsFirstName": "نام",
+    "accountsLastName": "نام خانوادگی",
+    "accountsOtp": "کد",
+    "accountsPassword": "رمز عبور",
+    "accountsPasswordChanged": "رمز عبور تغییر کرد",
+    "accountsPasswordConfirmation": "تایید رمز عبور",
+    "accountsPhone": "شماره تلفن",
+    "accountsProfile": "پروفایل",
+    "accountsRoleName": "نام نقش",
+    "accountsSignIn": "ورود",
+    "accountsSignOut": "خروج",
+    "accountsUser": "کاربر",
+    "accountsUserName": "نام کاربری",
+    "accountsUsers": "کاربران"
+}

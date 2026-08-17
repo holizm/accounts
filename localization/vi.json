@@ -1,1 +1,19 @@
-{}
+{
+    "accountsAccounts": "Tài khoản",
+    "accountsAnonymous": "Vô danh",
+    "accountsChangePassword": "Đổi mật khẩu",
+    "accountsFirstName": "Tên",
+    "accountsLastName": "Họ",
+    "accountsOtp": "Mã",
+    "accountsPassword": "Mật khẩu",
+    "accountsPasswordChanged": "Mật khẩu đã được thay đổi",
+    "accountsPasswordConfirmation": "Xác nhận mật khẩu",
+    "accountsPhone": "Số điện thoại",
+    "accountsProfile": "Hồ sơ",
+    "accountsRoleName": "Tên vai trò",
+    "accountsSignIn": "Đăng nhập",
+    "accountsSignOut": "Đăng xuất",
+    "accountsUser": "Người dùng",
+    "accountsUserName": "Tên tài khoản",
+    "accountsUsers": "Người dùng"
+}

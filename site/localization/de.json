@@ -6,17 +6,12 @@
     "accountsEmptyPhone": "Die Telefonnummer darf nicht leer sein",
     "accountsInvalidOtp": "Code ist ungültig",
     "accountsInvalidPhone": "Die Telefonnummer ist ungültig",
-    "accountsOtp": "Code",
     "accountsOtpLabel": "Bitte geben Sie den Code ein, den Sie erhalten haben",
-    "accountsOtpSent": "Für diese Nummer wird ein Code gesendet",
-    "accountsPhone": "Telefonnummer",
+    "accountsOtpSent": "Der Code wurde an diese Nummer gesendet",
     "accountsPhoneLabel": "Bitte geben sie ihre Telefonnummer ein",
-    "accountsProfile": "Profil",
     "accountsRegisterOrSignIn": "Registrieren oder Anmelden",
     "accountsResend": "Erneut senden",
     "accountsSendOtp": "Code senden",
-    "accountsSendingOtp": "Senden",
-    "accountsSignIn": "anmelden",
-    "accountsSignOut": "Abmelden",
-    "accountsSigningIn": "Jetzt betreten"
+    "accountsSendingOtp": "Wird gesendet",
+    "accountsSigningIn": "Anmeldung läuft"
 }

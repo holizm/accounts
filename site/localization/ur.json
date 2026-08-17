@@ -6,17 +6,12 @@
     "accountsEmptyPhone": "فون نمبر خالی نہیں ہو سکتا",
     "accountsInvalidOtp": "کوڈ درست نہیں ہے۔",
     "accountsInvalidPhone": "فون نمبر درست نہیں ہے۔",
-    "accountsOtp": "کوڈ",
     "accountsOtpLabel": "براہ کرم آپ کو موصول ہونے والا کوڈ درج کریں۔",
     "accountsOtpSent": "اس نمبر کے لیے کوڈ بھیجا گیا ہے۔",
-    "accountsPhone": "فون نمبر",
     "accountsPhoneLabel": "براہ کرم اپنا فون نمبر درج کریں۔",
-    "accountsProfile": "پروفائل",
     "accountsRegisterOrSignIn": "رجسٹر یا سائن ان کریں۔",
     "accountsResend": "دوبارہ بھیجیں۔",
     "accountsSendOtp": "کوڈ بھیجیں۔",
     "accountsSendingOtp": "بھیج رہا ہے۔",
-    "accountsSignIn": "سائن ان",
-    "accountsSignOut": "سائن آؤٹ",
-    "accountsSigningIn": "ابھی داخل ہو رہا ہے۔"
+    "accountsSigningIn": "سائن ان ہو رہا ہے"
 }

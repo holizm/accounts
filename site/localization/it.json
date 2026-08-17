@@ -6,17 +6,12 @@
     "accountsEmptyPhone": "Il numero di telefono non può essere vuoto",
     "accountsInvalidOtp": "Il codice non è valido",
     "accountsInvalidPhone": "Il numero di telefono non è valido",
-    "accountsOtp": "Codice",
     "accountsOtpLabel": "Inserisci il codice che hai ricevuto",
-    "accountsOtpSent": "Il codice viene inviato per questo numero",
-    "accountsPhone": "Numero di telefono",
+    "accountsOtpSent": "Il codice è stato inviato a questo numero",
     "accountsPhoneLabel": "Per favore immetti il tuo numero di telefono",
-    "accountsProfile": "Profilo",
     "accountsRegisterOrSignIn": "Registrati o accedi",
     "accountsResend": "Invia nuovamente",
-    "accountsSendOtp": "Manda il codice",
+    "accountsSendOtp": "Invia codice",
     "accountsSendingOtp": "Invio",
-    "accountsSignIn": "Registrazione",
-    "accountsSignOut": "disconnessione",
-    "accountsSigningIn": "Entrando adesso"
+    "accountsSigningIn": "Accesso in corso"
 }

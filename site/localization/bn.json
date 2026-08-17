@@ -6,17 +6,12 @@
     "accountsEmptyPhone": "ফোন নম্বর খালি করা যাবে না",
     "accountsInvalidOtp": "কোড বৈধ নয়",
     "accountsInvalidPhone": "ফোন নম্বর বৈধ নয়",
-    "accountsOtp": "কোড",
     "accountsOtpLabel": "আপনি প্রাপ্ত কোড লিখুন দয়া করে",
     "accountsOtpSent": "এই নম্বরের জন্য কোড পাঠানো হয়",
-    "accountsPhone": "ফোন নম্বর",
     "accountsPhoneLabel": "অনুগ্রহ করে আপনার ফোন নাম্বারটি প্রদান করুন",
-    "accountsProfile": "প্রোফাইল",
     "accountsRegisterOrSignIn": "নিবন্ধন করুন বা সাইন ইন করুন",
     "accountsResend": "আবার পাঠান",
-    "accountsSendOtp": "সংকেত পাঠাও",
+    "accountsSendOtp": "কোড পাঠান",
     "accountsSendingOtp": "পাঠানো হচ্ছে",
-    "accountsSignIn": "সাইন ইন করুন",
-    "accountsSignOut": "সাইন আউট",
-    "accountsSigningIn": "এখন প্রবেশ করছে"
+    "accountsSigningIn": "সাইন ইন করা হচ্ছে"
 }

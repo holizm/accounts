@@ -1,1 +1,19 @@
-{}
+{
+    "accountsAccounts": "खाते",
+    "accountsAnonymous": "गुमनाम",
+    "accountsChangePassword": "पासवर्ड बदलें",
+    "accountsFirstName": "पहला नाम",
+    "accountsLastName": "उपनाम",
+    "accountsOtp": "कोड",
+    "accountsPassword": "पासवर्ड",
+    "accountsPasswordChanged": "पासवर्ड बदला गया",
+    "accountsPasswordConfirmation": "पासवर्ड पुष्टि",
+    "accountsPhone": "फ़ोन नंबर",
+    "accountsProfile": "प्रोफ़ाइल",
+    "accountsRoleName": "भूमिका का नाम",
+    "accountsSignIn": "साइन इन करें",
+    "accountsSignOut": "साइन आउट",
+    "accountsUser": "उपयोगकर्ता",
+    "accountsUserName": "उपयोगकर्ता नाम",
+    "accountsUsers": "उपयोगकर्ता"
+}

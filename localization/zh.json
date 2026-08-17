@@ -1,1 +1,19 @@
-{}
+{
+    "accountsAccounts": "账户",
+    "accountsAnonymous": "匿名",
+    "accountsChangePassword": "更改密码",
+    "accountsFirstName": "名",
+    "accountsLastName": "姓",
+    "accountsOtp": "代码",
+    "accountsPassword": "密码",
+    "accountsPasswordChanged": "密码已更改",
+    "accountsPasswordConfirmation": "确认密码",
+    "accountsPhone": "电话号码",
+    "accountsProfile": "个人资料",
+    "accountsRoleName": "角色名称",
+    "accountsSignIn": "登录",
+    "accountsSignOut": "退出登录",
+    "accountsUser": "用户",
+    "accountsUserName": "用户名",
+    "accountsUsers": "用户"
+}

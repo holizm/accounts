@@ -1,1 +1,19 @@
-{}
+{
+    "accountsAccounts": "Konten",
+    "accountsAnonymous": "Anonym",
+    "accountsChangePassword": "Kennwort ändern",
+    "accountsFirstName": "Vorname",
+    "accountsLastName": "Nachname",
+    "accountsOtp": "Code",
+    "accountsPassword": "Passwort",
+    "accountsPasswordChanged": "Passwort geändert",
+    "accountsPasswordConfirmation": "Passwortbestätigung",
+    "accountsPhone": "Telefonnummer",
+    "accountsProfile": "Profil",
+    "accountsRoleName": "Rollenname",
+    "accountsSignIn": "Anmelden",
+    "accountsSignOut": "Abmelden",
+    "accountsUser": "Benutzer",
+    "accountsUserName": "Nutzername",
+    "accountsUsers": "Benutzer"
+}

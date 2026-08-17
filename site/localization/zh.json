@@ -1,22 +1,17 @@
 {
-    "accountsChangePhone": "改变",
+    "accountsChangePhone": "更改",
     "accountsDashboardWelcomeMessage": "欢迎！",
     "accountsEditProfile": "编辑您的个人资料",
     "accountsEmptyOtp": "代码不能为空",
     "accountsEmptyPhone": "电话号码不能为空",
     "accountsInvalidOtp": "代码无效",
     "accountsInvalidPhone": "电话号码无效",
-    "accountsOtp": "代码",
     "accountsOtpLabel": "请输入您收到的代码",
     "accountsOtpSent": "已为此号码发送代码",
-    "accountsPhone": "电话号码",
     "accountsPhoneLabel": "请输入您的电话号码",
-    "accountsProfile": "轮廓",
     "accountsRegisterOrSignIn": "注册或登录",
     "accountsResend": "重发",
     "accountsSendOtp": "发送代码",
     "accountsSendingOtp": "发送",
-    "accountsSignIn": "登入",
-    "accountsSignOut": "登出",
-    "accountsSigningIn": "现在进入"
+    "accountsSigningIn": "正在登录"
 }

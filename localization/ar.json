@@ -1,1 +1,19 @@
-{}
+{
+    "accountsAccounts": "الحسابات",
+    "accountsAnonymous": "مجهول",
+    "accountsChangePassword": "تغيير كلمة المرور",
+    "accountsFirstName": "الاسم الأول",
+    "accountsLastName": "اسم العائلة",
+    "accountsOtp": "رمز التحقق",
+    "accountsPassword": "كلمة المرور",
+    "accountsPasswordChanged": "تم تغيير كلمة المرور",
+    "accountsPasswordConfirmation": "تأكيد كلمة المرور",
+    "accountsPhone": "رقم الهاتف",
+    "accountsProfile": "الملف الشخصي",
+    "accountsRoleName": "اسم الدور",
+    "accountsSignIn": "تسجيل الدخول",
+    "accountsSignOut": "تسجيل الخروج",
+    "accountsUser": "مستخدم",
+    "accountsUserName": "اسم المستخدم",
+    "accountsUsers": "المستخدمون"
+}

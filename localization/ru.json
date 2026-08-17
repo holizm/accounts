@@ -1,1 +1,19 @@
-{}
+{
+    "accountsAccounts": "Учетные записи",
+    "accountsAnonymous": "Анонимный",
+    "accountsChangePassword": "Изменить пароль",
+    "accountsFirstName": "Имя",
+    "accountsLastName": "Фамилия",
+    "accountsOtp": "Код",
+    "accountsPassword": "Пароль",
+    "accountsPasswordChanged": "Пароль изменен",
+    "accountsPasswordConfirmation": "Подтверждение пароля",
+    "accountsPhone": "Номер телефона",
+    "accountsProfile": "Профиль",
+    "accountsRoleName": "Имя роли",
+    "accountsSignIn": "Войти",
+    "accountsSignOut": "Выйти",
+    "accountsUser": "Пользователь",
+    "accountsUserName": "Имя пользователя",
+    "accountsUsers": "Пользователи"
+}

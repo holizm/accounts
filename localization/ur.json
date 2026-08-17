@@ -1,1 +1,19 @@
-{}
+{
+    "accountsAccounts": "اکاؤنٹس",
+    "accountsAnonymous": "گمنام",
+    "accountsChangePassword": "پاس ورڈ تبدیل کریں",
+    "accountsFirstName": "پہلا نام",
+    "accountsLastName": "آخری نام",
+    "accountsOtp": "کوڈ",
+    "accountsPassword": "پاس ورڈ",
+    "accountsPasswordChanged": "پاس ورڈ بدل گیا۔",
+    "accountsPasswordConfirmation": "پاسورڈ کی تو ثیق",
+    "accountsPhone": "فون نمبر",
+    "accountsProfile": "پروفائل",
+    "accountsRoleName": "کردار کا نام",
+    "accountsSignIn": "سائن ان",
+    "accountsSignOut": "سائن آؤٹ",
+    "accountsUser": "صارف",
+    "accountsUserName": "صارف کا نام",
+    "accountsUsers": "صارفین"
+}

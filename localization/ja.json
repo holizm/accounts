@@ -1,1 +1,19 @@
-{}
+{
+    "accountsAccounts": "アカウント",
+    "accountsAnonymous": "匿名",
+    "accountsChangePassword": "パスワードを変更する",
+    "accountsFirstName": "ファーストネーム",
+    "accountsLastName": "苗字",
+    "accountsOtp": "コード",
+    "accountsPassword": "パスワード",
+    "accountsPasswordChanged": "パスワード変更済み",
+    "accountsPasswordConfirmation": "パスワードの確認",
+    "accountsPhone": "電話番号",
+    "accountsProfile": "プロフィール",
+    "accountsRoleName": "役割名",
+    "accountsSignIn": "サインイン",
+    "accountsSignOut": "サインアウト",
+    "accountsUser": "ユーザー",
+    "accountsUserName": "ユーザー名",
+    "accountsUsers": "ユーザー"
+}

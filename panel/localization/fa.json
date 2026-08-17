@@ -1,24 +1,12 @@
 {
-    "accountsAccounts": "حساب ها",
     "accountsAddFromUsers": "افزودن از کاربران",
-    "accountsAnonymous": "ناشناس",
-    "accountsChangePassword": "تغییر رمز عبور",
-    "accountsConfigure": "پیکربندی حساب ها",
+    "accountsConfigure": "پیکربندی حساب‌ها",
     "accountsCreateUserForPerson": "ایجاد کاربر برای شخص",
-    "accountsFirstName": "نام",
     "accountsForPerson": "برای شخص",
-    "accountsLastName": "نام خانوادگی",
     "accountsLastSyncDate": "آخرین تاریخ هماهنگ سازی",
-    "accountsManageRoles": "مدیریت نقش ها",
-    "accountsPassword": "رمز عبور",
-    "accountsPasswordChanged": "رمز عبور تغییر کرد",
-    "accountsPasswordConfirmation": "تایید رمز عبور",
-    "accountsRoleName": "نام نقش",
-    "accountsSync": "هماهنگ سازی",
-    "accountsUser": "کاربر",
-    "accountsUserName": "نام کاربری",
+    "accountsManageRoles": "مدیریت نقش‌ها",
+    "accountsSync": "همگام‌سازی",
     "accountsUserNameAToZ": "نام کاربری الف-ی",
     "accountsUserNameZToA": "نام کاربری ی-الف",
-    "accountsUsers": "کاربران",
-    "accountsUsersAreSynced": "هماهنگ سازی کابران انجام شد"
+    "accountsUsersAreSynced": "کاربران همگام‌سازی شدند"
 }

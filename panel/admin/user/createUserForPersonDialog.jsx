@@ -8,10 +8,10 @@ export default () => {
 
     const inputs = <>
         <ContactsPersonField
-            property='personUuid'
+            property='person'
         />
         <Text
-            property='userName'
+            property='username'
             placeholder='accountsUserName'
         />
     </>
@@ -19,6 +19,6 @@ export default () => {
     return <DialogForm
         title='accountsCreateUserForPerson'
         inputs={inputs}
-        submitTo='/adminUser/createForPerson'
+        submitTo='/accounts/user/createForPerson'
     />
 }

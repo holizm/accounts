@@ -22,7 +22,7 @@ export default ({
         placeholder={placeholder ?? 'accountsUser'}
         property={property ?? 'userUuid'}
         row={row}
-        display={item => item.userName || item.naturalPersonName}
+        display={item => item.username || item.naturalPersonName}
         {...rest}
     />
 }

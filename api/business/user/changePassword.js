@@ -10,5 +10,5 @@ export const changePassword = async params => {
         type: 'password',
         value: password,
     }
-    iamPut(`users/${user}/reset-password`, parameters, params)
+    await iamPut(`users/${user}/reset-password`, parameters, params)
 }

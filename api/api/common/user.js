@@ -5,6 +5,9 @@ const syncByUuidOnPost = async params => {
     return user
 }
 
+const syncOnPost = async params => await syncUserByUuid(params)
+
 export default {
     syncByUuidOnPost,
+    syncOnPost,
 }

@@ -1,26 +1,43 @@
 
 import {
+    clientError,
     createOnPost,
-    getByFilter,
-    getOrCreateAndGet
+    dbItem,
+    dbUpdateItem,
+    providers,
 } from 'core'
 
 export default async params => {
-    const { uuid } = params?.body
-    // const user = await iamGet(`users/${uuid}`) todo get
-    const user = await getOrCreateAndGet(
-        {
+    const identity = params.identity || providers.identity
+    const uuid = params?.body?.uuid || identity?.uuid
+    if (!uuid) {
+        clientError('userIdentityFetchFailed')
+    }
+    let user = await dbItem({
+        part: 'accounts',
+        query: { uuid },
+        type: 'user',
+    })
+    if (!user) {
+        user = await createOnPost({
+            ...identity,
+            ...params,
+            defaultPersonType: params.defaultPersonType || params.query?.defaultPersonType,
+            lastSyncDate: new Date(),
             part: 'accounts',
             type: 'user',
-            query: {
-                uuid: uuid
-            }
-        },
-        {
-            uuid: uuid,
-        }
-    )
+            username: identity?.userName,
+            uuid,
+        })
+    }
+    else {
+        user.lastSyncDate = new Date()
+        user.username = identity?.userName || user.username
+        user = await dbUpdateItem({
+            item: user,
+            part: 'accounts',
+            type: 'user',
+        })
+    }
     return user
-
 }
-

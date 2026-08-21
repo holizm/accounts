@@ -33,7 +33,7 @@ export default personType => {
 
     return <>
         <Text
-            property='userName'
+            property='username'
             placeholder='accountsUserName'
             required
             dir='ltr'

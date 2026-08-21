@@ -5,7 +5,7 @@ export default ({ item }) => {
             className='w-10 h-10 rounded-full object-cover'
         />
         <span className='flex gap-2 items-center'>
-            <span className='font-bold text-slate-800'>{item.naturalPersonName || item.juridicalPersonName || item.userName}</span>
+            <span className='font-bold text-slate-800'>{item.naturalPersonName || item.juridicalPersonName || item.username}</span>
         </span>
     </div>
 }

@@ -55,7 +55,7 @@ const buildClientConfig = (name, baseDomain) => {
         publicClient: isPanel,
         serviceAccountsEnabled: name === 'adminApi',
         standardFlowEnabled: !isApi,
-        directAccessGrantsEnabled: isApi,
+        directAccessGrantsEnabled: isApi || isSite,
         redirectUris: getRedirectUrls({
             baseDomain,
             baseName,

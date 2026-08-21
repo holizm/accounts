@@ -1,19 +1,14 @@
 import { createOnPost } from 'core'
-import { createPerson } from 'contacts'
 import { getUserByUsername } from './getByUsername.js'
 
 export const getUserByPhone = async phone => {
     let user = await getUserByUsername(phone)
     if (!user) {
-        const person = await createPerson({
-            meaning: phone
-        })
         await createOnPost({
+            lastSyncDate: new Date(),
             part: 'accounts',
             type: 'user',
             username: phone,
-            lastSyncUtcDate: new Date(),
-            person: person.id,
         })
     }
     user = await getUserByUsername(phone)

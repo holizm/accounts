@@ -6,6 +6,7 @@ import {
     httpGet,
     httpPost,
     httpPut,
+    providers,
     settings,
     warning,
 } from 'core'
@@ -16,7 +17,7 @@ const tokenCache = {}
 const realmValidationCache = {}
 
 const getRealm = params => {
-    const tenant = getTenant(params.host)
+    const tenant = getTenant(params.host || providers.host)
     const tenantSettings = settings.
         production?.
         adminApi?.

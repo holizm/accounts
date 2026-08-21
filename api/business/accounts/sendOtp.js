@@ -61,7 +61,7 @@ const createTotp = userKey => {
     return TotpGenerator.generate(userKey)
 }
 
-const makePasswordFromOtp = otp => {
+export const makePasswordFromOtp = otp => {
     const hash = crypto.createHash('sha256').update(otp, 'utf8').digest('hex')
     const alphanumericHash = hash.replace(/[^a-zA-Z0-9]/g, '')
     return alphanumericHash

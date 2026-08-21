@@ -13,6 +13,6 @@ export default item => <>
         />
     </td>
     <DateTime
-        date={item.lastSyncUtcDate}
+        date={item.lastSyncDate}
     />
 </>

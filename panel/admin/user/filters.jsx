@@ -2,7 +2,7 @@ import { Text } from 'list'
 
 export default <>
     <Text
-        property='userName'
+        property='username'
         placeholder='accountsUserName'
     />
 </>

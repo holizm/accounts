@@ -1,0 +1,10 @@
+session
+    user
+    issuedDate
+    expiresDate
+    revoked yesNo optional
+userIdentity
+    user
+    provider
+    providerUserUuid
+    unique provider providerUserUuid

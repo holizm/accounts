@@ -4,7 +4,7 @@ import {
 } from '@builder.io/qwik'
 import { SignOut } from 'accounts'
 
-export default component$(({ signOutText }) => <main class='dashboardLayout'>
+export default component$(({ signOutText }) => <main class='dashboard'>
     <aside class='sidebar'>
         <SignOut>
             <button

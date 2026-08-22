@@ -24,7 +24,7 @@ export default props => {
         visiblePhone,
     } = props
 
-    return <section class='signInLayout'>
+    return <section class='signIn'>
         <h1 class='title'>{translations.registerOrSignIn}</h1>
         {
             visibleOtp &&

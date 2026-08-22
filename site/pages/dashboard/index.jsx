@@ -3,6 +3,7 @@ import {
     useVisibleTask$,
 } from '@builder.io/qwik'
 import {
+    DashboardWelcome,
     loadDashboard,
     syncUser,
     useSession,
@@ -20,7 +21,5 @@ export default component$(() => {
         }
     })
 
-    return <div class={'flex flex-col sm:flex-row max-w-6xl mx-auto bg-gray-100 rounded-md my-10 justify-center item-center text-center'}>
-        <span>{translations.dashboardWelcomeMessage}</span>
-    </div>
+    return <DashboardWelcome message={translations.dashboardWelcomeMessage} />
 })

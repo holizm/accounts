@@ -1,20 +1,10 @@
 import { List } from 'list'
-import Form from './form'
-
-const headers = <>
-    <th>role Name</th>
-</>
-
-const row = item => {
-    return <>
-        <td>
-            {item.name}
-        </td>
-    </>
-}
+import form from './form'
+import headers from './headers'
+import row from './row'
 
 export default <List
+    create={form}
     headers={headers}
     row={row}
-    create={Form}
 />

@@ -1,6 +1,6 @@
 import {
-    component$,
     Slot,
+    component$,
 } from '@builder.io/qwik'
 import {
     checkLogin,

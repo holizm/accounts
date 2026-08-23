@@ -6,13 +6,13 @@ export default ({
 }) => <div class='field'>
     <label
         class='label'
-        for={inputProps.id}
+        for={inputProps?.id}
     >
         {label}
     </label>
     <input
         {...inputProps}
-        aria-describedby={error ? `${inputProps.id}Error` : undefined}
+        aria-describedby={error ? `${inputProps?.id}Error` : undefined}
         aria-invalid={error ? 'true' : 'false'}
         class='control'
         placeholder={placeholder}
@@ -20,7 +20,7 @@ export default ({
     {
         error && <span
             class='validationMessage'
-            id={`${inputProps.id}Error`}
+            id={`${inputProps?.id}Error`}
             role='alert'
         >
             {error}

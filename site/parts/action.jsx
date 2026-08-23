@@ -1,15 +1,17 @@
 export default ({
     disabled,
+    hasClickHandler,
     href,
+    link,
     progress,
     text,
     ...rest
-}) => href
+}) => (href || link) && !hasClickHandler
     ?
     <a
         aria-label={text}
         class='action'
-        href={href}
+        href={href || link}
         {...rest}
     >
         {text}

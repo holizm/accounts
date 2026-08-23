@@ -1,7 +1,7 @@
 export default ({
     label,
     value,
-}) => <div class='userDetail'>
+}) => <div class='detail'>
     <dt class='label'>{label}</dt>
     <dd class='value'>{value}</dd>
 </div>

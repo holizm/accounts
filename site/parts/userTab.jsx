@@ -8,7 +8,7 @@ export default component$(() => {
 
     const session = useSession()
 
-    return <dl class='userDetails'>
+    return <dl class='details'>
         <UserDetail
             label='Email'
             value={session?.value?.user?.email}

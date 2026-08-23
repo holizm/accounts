@@ -1,3 +1,3 @@
-export default ({ message }) => <p class='dashboardWelcome'>
+export default ({ message }) => <p class='welcome'>
     {message}
 </p>

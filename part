@@ -7,3 +7,9 @@ user
 key
     user unique
     value
+permission
+    condition uniquePerTenant
+userPermission
+    user
+    permission
+    unique user permission

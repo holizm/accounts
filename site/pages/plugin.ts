@@ -5,11 +5,10 @@ import Keycloak from '@auth/qwik/providers/keycloak'
 import {
     getFromCacheOrApi,
     getTenant,
+    loadPrivateSettings,
     pascalize,
     post,
 } from 'core'
-import fs from 'fs'
-import path from 'path'
 
 const paramsCache: Record<string, any> = {}
 
@@ -43,8 +42,7 @@ const getParams = async (env, url) => {
             i => i.domain === tenant.prodDomain
         )
     } else {
-        const filePath = path.resolve(process.cwd(), 'privateSettings.json')
-        const privateSettings = JSON.parse(fs.readFileSync(filePath, 'utf-8'))
+        const privateSettings = await loadPrivateSettings()
         tenantSettings = privateSettings?.iamClientSecrets?.find(
             i => i.domain === tenant.prodDomain
         )

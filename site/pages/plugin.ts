@@ -5,7 +5,6 @@ import Keycloak from '@auth/qwik/providers/keycloak'
 import {
     getFromCacheOrApi,
     getTenant,
-    loadPrivateSettings,
     pascalize,
     post,
 } from 'core'
@@ -42,6 +41,7 @@ const getParams = async (env, url) => {
             i => i.domain === tenant.prodDomain
         )
     } else {
+        const { loadPrivateSettings } = await import('core')
         const privateSettings = await loadPrivateSettings()
         tenantSettings = privateSettings?.iamClientSecrets?.find(
             i => i.domain === tenant.prodDomain

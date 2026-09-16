@@ -16,19 +16,18 @@
         "signOut": "Esci",
         "user": "Utente",
         "userName": "Nome utente",
-        "users": "Utenti"
+        "users": "Utenti",
+        "forPerson": "Per persona",
+        "lastSyncDate": "Data dell'ultima sincronizzazione",
+        "userNameAToZ": "Nome utente dalla A alla Z",
+        "userNameZToA": "Nome utente Z-A"
     },
-    "api": {},
     "panel": {
         "addFromUsers": "Aggiungi dagli utenti",
         "configure": "Configura gli account",
         "createUserForPerson": "Crea utente per persona",
-        "forPerson": "Per persona",
-        "lastSyncDate": "Data dell'ultima sincronizzazione",
         "manageRoles": "Gestire i ruoli",
         "sync": "Sincronizzazione",
-        "userNameAToZ": "Nome utente dalla A alla Z",
-        "userNameZToA": "Nome utente Z-A",
         "usersAreSynced": "Gli utenti sono sincronizzati"
     },
     "site": {

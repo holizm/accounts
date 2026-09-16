@@ -16,19 +16,18 @@
         "signOut": "সাইন আউট",
         "user": "ব্যবহারকারী",
         "userName": "ব্যবহারকারীর নাম",
-        "users": "ব্যবহারকারীরা"
+        "users": "ব্যবহারকারীরা",
+        "forPerson": "ব্যক্তির জন্য",
+        "lastSyncDate": "শেষ সিঙ্ক তারিখ",
+        "userNameAToZ": "ব্যবহারকারীর নাম A-Z",
+        "userNameZToA": "ব্যবহারকারীর নাম Z-A"
     },
-    "api": {},
     "panel": {
         "addFromUsers": "ব্যবহারকারীদের থেকে যোগ করুন",
         "configure": "অ্যাকাউন্ট কনফিগার করুন",
         "createUserForPerson": "ব্যক্তির জন্য ব্যবহারকারী তৈরি করুন",
-        "forPerson": "ব্যক্তির জন্য",
-        "lastSyncDate": "শেষ সিঙ্ক তারিখ",
         "manageRoles": "ভূমিকা পরিচালনা করুন",
         "sync": "সিঙ্ক করুন",
-        "userNameAToZ": "ব্যবহারকারীর নাম A-Z",
-        "userNameZToA": "ব্যবহারকারীর নাম Z-A",
         "usersAreSynced": "ব্যবহারকারীদের সিঙ্ক করা হয়েছে"
     },
     "site": {

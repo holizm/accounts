@@ -16,19 +16,18 @@
         "signOut": "تسجيل الخروج",
         "user": "مستخدم",
         "userName": "اسم المستخدم",
-        "users": "المستخدمون"
+        "users": "المستخدمون",
+        "forPerson": "للشخص",
+        "lastSyncDate": "تاريخ آخر مزامنة",
+        "userNameAToZ": "اسم المستخدم أ-ي",
+        "userNameZToA": "اسم المستخدم ي-أ"
     },
-    "api": {},
     "panel": {
         "addFromUsers": "إضافة من المستخدمين",
         "configure": "تكوين الحسابات",
         "createUserForPerson": "إنشاء مستخدم للشخص",
-        "forPerson": "للشخص",
-        "lastSyncDate": "تاريخ آخر مزامنة",
         "manageRoles": "إدارة الأدوار",
         "sync": "مزامنة",
-        "userNameAToZ": "اسم المستخدم أ-ي",
-        "userNameZToA": "اسم المستخدم ي-أ",
         "usersAreSynced": "تمت مزامنة المستخدمين"
     },
     "site": {

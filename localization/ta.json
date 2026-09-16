@@ -16,19 +16,18 @@
         "signOut": "வெளியேறு",
         "user": "பயனர்",
         "userName": "பயனர் பெயர்",
-        "users": "பயனர்கள்"
+        "users": "பயனர்கள்",
+        "forPerson": "நபருக்கு",
+        "lastSyncDate": "கடைசி ஒத்திசைவு தேதி",
+        "userNameAToZ": "பயனர்பெயர் A-Z",
+        "userNameZToA": "பயனர் பெயர் Z-A"
     },
-    "api": {},
     "panel": {
         "addFromUsers": "பயனர்களிடமிருந்து சேர்",
         "configure": "கணக்குகளை உள்ளமைக்கவும்",
         "createUserForPerson": "நபருக்கான பயனரை உருவாக்கவும்",
-        "forPerson": "நபருக்கு",
-        "lastSyncDate": "கடைசி ஒத்திசைவு தேதி",
         "manageRoles": "பாத்திரங்களை நிர்வகிக்கவும்",
         "sync": "ஒத்திசை",
-        "userNameAToZ": "பயனர்பெயர் A-Z",
-        "userNameZToA": "பயனர் பெயர் Z-A",
         "usersAreSynced": "பயனர்கள் ஒத்திசைக்கப்பட்டுள்ளனர்"
     },
     "site": {

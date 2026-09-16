@@ -16,19 +16,17 @@
         "signOut": "サインアウト",
         "user": "ユーザー",
         "userName": "ユーザー名",
-        "users": "ユーザー"
+        "forPerson": "人向け",
+        "lastSyncDate": "最終同期日",
+        "userNameAToZ": "ユーザー名 A ～ Z",
+        "userNameZToA": "ユーザー名 Z-A"
     },
-    "api": {},
     "panel": {
         "addFromUsers": "ユーザーから追加",
         "configure": "アカウントを構成する",
         "createUserForPerson": "個人のユーザーを作成する",
-        "forPerson": "人向け",
-        "lastSyncDate": "最終同期日",
         "manageRoles": "役割の管理",
         "sync": "同期",
-        "userNameAToZ": "ユーザー名 A ～ Z",
-        "userNameZToA": "ユーザー名 Z-A",
         "usersAreSynced": "ユーザーは同期されています"
     },
     "site": {

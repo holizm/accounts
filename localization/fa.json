@@ -16,19 +16,18 @@
         "signOut": "خروج",
         "user": "کاربر",
         "userName": "نام کاربری",
-        "users": "کاربران"
+        "users": "کاربران",
+        "forPerson": "برای شخص",
+        "lastSyncDate": "آخرین تاریخ هماهنگ سازی",
+        "userNameAToZ": "نام کاربری الف-ی",
+        "userNameZToA": "نام کاربری ی-الف"
     },
-    "api": {},
     "panel": {
         "addFromUsers": "افزودن از کاربران",
         "configure": "پیکربندی حساب‌ها",
         "createUserForPerson": "ایجاد کاربر برای شخص",
-        "forPerson": "برای شخص",
-        "lastSyncDate": "آخرین تاریخ هماهنگ سازی",
         "manageRoles": "مدیریت نقش‌ها",
         "sync": "همگام‌سازی",
-        "userNameAToZ": "نام کاربری الف-ی",
-        "userNameZToA": "نام کاربری ی-الف",
         "usersAreSynced": "کاربران همگام‌سازی شدند"
     },
     "site": {

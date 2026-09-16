@@ -16,19 +16,18 @@
         "signOut": "Sair",
         "user": "Usuário",
         "userName": "Nome de usuário",
-        "users": "Usuários"
+        "users": "Usuários",
+        "forPerson": "Para pessoa",
+        "lastSyncDate": "Data da última sincronização",
+        "userNameAToZ": "Nome de usuário A-Z",
+        "userNameZToA": "Nome de usuário Z-A"
     },
-    "api": {},
     "panel": {
         "addFromUsers": "Adicionar de usuários",
         "configure": "Configurar contas",
         "createUserForPerson": "Criar usuário para pessoa",
-        "forPerson": "Para pessoa",
-        "lastSyncDate": "Data da última sincronização",
         "manageRoles": "Gerenciar funções",
         "sync": "Sincronizar",
-        "userNameAToZ": "Nome de usuário A-Z",
-        "userNameZToA": "Nome de usuário Z-A",
         "usersAreSynced": "Os usuários são sincronizados"
     },
     "site": {

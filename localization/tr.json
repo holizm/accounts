@@ -16,19 +16,18 @@
         "signOut": "Oturumu kapat",
         "user": "Kullanıcı",
         "userName": "Kullanıcı adı",
-        "users": "Kullanıcılar"
+        "users": "Kullanıcılar",
+        "forPerson": "Kişi için",
+        "lastSyncDate": "Son senkronizasyon tarihi",
+        "userNameAToZ": "Kullanıcı adı A'dan Z'ye",
+        "userNameZToA": "Kullanıcı adı Z-A"
     },
-    "api": {},
     "panel": {
         "addFromUsers": "Kullanıcılardan Ekle",
         "configure": "Hesapları yapılandırma",
         "createUserForPerson": "Kişiye göre kullanıcı oluştur",
-        "forPerson": "Kişi için",
-        "lastSyncDate": "Son senkronizasyon tarihi",
         "manageRoles": "Rolleri yönet",
         "sync": "Senkronize et",
-        "userNameAToZ": "Kullanıcı adı A'dan Z'ye",
-        "userNameZToA": "Kullanıcı adı Z-A",
         "usersAreSynced": "Kullanıcılar senkronize edildi"
     },
     "site": {

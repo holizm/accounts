@@ -16,19 +16,17 @@
         "signOut": "साइन आउट",
         "user": "उपयोगकर्ता",
         "userName": "उपयोगकर्ता नाम",
-        "users": "उपयोगकर्ता"
+        "forPerson": "व्यक्ति के लिए",
+        "lastSyncDate": "अंतिम सिंक तिथि",
+        "userNameAToZ": "उपयोक्तानाम A-Z",
+        "userNameZToA": "उपयोक्तानाम Z-A"
     },
-    "api": {},
     "panel": {
         "addFromUsers": "उपयोगकर्ताओं से जोड़ें",
         "configure": "खाते कॉन्फ़िगर करें",
         "createUserForPerson": "व्यक्ति के लिए उपयोगकर्ता बनाएं",
-        "forPerson": "व्यक्ति के लिए",
-        "lastSyncDate": "अंतिम सिंक तिथि",
         "manageRoles": "भूमिकाएँ प्रबंधित करें",
         "sync": "सिंक करें",
-        "userNameAToZ": "उपयोक्तानाम A-Z",
-        "userNameZToA": "उपयोक्तानाम Z-A",
         "usersAreSynced": "उपयोगकर्ता सिंक हो गए हैं"
     },
     "site": {

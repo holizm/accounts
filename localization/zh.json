@@ -16,19 +16,17 @@
         "signOut": "退出登录",
         "user": "用户",
         "userName": "用户名",
-        "users": "用户"
+        "forPerson": "对于人",
+        "lastSyncDate": "上次同步日期",
+        "userNameAToZ": "用户名 A-Z",
+        "userNameZToA": "用户名 Z-A"
     },
-    "api": {},
     "panel": {
         "addFromUsers": "从用户添加",
         "configure": "配置账户",
         "createUserForPerson": "为人员创建用户",
-        "forPerson": "对于人",
-        "lastSyncDate": "上次同步日期",
         "manageRoles": "管理角色",
         "sync": "同步",
-        "userNameAToZ": "用户名 A-Z",
-        "userNameZToA": "用户名 Z-A",
         "usersAreSynced": "用户已同步"
     },
     "site": {

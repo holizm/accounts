@@ -16,19 +16,17 @@
         "signOut": "로그아웃",
         "user": "사용자",
         "userName": "사용자 이름",
-        "users": "사용자"
+        "forPerson": "사람을 위한",
+        "lastSyncDate": "마지막 동기화 날짜",
+        "userNameAToZ": "사용자 이름 A-Z",
+        "userNameZToA": "사용자 이름 Z-A"
     },
-    "api": {},
     "panel": {
         "addFromUsers": "사용자로부터 추가",
         "configure": "계정 구성",
         "createUserForPerson": "개인에 대한 사용자 생성",
-        "forPerson": "사람을 위한",
-        "lastSyncDate": "마지막 동기화 날짜",
         "manageRoles": "역할 관리",
         "sync": "동기화",
-        "userNameAToZ": "사용자 이름 A-Z",
-        "userNameZToA": "사용자 이름 Z-A",
         "usersAreSynced": "사용자가 동기화되었습니다."
     },
     "site": {

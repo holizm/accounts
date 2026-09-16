@@ -16,19 +16,17 @@
         "signOut": "Đăng xuất",
         "user": "Người dùng",
         "userName": "Tên tài khoản",
-        "users": "Người dùng"
+        "forPerson": "Dành cho người",
+        "lastSyncDate": "Ngày đồng bộ hóa lần cuối",
+        "userNameAToZ": "Tên người dùng A-Z",
+        "userNameZToA": "Tên người dùng Z-A"
     },
-    "api": {},
     "panel": {
         "addFromUsers": "Thêm từ người dùng",
         "configure": "Định cấu hình tài khoản",
         "createUserForPerson": "Tạo người dùng cho người",
-        "forPerson": "Dành cho người",
-        "lastSyncDate": "Ngày đồng bộ hóa lần cuối",
         "manageRoles": "Quản lý vai trò",
         "sync": "Đồng bộ hóa",
-        "userNameAToZ": "Tên người dùng A-Z",
-        "userNameZToA": "Tên người dùng Z-A",
         "usersAreSynced": "Người dùng được đồng bộ hóa"
     },
     "site": {

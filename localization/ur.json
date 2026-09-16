@@ -16,19 +16,18 @@
         "signOut": "سائن آؤٹ",
         "user": "صارف",
         "userName": "صارف کا نام",
-        "users": "صارفین"
+        "users": "صارفین",
+        "forPerson": "شخص کے لیے",
+        "lastSyncDate": "مطابقت پذیری کی آخری تاریخ",
+        "userNameAToZ": "صارف نام A-Z",
+        "userNameZToA": "صارف نام Z-A"
     },
-    "api": {},
     "panel": {
         "addFromUsers": "صارفین سے شامل کریں۔",
         "configure": "اکاؤنٹس کو ترتیب دیں۔",
         "createUserForPerson": "فرد کے لیے صارف بنائیں",
-        "forPerson": "شخص کے لیے",
-        "lastSyncDate": "مطابقت پذیری کی آخری تاریخ",
         "manageRoles": "کرداروں کا نظم کریں۔",
         "sync": "مطابقت پذیری",
-        "userNameAToZ": "صارف نام A-Z",
-        "userNameZToA": "صارف نام Z-A",
         "usersAreSynced": "صارفین مطابقت پذیر ہیں۔"
     },
     "site": {

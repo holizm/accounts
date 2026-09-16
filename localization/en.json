@@ -8,7 +8,6 @@
         "passwordChanged": "Password changed",
         "passwordConfirmation": "Password confirmation",
         "phone": "Phone number",
-        "roleName": "Role name",
         "signIn": "Sign in",
         "user": "User",
         "userName": "Username",
@@ -23,24 +22,9 @@
         "configure": "Configure accounts",
         "createUserForPerson": "Create user for person",
         "manageRoles": "Manage roles",
-        "sync": "Sync",
-        "usersAreSynced": "Users are synced"
+        "sync": "Sync"
     },
     "site": {
-        "changePhone": "Change",
-        "dashboardWelcomeMessage": "Welcome!",
-        "editProfile": "Edit your profile",
-        "emptyOtp": "Code cannot be empty",
-        "emptyPhone": "Phone number cannot be empty",
-        "invalidOtp": "Code is invalid",
-        "invalidPhone": "Phone number is invalid",
-        "otpLabel": "Please enter the code you received",
-        "otpSent": "Code sent to this number",
-        "phoneLabel": "Please enter your phone number",
-        "registerOrSignIn": "Register or sign in",
-        "resend": "Resend",
-        "sendOtp": "Send code",
-        "sendingOtp": "Sending",
-        "signingIn": "Signing in"
+        "editProfile": "Edit your profile"
     }
 }

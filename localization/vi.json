@@ -8,7 +8,6 @@
         "passwordChanged": "Mật khẩu đã được thay đổi",
         "passwordConfirmation": "Xác nhận mật khẩu",
         "phone": "Số điện thoại",
-        "roleName": "Tên vai trò",
         "signIn": "Đăng nhập",
         "user": "Người dùng",
         "userName": "Tên tài khoản",
@@ -22,24 +21,9 @@
         "configure": "Định cấu hình tài khoản",
         "createUserForPerson": "Tạo người dùng cho người",
         "manageRoles": "Quản lý vai trò",
-        "sync": "Đồng bộ hóa",
-        "usersAreSynced": "Người dùng được đồng bộ hóa"
+        "sync": "Đồng bộ hóa"
     },
     "site": {
-        "changePhone": "Thay đổi",
-        "dashboardWelcomeMessage": "Chào mừng!",
-        "editProfile": "Chỉnh sửa hồ sơ của bạn",
-        "emptyOtp": "Mã không được để trống",
-        "emptyPhone": "Số điện thoại không được để trống",
-        "invalidOtp": "Mã không hợp lệ",
-        "invalidPhone": "Số điện thoại không hợp lệ",
-        "otpLabel": "Vui lòng nhập mã bạn nhận được",
-        "otpSent": "Mã đã được gửi đến số này",
-        "phoneLabel": "Xin vui lòng điền số điện thoại của bạn",
-        "registerOrSignIn": "Đăng ký hoặc đăng nhập",
-        "resend": "Gửi lại",
-        "sendOtp": "Gửi mã",
-        "sendingOtp": "Gửi",
-        "signingIn": "Đang đăng nhập"
+        "editProfile": "Chỉnh sửa hồ sơ của bạn"
     }
 }

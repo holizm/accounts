@@ -8,7 +8,6 @@
         "passwordChanged": "비밀번호가 변경되었습니다.",
         "passwordConfirmation": "비밀번호 확인",
         "phone": "전화번호",
-        "roleName": "역할 이름",
         "signIn": "로그인",
         "user": "사용자",
         "userName": "사용자 이름",
@@ -22,24 +21,9 @@
         "configure": "계정 구성",
         "createUserForPerson": "개인에 대한 사용자 생성",
         "manageRoles": "역할 관리",
-        "sync": "동기화",
-        "usersAreSynced": "사용자가 동기화되었습니다."
+        "sync": "동기화"
     },
     "site": {
-        "changePhone": "변경",
-        "dashboardWelcomeMessage": "환영합니다!",
-        "editProfile": "프로필을 편집하십시오",
-        "emptyOtp": "코드는 비워둘 수 없습니다.",
-        "emptyPhone": "전화번호는 비워둘 수 없습니다.",
-        "invalidOtp": "코드가 유효하지 않습니다.",
-        "invalidPhone": "전화번호가 유효하지 않습니다.",
-        "otpLabel": "받은 코드를 입력하세요",
-        "otpSent": "이 번호로 코드가 전송되었습니다",
-        "phoneLabel": "전화번호를 입력하세요",
-        "registerOrSignIn": "등록 또는 로그인",
-        "resend": "재전송",
-        "sendOtp": "코드 보내기",
-        "sendingOtp": "전송 중",
-        "signingIn": "로그인 중"
+        "editProfile": "프로필을 편집하십시오"
     }
 }

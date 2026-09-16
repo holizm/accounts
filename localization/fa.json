@@ -8,7 +8,6 @@
         "passwordChanged": "رمز عبور تغییر کرد",
         "passwordConfirmation": "تایید رمز عبور",
         "phone": "شماره تلفن",
-        "roleName": "نام نقش",
         "signIn": "ورود",
         "user": "کاربر",
         "userName": "نام کاربری",
@@ -23,24 +22,9 @@
         "configure": "پیکربندی حساب‌ها",
         "createUserForPerson": "ایجاد کاربر برای شخص",
         "manageRoles": "مدیریت نقش‌ها",
-        "sync": "همگام‌سازی",
-        "usersAreSynced": "کاربران همگام‌سازی شدند"
+        "sync": "همگام‌سازی"
     },
     "site": {
-        "changePhone": "تغییر",
-        "dashboardWelcomeMessage": "خوش آمدید!",
-        "editProfile": "ویرایش پروفایل",
-        "emptyOtp": "کد نمی‌تواند خالی باشد",
-        "emptyPhone": "شماره تلفن نمی‌تواند خالی باشد",
-        "invalidOtp": "کد معتبر نیست",
-        "invalidPhone": "شماره تلفن معتبر نیست",
-        "otpLabel": "لطفاً کد دریافتی را وارد کنید",
-        "otpSent": "کد برای این شماره ارسال شد",
-        "phoneLabel": "لطفاً شماره تلفن خود را وارد کنید",
-        "registerOrSignIn": "ثبت‌نام یا ورود",
-        "resend": "ارسال مجدد",
-        "sendOtp": "ارسال کد",
-        "sendingOtp": "در حال ارسال",
-        "signingIn": "در حال ورود"
+        "editProfile": "ویرایش پروفایل"
     }
 }

@@ -8,7 +8,6 @@
         "passwordChanged": "تم تغيير كلمة المرور",
         "passwordConfirmation": "تأكيد كلمة المرور",
         "phone": "رقم الهاتف",
-        "roleName": "اسم الدور",
         "signIn": "تسجيل الدخول",
         "user": "مستخدم",
         "userName": "اسم المستخدم",
@@ -23,24 +22,9 @@
         "configure": "تكوين الحسابات",
         "createUserForPerson": "إنشاء مستخدم للشخص",
         "manageRoles": "إدارة الأدوار",
-        "sync": "مزامنة",
-        "usersAreSynced": "تمت مزامنة المستخدمين"
+        "sync": "مزامنة"
     },
     "site": {
-        "changePhone": "تغيير",
-        "dashboardWelcomeMessage": "مرحباً!",
-        "editProfile": "تحرير ملفك الشخصي",
-        "emptyOtp": "لا يمكن أن يكون الرمز فارغًا",
-        "emptyPhone": "لا يمكن أن يكون رقم الهاتف فارغاً",
-        "invalidOtp": "الرمز غير صالح",
-        "invalidPhone": "رقم الهاتف غير صالح",
-        "otpLabel": "الرجاء إدخال الرمز الذي تلقيته",
-        "otpSent": "تم إرسال الرمز إلى هذا الرقم",
-        "phoneLabel": "يرجى إدخال رقم الهاتف الخاص بك",
-        "registerOrSignIn": "التسجيل أو تسجيل الدخول",
-        "resend": "إعادة إرسال",
-        "sendOtp": "إرسال الرمز",
-        "sendingOtp": "جارٍ الإرسال",
-        "signingIn": "جارٍ تسجيل الدخول"
+        "editProfile": "تحرير ملفك الشخصي"
     }
 }

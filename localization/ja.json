@@ -8,7 +8,6 @@
         "passwordChanged": "パスワード変更済み",
         "passwordConfirmation": "パスワードの確認",
         "phone": "電話番号",
-        "roleName": "役割名",
         "signIn": "サインイン",
         "user": "ユーザー",
         "userName": "ユーザー名",
@@ -22,24 +21,9 @@
         "configure": "アカウントを構成する",
         "createUserForPerson": "個人のユーザーを作成する",
         "manageRoles": "役割の管理",
-        "sync": "同期",
-        "usersAreSynced": "ユーザーは同期されています"
+        "sync": "同期"
     },
     "site": {
-        "changePhone": "変更",
-        "dashboardWelcomeMessage": "ようこそ！",
-        "editProfile": "プロフィールを編集します",
-        "emptyOtp": "コードを空にすることはできません",
-        "emptyPhone": "電話番号を空白にすることはできません",
-        "invalidOtp": "コードが無効です",
-        "invalidPhone": "電話番号が無効です",
-        "otpLabel": "受け取ったコードを入力してください",
-        "otpSent": "この番号にコードを送信しました",
-        "phoneLabel": "電話番号を入力してください",
-        "registerOrSignIn": "登録またはサインイン",
-        "resend": "再送信",
-        "sendOtp": "コードを送信する",
-        "sendingOtp": "送信",
-        "signingIn": "サインインしています"
+        "editProfile": "プロフィールを編集します"
     }
 }

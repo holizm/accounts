@@ -8,7 +8,6 @@
         "passwordChanged": "密码已更改",
         "passwordConfirmation": "确认密码",
         "phone": "电话号码",
-        "roleName": "角色名称",
         "signIn": "登录",
         "user": "用户",
         "userName": "用户名",
@@ -22,24 +21,9 @@
         "configure": "配置账户",
         "createUserForPerson": "为人员创建用户",
         "manageRoles": "管理角色",
-        "sync": "同步",
-        "usersAreSynced": "用户已同步"
+        "sync": "同步"
     },
     "site": {
-        "changePhone": "更改",
-        "dashboardWelcomeMessage": "欢迎！",
-        "editProfile": "编辑您的个人资料",
-        "emptyOtp": "代码不能为空",
-        "emptyPhone": "电话号码不能为空",
-        "invalidOtp": "代码无效",
-        "invalidPhone": "电话号码无效",
-        "otpLabel": "请输入您收到的代码",
-        "otpSent": "已为此号码发送代码",
-        "phoneLabel": "请输入您的电话号码",
-        "registerOrSignIn": "注册或登录",
-        "resend": "重发",
-        "sendOtp": "发送代码",
-        "sendingOtp": "发送",
-        "signingIn": "正在登录"
+        "editProfile": "编辑您的个人资料"
     }
 }

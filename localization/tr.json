@@ -8,7 +8,6 @@
         "passwordChanged": "Şifre değiştirildi",
         "passwordConfirmation": "Şifre onayı",
         "phone": "Telefon numarası",
-        "roleName": "Rol ismi",
         "signIn": "Oturum aç",
         "user": "Kullanıcı",
         "userName": "Kullanıcı adı",
@@ -23,24 +22,9 @@
         "configure": "Hesapları yapılandırma",
         "createUserForPerson": "Kişiye göre kullanıcı oluştur",
         "manageRoles": "Rolleri yönet",
-        "sync": "Senkronize et",
-        "usersAreSynced": "Kullanıcılar senkronize edildi"
+        "sync": "Senkronize et"
     },
     "site": {
-        "changePhone": "Değiştir",
-        "dashboardWelcomeMessage": "Hoş geldin!",
-        "editProfile": "Profilinizi Düzenle",
-        "emptyOtp": "Kod boş olamaz",
-        "emptyPhone": "Telefon numarası boş olamaz",
-        "invalidOtp": "Kod geçerli değil",
-        "invalidPhone": "Telefon numarası geçerli değil",
-        "otpLabel": "Lütfen aldığınız kodu girin",
-        "otpSent": "Bu numaraya kod gönderildi",
-        "phoneLabel": "Lütfen telefon numaranızı girin",
-        "registerOrSignIn": "Kayıt olun veya oturum açın",
-        "resend": "Yeniden gönder",
-        "sendOtp": "Kodu gönder",
-        "sendingOtp": "Gönderiliyor",
-        "signingIn": "Oturum açılıyor"
+        "editProfile": "Profilinizi Düzenle"
     }
 }

@@ -8,7 +8,6 @@
         "passwordChanged": "Mot de passe changé",
         "passwordConfirmation": "Confirmation du mot de passe",
         "phone": "Numéro de téléphone",
-        "roleName": "Nom de rôle",
         "signIn": "Se connecter",
         "user": "Utilisateur",
         "userName": "Nom d'utilisateur",
@@ -23,24 +22,9 @@
         "configure": "Configurer les comptes",
         "createUserForPerson": "Créer un utilisateur pour une personne",
         "manageRoles": "Gérer les rôles",
-        "sync": "Synchroniser",
-        "usersAreSynced": "Les utilisateurs sont synchronisés"
+        "sync": "Synchroniser"
     },
     "site": {
-        "changePhone": "Modifier",
-        "dashboardWelcomeMessage": "Bienvenue !",
-        "editProfile": "Modifiez votre profil",
-        "emptyOtp": "Le code ne peut pas être vide",
-        "emptyPhone": "Le numéro de téléphone ne peut pas être vide",
-        "invalidOtp": "Le code n'est pas valide",
-        "invalidPhone": "Le numéro de téléphone n'est pas valide",
-        "otpLabel": "Veuillez entrer le code que vous avez reçu",
-        "otpSent": "Le code a été envoyé à ce numéro",
-        "phoneLabel": "Veuillez entrer votre numéro de téléphone",
-        "registerOrSignIn": "S'inscrire ou se connecter",
-        "resend": "Renvoyer",
-        "sendOtp": "Envoyer le code",
-        "sendingOtp": "Envoi en cours",
-        "signingIn": "Connexion en cours"
+        "editProfile": "Modifiez votre profil"
     }
 }

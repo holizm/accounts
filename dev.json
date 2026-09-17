@@ -2756,7 +2756,7 @@
         "cibaInterval": "5",
         "realmReusableOtpCode": "false"
     },
-    "keycloakVersion": "26.7.3",
+    "keycloakVersion": "26.7.4",
     "userManagedAccessAllowed": false,
     "organizationsEnabled": false,
     "verifiableCredentialsEnabled": false,

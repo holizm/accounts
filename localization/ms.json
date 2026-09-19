@@ -1,0 +1,30 @@
+{
+    "common": {
+        "accounts": "Akaun",
+        "anonymous": "Tanpa nama",
+        "changePassword": "Tukar kata laluan",
+        "otp": "Kod",
+        "password": "Kata laluan",
+        "passwordChanged": "Kata laluan telah ditukar",
+        "passwordConfirmation": "Pengesahan kata laluan",
+        "phone": "Nombor telefon",
+        "signIn": "Log masuk",
+        "user": "Pengguna",
+        "userName": "Nama pengguna",
+        "users": "Pengguna",
+        "forPerson": "Untuk individu",
+        "lastSyncDate": "Tarikh penyegerakan terakhir",
+        "userNameAToZ": "Nama pengguna A-Z",
+        "userNameZToA": "Nama pengguna Z-A"
+    },
+    "panel": {
+        "addFromUsers": "Tambah daripada pengguna",
+        "configure": "Konfigurasikan akaun",
+        "createUserForPerson": "Cipta pengguna untuk individu",
+        "manageRoles": "Urus peranan",
+        "sync": "Segerakkan"
+    },
+    "site": {
+        "editProfile": "Edit profil anda"
+    }
+}

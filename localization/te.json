@@ -1,0 +1,30 @@
+{
+    "common": {
+        "accounts": "ఖాతాలు",
+        "anonymous": "అజ్ఞాత",
+        "changePassword": "పాస్‌వర్డ్ మార్చండి",
+        "otp": "కోడ్",
+        "password": "పాస్‌వర్డ్",
+        "passwordChanged": "పాస్‌వర్డ్ మార్చబడింది",
+        "passwordConfirmation": "పాస్‌వర్డ్ నిర్ధారణ",
+        "phone": "ఫోన్ నంబర్",
+        "signIn": "సైన్ ఇన్ చేయండి",
+        "user": "వినియోగదారు",
+        "userName": "వినియోగదారు పేరు",
+        "users": "వినియోగదారులు",
+        "forPerson": "వ్యక్తి కోసం",
+        "lastSyncDate": "చివరి సమకాలీకరణ తేదీ",
+        "userNameAToZ": "వినియోగదారు పేరు A-Z",
+        "userNameZToA": "వినియోగదారు పేరు Z-A"
+    },
+    "panel": {
+        "addFromUsers": "వినియోగదారుల నుండి జోడించండి",
+        "configure": "ఖాతాలను కాన్ఫిగర్ చేయండి",
+        "createUserForPerson": "వ్యక్తి కోసం వినియోగదారుని సృష్టించండి",
+        "manageRoles": "పాత్రలను నిర్వహించండి",
+        "sync": "సమకాలీకరించండి"
+    },
+    "site": {
+        "editProfile": "మీ ప్రొఫైల్‌ను సవరించండి"
+    }
+}

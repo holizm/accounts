@@ -1,0 +1,30 @@
+{
+    "common": {
+        "accounts": "Konton",
+        "anonymous": "Anonym",
+        "changePassword": "Byt lösenord",
+        "otp": "Kod",
+        "password": "Lösenord",
+        "passwordChanged": "Lösenordet har ändrats",
+        "passwordConfirmation": "Bekräfta lösenord",
+        "phone": "Telefonnummer",
+        "signIn": "Logga in",
+        "user": "Användare",
+        "userName": "Användarnamn",
+        "users": "Användare",
+        "forPerson": "För person",
+        "lastSyncDate": "Datum för senaste synkronisering",
+        "userNameAToZ": "Användarnamn A–Ö",
+        "userNameZToA": "Användarnamn Ö–A"
+    },
+    "panel": {
+        "addFromUsers": "Lägg till från användare",
+        "configure": "Konfigurera konton",
+        "createUserForPerson": "Skapa användare för person",
+        "manageRoles": "Hantera roller",
+        "sync": "Synkronisera"
+    },
+    "site": {
+        "editProfile": "Redigera din profil"
+    }
+}

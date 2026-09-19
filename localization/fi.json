@@ -1,0 +1,30 @@
+{
+    "common": {
+        "accounts": "Tilit",
+        "anonymous": "Anonyymi",
+        "changePassword": "Vaihda salasana",
+        "otp": "Koodi",
+        "password": "Salasana",
+        "passwordChanged": "Salasana vaihdettu",
+        "passwordConfirmation": "Salasanan vahvistus",
+        "phone": "Puhelinnumero",
+        "signIn": "Kirjaudu sisään",
+        "user": "Käyttäjä",
+        "userName": "Käyttäjänimi",
+        "users": "Käyttäjät",
+        "forPerson": "Henkilölle",
+        "lastSyncDate": "Viimeisin synkronointipäivä",
+        "userNameAToZ": "Käyttäjänimi A–Ö",
+        "userNameZToA": "Käyttäjänimi Ö–A"
+    },
+    "panel": {
+        "addFromUsers": "Lisää käyttäjistä",
+        "configure": "Määritä tilit",
+        "createUserForPerson": "Luo käyttäjä henkilölle",
+        "manageRoles": "Hallitse rooleja",
+        "sync": "Synkronoi"
+    },
+    "site": {
+        "editProfile": "Muokkaa profiiliasi"
+    }
+}

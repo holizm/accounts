@@ -1,0 +1,30 @@
+{
+    "common": {
+        "accounts": "Konta",
+        "anonymous": "Anonimowy",
+        "changePassword": "Zmień hasło",
+        "otp": "Kod",
+        "password": "Hasło",
+        "passwordChanged": "Hasło zostało zmienione",
+        "passwordConfirmation": "Potwierdzenie hasła",
+        "phone": "Numer telefonu",
+        "signIn": "Zaloguj się",
+        "user": "Użytkownik",
+        "userName": "Nazwa użytkownika",
+        "users": "Użytkownicy",
+        "forPerson": "Dla osoby",
+        "lastSyncDate": "Data ostatniej synchronizacji",
+        "userNameAToZ": "Nazwa użytkownika A–Z",
+        "userNameZToA": "Nazwa użytkownika Z–A"
+    },
+    "panel": {
+        "addFromUsers": "Dodaj z użytkowników",
+        "configure": "Skonfiguruj konta",
+        "createUserForPerson": "Utwórz użytkownika dla osoby",
+        "manageRoles": "Zarządzaj rolami",
+        "sync": "Synchronizuj"
+    },
+    "site": {
+        "editProfile": "Edytuj swój profil"
+    }
+}

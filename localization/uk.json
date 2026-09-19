@@ -1,0 +1,30 @@
+{
+    "common": {
+        "accounts": "Облікові записи",
+        "anonymous": "Анонімний",
+        "changePassword": "Змінити пароль",
+        "otp": "Код",
+        "password": "Пароль",
+        "passwordChanged": "Пароль змінено",
+        "passwordConfirmation": "Підтвердження пароля",
+        "phone": "Номер телефону",
+        "signIn": "Увійти",
+        "user": "Користувач",
+        "userName": "Ім’я користувача",
+        "users": "Користувачі",
+        "forPerson": "Для особи",
+        "lastSyncDate": "Дата останньої синхронізації",
+        "userNameAToZ": "Ім’я користувача А-Я",
+        "userNameZToA": "Ім’я користувача Я-А"
+    },
+    "panel": {
+        "addFromUsers": "Додати з користувачів",
+        "configure": "Налаштувати облікові записи",
+        "createUserForPerson": "Створити користувача для особи",
+        "manageRoles": "Керувати ролями",
+        "sync": "Синхронізувати"
+    },
+    "site": {
+        "editProfile": "Редагувати свій профіль"
+    }
+}

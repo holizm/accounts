@@ -1,0 +1,30 @@
+{
+    "common": {
+        "accounts": "Účty",
+        "anonymous": "Anonymní",
+        "changePassword": "Změnit heslo",
+        "otp": "Kód",
+        "password": "Heslo",
+        "passwordChanged": "Heslo bylo změněno",
+        "passwordConfirmation": "Potvrzení hesla",
+        "phone": "Telefonní číslo",
+        "signIn": "Přihlásit se",
+        "user": "Uživatel",
+        "userName": "Uživatelské jméno",
+        "users": "Uživatelé",
+        "forPerson": "Pro osobu",
+        "lastSyncDate": "Datum poslední synchronizace",
+        "userNameAToZ": "Uživatelské jméno A–Z",
+        "userNameZToA": "Uživatelské jméno Z–A"
+    },
+    "panel": {
+        "addFromUsers": "Přidat z uživatelů",
+        "configure": "Nastavit účty",
+        "createUserForPerson": "Vytvořit uživatele pro osobu",
+        "manageRoles": "Spravovat role",
+        "sync": "Synchronizovat"
+    },
+    "site": {
+        "editProfile": "Upravit profil"
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "common": {
+        "accounts": "Λογαριασμοί",
+        "anonymous": "Ανώνυμος",
+        "changePassword": "Αλλαγή κωδικού πρόσβασης",
+        "otp": "Κωδικός",
+        "password": "Κωδικός πρόσβασης",
+        "passwordChanged": "Ο κωδικός πρόσβασης άλλαξε",
+        "passwordConfirmation": "Επιβεβαίωση κωδικού πρόσβασης",
+        "phone": "Αριθμός τηλεφώνου",
+        "signIn": "Σύνδεση",
+        "user": "Χρήστης",
+        "userName": "Όνομα χρήστη",
+        "users": "Χρήστες",
+        "forPerson": "Για άτομο",
+        "lastSyncDate": "Ημερομηνία τελευταίου συγχρονισμού",
+        "userNameAToZ": "Όνομα χρήστη Α-Ω",
+        "userNameZToA": "Όνομα χρήστη Ω-Α"
+    },
+    "panel": {
+        "addFromUsers": "Προσθήκη από χρήστες",
+        "configure": "Ρύθμιση λογαριασμών",
+        "createUserForPerson": "Δημιουργία χρήστη για άτομο",
+        "manageRoles": "Διαχείριση ρόλων",
+        "sync": "Συγχρονισμός"
+    },
+    "site": {
+        "editProfile": "Επεξεργασία του προφίλ σας"
+    }
+}

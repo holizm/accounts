@@ -1,0 +1,30 @@
+{
+    "common": {
+        "accounts": "Mga account",
+        "anonymous": "Anonymous",
+        "changePassword": "Palitan ang password",
+        "otp": "Code",
+        "password": "Password",
+        "passwordChanged": "Napalitan na ang password",
+        "passwordConfirmation": "Kumpirmasyon ng password",
+        "phone": "Numero ng telepono",
+        "signIn": "Mag-sign in",
+        "user": "User",
+        "userName": "Username",
+        "users": "Mga user",
+        "forPerson": "Para sa tao",
+        "lastSyncDate": "Petsa ng huling pag-sync",
+        "userNameAToZ": "Username A-Z",
+        "userNameZToA": "Username Z-A"
+    },
+    "panel": {
+        "addFromUsers": "Idagdag mula sa mga user",
+        "configure": "I-configure ang mga account",
+        "createUserForPerson": "Gumawa ng user para sa tao",
+        "manageRoles": "Pamahalaan ang mga tungkulin",
+        "sync": "I-sync"
+    },
+    "site": {
+        "editProfile": "I-edit ang iyong profile"
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "common": {
+        "accounts": "መለያዎች",
+        "anonymous": "ስም-አልባ",
+        "changePassword": "የይለፍ ቃል ቀይር",
+        "otp": "ኮድ",
+        "password": "የይለፍ ቃል",
+        "passwordChanged": "የይለፍ ቃል ተቀይሯል",
+        "passwordConfirmation": "የይለፍ ቃል ማረጋገጫ",
+        "phone": "ስልክ ቁጥር",
+        "signIn": "ግባ",
+        "user": "ተጠቃሚ",
+        "userName": "የተጠቃሚ ስም",
+        "users": "ተጠቃሚዎች",
+        "forPerson": "ለግለሰብ",
+        "lastSyncDate": "የመጨረሻ ማመሳሰል ቀን",
+        "userNameAToZ": "የተጠቃሚ ስም A-Z",
+        "userNameZToA": "የተጠቃሚ ስም Z-A"
+    },
+    "panel": {
+        "addFromUsers": "ከተጠቃሚዎች አክል",
+        "configure": "መለያዎችን አዋቅር",
+        "createUserForPerson": "ለግለሰብ ተጠቃሚ ፍጠር",
+        "manageRoles": "ሚናዎችን አስተዳድር",
+        "sync": "አመሳስል"
+    },
+    "site": {
+        "editProfile": "መገለጫዎን ያርትዑ"
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "common": {
+        "accounts": "Akaunti",
+        "anonymous": "Asiyejulikana",
+        "changePassword": "Badilisha nenosiri",
+        "otp": "Msimbo",
+        "password": "Nenosiri",
+        "passwordChanged": "Nenosiri limebadilishwa",
+        "passwordConfirmation": "Uthibitisho wa nenosiri",
+        "phone": "Nambari ya simu",
+        "signIn": "Ingia",
+        "user": "Mtumiaji",
+        "userName": "Jina la mtumiaji",
+        "users": "Watumiaji",
+        "forPerson": "Kwa ajili ya mtu",
+        "lastSyncDate": "Tarehe ya mwisho ya ulandanishi",
+        "userNameAToZ": "Jina la mtumiaji A-Z",
+        "userNameZToA": "Jina la mtumiaji Z-A"
+    },
+    "panel": {
+        "addFromUsers": "Ongeza kutoka kwa watumiaji",
+        "configure": "Sanidi akaunti",
+        "createUserForPerson": "Unda mtumiaji kwa ajili ya mtu",
+        "manageRoles": "Dhibiti majukumu",
+        "sync": "Landanisha"
+    },
+    "site": {
+        "editProfile": "Hariri wasifu wako"
+    }
+}

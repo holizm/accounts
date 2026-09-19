@@ -1,0 +1,30 @@
+{
+    "common": {
+        "accounts": "ખાતાં",
+        "anonymous": "અનામી",
+        "changePassword": "પાસવર્ડ બદલો",
+        "otp": "કોડ",
+        "password": "પાસવર્ડ",
+        "passwordChanged": "પાસવર્ડ બદલાયો",
+        "passwordConfirmation": "પાસવર્ડની પુષ્ટિ",
+        "phone": "ફોન નંબર",
+        "signIn": "સાઇન ઇન કરો",
+        "user": "વપરાશકર્તા",
+        "userName": "વપરાશકર્તા નામ",
+        "users": "વપરાશકર્તાઓ",
+        "forPerson": "વ્યક્તિ માટે",
+        "lastSyncDate": "છેલ્લી સમન્વય તારીખ",
+        "userNameAToZ": "વપરાશકર્તા નામ A-Z",
+        "userNameZToA": "વપરાશકર્તા નામ Z-A"
+    },
+    "panel": {
+        "addFromUsers": "વપરાશકર્તાઓમાંથી ઉમેરો",
+        "configure": "ખાતાં ગોઠવો",
+        "createUserForPerson": "વ્યક્તિ માટે વપરાશકર્તા બનાવો",
+        "manageRoles": "ભૂમિકાઓ સંચાલિત કરો",
+        "sync": "સમન્વય કરો"
+    },
+    "site": {
+        "editProfile": "તમારી પ્રોફાઇલ સંપાદિત કરો"
+    }
+}

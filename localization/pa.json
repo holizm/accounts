@@ -1,0 +1,30 @@
+{
+    "common": {
+        "accounts": "ਖਾਤੇ",
+        "anonymous": "ਅਗਿਆਤ",
+        "changePassword": "ਪਾਸਵਰਡ ਬਦਲੋ",
+        "otp": "ਕੋਡ",
+        "password": "ਪਾਸਵਰਡ",
+        "passwordChanged": "ਪਾਸਵਰਡ ਬਦਲਿਆ ਗਿਆ",
+        "passwordConfirmation": "ਪਾਸਵਰਡ ਦੀ ਪੁਸ਼ਟੀ",
+        "phone": "ਫ਼ੋਨ ਨੰਬਰ",
+        "signIn": "ਸਾਈਨ ਇਨ ਕਰੋ",
+        "user": "ਵਰਤੋਂਕਾਰ",
+        "userName": "ਵਰਤੋਂਕਾਰ ਨਾਮ",
+        "users": "ਵਰਤੋਂਕਾਰ",
+        "forPerson": "ਵਿਅਕਤੀ ਲਈ",
+        "lastSyncDate": "ਆਖਰੀ ਸਿੰਕ ਮਿਤੀ",
+        "userNameAToZ": "ਵਰਤੋਂਕਾਰ ਨਾਮ A-Z",
+        "userNameZToA": "ਵਰਤੋਂਕਾਰ ਨਾਮ Z-A"
+    },
+    "panel": {
+        "addFromUsers": "ਵਰਤੋਂਕਾਰਾਂ ਤੋਂ ਸ਼ਾਮਲ ਕਰੋ",
+        "configure": "ਖਾਤੇ ਕੌਂਫਿਗਰ ਕਰੋ",
+        "createUserForPerson": "ਵਿਅਕਤੀ ਲਈ ਵਰਤੋਂਕਾਰ ਬਣਾਓ",
+        "manageRoles": "ਭੂਮਿਕਾਵਾਂ ਦਾ ਪ੍ਰਬੰਧ ਕਰੋ",
+        "sync": "ਸਿੰਕ ਕਰੋ"
+    },
+    "site": {
+        "editProfile": "ਆਪਣੀ ਪ੍ਰੋਫਾਈਲ ਸੋਧੋ"
+    }
+}

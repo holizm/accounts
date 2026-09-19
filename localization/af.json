@@ -1,0 +1,30 @@
+{
+    "common": {
+        "accounts": "Rekeninge",
+        "anonymous": "Anoniem",
+        "changePassword": "Verander wagwoord",
+        "otp": "Kode",
+        "password": "Wagwoord",
+        "passwordChanged": "Wagwoord verander",
+        "passwordConfirmation": "Wagwoordbevestiging",
+        "phone": "Telefoonnommer",
+        "signIn": "Meld aan",
+        "user": "Gebruiker",
+        "userName": "Gebruikersnaam",
+        "users": "Gebruikers",
+        "forPerson": "Vir persoon",
+        "lastSyncDate": "Laaste sinkroniseringsdatum",
+        "userNameAToZ": "Gebruikersnaam A-Z",
+        "userNameZToA": "Gebruikersnaam Z-A"
+    },
+    "panel": {
+        "addFromUsers": "Voeg vanaf gebruikers by",
+        "configure": "Stel rekeninge op",
+        "createUserForPerson": "Skep gebruiker vir persoon",
+        "manageRoles": "Bestuur rolle",
+        "sync": "Sinkroniseer"
+    },
+    "site": {
+        "editProfile": "Wysig jou profiel"
+    }
+}

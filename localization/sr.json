@@ -1,0 +1,30 @@
+{
+    "common": {
+        "accounts": "Налози",
+        "anonymous": "Анонимно",
+        "changePassword": "Промени лозинку",
+        "otp": "Код",
+        "password": "Лозинка",
+        "passwordChanged": "Лозинка је промењена",
+        "passwordConfirmation": "Потврда лозинке",
+        "phone": "Број телефона",
+        "signIn": "Пријави се",
+        "user": "Корисник",
+        "userName": "Корисничко име",
+        "users": "Корисници",
+        "forPerson": "За особу",
+        "lastSyncDate": "Датум последње синхронизације",
+        "userNameAToZ": "Корисничко име А-Ш",
+        "userNameZToA": "Корисничко име Ш-А"
+    },
+    "panel": {
+        "addFromUsers": "Додај из корисника",
+        "configure": "Подеси налоге",
+        "createUserForPerson": "Креирај корисника за особу",
+        "manageRoles": "Управљај улогама",
+        "sync": "Синхронизуј"
+    },
+    "site": {
+        "editProfile": "Уредите свој профил"
+    }
+}

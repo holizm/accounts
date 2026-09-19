@@ -1,0 +1,30 @@
+{
+    "common": {
+        "accounts": "खाती",
+        "anonymous": "निनावी",
+        "changePassword": "पासवर्ड बदला",
+        "otp": "कोड",
+        "password": "पासवर्ड",
+        "passwordChanged": "पासवर्ड बदलला",
+        "passwordConfirmation": "पासवर्डची पुष्टी",
+        "phone": "दूरध्वनी क्रमांक",
+        "signIn": "साइन इन करा",
+        "user": "वापरकर्ता",
+        "userName": "वापरकर्तानाव",
+        "users": "वापरकर्ते",
+        "forPerson": "व्यक्तीसाठी",
+        "lastSyncDate": "शेवटच्या समक्रमणाची तारीख",
+        "userNameAToZ": "वापरकर्तानाव A-Z",
+        "userNameZToA": "वापरकर्तानाव Z-A"
+    },
+    "panel": {
+        "addFromUsers": "वापरकर्त्यांमधून जोडा",
+        "configure": "खाती कॉन्फिगर करा",
+        "createUserForPerson": "व्यक्तीसाठी वापरकर्ता तयार करा",
+        "manageRoles": "भूमिका व्यवस्थापित करा",
+        "sync": "समक्रमित करा"
+    },
+    "site": {
+        "editProfile": "तुमचे प्रोफाइल संपादित करा"
+    }
+}

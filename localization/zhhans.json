@@ -1,0 +1,30 @@
+{
+    "common": {
+        "accounts": "账户",
+        "anonymous": "匿名",
+        "changePassword": "更改密码",
+        "otp": "验证码",
+        "password": "密码",
+        "passwordChanged": "密码已更改",
+        "passwordConfirmation": "确认密码",
+        "phone": "电话号码",
+        "signIn": "登录",
+        "user": "用户",
+        "userName": "用户名",
+        "users": "用户",
+        "forPerson": "关联人员",
+        "lastSyncDate": "上次同步日期",
+        "userNameAToZ": "用户名 A-Z",
+        "userNameZToA": "用户名 Z-A"
+    },
+    "panel": {
+        "addFromUsers": "从用户中添加",
+        "configure": "配置账户",
+        "createUserForPerson": "为人员创建用户",
+        "manageRoles": "管理角色",
+        "sync": "同步"
+    },
+    "site": {
+        "editProfile": "编辑您的个人资料"
+    }
+}

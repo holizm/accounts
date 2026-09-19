@@ -1,0 +1,30 @@
+{
+    "common": {
+        "accounts": "Asusu",
+        "anonymous": "Ba a san ko wanene ba",
+        "changePassword": "Canja kalmar sirri",
+        "otp": "Lamba",
+        "password": "Kalmar sirri",
+        "passwordChanged": "An canja kalmar sirri",
+        "passwordConfirmation": "Tabbatar da kalmar sirri",
+        "phone": "Lambar waya",
+        "signIn": "Shiga",
+        "user": "Mai amfani",
+        "userName": "Sunan mai amfani",
+        "users": "Masu amfani",
+        "forPerson": "Don mutum",
+        "lastSyncDate": "Ranar aiki tare ta ƙarshe",
+        "userNameAToZ": "Sunan mai amfani A-Z",
+        "userNameZToA": "Sunan mai amfani Z-A"
+    },
+    "panel": {
+        "addFromUsers": "Ƙara daga masu amfani",
+        "configure": "Saita asusu",
+        "createUserForPerson": "Ƙirƙiri mai amfani don mutum",
+        "manageRoles": "Sarrafa matsayi",
+        "sync": "Aiki tare"
+    },
+    "site": {
+        "editProfile": "Gyara bayanan martabarka"
+    }
+}

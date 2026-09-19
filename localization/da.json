@@ -1,0 +1,30 @@
+{
+    "common": {
+        "accounts": "Konti",
+        "anonymous": "Anonym",
+        "changePassword": "Skift adgangskode",
+        "otp": "Kode",
+        "password": "Adgangskode",
+        "passwordChanged": "Adgangskoden er ændret",
+        "passwordConfirmation": "Bekræft adgangskode",
+        "phone": "Telefonnummer",
+        "signIn": "Log ind",
+        "user": "Bruger",
+        "userName": "Brugernavn",
+        "users": "Brugere",
+        "forPerson": "For person",
+        "lastSyncDate": "Seneste synkroniseringsdato",
+        "userNameAToZ": "Brugernavn A-Å",
+        "userNameZToA": "Brugernavn Å-A"
+    },
+    "panel": {
+        "addFromUsers": "Tilføj fra brugere",
+        "configure": "Konfigurer konti",
+        "createUserForPerson": "Opret bruger for person",
+        "manageRoles": "Administrer roller",
+        "sync": "Synkroniser"
+    },
+    "site": {
+        "editProfile": "Rediger din profil"
+    }
+}

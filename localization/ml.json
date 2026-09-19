@@ -1,0 +1,30 @@
+{
+    "common": {
+        "accounts": "അക്കൗണ്ടുകൾ",
+        "anonymous": "അജ്ഞാതൻ",
+        "changePassword": "പാസ്‌വേഡ് മാറ്റുക",
+        "otp": "കോഡ്",
+        "password": "പാസ്‌വേഡ്",
+        "passwordChanged": "പാസ്‌വേഡ് മാറ്റി",
+        "passwordConfirmation": "പാസ്‌വേഡ് സ്ഥിരീകരണം",
+        "phone": "ഫോൺ നമ്പർ",
+        "signIn": "സൈൻ ഇൻ ചെയ്യുക",
+        "user": "ഉപയോക്താവ്",
+        "userName": "ഉപയോക്തൃനാമം",
+        "users": "ഉപയോക്താക്കൾ",
+        "forPerson": "വ്യക്തിക്കായി",
+        "lastSyncDate": "അവസാന സമന്വയ തീയതി",
+        "userNameAToZ": "ഉപയോക്തൃനാമം A-Z",
+        "userNameZToA": "ഉപയോക്തൃനാമം Z-A"
+    },
+    "panel": {
+        "addFromUsers": "ഉപയോക്താക്കളിൽ നിന്ന് ചേർക്കുക",
+        "configure": "അക്കൗണ്ടുകൾ ക്രമീകരിക്കുക",
+        "createUserForPerson": "വ്യക്തിക്കായി ഉപയോക്താവിനെ സൃഷ്ടിക്കുക",
+        "manageRoles": "റോളുകൾ നിയന്ത്രിക്കുക",
+        "sync": "സമന്വയിപ്പിക്കുക"
+    },
+    "site": {
+        "editProfile": "നിങ്ങളുടെ പ്രൊഫൈൽ തിരുത്തുക"
+    }
+}

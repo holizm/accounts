@@ -1,0 +1,30 @@
+{
+    "common": {
+        "accounts": "Профили",
+        "anonymous": "Анонимен",
+        "changePassword": "Промяна на паролата",
+        "otp": "Код",
+        "password": "Парола",
+        "passwordChanged": "Паролата е променена",
+        "passwordConfirmation": "Потвърждение на паролата",
+        "phone": "Телефонен номер",
+        "signIn": "Вход",
+        "user": "Потребител",
+        "userName": "Потребителско име",
+        "users": "Потребители",
+        "forPerson": "За лице",
+        "lastSyncDate": "Дата на последна синхронизация",
+        "userNameAToZ": "Потребителско име А-Я",
+        "userNameZToA": "Потребителско име Я-А"
+    },
+    "panel": {
+        "addFromUsers": "Добавяне от потребители",
+        "configure": "Настройване на профили",
+        "createUserForPerson": "Създаване на потребител за лице",
+        "manageRoles": "Управление на роли",
+        "sync": "Синхронизиране"
+    },
+    "site": {
+        "editProfile": "Редактирайте профила си"
+    }
+}

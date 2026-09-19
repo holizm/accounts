@@ -1,0 +1,30 @@
+{
+    "common": {
+        "accounts": "Fiókok",
+        "anonymous": "Névtelen",
+        "changePassword": "Jelszó módosítása",
+        "otp": "Kód",
+        "password": "Jelszó",
+        "passwordChanged": "A jelszó megváltozott",
+        "passwordConfirmation": "Jelszó megerősítése",
+        "phone": "Telefonszám",
+        "signIn": "Bejelentkezés",
+        "user": "Felhasználó",
+        "userName": "Felhasználónév",
+        "users": "Felhasználók",
+        "forPerson": "Személyhez",
+        "lastSyncDate": "Utolsó szinkronizálás dátuma",
+        "userNameAToZ": "Felhasználónév A–Z",
+        "userNameZToA": "Felhasználónév Z–A"
+    },
+    "panel": {
+        "addFromUsers": "Hozzáadás a felhasználókból",
+        "configure": "Fiókok beállítása",
+        "createUserForPerson": "Felhasználó létrehozása személyhez",
+        "manageRoles": "Szerepkörök kezelése",
+        "sync": "Szinkronizálás"
+    },
+    "site": {
+        "editProfile": "Profil szerkesztése"
+    }
+}

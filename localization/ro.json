@@ -1,0 +1,30 @@
+{
+    "common": {
+        "accounts": "Conturi",
+        "anonymous": "Anonim",
+        "changePassword": "Schimbă parola",
+        "otp": "Cod",
+        "password": "Parolă",
+        "passwordChanged": "Parola a fost schimbată",
+        "passwordConfirmation": "Confirmarea parolei",
+        "phone": "Număr de telefon",
+        "signIn": "Autentificare",
+        "user": "Utilizator",
+        "userName": "Nume de utilizator",
+        "users": "Utilizatori",
+        "forPerson": "Pentru persoană",
+        "lastSyncDate": "Data ultimei sincronizări",
+        "userNameAToZ": "Nume utilizator A-Z",
+        "userNameZToA": "Nume utilizator Z-A"
+    },
+    "panel": {
+        "addFromUsers": "Adaugă din utilizatori",
+        "configure": "Configurează conturile",
+        "createUserForPerson": "Creează utilizator pentru persoană",
+        "manageRoles": "Gestionează rolurile",
+        "sync": "Sincronizează"
+    },
+    "site": {
+        "editProfile": "Editează-ți profilul"
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "common": {
+        "accounts": "חשבונות",
+        "anonymous": "אנונימי",
+        "changePassword": "שינוי סיסמה",
+        "otp": "קוד",
+        "password": "סיסמה",
+        "passwordChanged": "הסיסמה שונתה",
+        "passwordConfirmation": "אימות סיסמה",
+        "phone": "מספר טלפון",
+        "signIn": "כניסה",
+        "user": "משתמש",
+        "userName": "שם משתמש",
+        "users": "משתמשים",
+        "forPerson": "עבור אדם",
+        "lastSyncDate": "תאריך סנכרון אחרון",
+        "userNameAToZ": "שם משתמש א-ת",
+        "userNameZToA": "שם משתמש ת-א"
+    },
+    "panel": {
+        "addFromUsers": "הוספה ממשתמשים",
+        "configure": "הגדרת חשבונות",
+        "createUserForPerson": "יצירת משתמש עבור אדם",
+        "manageRoles": "ניהול תפקידים",
+        "sync": "סנכרון"
+    },
+    "site": {
+        "editProfile": "עריכת הפרופיל שלך"
+    }
+}

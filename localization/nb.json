@@ -1,0 +1,30 @@
+{
+    "common": {
+        "accounts": "Kontoer",
+        "anonymous": "Anonym",
+        "changePassword": "Endre passord",
+        "otp": "Kode",
+        "password": "Passord",
+        "passwordChanged": "Passordet er endret",
+        "passwordConfirmation": "Bekreft passord",
+        "phone": "Telefonnummer",
+        "signIn": "Logg inn",
+        "user": "Bruker",
+        "userName": "Brukernavn",
+        "users": "Brukere",
+        "forPerson": "For person",
+        "lastSyncDate": "Dato for siste synkronisering",
+        "userNameAToZ": "Brukernavn A–Å",
+        "userNameZToA": "Brukernavn Å–A"
+    },
+    "panel": {
+        "addFromUsers": "Legg til fra brukere",
+        "configure": "Konfigurer kontoer",
+        "createUserForPerson": "Opprett bruker for person",
+        "manageRoles": "Administrer roller",
+        "sync": "Synkroniser"
+    },
+    "site": {
+        "editProfile": "Rediger profilen din"
+    }
+}

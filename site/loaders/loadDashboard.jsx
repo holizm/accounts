@@ -11,7 +11,7 @@ import {
 
 export default routeLoader$(async props => {
 
-    const newUrl = '/dashboard'
+    const newUrl = '/accounts/dashboard'
 
     const {
         fail,

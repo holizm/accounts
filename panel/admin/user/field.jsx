@@ -9,8 +9,7 @@ export default ({
     placeholder,
     property,
     ...rest
-}) => {
-    return <Browse
+}) => <Browse
         choose={choose}
         display={item => item.username || item.naturalPersonName}
         filters={filters}
@@ -21,4 +20,3 @@ export default ({
         sorts={sorts}
         {...rest}
     />
-}

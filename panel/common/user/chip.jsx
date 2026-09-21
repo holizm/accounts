@@ -1,5 +1,4 @@
-export default ({ item }) => {
-    return <div className='flex gap-4 items-start'>
+export default ({ item }) => <div className='flex gap-4 items-start'>
         <img
             src={item.personImageUrl || item.imageUrl}
             className='w-10 h-10 rounded-full object-cover'
@@ -8,4 +7,3 @@ export default ({ item }) => {
             <span className='font-bold text-slate-800'>{item.naturalPersonName || item.juridicalPersonName || item.username}</span>
         </span>
     </div>
-}

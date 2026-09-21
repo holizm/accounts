@@ -1,8 +1,7 @@
 export default ({
     item,
     usersPropertyName
-}) => {
-    return <div className='flex gap-2'>
+}) => <div className='flex gap-2'>
         {
             item[usersPropertyName || 'users']?.map(user => <span
                 className='px-2 py-0.5 rounded-sm'
@@ -17,4 +16,3 @@ export default ({
             )
         }
     </div>
-}

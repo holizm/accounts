@@ -10,14 +10,8 @@ export default ({
     property,
     ...rest
 }) => {
-    const handleChoose = item => {
-        if (choose) {
-            return choose(item)
-        }
-        return item.id
-    }
     return <Browse
-        choose={item => handleChoose(item)}
+        choose={choose}
         display={item => item.username || item.naturalPersonName}
         filters={filters}
         headers={headers}

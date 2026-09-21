@@ -1,5 +1,7 @@
-import { sendOtp } from '../../business/accounts/sendOtp.js'
-import { signIn } from '../../business/accounts/signIn.js'
+import {
+    sendOtp,
+    signIn,
+} from 'accountsBusiness'
 
 export default {
     sendOtpOnPost: sendOtp,

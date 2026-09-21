@@ -1,4 +1,4 @@
-import syncUserByUuid from '../../business/user/syncUserByUuid.js'
+import { syncUserByUuid } from 'accountsBusiness'
 
 const syncByUuidOnPost = async params => {
     const user = await syncUserByUuid(params)

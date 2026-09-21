@@ -4,10 +4,12 @@ import {
     read,
     write,
 } from 'core'
-import { assignRoles } from '../../business/user/assignRoles.js'
-import { changePassword } from '../../business/user/changePassword.js'
-import { getRoles } from '../../business/user/getRoles.js'
-import syncUsers from '../../business/user/syncUsers.js'
+import {
+    assignRoles,
+    changePassword,
+    getRoles,
+    syncUsers,
+} from 'accountsBusiness'
 
 const assignedRolesOnGet = async params => await getRoles(params)
 

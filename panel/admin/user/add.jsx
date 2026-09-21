@@ -20,7 +20,7 @@ export default props => {
         }
     </>
 
-    return <DialogContext.Provider
+    return <DialogContext
         value={{
             open,
             setOpen
@@ -35,5 +35,5 @@ export default props => {
             icon='peopleAlt'
             onClick={() => setOpen(true)}
         />
-    </DialogContext.Provider>
+    </DialogContext>
 }

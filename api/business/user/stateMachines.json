@@ -1,12 +1,10 @@
 [
     {
-        "id": "shared_shared_stateMachines_stateMachine_userStatus",
         "meaning": "userStatus",
         "title": "User Status",
         "default": true,
         "states": [
             {
-                "id": "shared_shared_stateMachines_state_active_userStatus",
                 "title": "active",
                 "meaning": "active",
                 "initial": true,
@@ -36,7 +34,6 @@
                 }
             },
             {
-                "id": "shared_shared_stateMachines_state_suspended_userStatus",
                 "title": "suspended",
                 "meaning": "suspended",
                 "color": "#6B7280",

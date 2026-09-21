@@ -14,13 +14,11 @@
         "permission": "ခွင့်ပြုချက်",
         "permissions": "ခွင့်ပြုချက်များ",
         "signIn": "လက်မှတ်ထိုးဝင်ရန်",
-        "user": "အသုံးပြုသူ",
         "userName": "အသုံးပြုသူအမည်",
         "userNameAToZ": "အသုံးပြုသူအမည် A-Z",
         "userNameZToA": "အသုံးပြုသူအမည် Z-A",
         "userPermission": "အသုံးပြုသူ ခွင့်ပြုချက်",
-        "userPermissions": "အသုံးပြုသူ ခွင့်ပြုချက်များ",
-        "users": "အသုံးပြုသူများ"
+        "userPermissions": "အသုံးပြုသူ ခွင့်ပြုချက်များ"
     },
     "panel": {
         "addFromUsers": "အသုံးပြုသူများမှ ထည့်ရန်",

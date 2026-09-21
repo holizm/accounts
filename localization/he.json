@@ -14,13 +14,11 @@
         "permission": "הרשאה",
         "permissions": "הרשאות",
         "signIn": "כניסה",
-        "user": "משתמש",
         "userName": "שם משתמש",
         "userNameAToZ": "שם משתמש א-ת",
         "userNameZToA": "שם משתמש ת-א",
         "userPermission": "הרשאת משתמש",
-        "userPermissions": "הרשאות משתמש",
-        "users": "משתמשים"
+        "userPermissions": "הרשאות משתמש"
     },
     "panel": {
         "addFromUsers": "הוספה ממשתמשים",

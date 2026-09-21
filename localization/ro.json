@@ -14,13 +14,11 @@
         "permission": "Permisiune",
         "permissions": "Permisiuni",
         "signIn": "Autentificare",
-        "user": "Utilizator",
         "userName": "Nume de utilizator",
         "userNameAToZ": "Nume utilizator A-Z",
         "userNameZToA": "Nume utilizator Z-A",
         "userPermission": "Permisiune de utilizator",
-        "userPermissions": "Permisiuni de utilizator",
-        "users": "Utilizatori"
+        "userPermissions": "Permisiuni de utilizator"
     },
     "panel": {
         "addFromUsers": "Adaugă din utilizatori",

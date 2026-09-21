@@ -14,13 +14,11 @@
         "permission": "Δικαίωμα",
         "permissions": "Δικαιώματα",
         "signIn": "Σύνδεση",
-        "user": "Χρήστης",
         "userName": "Όνομα χρήστη",
         "userNameAToZ": "Όνομα χρήστη Α-Ω",
         "userNameZToA": "Όνομα χρήστη Ω-Α",
         "userPermission": "Δικαίωμα χρήστη",
-        "userPermissions": "Δικαιώματα χρήστη",
-        "users": "Χρήστες"
+        "userPermissions": "Δικαιώματα χρήστη"
     },
     "panel": {
         "addFromUsers": "Προσθήκη από χρήστες",

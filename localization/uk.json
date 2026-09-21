@@ -14,13 +14,11 @@
         "permission": "Дозвіл",
         "permissions": "Дозволи",
         "signIn": "Увійти",
-        "user": "Користувач",
         "userName": "Ім’я користувача",
         "userNameAToZ": "Ім’я користувача А-Я",
         "userNameZToA": "Ім’я користувача Я-А",
         "userPermission": "Дозвіл користувача",
-        "userPermissions": "Дозволи користувача",
-        "users": "Користувачі"
+        "userPermissions": "Дозволи користувача"
     },
     "panel": {
         "addFromUsers": "Додати з користувачів",

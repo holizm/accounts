@@ -14,13 +14,11 @@
         "permission": "પરવાનગી",
         "permissions": "પરવાનગીઓ",
         "signIn": "સાઇન ઇન કરો",
-        "user": "વપરાશકર્તા",
         "userName": "વપરાશકર્તા નામ",
         "userNameAToZ": "વપરાશકર્તા નામ A-Z",
         "userNameZToA": "વપરાશકર્તા નામ Z-A",
         "userPermission": "વપરાશકર્તાની પરવાનગી",
-        "userPermissions": "વપરાશકર્તાની પરવાનગીઓ",
-        "users": "વપરાશકર્તાઓ"
+        "userPermissions": "વપરાશકર્તાની પરવાનગીઓ"
     },
     "panel": {
         "addFromUsers": "વપરાશકર્તાઓમાંથી ઉમેરો",

@@ -14,13 +14,11 @@
         "permission": "ਇਜਾਜ਼ਤ",
         "permissions": "ਇਜਾਜ਼ਤਾਂ",
         "signIn": "ਸਾਈਨ ਇਨ ਕਰੋ",
-        "user": "ਵਰਤੋਂਕਾਰ",
         "userName": "ਵਰਤੋਂਕਾਰ ਨਾਮ",
         "userNameAToZ": "ਵਰਤੋਂਕਾਰ ਨਾਮ A-Z",
         "userNameZToA": "ਵਰਤੋਂਕਾਰ ਨਾਮ Z-A",
         "userPermission": "ਵਰਤੋਂਕਾਰ ਦੀ ਇਜਾਜ਼ਤ",
-        "userPermissions": "ਵਰਤੋਂਕਾਰ ਦੀਆਂ ਇਜਾਜ਼ਤਾਂ",
-        "users": "ਵਰਤੋਂਕਾਰ"
+        "userPermissions": "ਵਰਤੋਂਕਾਰ ਦੀਆਂ ਇਜਾਜ਼ਤਾਂ"
     },
     "panel": {
         "addFromUsers": "ਵਰਤੋਂਕਾਰਾਂ ਤੋਂ ਸ਼ਾਮਲ ਕਰੋ",

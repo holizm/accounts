@@ -14,13 +14,11 @@
         "permission": "مجوز",
         "permissions": "مجوزها",
         "signIn": "ورود",
-        "user": "کاربر",
         "userName": "نام کاربری",
         "userNameAToZ": "نام کاربری الف-ی",
         "userNameZToA": "نام کاربری ی-الف",
         "userPermission": "مجوز کاربر",
-        "userPermissions": "مجوزهای کاربر",
-        "users": "کاربران"
+        "userPermissions": "مجوزهای کاربر"
     },
     "panel": {
         "addFromUsers": "افزودن از کاربران",

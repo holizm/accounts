@@ -14,13 +14,11 @@
         "permission": "Ruhusa",
         "permissions": "Ruhusa",
         "signIn": "Ingia",
-        "user": "Mtumiaji",
         "userName": "Jina la mtumiaji",
         "userNameAToZ": "Jina la mtumiaji A-Z",
         "userNameZToA": "Jina la mtumiaji Z-A",
         "userPermission": "Ruhusa ya mtumiaji",
-        "userPermissions": "Ruhusa za mtumiaji",
-        "users": "Watumiaji"
+        "userPermissions": "Ruhusa za mtumiaji"
     },
     "panel": {
         "addFromUsers": "Ongeza kutoka kwa watumiaji",

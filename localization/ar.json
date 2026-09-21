@@ -14,13 +14,11 @@
         "permission": "صلاحية",
         "permissions": "صلاحيات",
         "signIn": "تسجيل الدخول",
-        "user": "مستخدم",
         "userName": "اسم المستخدم",
         "userNameAToZ": "اسم المستخدم أ-ي",
         "userNameZToA": "اسم المستخدم ي-أ",
         "userPermission": "صلاحية المستخدم",
-        "userPermissions": "صلاحيات المستخدم",
-        "users": "المستخدمون"
+        "userPermissions": "صلاحيات المستخدم"
     },
     "panel": {
         "addFromUsers": "إضافة من المستخدمين",

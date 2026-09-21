@@ -14,13 +14,11 @@
         "permission": "Toestemming",
         "permissions": "Toestemmings",
         "signIn": "Meld aan",
-        "user": "Gebruiker",
         "userName": "Gebruikersnaam",
         "userNameAToZ": "Gebruikersnaam A-Z",
         "userNameZToA": "Gebruikersnaam Z-A",
         "userPermission": "Gebruikertoestemming",
-        "userPermissions": "Gebruikertoestemmings",
-        "users": "Gebruikers"
+        "userPermissions": "Gebruikertoestemmings"
     },
     "panel": {
         "addFromUsers": "Voeg vanaf gebruikers by",

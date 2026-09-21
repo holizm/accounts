@@ -14,13 +14,11 @@
         "permission": "Izin",
         "permissions": "Izin",
         "signIn": "Masuk",
-        "user": "Pengguna",
         "userName": "Nama pengguna",
         "userNameAToZ": "Nama pengguna A-Z",
         "userNameZToA": "Nama pengguna Z-A",
         "userPermission": "Izin pengguna",
-        "userPermissions": "Izin pengguna",
-        "users": "Pengguna"
+        "userPermissions": "Izin pengguna"
     },
     "panel": {
         "addFromUsers": "Tambahkan dari pengguna",

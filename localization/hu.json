@@ -14,13 +14,11 @@
         "permission": "Jogosultság",
         "permissions": "Jogosultságok",
         "signIn": "Bejelentkezés",
-        "user": "Felhasználó",
         "userName": "Felhasználónév",
         "userNameAToZ": "Felhasználónév A–Z",
         "userNameZToA": "Felhasználónév Z–A",
         "userPermission": "Felhasználói jogosultság",
-        "userPermissions": "Felhasználói jogosultságok",
-        "users": "Felhasználók"
+        "userPermissions": "Felhasználói jogosultságok"
     },
     "panel": {
         "addFromUsers": "Hozzáadás a felhasználókból",

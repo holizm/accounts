@@ -14,13 +14,11 @@
         "permission": "అనుమతి",
         "permissions": "అనుమతులు",
         "signIn": "సైన్ ఇన్ చేయండి",
-        "user": "వినియోగదారు",
         "userName": "వినియోగదారు పేరు",
         "userNameAToZ": "వినియోగదారు పేరు A-Z",
         "userNameZToA": "వినియోగదారు పేరు Z-A",
         "userPermission": "వినియోగదారు అనుమతి",
-        "userPermissions": "వినియోగదారు అనుమతులు",
-        "users": "వినియోగదారులు"
+        "userPermissions": "వినియోగదారు అనుమతులు"
     },
     "panel": {
         "addFromUsers": "వినియోగదారుల నుండి జోడించండి",

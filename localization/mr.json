@@ -14,13 +14,11 @@
         "permission": "परवानगी",
         "permissions": "परवानग्या",
         "signIn": "साइन इन करा",
-        "user": "वापरकर्ता",
         "userName": "वापरकर्तानाव",
         "userNameAToZ": "वापरकर्तानाव A-Z",
         "userNameZToA": "वापरकर्तानाव Z-A",
         "userPermission": "वापरकर्त्याची परवानगी",
-        "userPermissions": "वापरकर्त्याच्या परवानग्या",
-        "users": "वापरकर्ते"
+        "userPermissions": "वापरकर्त्याच्या परवानग्या"
     },
     "panel": {
         "addFromUsers": "वापरकर्त्यांमधून जोडा",

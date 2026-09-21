@@ -14,13 +14,11 @@
         "permission": "Permission",
         "permissions": "Permissions",
         "signIn": "Sign in",
-        "user": "User",
         "userName": "Username",
         "userNameAToZ": "Username A-Z",
         "userNameZToA": "Username Z-A",
         "userPermission": "User permission",
-        "userPermissions": "User permissions",
-        "users": "Users"
+        "userPermissions": "User permissions"
     },
     "panel": {
         "addFromUsers": "Add From Users",

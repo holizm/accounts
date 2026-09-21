@@ -14,13 +14,11 @@
         "permission": "Tillatelse",
         "permissions": "Tillatelser",
         "signIn": "Logg inn",
-        "user": "Bruker",
         "userName": "Brukernavn",
         "userNameAToZ": "Brukernavn A–Å",
         "userNameZToA": "Brukernavn Å–A",
         "userPermission": "Brukertillatelse",
-        "userPermissions": "Brukertillatelser",
-        "users": "Brukere"
+        "userPermissions": "Brukertillatelser"
     },
     "panel": {
         "addFromUsers": "Legg til fra brukere",

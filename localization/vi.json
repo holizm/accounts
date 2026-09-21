@@ -14,13 +14,11 @@
         "permission": "Quyền",
         "permissions": "Các quyền",
         "signIn": "Đăng nhập",
-        "user": "Người dùng",
         "userName": "Tên tài khoản",
         "userNameAToZ": "Tên người dùng A-Z",
         "userNameZToA": "Tên người dùng Z-A",
         "userPermission": "Quyền người dùng",
-        "userPermissions": "Các quyền người dùng",
-        "users": "Người dùng"
+        "userPermissions": "Các quyền người dùng"
     },
     "panel": {
         "addFromUsers": "Thêm từ người dùng",

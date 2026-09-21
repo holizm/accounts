@@ -14,13 +14,11 @@
         "permission": "Käyttöoikeus",
         "permissions": "Käyttöoikeudet",
         "signIn": "Kirjaudu sisään",
-        "user": "Käyttäjä",
         "userName": "Käyttäjänimi",
         "userNameAToZ": "Käyttäjänimi A–Ö",
         "userNameZToA": "Käyttäjänimi Ö–A",
         "userPermission": "Käyttäjän käyttöoikeus",
-        "userPermissions": "Käyttäjän käyttöoikeudet",
-        "users": "Käyttäjät"
+        "userPermissions": "Käyttäjän käyttöoikeudet"
     },
     "panel": {
         "addFromUsers": "Lisää käyttäjistä",

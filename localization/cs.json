@@ -14,13 +14,11 @@
         "permission": "Oprávnění",
         "permissions": "Oprávnění",
         "signIn": "Přihlásit se",
-        "user": "Uživatel",
         "userName": "Uživatelské jméno",
         "userNameAToZ": "Uživatelské jméno A–Z",
         "userNameZToA": "Uživatelské jméno Z–A",
         "userPermission": "Uživatelské oprávnění",
-        "userPermissions": "Uživatelská oprávnění",
-        "users": "Uživatelé"
+        "userPermissions": "Uživatelská oprávnění"
     },
     "panel": {
         "addFromUsers": "Přidat z uživatelů",

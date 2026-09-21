@@ -14,13 +14,11 @@
         "permission": "權限",
         "permissions": "權限",
         "signIn": "登入",
-        "user": "使用者",
         "userName": "使用者名稱",
         "userNameAToZ": "使用者名稱 A-Z",
         "userNameZToA": "使用者名稱 Z-A",
         "userPermission": "使用者權限",
-        "userPermissions": "使用者權限",
-        "users": "使用者"
+        "userPermissions": "使用者權限"
     },
     "panel": {
         "addFromUsers": "從使用者新增",

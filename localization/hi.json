@@ -14,13 +14,11 @@
         "permission": "अनुमति",
         "permissions": "अनुमतियाँ",
         "signIn": "साइन इन करें",
-        "user": "उपयोगकर्ता",
         "userName": "उपयोगकर्ता नाम",
         "userNameAToZ": "उपयोक्तानाम A-Z",
         "userNameZToA": "उपयोक्तानाम Z-A",
         "userPermission": "उपयोगकर्ता अनुमति",
-        "userPermissions": "उपयोगकर्ता अनुमतियाँ",
-        "users": "उपयोगकर्ता"
+        "userPermissions": "उपयोगकर्ता अनुमतियाँ"
     },
     "panel": {
         "addFromUsers": "उपयोगकर्ताओं से जोड़ें",

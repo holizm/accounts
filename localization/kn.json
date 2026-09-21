@@ -14,13 +14,11 @@
         "permission": "ಅನುಮತಿ",
         "permissions": "ಅನುಮತಿಗಳು",
         "signIn": "ಸೈನ್ ಇನ್ ಮಾಡಿ",
-        "user": "ಬಳಕೆದಾರ",
         "userName": "ಬಳಕೆದಾರ ಹೆಸರು",
         "userNameAToZ": "ಬಳಕೆದಾರ ಹೆಸರು A-Z",
         "userNameZToA": "ಬಳಕೆದಾರ ಹೆಸರು Z-A",
         "userPermission": "ಬಳಕೆದಾರರ ಅನುಮತಿ",
-        "userPermissions": "ಬಳಕೆದಾರರ ಅನುಮತಿಗಳು",
-        "users": "ಬಳಕೆದಾರರು"
+        "userPermissions": "ಬಳಕೆದಾರರ ಅನುಮತಿಗಳು"
     },
     "panel": {
         "addFromUsers": "ಬಳಕೆದಾರರಿಂದ ಸೇರಿಸಿ",

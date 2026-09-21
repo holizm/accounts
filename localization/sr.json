@@ -14,13 +14,11 @@
         "permission": "Дозвола",
         "permissions": "Дозволе",
         "signIn": "Пријави се",
-        "user": "Корисник",
         "userName": "Корисничко име",
         "userNameAToZ": "Корисничко име А-Ш",
         "userNameZToA": "Корисничко име Ш-А",
         "userPermission": "Корисничка дозвола",
-        "userPermissions": "Корисничке дозволе",
-        "users": "Корисници"
+        "userPermissions": "Корисничке дозволе"
     },
     "panel": {
         "addFromUsers": "Додај из корисника",

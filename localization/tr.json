@@ -14,13 +14,11 @@
         "permission": "İzin",
         "permissions": "İzinler",
         "signIn": "Oturum aç",
-        "user": "Kullanıcı",
         "userName": "Kullanıcı adı",
         "userNameAToZ": "Kullanıcı adı A'dan Z'ye",
         "userNameZToA": "Kullanıcı adı Z-A",
         "userPermission": "Kullanıcı izni",
-        "userPermissions": "Kullanıcı izinleri",
-        "users": "Kullanıcılar"
+        "userPermissions": "Kullanıcı izinleri"
     },
     "panel": {
         "addFromUsers": "Kullanıcılardan Ekle",

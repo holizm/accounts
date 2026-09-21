@@ -14,13 +14,11 @@
         "permission": "Ìyọ̀nda",
         "permissions": "Àwọn ìyọ̀nda",
         "signIn": "Wọlé",
-        "user": "Olùlò",
         "userName": "Orúkọ olùlò",
         "userNameAToZ": "Orúkọ olùlò A-Z",
         "userNameZToA": "Orúkọ olùlò Z-A",
         "userPermission": "Ìyọ̀nda aṣàmúlò",
-        "userPermissions": "Àwọn ìyọ̀nda aṣàmúlò",
-        "users": "Àwọn olùlò"
+        "userPermissions": "Àwọn ìyọ̀nda aṣàmúlò"
     },
     "panel": {
         "addFromUsers": "Ṣàfikún láti ọ̀dọ̀ àwọn olùlò",

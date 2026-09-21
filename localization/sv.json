@@ -14,13 +14,11 @@
         "permission": "Behörighet",
         "permissions": "Behörigheter",
         "signIn": "Logga in",
-        "user": "Användare",
         "userName": "Användarnamn",
         "userNameAToZ": "Användarnamn A–Ö",
         "userNameZToA": "Användarnamn Ö–A",
         "userPermission": "Användarbehörighet",
-        "userPermissions": "Användarbehörigheter",
-        "users": "Användare"
+        "userPermissions": "Användarbehörigheter"
     },
     "panel": {
         "addFromUsers": "Lägg till från användare",

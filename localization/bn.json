@@ -14,13 +14,11 @@
         "permission": "অনুমতি",
         "permissions": "অনুমতিসমূহ",
         "signIn": "সাইন ইন করুন",
-        "user": "ব্যবহারকারী",
         "userName": "ব্যবহারকারীর নাম",
         "userNameAToZ": "ব্যবহারকারীর নাম A-Z",
         "userNameZToA": "ব্যবহারকারীর নাম Z-A",
         "userPermission": "ব্যবহারকারীর অনুমতি",
-        "userPermissions": "ব্যবহারকারীর অনুমতিসমূহ",
-        "users": "ব্যবহারকারীরা"
+        "userPermissions": "ব্যবহারকারীর অনুমতিসমূহ"
     },
     "panel": {
         "addFromUsers": "ব্যবহারকারীদের থেকে যোগ করুন",

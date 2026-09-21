@@ -3,7 +3,7 @@ export default [
         children: [
             {
                 path: '/accounts/user/list',
-                title: 'accountsUsers'
+                title: 'coreUsers'
             }
         ],
         icon: 'peopleAlt',

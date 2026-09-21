@@ -14,13 +14,11 @@
         "permission": "அனுமதி",
         "permissions": "அனுமதிகள்",
         "signIn": "உள்நுழைக",
-        "user": "பயனர்",
         "userName": "பயனர் பெயர்",
         "userNameAToZ": "பயனர்பெயர் A-Z",
         "userNameZToA": "பயனர் பெயர் Z-A",
         "userPermission": "பயனர் அனுமதி",
-        "userPermissions": "பயனர் அனுமதிகள்",
-        "users": "பயனர்கள்"
+        "userPermissions": "பயனர் அனுமதிகள்"
     },
     "panel": {
         "addFromUsers": "பயனர்களிடமிருந்து சேர்",

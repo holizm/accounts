@@ -14,13 +14,11 @@
         "permission": "Pahintulot",
         "permissions": "Mga pahintulot",
         "signIn": "Mag-sign in",
-        "user": "User",
         "userName": "Username",
         "userNameAToZ": "Username A-Z",
         "userNameZToA": "Username Z-A",
         "userPermission": "Pahintulot ng gumagamit",
-        "userPermissions": "Mga pahintulot ng gumagamit",
-        "users": "Mga user"
+        "userPermissions": "Mga pahintulot ng gumagamit"
     },
     "panel": {
         "addFromUsers": "Idagdag mula sa mga user",

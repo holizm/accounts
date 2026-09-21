@@ -14,13 +14,11 @@
         "permission": "اجازت",
         "permissions": "اجازتیں",
         "signIn": "سائن ان",
-        "user": "صارف",
         "userName": "صارف کا نام",
         "userNameAToZ": "صارف نام A-Z",
         "userNameZToA": "صارف نام Z-A",
         "userPermission": "صارف کی اجازت",
-        "userPermissions": "صارف کی اجازتیں",
-        "users": "صارفین"
+        "userPermissions": "صارف کی اجازتیں"
     },
     "panel": {
         "addFromUsers": "صارفین سے شامل کریں۔",

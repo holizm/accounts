@@ -14,13 +14,11 @@
         "permission": "Izini",
         "permissions": "Izinai",
         "signIn": "Shiga",
-        "user": "Mai amfani",
         "userName": "Sunan mai amfani",
         "userNameAToZ": "Sunan mai amfani A-Z",
         "userNameZToA": "Sunan mai amfani Z-A",
         "userPermission": "Izinin mai amfani",
-        "userPermissions": "Izinan mai amfani",
-        "users": "Masu amfani"
+        "userPermissions": "Izinan mai amfani"
     },
     "panel": {
         "addFromUsers": "Ƙara daga masu amfani",

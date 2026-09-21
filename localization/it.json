@@ -14,13 +14,11 @@
         "permission": "Autorizzazione",
         "permissions": "Autorizzazioni",
         "signIn": "Accedi",
-        "user": "Utente",
         "userName": "Nome utente",
         "userNameAToZ": "Nome utente dalla A alla Z",
         "userNameZToA": "Nome utente Z-A",
         "userPermission": "Autorizzazione utente",
-        "userPermissions": "Autorizzazioni utente",
-        "users": "Utenti"
+        "userPermissions": "Autorizzazioni utente"
     },
     "panel": {
         "addFromUsers": "Aggiungi dagli utenti",

@@ -14,13 +14,11 @@
         "permission": "അനുമതി",
         "permissions": "അനുമതികൾ",
         "signIn": "സൈൻ ഇൻ ചെയ്യുക",
-        "user": "ഉപയോക്താവ്",
         "userName": "ഉപയോക്തൃനാമം",
         "userNameAToZ": "ഉപയോക്തൃനാമം A-Z",
         "userNameZToA": "ഉപയോക്തൃനാമം Z-A",
         "userPermission": "ഉപയോക്തൃ അനുമതി",
-        "userPermissions": "ഉപയോക്തൃ അനുമതികൾ",
-        "users": "ഉപയോക്താക്കൾ"
+        "userPermissions": "ഉപയോക്തൃ അനുമതികൾ"
     },
     "panel": {
         "addFromUsers": "ഉപയോക്താക്കളിൽ നിന്ന് ചേർക്കുക",

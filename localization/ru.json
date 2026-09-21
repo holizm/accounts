@@ -14,13 +14,11 @@
         "permission": "Разрешение",
         "permissions": "Разрешения",
         "signIn": "Войти",
-        "user": "Пользователь",
         "userName": "Имя пользователя",
         "userNameAToZ": "Имя пользователя от А до Я",
         "userNameZToA": "Имя пользователя Z-A",
         "userPermission": "Разрешение пользователя",
-        "userPermissions": "Разрешения пользователя",
-        "users": "Пользователи"
+        "userPermissions": "Разрешения пользователя"
     },
     "panel": {
         "addFromUsers": "Добавить от пользователей",

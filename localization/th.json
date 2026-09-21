@@ -14,13 +14,11 @@
         "permission": "สิทธิ์",
         "permissions": "สิทธิ์",
         "signIn": "ลงชื่อเข้าใช้",
-        "user": "ผู้ใช้",
         "userName": "ชื่อผู้ใช้",
         "userNameAToZ": "ชื่อผู้ใช้ ก-ฮ",
         "userNameZToA": "ชื่อผู้ใช้ ฮ-ก",
         "userPermission": "สิทธิ์ผู้ใช้",
-        "userPermissions": "สิทธิ์ผู้ใช้",
-        "users": "ผู้ใช้"
+        "userPermissions": "สิทธิ์ผู้ใช้"
     },
     "panel": {
         "addFromUsers": "เพิ่มจากผู้ใช้",

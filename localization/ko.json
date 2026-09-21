@@ -14,13 +14,11 @@
         "permission": "권한",
         "permissions": "권한",
         "signIn": "로그인",
-        "user": "사용자",
         "userName": "사용자 이름",
         "userNameAToZ": "사용자 이름 A-Z",
         "userNameZToA": "사용자 이름 Z-A",
         "userPermission": "사용자 권한",
-        "userPermissions": "사용자 권한",
-        "users": "사용자"
+        "userPermissions": "사용자 권한"
     },
     "panel": {
         "addFromUsers": "사용자로부터 추가",

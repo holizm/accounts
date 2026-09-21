@@ -14,13 +14,11 @@
         "permission": "ፈቃድ",
         "permissions": "ፈቃዶች",
         "signIn": "ግባ",
-        "user": "ተጠቃሚ",
         "userName": "የተጠቃሚ ስም",
         "userNameAToZ": "የተጠቃሚ ስም A-Z",
         "userNameZToA": "የተጠቃሚ ስም Z-A",
         "userPermission": "የተጠቃሚ ፈቃድ",
-        "userPermissions": "የተጠቃሚ ፈቃዶች",
-        "users": "ተጠቃሚዎች"
+        "userPermissions": "የተጠቃሚ ፈቃዶች"
     },
     "panel": {
         "addFromUsers": "ከተጠቃሚዎች አክል",

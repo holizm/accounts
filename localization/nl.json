@@ -14,13 +14,11 @@
         "permission": "Machtiging",
         "permissions": "Machtigingen",
         "signIn": "Aanmelden",
-        "user": "Gebruiker",
         "userName": "Gebruikersnaam",
         "userNameAToZ": "Gebruikersnaam A-Z",
         "userNameZToA": "Gebruikersnaam Z-A",
         "userPermission": "Gebruikersmachtiging",
-        "userPermissions": "Gebruikersmachtigingen",
-        "users": "Gebruikers"
+        "userPermissions": "Gebruikersmachtigingen"
     },
     "panel": {
         "addFromUsers": "Toevoegen vanuit gebruikers",

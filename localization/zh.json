@@ -13,7 +13,6 @@
         "passwordConfirmation": "确认密码",
         "permission": "权限",
         "permissions": "权限",
-        "phone": "电话号码",
         "signIn": "登录",
         "user": "用户",
         "userName": "用户名",
@@ -27,8 +26,7 @@
         "addFromUsers": "从用户添加",
         "configure": "配置账户",
         "createUserForPerson": "为人员创建用户",
-        "manageRoles": "管理角色",
-        "sync": "同步"
+        "manageRoles": "管理角色"
     },
     "site": {
         "editProfile": "编辑您的个人资料"

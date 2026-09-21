@@ -13,7 +13,6 @@
         "passwordConfirmation": "Jelszó megerősítése",
         "permission": "Jogosultság",
         "permissions": "Jogosultságok",
-        "phone": "Telefonszám",
         "signIn": "Bejelentkezés",
         "user": "Felhasználó",
         "userName": "Felhasználónév",
@@ -27,8 +26,7 @@
         "addFromUsers": "Hozzáadás a felhasználókból",
         "configure": "Fiókok beállítása",
         "createUserForPerson": "Felhasználó létrehozása személyhez",
-        "manageRoles": "Szerepkörök kezelése",
-        "sync": "Szinkronizálás"
+        "manageRoles": "Szerepkörök kezelése"
     },
     "site": {
         "editProfile": "Profil szerkesztése"

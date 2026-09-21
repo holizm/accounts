@@ -13,7 +13,6 @@
         "passwordConfirmation": "ಪಾಸ್‌ವರ್ಡ್ ದೃಢೀಕರಣ",
         "permission": "ಅನುಮತಿ",
         "permissions": "ಅನುಮತಿಗಳು",
-        "phone": "ದೂರವಾಣಿ ಸಂಖ್ಯೆ",
         "signIn": "ಸೈನ್ ಇನ್ ಮಾಡಿ",
         "user": "ಬಳಕೆದಾರ",
         "userName": "ಬಳಕೆದಾರ ಹೆಸರು",
@@ -27,8 +26,7 @@
         "addFromUsers": "ಬಳಕೆದಾರರಿಂದ ಸೇರಿಸಿ",
         "configure": "ಖಾತೆಗಳನ್ನು ಕಾನ್ಫಿಗರ್ ಮಾಡಿ",
         "createUserForPerson": "ವ್ಯಕ್ತಿಗಾಗಿ ಬಳಕೆದಾರರನ್ನು ರಚಿಸಿ",
-        "manageRoles": "ಪಾತ್ರಗಳನ್ನು ನಿರ್ವಹಿಸಿ",
-        "sync": "ಸಿಂಕ್ ಮಾಡಿ"
+        "manageRoles": "ಪಾತ್ರಗಳನ್ನು ನಿರ್ವಹಿಸಿ"
     },
     "site": {
         "editProfile": "ನಿಮ್ಮ ಪ್ರೊಫೈಲ್ ಸಂಪಾದಿಸಿ"

@@ -13,7 +13,6 @@
         "passwordConfirmation": "Salasanan vahvistus",
         "permission": "Käyttöoikeus",
         "permissions": "Käyttöoikeudet",
-        "phone": "Puhelinnumero",
         "signIn": "Kirjaudu sisään",
         "user": "Käyttäjä",
         "userName": "Käyttäjänimi",
@@ -27,8 +26,7 @@
         "addFromUsers": "Lisää käyttäjistä",
         "configure": "Määritä tilit",
         "createUserForPerson": "Luo käyttäjä henkilölle",
-        "manageRoles": "Hallitse rooleja",
-        "sync": "Synkronoi"
+        "manageRoles": "Hallitse rooleja"
     },
     "site": {
         "editProfile": "Muokkaa profiiliasi"

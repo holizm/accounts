@@ -13,7 +13,6 @@
         "passwordConfirmation": "ยืนยันรหัสผ่าน",
         "permission": "สิทธิ์",
         "permissions": "สิทธิ์",
-        "phone": "หมายเลขโทรศัพท์",
         "signIn": "ลงชื่อเข้าใช้",
         "user": "ผู้ใช้",
         "userName": "ชื่อผู้ใช้",
@@ -27,8 +26,7 @@
         "addFromUsers": "เพิ่มจากผู้ใช้",
         "configure": "กำหนดค่าบัญชี",
         "createUserForPerson": "สร้างผู้ใช้สำหรับบุคคล",
-        "manageRoles": "จัดการบทบาท",
-        "sync": "ซิงค์"
+        "manageRoles": "จัดการบทบาท"
     },
     "site": {
         "editProfile": "แก้ไขโปรไฟล์ของคุณ"

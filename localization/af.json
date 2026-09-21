@@ -13,7 +13,6 @@
         "passwordConfirmation": "Wagwoordbevestiging",
         "permission": "Toestemming",
         "permissions": "Toestemmings",
-        "phone": "Telefoonnommer",
         "signIn": "Meld aan",
         "user": "Gebruiker",
         "userName": "Gebruikersnaam",
@@ -27,8 +26,7 @@
         "addFromUsers": "Voeg vanaf gebruikers by",
         "configure": "Stel rekeninge op",
         "createUserForPerson": "Skep gebruiker vir persoon",
-        "manageRoles": "Bestuur rolle",
-        "sync": "Sinkroniseer"
+        "manageRoles": "Bestuur rolle"
     },
     "site": {
         "editProfile": "Wysig jou profiel"

@@ -13,7 +13,6 @@
         "passwordConfirmation": "Pengesahan kata laluan",
         "permission": "Kebenaran",
         "permissions": "Kebenaran",
-        "phone": "Nombor telefon",
         "signIn": "Log masuk",
         "user": "Pengguna",
         "userName": "Nama pengguna",
@@ -27,8 +26,7 @@
         "addFromUsers": "Tambah daripada pengguna",
         "configure": "Konfigurasikan akaun",
         "createUserForPerson": "Cipta pengguna untuk individu",
-        "manageRoles": "Urus peranan",
-        "sync": "Segerakkan"
+        "manageRoles": "Urus peranan"
     },
     "site": {
         "editProfile": "Edit profil anda"

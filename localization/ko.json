@@ -13,7 +13,6 @@
         "passwordConfirmation": "비밀번호 확인",
         "permission": "권한",
         "permissions": "권한",
-        "phone": "전화번호",
         "signIn": "로그인",
         "user": "사용자",
         "userName": "사용자 이름",
@@ -27,8 +26,7 @@
         "addFromUsers": "사용자로부터 추가",
         "configure": "계정 구성",
         "createUserForPerson": "개인에 대한 사용자 생성",
-        "manageRoles": "역할 관리",
-        "sync": "동기화"
+        "manageRoles": "역할 관리"
     },
     "site": {
         "editProfile": "프로필을 편집하십시오"

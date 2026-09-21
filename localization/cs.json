@@ -13,7 +13,6 @@
         "passwordConfirmation": "Potvrzení hesla",
         "permission": "Oprávnění",
         "permissions": "Oprávnění",
-        "phone": "Telefonní číslo",
         "signIn": "Přihlásit se",
         "user": "Uživatel",
         "userName": "Uživatelské jméno",
@@ -27,8 +26,7 @@
         "addFromUsers": "Přidat z uživatelů",
         "configure": "Nastavit účty",
         "createUserForPerson": "Vytvořit uživatele pro osobu",
-        "manageRoles": "Spravovat role",
-        "sync": "Synchronizovat"
+        "manageRoles": "Spravovat role"
     },
     "site": {
         "editProfile": "Upravit profil"

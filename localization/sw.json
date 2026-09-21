@@ -13,7 +13,6 @@
         "passwordConfirmation": "Uthibitisho wa nenosiri",
         "permission": "Ruhusa",
         "permissions": "Ruhusa",
-        "phone": "Nambari ya simu",
         "signIn": "Ingia",
         "user": "Mtumiaji",
         "userName": "Jina la mtumiaji",
@@ -27,8 +26,7 @@
         "addFromUsers": "Ongeza kutoka kwa watumiaji",
         "configure": "Sanidi akaunti",
         "createUserForPerson": "Unda mtumiaji kwa ajili ya mtu",
-        "manageRoles": "Dhibiti majukumu",
-        "sync": "Landanisha"
+        "manageRoles": "Dhibiti majukumu"
     },
     "site": {
         "editProfile": "Hariri wasifu wako"

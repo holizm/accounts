@@ -13,7 +13,6 @@
         "passwordConfirmation": "Passwortbestätigung",
         "permission": "Berechtigung",
         "permissions": "Berechtigungen",
-        "phone": "Telefonnummer",
         "signIn": "Anmelden",
         "user": "Benutzer",
         "userName": "Nutzername",
@@ -27,8 +26,7 @@
         "addFromUsers": "Von Benutzern hinzufügen",
         "configure": "Konten konfigurieren",
         "createUserForPerson": "Benutzer für Person erstellen",
-        "manageRoles": "Rollen verwalten",
-        "sync": "Synchronisieren"
+        "manageRoles": "Rollen verwalten"
     },
     "site": {
         "editProfile": "Bearbeiten Sie Ihr Profil"

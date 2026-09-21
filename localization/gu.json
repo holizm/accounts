@@ -13,7 +13,6 @@
         "passwordConfirmation": "પાસવર્ડની પુષ્ટિ",
         "permission": "પરવાનગી",
         "permissions": "પરવાનગીઓ",
-        "phone": "ફોન નંબર",
         "signIn": "સાઇન ઇન કરો",
         "user": "વપરાશકર્તા",
         "userName": "વપરાશકર્તા નામ",
@@ -27,8 +26,7 @@
         "addFromUsers": "વપરાશકર્તાઓમાંથી ઉમેરો",
         "configure": "ખાતાં ગોઠવો",
         "createUserForPerson": "વ્યક્તિ માટે વપરાશકર્તા બનાવો",
-        "manageRoles": "ભૂમિકાઓ સંચાલિત કરો",
-        "sync": "સમન્વય કરો"
+        "manageRoles": "ભૂમિકાઓ સંચાલિત કરો"
     },
     "site": {
         "editProfile": "તમારી પ્રોફાઇલ સંપાદિત કરો"

@@ -13,7 +13,6 @@
         "passwordConfirmation": "Підтвердження пароля",
         "permission": "Дозвіл",
         "permissions": "Дозволи",
-        "phone": "Номер телефону",
         "signIn": "Увійти",
         "user": "Користувач",
         "userName": "Ім’я користувача",
@@ -27,8 +26,7 @@
         "addFromUsers": "Додати з користувачів",
         "configure": "Налаштувати облікові записи",
         "createUserForPerson": "Створити користувача для особи",
-        "manageRoles": "Керувати ролями",
-        "sync": "Синхронізувати"
+        "manageRoles": "Керувати ролями"
     },
     "site": {
         "editProfile": "Редагувати свій профіль"

@@ -3,7 +3,7 @@ import CreateUserForPersonDialog from './createUserForPersonDialog'
 
 export default <>
     <ListAction
-        title='accountsSync'
+        title='coreSync'
         icon='syncAlt'
         post='/accounts/user/syncAll'
         notApplicableToItems

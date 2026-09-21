@@ -13,7 +13,6 @@
         "passwordConfirmation": "Потврда лозинке",
         "permission": "Дозвола",
         "permissions": "Дозволе",
-        "phone": "Број телефона",
         "signIn": "Пријави се",
         "user": "Корисник",
         "userName": "Корисничко име",
@@ -27,8 +26,7 @@
         "addFromUsers": "Додај из корисника",
         "configure": "Подеси налоге",
         "createUserForPerson": "Креирај корисника за особу",
-        "manageRoles": "Управљај улогама",
-        "sync": "Синхронизуј"
+        "manageRoles": "Управљај улогама"
     },
     "site": {
         "editProfile": "Уредите свој профил"

@@ -13,7 +13,6 @@
         "passwordConfirmation": "Xác nhận mật khẩu",
         "permission": "Quyền",
         "permissions": "Các quyền",
-        "phone": "Số điện thoại",
         "signIn": "Đăng nhập",
         "user": "Người dùng",
         "userName": "Tên tài khoản",
@@ -27,8 +26,7 @@
         "addFromUsers": "Thêm từ người dùng",
         "configure": "Định cấu hình tài khoản",
         "createUserForPerson": "Tạo người dùng cho người",
-        "manageRoles": "Quản lý vai trò",
-        "sync": "Đồng bộ hóa"
+        "manageRoles": "Quản lý vai trò"
     },
     "site": {
         "editProfile": "Chỉnh sửa hồ sơ của bạn"

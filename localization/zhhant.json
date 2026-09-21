@@ -13,7 +13,6 @@
         "passwordConfirmation": "確認密碼",
         "permission": "權限",
         "permissions": "權限",
-        "phone": "電話號碼",
         "signIn": "登入",
         "user": "使用者",
         "userName": "使用者名稱",
@@ -27,8 +26,7 @@
         "addFromUsers": "從使用者新增",
         "configure": "設定帳戶",
         "createUserForPerson": "為人員建立使用者",
-        "manageRoles": "管理角色",
-        "sync": "同步"
+        "manageRoles": "管理角色"
     },
     "site": {
         "editProfile": "編輯您的個人資料"

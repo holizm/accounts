@@ -13,7 +13,6 @@
         "passwordConfirmation": "पासवर्ड पुष्टि",
         "permission": "अनुमति",
         "permissions": "अनुमतियाँ",
-        "phone": "फ़ोन नंबर",
         "signIn": "साइन इन करें",
         "user": "उपयोगकर्ता",
         "userName": "उपयोगकर्ता नाम",
@@ -27,8 +26,7 @@
         "addFromUsers": "उपयोगकर्ताओं से जोड़ें",
         "configure": "खाते कॉन्फ़िगर करें",
         "createUserForPerson": "व्यक्ति के लिए उपयोगकर्ता बनाएं",
-        "manageRoles": "भूमिकाएँ प्रबंधित करें",
-        "sync": "सिंक करें"
+        "manageRoles": "भूमिकाएँ प्रबंधित करें"
     },
     "site": {
         "editProfile": "अपनी प्रोफ़ाइल को संपादित करें"

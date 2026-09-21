@@ -13,7 +13,6 @@
         "passwordConfirmation": "Tabbatar da kalmar sirri",
         "permission": "Izini",
         "permissions": "Izinai",
-        "phone": "Lambar waya",
         "signIn": "Shiga",
         "user": "Mai amfani",
         "userName": "Sunan mai amfani",
@@ -27,8 +26,7 @@
         "addFromUsers": "Ƙara daga masu amfani",
         "configure": "Saita asusu",
         "createUserForPerson": "Ƙirƙiri mai amfani don mutum",
-        "manageRoles": "Sarrafa matsayi",
-        "sync": "Aiki tare"
+        "manageRoles": "Sarrafa matsayi"
     },
     "site": {
         "editProfile": "Gyara bayanan martabarka"

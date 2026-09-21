@@ -13,7 +13,6 @@
         "passwordConfirmation": "Επιβεβαίωση κωδικού πρόσβασης",
         "permission": "Δικαίωμα",
         "permissions": "Δικαιώματα",
-        "phone": "Αριθμός τηλεφώνου",
         "signIn": "Σύνδεση",
         "user": "Χρήστης",
         "userName": "Όνομα χρήστη",
@@ -27,8 +26,7 @@
         "addFromUsers": "Προσθήκη από χρήστες",
         "configure": "Ρύθμιση λογαριασμών",
         "createUserForPerson": "Δημιουργία χρήστη για άτομο",
-        "manageRoles": "Διαχείριση ρόλων",
-        "sync": "Συγχρονισμός"
+        "manageRoles": "Διαχείριση ρόλων"
     },
     "site": {
         "editProfile": "Επεξεργασία του προφίλ σας"

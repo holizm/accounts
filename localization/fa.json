@@ -13,7 +13,6 @@
         "passwordConfirmation": "تایید رمز عبور",
         "permission": "مجوز",
         "permissions": "مجوزها",
-        "phone": "شماره تلفن",
         "signIn": "ورود",
         "user": "کاربر",
         "userName": "نام کاربری",
@@ -27,8 +26,7 @@
         "addFromUsers": "افزودن از کاربران",
         "configure": "پیکربندی حساب‌ها",
         "createUserForPerson": "ایجاد کاربر برای شخص",
-        "manageRoles": "مدیریت نقش‌ها",
-        "sync": "همگام‌سازی"
+        "manageRoles": "مدیریت نقش‌ها"
     },
     "site": {
         "editProfile": "ویرایش پروفایل"

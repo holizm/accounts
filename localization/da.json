@@ -13,7 +13,6 @@
         "passwordConfirmation": "Bekræft adgangskode",
         "permission": "Tilladelse",
         "permissions": "Tilladelser",
-        "phone": "Telefonnummer",
         "signIn": "Log ind",
         "user": "Bruger",
         "userName": "Brugernavn",
@@ -27,8 +26,7 @@
         "addFromUsers": "Tilføj fra brugere",
         "configure": "Konfigurer konti",
         "createUserForPerson": "Opret bruger for person",
-        "manageRoles": "Administrer roller",
-        "sync": "Synkroniser"
+        "manageRoles": "Administrer roller"
     },
     "site": {
         "editProfile": "Rediger din profil"

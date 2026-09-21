@@ -13,7 +13,6 @@
         "passwordConfirmation": "پاسورڈ کی تو ثیق",
         "permission": "اجازت",
         "permissions": "اجازتیں",
-        "phone": "فون نمبر",
         "signIn": "سائن ان",
         "user": "صارف",
         "userName": "صارف کا نام",
@@ -27,8 +26,7 @@
         "addFromUsers": "صارفین سے شامل کریں۔",
         "configure": "اکاؤنٹس کو ترتیب دیں۔",
         "createUserForPerson": "فرد کے لیے صارف بنائیں",
-        "manageRoles": "کرداروں کا نظم کریں۔",
-        "sync": "مطابقت پذیری"
+        "manageRoles": "کرداروں کا نظم کریں۔"
     },
     "site": {
         "editProfile": "اپنے پروفائل میں ترمیم کریں"

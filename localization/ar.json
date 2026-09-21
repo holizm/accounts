@@ -13,7 +13,6 @@
         "passwordConfirmation": "تأكيد كلمة المرور",
         "permission": "صلاحية",
         "permissions": "صلاحيات",
-        "phone": "رقم الهاتف",
         "signIn": "تسجيل الدخول",
         "user": "مستخدم",
         "userName": "اسم المستخدم",
@@ -27,8 +26,7 @@
         "addFromUsers": "إضافة من المستخدمين",
         "configure": "تكوين الحسابات",
         "createUserForPerson": "إنشاء مستخدم للشخص",
-        "manageRoles": "إدارة الأدوار",
-        "sync": "مزامنة"
+        "manageRoles": "إدارة الأدوار"
     },
     "site": {
         "editProfile": "تحرير ملفك الشخصي"

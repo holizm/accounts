@@ -13,7 +13,6 @@
         "passwordConfirmation": "የይለፍ ቃል ማረጋገጫ",
         "permission": "ፈቃድ",
         "permissions": "ፈቃዶች",
-        "phone": "ስልክ ቁጥር",
         "signIn": "ግባ",
         "user": "ተጠቃሚ",
         "userName": "የተጠቃሚ ስም",
@@ -27,8 +26,7 @@
         "addFromUsers": "ከተጠቃሚዎች አክል",
         "configure": "መለያዎችን አዋቅር",
         "createUserForPerson": "ለግለሰብ ተጠቃሚ ፍጠር",
-        "manageRoles": "ሚናዎችን አስተዳድር",
-        "sync": "አመሳስል"
+        "manageRoles": "ሚናዎችን አስተዳድር"
     },
     "site": {
         "editProfile": "መገለጫዎን ያርትዑ"

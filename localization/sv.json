@@ -13,7 +13,6 @@
         "passwordConfirmation": "Bekräfta lösenord",
         "permission": "Behörighet",
         "permissions": "Behörigheter",
-        "phone": "Telefonnummer",
         "signIn": "Logga in",
         "user": "Användare",
         "userName": "Användarnamn",
@@ -27,8 +26,7 @@
         "addFromUsers": "Lägg till från användare",
         "configure": "Konfigurera konton",
         "createUserForPerson": "Skapa användare för person",
-        "manageRoles": "Hantera roller",
-        "sync": "Synkronisera"
+        "manageRoles": "Hantera roller"
     },
     "site": {
         "editProfile": "Redigera din profil"

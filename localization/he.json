@@ -13,7 +13,6 @@
         "passwordConfirmation": "אימות סיסמה",
         "permission": "הרשאה",
         "permissions": "הרשאות",
-        "phone": "מספר טלפון",
         "signIn": "כניסה",
         "user": "משתמש",
         "userName": "שם משתמש",
@@ -27,8 +26,7 @@
         "addFromUsers": "הוספה ממשתמשים",
         "configure": "הגדרת חשבונות",
         "createUserForPerson": "יצירת משתמש עבור אדם",
-        "manageRoles": "ניהול תפקידים",
-        "sync": "סנכרון"
+        "manageRoles": "ניהול תפקידים"
     },
     "site": {
         "editProfile": "עריכת הפרופיל שלך"

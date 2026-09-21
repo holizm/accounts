@@ -13,7 +13,6 @@
         "passwordConfirmation": "Kumpirmasyon ng password",
         "permission": "Pahintulot",
         "permissions": "Mga pahintulot",
-        "phone": "Numero ng telepono",
         "signIn": "Mag-sign in",
         "user": "User",
         "userName": "Username",
@@ -27,8 +26,7 @@
         "addFromUsers": "Idagdag mula sa mga user",
         "configure": "I-configure ang mga account",
         "createUserForPerson": "Gumawa ng user para sa tao",
-        "manageRoles": "Pamahalaan ang mga tungkulin",
-        "sync": "I-sync"
+        "manageRoles": "Pamahalaan ang mga tungkulin"
     },
     "site": {
         "editProfile": "I-edit ang iyong profile"

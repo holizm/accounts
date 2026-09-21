@@ -13,7 +13,6 @@
         "passwordConfirmation": "Confirmarea parolei",
         "permission": "Permisiune",
         "permissions": "Permisiuni",
-        "phone": "Număr de telefon",
         "signIn": "Autentificare",
         "user": "Utilizator",
         "userName": "Nume de utilizator",
@@ -27,8 +26,7 @@
         "addFromUsers": "Adaugă din utilizatori",
         "configure": "Configurează conturile",
         "createUserForPerson": "Creează utilizator pentru persoană",
-        "manageRoles": "Gestionează rolurile",
-        "sync": "Sincronizează"
+        "manageRoles": "Gestionează rolurile"
     },
     "site": {
         "editProfile": "Editează-ți profilul"

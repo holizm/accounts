@@ -13,7 +13,6 @@
         "passwordConfirmation": "Konfirmasi kata sandi",
         "permission": "Izin",
         "permissions": "Izin",
-        "phone": "Nomor telepon",
         "signIn": "Masuk",
         "user": "Pengguna",
         "userName": "Nama pengguna",
@@ -27,8 +26,7 @@
         "addFromUsers": "Tambahkan dari pengguna",
         "configure": "Konfigurasikan akun",
         "createUserForPerson": "Buat pengguna untuk orang",
-        "manageRoles": "Kelola peran",
-        "sync": "Sinkronkan"
+        "manageRoles": "Kelola peran"
     },
     "site": {
         "editProfile": "Edit profil Anda"

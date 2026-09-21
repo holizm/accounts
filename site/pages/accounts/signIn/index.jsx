@@ -137,7 +137,7 @@ export default component$(() => {
         autofocus: true,
         dir: 'ltr',
         disabled: sendingOtp.value,
-        id: 'accountsPhone',
+        id: 'corePhone',
         onClick$: $(e => visiblePhone.value != visiblePhone.value),
         onInput$: $(e => {
             phone.value = e.target.value

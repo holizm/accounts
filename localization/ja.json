@@ -13,7 +13,6 @@
         "passwordConfirmation": "パスワードの確認",
         "permission": "権限",
         "permissions": "権限",
-        "phone": "電話番号",
         "signIn": "サインイン",
         "user": "ユーザー",
         "userName": "ユーザー名",
@@ -27,8 +26,7 @@
         "addFromUsers": "ユーザーから追加",
         "configure": "アカウントを構成する",
         "createUserForPerson": "個人のユーザーを作成する",
-        "manageRoles": "役割の管理",
-        "sync": "同期"
+        "manageRoles": "役割の管理"
     },
     "site": {
         "editProfile": "プロフィールを編集します"

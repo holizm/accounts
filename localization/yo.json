@@ -13,7 +13,6 @@
         "passwordConfirmation": "Ìjẹ́rìísí ọ̀rọ̀ aṣínà",
         "permission": "Ìyọ̀nda",
         "permissions": "Àwọn ìyọ̀nda",
-        "phone": "Nọ́mbà fóònù",
         "signIn": "Wọlé",
         "user": "Olùlò",
         "userName": "Orúkọ olùlò",
@@ -27,8 +26,7 @@
         "addFromUsers": "Ṣàfikún láti ọ̀dọ̀ àwọn olùlò",
         "configure": "Ṣètò àwọn àkọọ́lẹ̀",
         "createUserForPerson": "Ṣẹ̀dá olùlò fún ẹni",
-        "manageRoles": "Ṣàkóso àwọn ipa",
-        "sync": "Múdójúìwọ̀n"
+        "manageRoles": "Ṣàkóso àwọn ipa"
     },
     "site": {
         "editProfile": "Ṣàtúnṣe prófáìlì rẹ"

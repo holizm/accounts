@@ -36,7 +36,6 @@ export default ({
     }
 
     return <DialogForm
-
         inputs={inputs}
         okAction={changePassword}
         title='accountsChangePassword'

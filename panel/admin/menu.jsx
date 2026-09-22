@@ -3,11 +3,11 @@ export default [
         children: [
             {
                 path: '/accounts/user/list',
-                title: 'coreUsers'
-            }
+                title: 'coreUsers',
+            },
         ],
         icon: 'peopleAlt',
         path: '/accounts',
-        title: 'accountsAccounts'
-    }
+        title: 'accountsAccounts',
+    },
 ]

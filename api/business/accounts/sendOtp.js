@@ -1,11 +1,8 @@
 import crypto from 'crypto'
-import { totp as TotpGenerator } from 'otplib'
+// import otplib from 'otplib'
 import {
-    clientError,
     ensure,
     error,
-    pascalize,
-    providers,
     settings,
 } from 'core'
 import { sendTextMessage } from 'notifications'
@@ -30,13 +27,11 @@ export const sendOtp = async params => {
         password,
         user: user.id,
     })
-    error(`OTP => ${phone} - ${otp}`)
-    const template = `${pascalize(providers.tenant)}SignInCode`
-
     await sendTextMessage({
-        item: user.id,
+        ...params,
+        item: user,
         phone,
-        template,
+        notificationKey: 'sendOtp',
         tokens: { otp }
     })
 
@@ -53,12 +48,14 @@ export const sendOtp = async params => {
 const createTotp = userKey => {
     const seconds = 60 // parseInt(CoreConfig.getSetting('otpLifetimeInSeconds') || '60', 10)
     const length = 5 // parseInt(CoreConfig.getSetting('otpLength') || '5', 10)
-    TotpGenerator.options = {
-        algorithm: 'sha512',
-        digits: length,
-        step: seconds,
-    }
-    return TotpGenerator.generate(userKey)
+    // const TotpGenerator = otplib.totp
+    // TotpGenerator.options = {
+    //     algorithm: 'sha512',
+    //     digits: length,
+    //     step: seconds,
+    // }
+    // return TotpGenerator.generate(userKey)
+    return ''
 }
 
 export const makePasswordFromOtp = otp => {

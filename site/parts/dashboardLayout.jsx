@@ -2,20 +2,14 @@ import {
     component$,
     Slot,
 } from '@builder.io/qwik'
-import { SignOut } from 'accounts'
+import {
+    DashboardContent,
+    DashboardSidebar,
+} from 'accounts'
 
-export default component$(({ signOutText }) => <main class='dashboard'>
-    <aside class='sidebar'>
-        <SignOut>
-            <button
-                class='signOutAction'
-                type='button'
-            >
-                {signOutText}
-            </button>
-        </SignOut>
-    </aside>
-    <section class='content'>
+export default component$(props => <main class='dashboard'>
+    <DashboardSidebar {...props} />
+    <DashboardContent>
         <Slot />
-    </section>
+    </DashboardContent>
 </main>)

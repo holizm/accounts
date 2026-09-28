@@ -12,7 +12,6 @@ import {
 export default component$(() => {
 
     const data = loadDashboard().value
-    const { translations } = data
     const session = useSession()
 
     useVisibleTask$(async () => {
@@ -21,5 +20,8 @@ export default component$(() => {
         }
     })
 
-    return <DashboardWelcome message={translations.dashboardWelcomeMessage} />
+    return <DashboardWelcome
+        {...data}
+        session={session}
+    />
 })

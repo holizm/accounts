@@ -4,6 +4,7 @@ import {
     useAsync
 } from 'core'
 import { getValues } from 'contents'
+import { getPersonInfo } from 'contacts'
 import {
     getGlobalization,
     applyGranularity,
@@ -28,12 +29,15 @@ export default routeLoader$(async props => {
         getFromCacheOrApi(newUrl, props),
         getValues('dashboard', props),
         getGlobalization(props),
+        getPersonInfo(props)
     ])
     globalization.translations.dashboardWelcomeMessage = applyGranularity(globalization.translations, 'dashboardWelcomeMessage', 'accounts')
 
-    return {
+    const dashboard = {
         ...data,
         ...layout,
         ...globalization,
+        profileUrl: `${globalization?.localePathPrefix || ''}/accounts/dashboard/profile`,
     }
+    return dashboard
 })

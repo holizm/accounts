@@ -1,25 +1,15 @@
 import { createOnPost } from 'core'
 import ensureIamUser from './ensureIamUser.js'
 
-export default async params => {
-    const {
-        defaultPersonType,
-        item,
-    } = params
+export default async ({ item }) => {
     await ensureIamUser(params)
     if (item.person) {
         return
     }
-    const personType =
-        defaultPersonType === 'juridical'
-        ?
-        'juridicalPerson'
-        :
-        'naturalPerson'
     const person = await createOnPost({
         ...params,
         part: 'contacts',
-        type: personType,
+        type: 'person'
     })
     const { inherited, ...personData } = person
     item.contact = inherited

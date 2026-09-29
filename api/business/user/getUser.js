@@ -7,6 +7,7 @@ import {
 
 export const getUser = async requestedUserUuid => {
     const uuid = providers.user || requestedUserUuid
+
     ensure(uuid).isSomething('invalidRequest')
     const user = await getByFilter(
         {

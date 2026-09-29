@@ -22,19 +22,18 @@ export default routeLoader$(async props => {
     } = props
 
     const [
-        data,
         layout,
         globalization,
+        person
     ] = await useAsync([
-        getFromCacheOrApi(newUrl, props),
         getValues('dashboard', props),
         getGlobalization(props),
         getPersonInfo(props)
     ])
     globalization.translations.dashboardWelcomeMessage = applyGranularity(globalization.translations, 'dashboardWelcomeMessage', 'accounts')
+    console.log(person, "ssssss")
 
     const dashboard = {
-        ...data,
         ...layout,
         ...globalization,
         profileUrl: `${globalization?.localePathPrefix || ''}/accounts/dashboard/profile`,

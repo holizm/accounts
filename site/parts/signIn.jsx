@@ -43,7 +43,7 @@ export default component$(({
             <input
                 type='hidden'
                 name='options.redirectTo'
-                value={returnTo || '/accounts/dashboard'}
+                value={returnTo || '/dashboard'}
             />
             <div onClick$={handleClick}>
                 <Slot />

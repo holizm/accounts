@@ -55,7 +55,6 @@ const getParams = async (env, url) => {
         params.iamClientSecret = tenantSettings.secret
     }
     paramsCache[host] = params
-    console.log(params, "sssssss")
     return params
 }
 

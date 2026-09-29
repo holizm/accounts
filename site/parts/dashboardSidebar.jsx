@@ -8,9 +8,9 @@ export default ({
     <nav class='menu'>
         {
             menu?.map(item => <a
-                aria-current={pathname === `/accounts/dashboard${item.path}` && 'page'}
+                aria-current={pathname === `/dashboard${item.path}` && 'page'}
                 class='item'
-                href={`/accounts/dashboard${item.path}`}
+                href={`/dashboard${item.path}`}
                 key={item.path}
             >
                 {

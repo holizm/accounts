@@ -1,4 +1,4 @@
-import Icons from 'icons'
+import icons from 'icons'
 import {
     Email,
     Text,
@@ -37,7 +37,7 @@ export default personType => {
             placeholder='accountsUserName'
             required
             dir='ltr'
-            startIcon={Icons.AccountCircle}
+            startIcon={icons.accountCircle}
         />
         <Email
             property='email'

@@ -1,0 +1,11 @@
+@reference 'tailwindcss';
+
+@layer part {
+    .autoSignIn {
+        @apply flex h-full w-full items-center justify-center;
+
+        .progress {
+            @apply h-5 w-5 animate-spin rounded-full border border-current border-t-transparent;
+        }
+    }
+}

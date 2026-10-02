@@ -1,6 +1,6 @@
 @reference 'tailwindcss';
 
-@layer part {
+@layer partPage {
     .autoSignIn {
         @apply flex h-full w-full items-center justify-center;
 

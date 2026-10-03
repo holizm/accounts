@@ -1,7 +1,6 @@
 import { component$, useVisibleTask$ } from '@builder.io/qwik'
 import { useLocation } from '@builder.io/qwik-city'
 import { useSignIn } from 'accounts'
-import '../../../styles/autoSignIn.css'
 
 export default component$(() => {
     const loc = useLocation()

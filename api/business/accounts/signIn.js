@@ -4,6 +4,7 @@ import {
     httpForm,
     settings,
 } from 'core'
+import getAccountsBaseUrl from '../getAccountsBaseUrl.js'
 import { makePasswordFromOtp } from './sendOtp.js'
 
 export const signIn = async params => {
@@ -17,7 +18,7 @@ export const signIn = async params => {
     const tenantSettings = settings.production?.site?.iamClientSecrets?.find(
         item => item.domain === tenant.prodDomain
     )
-    const accountsUrl = settings.accounts.url.replace(/\/$/, '')
+    const accountsUrl = getAccountsBaseUrl(tenant)
     const url = `${accountsUrl}/realms/${tenant.id}/protocol/openid-connect/token`
     const { responseJson } = await httpForm(url, {
         client_id: 'site',

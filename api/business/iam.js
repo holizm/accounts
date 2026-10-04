@@ -10,8 +10,7 @@ import {
     settings,
     warning,
 } from 'core'
-
-const baseUrl = settings.accounts.url.replace(/\/$/, '')
+import getAccountsBaseUrl from './getAccountsBaseUrl.js'
 
 const tokenCache = {}
 const realmValidationCache = {}
@@ -26,15 +25,18 @@ const getRealm = params => {
             i => i.domain === tenant.prodDomain
         )
     if (!tenantSettings) clientError(`Missing IAM client secret for tenant ${tenant.prodDomain}`)
-    return {
+    const realmConfiguration = {
+        baseUrl: getAccountsBaseUrl(tenant),
         realm: tenant.id,
         tenant,
         tenantSettings,
     }
+    return realmConfiguration
 }
 
 export const getAdminToken = async params => {
     const {
+        baseUrl,
         realm,
         tenant,
         tenantSettings,
@@ -66,7 +68,10 @@ export const getAdminToken = async params => {
 }
 
 const verifyRealmOnce = async params => {
-    const { realm } = getRealm(params)
+    const {
+        baseUrl,
+        realm,
+    } = getRealm(params)
     const cacheKey = realm
     if (realmValidationCache[cacheKey]) {
         return
@@ -89,7 +94,10 @@ const verifyRealmOnce = async params => {
 const iamApi = async (method, path, data, options) => {
     const token = await getAdminToken(options)
     await verifyRealmOnce(options)
-    const { realm } = getRealm(options)
+    const {
+        baseUrl,
+        realm,
+    } = getRealm(options)
     const url = `${baseUrl}/admin/realms/${realm}/${path}`
     options = options || {}
     options.headers = { Authorization: `Bearer ${token}`, ...options.headers }

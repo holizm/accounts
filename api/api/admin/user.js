@@ -7,7 +7,9 @@ import {
 import {
     assignRoles,
     changePassword,
+    getPermissions,
     getRoles,
+    setPermissions,
     syncUsers,
 } from 'accountsBusiness'
 
@@ -58,6 +60,8 @@ export default {
     assignRolesOnPost,
     changePasswordOnPost,
     createForPersonOnPost,
+    permissions: getPermissions,
     rolesOnGet,
+    setPermissionsOnPost: setPermissions,
     syncAllOnPost: syncUsers,
 }

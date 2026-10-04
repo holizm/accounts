@@ -24,7 +24,8 @@
         "addFromUsers": "افزودن از کاربران",
         "configure": "پیکربندی حساب‌ها",
         "createUserForPerson": "ایجاد کاربر برای شخص",
-        "manageRoles": "مدیریت نقش‌ها"
+        "manageRoles": "مدیریت نقش‌ها",
+        "permissionHelp": "منع بر اجازه اولویت دارد. ارث‌بری این استثنا را حذف می‌کند."
     },
     "site": {
         "editProfile": "ویرایش پروفایل"

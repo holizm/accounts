@@ -24,7 +24,8 @@
         "addFromUsers": "Lägg till från användare",
         "configure": "Konfigurera konton",
         "createUserForPerson": "Skapa användare för person",
-        "manageRoles": "Hantera roller"
+        "manageRoles": "Hantera roller",
+        "permissionHelp": "Neka har företräde framför Tillåt. Ärv tar bort detta undantag."
     },
     "site": {
         "editProfile": "Redigera din profil"

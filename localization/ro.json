@@ -24,7 +24,8 @@
         "addFromUsers": "Adaugă din utilizatori",
         "configure": "Configurează conturile",
         "createUserForPerson": "Creează utilizator pentru persoană",
-        "manageRoles": "Gestionează rolurile"
+        "manageRoles": "Gestionează rolurile",
+        "permissionHelp": "Refuzul are prioritate. Moștenirea elimină această excepție."
     },
     "site": {
         "editProfile": "Editează-ți profilul"

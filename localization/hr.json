@@ -24,7 +24,8 @@
         "addFromUsers": "Dodaj iz korisnika",
         "configure": "Konfiguriraj račune",
         "createUserForPerson": "Stvori korisnika za osobu",
-        "manageRoles": "Upravljaj ulogama"
+        "manageRoles": "Upravljaj ulogama",
+        "permissionHelp": "Zabrana ima prednost pred dopuštenjem. Nasljeđivanje uklanja ovu iznimku."
     },
     "site": {
         "editProfile": "Uredite svoj profil"

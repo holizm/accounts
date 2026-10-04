@@ -24,7 +24,8 @@
         "addFromUsers": "Legg til fra brukere",
         "configure": "Konfigurer kontoer",
         "createUserForPerson": "Opprett bruker for person",
-        "manageRoles": "Administrer roller"
+        "manageRoles": "Administrer roller",
+        "permissionHelp": "Avvis har forrang over Tillat. Arv fjerner dette unntaket."
     },
     "site": {
         "editProfile": "Rediger profilen din"

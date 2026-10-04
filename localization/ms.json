@@ -24,7 +24,8 @@
         "addFromUsers": "Tambah daripada pengguna",
         "configure": "Konfigurasikan akaun",
         "createUserForPerson": "Cipta pengguna untuk individu",
-        "manageRoles": "Urus peranan"
+        "manageRoles": "Urus peranan",
+        "permissionHelp": "Penolakan mengatasi kebenaran. Pewarisan membuang pengecualian ini."
     },
     "site": {
         "editProfile": "Edit profil anda"

@@ -24,7 +24,8 @@
         "addFromUsers": "Adicionar de usuários",
         "configure": "Configurar contas",
         "createUserForPerson": "Criar usuário para pessoa",
-        "manageRoles": "Gerenciar funções"
+        "manageRoles": "Gerenciar funções",
+        "permissionHelp": "Negar tem prioridade sobre Permitir. Herdar remove esta exceção."
     },
     "site": {
         "editProfile": "Edite seu perfil"

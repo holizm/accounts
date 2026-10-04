@@ -24,7 +24,8 @@
         "addFromUsers": "Von Benutzern hinzufügen",
         "configure": "Konten konfigurieren",
         "createUserForPerson": "Benutzer für Person erstellen",
-        "manageRoles": "Rollen verwalten"
+        "manageRoles": "Rollen verwalten",
+        "permissionHelp": "Verweigern hat Vorrang vor Erlauben. Erben entfernt diese Ausnahme."
     },
     "site": {
         "editProfile": "Bearbeiten Sie Ihr Profil"

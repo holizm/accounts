@@ -24,7 +24,8 @@
         "addFromUsers": "إضافة من المستخدمين",
         "configure": "تكوين الحسابات",
         "createUserForPerson": "إنشاء مستخدم للشخص",
-        "manageRoles": "إدارة الأدوار"
+        "manageRoles": "إدارة الأدوار",
+        "permissionHelp": "المنع له الأولوية على السماح. التوريث يزيل هذا الاستثناء."
     },
     "site": {
         "editProfile": "تحرير ملفك الشخصي"

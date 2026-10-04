@@ -24,7 +24,8 @@
         "addFromUsers": "Ƙara daga masu amfani",
         "configure": "Saita asusu",
         "createUserForPerson": "Ƙirƙiri mai amfani don mutum",
-        "manageRoles": "Sarrafa matsayi"
+        "manageRoles": "Sarrafa matsayi",
+        "permissionHelp": "Hani ya fi izini fifiko. Gada yana cire wannan keɓancewa."
     },
     "site": {
         "editProfile": "Gyara bayanan martabarka"

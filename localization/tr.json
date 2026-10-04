@@ -24,7 +24,8 @@
         "addFromUsers": "Kullanıcılardan Ekle",
         "configure": "Hesapları yapılandırma",
         "createUserForPerson": "Kişiye göre kullanıcı oluştur",
-        "manageRoles": "Rolleri yönet"
+        "manageRoles": "Rolleri yönet",
+        "permissionHelp": "Ret, izinden önceliklidir. Devralma bu istisnayı kaldırır."
     },
     "site": {
         "editProfile": "Profilinizi Düzenle"

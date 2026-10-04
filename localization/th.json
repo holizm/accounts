@@ -24,7 +24,8 @@
         "addFromUsers": "เพิ่มจากผู้ใช้",
         "configure": "กำหนดค่าบัญชี",
         "createUserForPerson": "สร้างผู้ใช้สำหรับบุคคล",
-        "manageRoles": "จัดการบทบาท"
+        "manageRoles": "จัดการบทบาท",
+        "permissionHelp": "การปฏิเสธมีความสำคัญกว่าการอนุญาต การสืบทอดจะลบข้อยกเว้นนี้"
     },
     "site": {
         "editProfile": "แก้ไขโปรไฟล์ของคุณ"

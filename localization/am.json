@@ -24,7 +24,8 @@
         "addFromUsers": "ከተጠቃሚዎች አክል",
         "configure": "መለያዎችን አዋቅር",
         "createUserForPerson": "ለግለሰብ ተጠቃሚ ፍጠር",
-        "manageRoles": "ሚናዎችን አስተዳድር"
+        "manageRoles": "ሚናዎችን አስተዳድር",
+        "permissionHelp": "ከልክል ከፍቀድ ይቀድማል። ውረስ ይህን ልዩ ደንብ ያስወግዳል።"
     },
     "site": {
         "editProfile": "መገለጫዎን ያርትዑ"

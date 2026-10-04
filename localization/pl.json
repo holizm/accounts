@@ -24,7 +24,8 @@
         "addFromUsers": "Dodaj z użytkowników",
         "configure": "Skonfiguruj konta",
         "createUserForPerson": "Utwórz użytkownika dla osoby",
-        "manageRoles": "Zarządzaj rolami"
+        "manageRoles": "Zarządzaj rolami",
+        "permissionHelp": "Odmowa ma pierwszeństwo. Dziedziczenie usuwa ten wyjątek."
     },
     "site": {
         "editProfile": "Edytuj swój profil"

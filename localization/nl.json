@@ -24,7 +24,8 @@
         "addFromUsers": "Toevoegen vanuit gebruikers",
         "configure": "Accounts configureren",
         "createUserForPerson": "Gebruiker voor persoon maken",
-        "manageRoles": "Rollen beheren"
+        "manageRoles": "Rollen beheren",
+        "permissionHelp": "Weigeren heeft voorrang op Toestaan. Overerven verwijdert deze uitzondering."
     },
     "site": {
         "editProfile": "Uw profiel bewerken"

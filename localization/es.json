@@ -24,7 +24,8 @@
         "addFromUsers": "Agregar de usuarios",
         "configure": "Configurar cuentas",
         "createUserForPerson": "Crear usuario para persona",
-        "manageRoles": "Administrar roles"
+        "manageRoles": "Administrar roles",
+        "permissionHelp": "Denegar tiene prioridad sobre Permitir. Heredar elimina esta excepción."
     },
     "site": {
         "editProfile": "Edite su perfil"

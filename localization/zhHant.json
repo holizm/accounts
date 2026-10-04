@@ -24,7 +24,8 @@
         "addFromUsers": "從使用者新增",
         "configure": "設定帳戶",
         "createUserForPerson": "為人員建立使用者",
-        "manageRoles": "管理角色"
+        "manageRoles": "管理角色",
+        "permissionHelp": "拒絕優先於允許。繼承會移除此覆寫規則。"
     },
     "site": {
         "editProfile": "編輯您的個人資料"

@@ -24,7 +24,8 @@
         "addFromUsers": "Hozzáadás a felhasználókból",
         "configure": "Fiókok beállítása",
         "createUserForPerson": "Felhasználó létrehozása személyhez",
-        "manageRoles": "Szerepkörök kezelése"
+        "manageRoles": "Szerepkörök kezelése",
+        "permissionHelp": "A tiltás elsőbbséget élvez. Az öröklés eltávolítja ezt a kivételt."
     },
     "site": {
         "editProfile": "Profil szerkesztése"

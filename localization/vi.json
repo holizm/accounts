@@ -24,7 +24,8 @@
         "addFromUsers": "Thêm từ người dùng",
         "configure": "Định cấu hình tài khoản",
         "createUserForPerson": "Tạo người dùng cho người",
-        "manageRoles": "Quản lý vai trò"
+        "manageRoles": "Quản lý vai trò",
+        "permissionHelp": "Từ chối được ưu tiên hơn Cho phép. Kế thừa xóa ngoại lệ này."
     },
     "site": {
         "editProfile": "Chỉnh sửa hồ sơ của bạn"

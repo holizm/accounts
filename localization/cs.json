@@ -24,7 +24,8 @@
         "addFromUsers": "Přidat z uživatelů",
         "configure": "Nastavit účty",
         "createUserForPerson": "Vytvořit uživatele pro osobu",
-        "manageRoles": "Spravovat role"
+        "manageRoles": "Spravovat role",
+        "permissionHelp": "Zákaz má přednost před povolením. Zdědění odstraní tuto výjimku."
     },
     "site": {
         "editProfile": "Upravit profil"

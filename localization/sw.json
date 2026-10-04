@@ -24,7 +24,8 @@
         "addFromUsers": "Ongeza kutoka kwa watumiaji",
         "configure": "Sanidi akaunti",
         "createUserForPerson": "Unda mtumiaji kwa ajili ya mtu",
-        "manageRoles": "Dhibiti majukumu"
+        "manageRoles": "Dhibiti majukumu",
+        "permissionHelp": "Kukataa kunatangulia kuruhusu. Kurithi huondoa ubaguzi huu."
     },
     "site": {
         "editProfile": "Hariri wasifu wako"

@@ -24,7 +24,8 @@
         "addFromUsers": "Lisää käyttäjistä",
         "configure": "Määritä tilit",
         "createUserForPerson": "Luo käyttäjä henkilölle",
-        "manageRoles": "Hallitse rooleja"
+        "manageRoles": "Hallitse rooleja",
+        "permissionHelp": "Esto on etusijalla sallimiseen nähden. Periminen poistaa tämän poikkeuksen."
     },
     "site": {
         "editProfile": "Muokkaa profiiliasi"

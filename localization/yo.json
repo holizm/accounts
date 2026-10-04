@@ -24,7 +24,8 @@
         "addFromUsers": "Ṣàfikún láti ọ̀dọ̀ àwọn olùlò",
         "configure": "Ṣètò àwọn àkọọ́lẹ̀",
         "createUserForPerson": "Ṣẹ̀dá olùlò fún ẹni",
-        "manageRoles": "Ṣàkóso àwọn ipa"
+        "manageRoles": "Ṣàkóso àwọn ipa",
+        "permissionHelp": "Kíkọ̀ ní ààyò ju fífàyè gbà lọ. Jíjogún yọ ìyàsọ́tọ̀ yìí kúrò."
     },
     "site": {
         "editProfile": "Ṣàtúnṣe prófáìlì rẹ"

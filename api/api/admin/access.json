@@ -1,0 +1,16 @@
+{
+    "user": {
+        "permissions": {
+            "authenticationRequired": true,
+            "roles": [
+                "superAdmin"
+            ]
+        },
+        "setPermissionsOnPost": {
+            "authenticationRequired": true,
+            "roles": [
+                "superAdmin"
+            ]
+        }
+    }
+}

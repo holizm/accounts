@@ -24,7 +24,8 @@
         "addFromUsers": "Додај из корисника",
         "configure": "Подеси налоге",
         "createUserForPerson": "Креирај корисника за особу",
-        "manageRoles": "Управљај улогама"
+        "manageRoles": "Управљај улогама",
+        "permissionHelp": "Забрана има предност. Наслеђивање уклања овај изузетак."
     },
     "site": {
         "editProfile": "Уредите свој профил"

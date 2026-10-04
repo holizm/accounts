@@ -24,7 +24,8 @@
         "addFromUsers": "Tambahkan dari pengguna",
         "configure": "Konfigurasikan akun",
         "createUserForPerson": "Buat pengguna untuk orang",
-        "manageRoles": "Kelola peran"
+        "manageRoles": "Kelola peran",
+        "permissionHelp": "Penolakan mengalahkan izin. Pewarisan menghapus pengecualian ini."
     },
     "site": {
         "editProfile": "Edit profil Anda"

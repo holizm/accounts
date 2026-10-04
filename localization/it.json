@@ -24,7 +24,8 @@
         "addFromUsers": "Aggiungi dagli utenti",
         "configure": "Configura gli account",
         "createUserForPerson": "Crea utente per persona",
-        "manageRoles": "Gestire i ruoli"
+        "manageRoles": "Gestire i ruoli",
+        "permissionHelp": "Nega ha precedenza su Consenti. Eredita rimuove questa eccezione."
     },
     "site": {
         "editProfile": "Modifica il tuo profilo"

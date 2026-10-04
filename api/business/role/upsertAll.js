@@ -1,11 +1,11 @@
 import {
     dbUpsertItems,
     generateId,
-    parseTenants,
+    getSystemRoles,
 } from 'core'
 
 export const upsertAll = async () => {
-    const names = [...new Set(parseTenants().flatMap(tenant => tenant.roles))].sort()
+    const names = getSystemRoles()
     const items = []
     for (const name of names) {
         const id = await generateId({

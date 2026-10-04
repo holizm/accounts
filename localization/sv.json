@@ -25,7 +25,8 @@
         "configure": "Konfigurera konton",
         "createUserForPerson": "Skapa användare för person",
         "manageRoles": "Hantera roller",
-        "permissionHelp": "Neka har företräde framför Tillåt. Ärv tar bort detta undantag."
+        "permissionHelp": "Neka har företräde framför Tillåt. Ärv tar bort detta undantag.",
+        "upsertAllRoles": "Infoga eller uppdatera alla roller"
     },
     "site": {
         "editProfile": "Redigera din profil"

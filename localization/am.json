@@ -25,7 +25,8 @@
         "configure": "መለያዎችን አዋቅር",
         "createUserForPerson": "ለግለሰብ ተጠቃሚ ፍጠር",
         "manageRoles": "ሚናዎችን አስተዳድር",
-        "permissionHelp": "ከልክል ከፍቀድ ይቀድማል። ውረስ ይህን ልዩ ደንብ ያስወግዳል።"
+        "permissionHelp": "ከልክል ከፍቀድ ይቀድማል። ውረስ ይህን ልዩ ደንብ ያስወግዳል።",
+        "upsertAllRoles": "ሁሉንም ሚናዎች ያስገቡ ወይም ያዘምኑ"
     },
     "site": {
         "editProfile": "መገለጫዎን ያርትዑ"

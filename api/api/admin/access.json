@@ -12,5 +12,13 @@
                 "superAdmin"
             ]
         }
+    },
+    "role": {
+        "upsertAllOnPost": {
+            "authenticationRequired": true,
+            "roles": [
+                "superAdmin"
+            ]
+        }
     }
 }

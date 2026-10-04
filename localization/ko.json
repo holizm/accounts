@@ -25,7 +25,8 @@
         "configure": "계정 구성",
         "createUserForPerson": "개인에 대한 사용자 생성",
         "manageRoles": "역할 관리",
-        "permissionHelp": "거부가 허용보다 우선합니다. 상속은 이 예외를 제거합니다."
+        "permissionHelp": "거부가 허용보다 우선합니다. 상속은 이 예외를 제거합니다.",
+        "upsertAllRoles": "모든 역할 추가 또는 업데이트"
     },
     "site": {
         "editProfile": "프로필을 편집하십시오"

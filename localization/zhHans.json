@@ -25,7 +25,8 @@
         "configure": "配置账户",
         "createUserForPerson": "为人员创建用户",
         "manageRoles": "管理角色",
-        "permissionHelp": "拒绝优先于允许。继承会移除此覆盖规则。"
+        "permissionHelp": "拒绝优先于允许。继承会移除此覆盖规则。",
+        "upsertAllRoles": "添加或更新所有角色"
     },
     "site": {
         "editProfile": "编辑您的个人资料"

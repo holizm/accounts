@@ -1,3 +1,1 @@
-export default <>
-    <th>role Name</th>
-</>
+export default <th>role</th>

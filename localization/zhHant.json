@@ -25,7 +25,8 @@
         "configure": "設定帳戶",
         "createUserForPerson": "為人員建立使用者",
         "manageRoles": "管理角色",
-        "permissionHelp": "拒絕優先於允許。繼承會移除此覆寫規則。"
+        "permissionHelp": "拒絕優先於允許。繼承會移除此覆寫規則。",
+        "upsertAllRoles": "新增或更新所有角色"
     },
     "site": {
         "editProfile": "編輯您的個人資料"

@@ -25,7 +25,8 @@
         "configure": "アカウントを構成する",
         "createUserForPerson": "個人のユーザーを作成する",
         "manageRoles": "役割の管理",
-        "permissionHelp": "拒否は許可より優先されます。継承はこの例外を削除します。"
+        "permissionHelp": "拒否は許可より優先されます。継承はこの例外を削除します。",
+        "upsertAllRoles": "すべてのロールを追加または更新"
     },
     "site": {
         "editProfile": "プロフィールを編集します"

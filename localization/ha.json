@@ -25,7 +25,8 @@
         "configure": "Saita asusu",
         "createUserForPerson": "Ƙirƙiri mai amfani don mutum",
         "manageRoles": "Sarrafa matsayi",
-        "permissionHelp": "Hani ya fi izini fifiko. Gada yana cire wannan keɓancewa."
+        "permissionHelp": "Hani ya fi izini fifiko. Gada yana cire wannan keɓancewa.",
+        "upsertAllRoles": "Ƙara ko sabunta duk matsayi"
     },
     "site": {
         "editProfile": "Gyara bayanan martabarka"

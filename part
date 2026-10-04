@@ -16,3 +16,6 @@ userPermission
     permission
     effect optional
     unique user permission
+role deterministicIdentifiers
+    name unique
+    sharedTenancy

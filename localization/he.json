@@ -25,7 +25,8 @@
         "configure": "הגדרת חשבונות",
         "createUserForPerson": "יצירת משתמש עבור אדם",
         "manageRoles": "ניהול תפקידים",
-        "permissionHelp": "דחייה קודמת לאישור. ירושה מסירה את החריגה הזו."
+        "permissionHelp": "דחייה קודמת לאישור. ירושה מסירה את החריגה הזו.",
+        "upsertAllRoles": "הוספה או עדכון של כל התפקידים"
     },
     "site": {
         "editProfile": "עריכת הפרופיל שלך"

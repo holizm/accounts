@@ -25,7 +25,8 @@
         "configure": "Configurar contas",
         "createUserForPerson": "Criar usuário para pessoa",
         "manageRoles": "Gerenciar funções",
-        "permissionHelp": "Negar tem prioridade sobre Permitir. Herdar remove esta exceção."
+        "permissionHelp": "Negar tem prioridade sobre Permitir. Herdar remove esta exceção.",
+        "upsertAllRoles": "Inserir ou atualizar todos os papéis"
     },
     "site": {
         "editProfile": "Edite seu perfil"

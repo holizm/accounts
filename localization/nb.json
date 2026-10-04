@@ -25,7 +25,8 @@
         "configure": "Konfigurer kontoer",
         "createUserForPerson": "Opprett bruker for person",
         "manageRoles": "Administrer roller",
-        "permissionHelp": "Avvis har forrang over Tillat. Arv fjerner dette unntaket."
+        "permissionHelp": "Avvis har forrang over Tillat. Arv fjerner dette unntaket.",
+        "upsertAllRoles": "Sett inn eller oppdater alle roller"
     },
     "site": {
         "editProfile": "Rediger profilen din"

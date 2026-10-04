@@ -1,5 +1,5 @@
-export default item => <>
-    <td>
-        {item.name}
-    </td>
-</>
+export default item => <td>
+    {
+        item.name
+    }
+</td>

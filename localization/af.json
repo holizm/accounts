@@ -25,7 +25,8 @@
         "configure": "Stel rekeninge op",
         "createUserForPerson": "Skep gebruiker vir persoon",
         "manageRoles": "Bestuur rolle",
-        "permissionHelp": "Weier geniet voorkeur bo Laat toe. Erf verwyder hierdie uitsondering."
+        "permissionHelp": "Weier geniet voorkeur bo Laat toe. Erf verwyder hierdie uitsondering.",
+        "upsertAllRoles": "Voeg alle rolle in of werk dit by"
     },
     "site": {
         "editProfile": "Wysig jou profiel"

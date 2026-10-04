@@ -25,7 +25,8 @@
         "configure": "Sanidi akaunti",
         "createUserForPerson": "Unda mtumiaji kwa ajili ya mtu",
         "manageRoles": "Dhibiti majukumu",
-        "permissionHelp": "Kukataa kunatangulia kuruhusu. Kurithi huondoa ubaguzi huu."
+        "permissionHelp": "Kukataa kunatangulia kuruhusu. Kurithi huondoa ubaguzi huu.",
+        "upsertAllRoles": "Ongeza au sasisha majukumu yote"
     },
     "site": {
         "editProfile": "Hariri wasifu wako"

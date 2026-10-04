@@ -25,7 +25,8 @@
         "configure": "Konfigurer konti",
         "createUserForPerson": "Opret bruger for person",
         "manageRoles": "Administrer roller",
-        "permissionHelp": "Afvis har forrang over Tillad. Arv fjerner denne undtagelse."
+        "permissionHelp": "Afvis har forrang over Tillad. Arv fjerner denne undtagelse.",
+        "upsertAllRoles": "Indsæt eller opdater alle roller"
     },
     "site": {
         "editProfile": "Rediger din profil"

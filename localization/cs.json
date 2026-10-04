@@ -25,7 +25,8 @@
         "configure": "Nastavit účty",
         "createUserForPerson": "Vytvořit uživatele pro osobu",
         "manageRoles": "Spravovat role",
-        "permissionHelp": "Zákaz má přednost před povolením. Zdědění odstraní tuto výjimku."
+        "permissionHelp": "Zákaz má přednost před povolením. Zdědění odstraní tuto výjimku.",
+        "upsertAllRoles": "Vložit nebo aktualizovat všechny role"
     },
     "site": {
         "editProfile": "Upravit profil"

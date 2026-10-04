@@ -25,7 +25,8 @@
         "configure": "Configurează conturile",
         "createUserForPerson": "Creează utilizator pentru persoană",
         "manageRoles": "Gestionează rolurile",
-        "permissionHelp": "Refuzul are prioritate. Moștenirea elimină această excepție."
+        "permissionHelp": "Refuzul are prioritate. Moștenirea elimină această excepție.",
+        "upsertAllRoles": "Adaugă sau actualizează toate rolurile"
     },
     "site": {
         "editProfile": "Editează-ți profilul"

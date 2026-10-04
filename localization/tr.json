@@ -25,7 +25,8 @@
         "configure": "Hesapları yapılandırma",
         "createUserForPerson": "Kişiye göre kullanıcı oluştur",
         "manageRoles": "Rolleri yönet",
-        "permissionHelp": "Ret, izinden önceliklidir. Devralma bu istisnayı kaldırır."
+        "permissionHelp": "Ret, izinden önceliklidir. Devralma bu istisnayı kaldırır.",
+        "upsertAllRoles": "Tüm rolleri ekle veya güncelle"
     },
     "site": {
         "editProfile": "Profilinizi Düzenle"

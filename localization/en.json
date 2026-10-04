@@ -25,7 +25,8 @@
         "configure": "Configure accounts",
         "createUserForPerson": "Create user for person",
         "manageRoles": "Manage roles",
-        "permissionHelp": "Deny takes precedence over Allow. Inherit removes this override."
+        "permissionHelp": "Deny takes precedence over Allow. Inherit removes this override.",
+        "upsertAllRoles": "Upsert all roles"
     },
     "site": {
         "editProfile": "Edit your profile"

@@ -25,7 +25,8 @@
         "configure": "I-configure ang mga account",
         "createUserForPerson": "Gumawa ng user para sa tao",
         "manageRoles": "Pamahalaan ang mga tungkulin",
-        "permissionHelp": "Mas inuuna ang pagtanggi kaysa pagpayag. Inaalis ng pagmamana ang pagbubukod na ito."
+        "permissionHelp": "Mas inuuna ang pagtanggi kaysa pagpayag. Inaalis ng pagmamana ang pagbubukod na ito.",
+        "upsertAllRoles": "Idagdag o i-update ang lahat ng tungkulin"
     },
     "site": {
         "editProfile": "I-edit ang iyong profile"

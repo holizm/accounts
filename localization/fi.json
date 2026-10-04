@@ -25,7 +25,8 @@
         "configure": "Määritä tilit",
         "createUserForPerson": "Luo käyttäjä henkilölle",
         "manageRoles": "Hallitse rooleja",
-        "permissionHelp": "Esto on etusijalla sallimiseen nähden. Periminen poistaa tämän poikkeuksen."
+        "permissionHelp": "Esto on etusijalla sallimiseen nähden. Periminen poistaa tämän poikkeuksen.",
+        "upsertAllRoles": "Lisää tai päivitä kaikki roolit"
     },
     "site": {
         "editProfile": "Muokkaa profiiliasi"

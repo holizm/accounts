@@ -25,7 +25,8 @@
         "configure": "Konten konfigurieren",
         "createUserForPerson": "Benutzer für Person erstellen",
         "manageRoles": "Rollen verwalten",
-        "permissionHelp": "Verweigern hat Vorrang vor Erlauben. Erben entfernt diese Ausnahme."
+        "permissionHelp": "Verweigern hat Vorrang vor Erlauben. Erben entfernt diese Ausnahme.",
+        "upsertAllRoles": "Alle Rollen einfügen oder aktualisieren"
     },
     "site": {
         "editProfile": "Bearbeiten Sie Ihr Profil"

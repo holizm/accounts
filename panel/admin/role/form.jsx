@@ -5,9 +5,9 @@ import {
 
 const inputs = <>
     <Text
-        property='name'
-        required
         dir='ltr'
+        name
+        required
     />
 </>
 

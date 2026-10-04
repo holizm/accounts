@@ -11,8 +11,8 @@ export default () => {
             property='person'
         />
         <Text
-            property='username'
             placeholder='userName'
+            username
         />
     </>
 

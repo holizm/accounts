@@ -15,7 +15,7 @@ export default ({
             checkedItemsUrl={`/accounts/user/assignedRoles?id=${item.id || ''}`}
             choose={item => item.name}
             itemsUrl='/accounts/user/roles'
-            property='roles'
+            roles
             show={item => item.name}
         />
     </>

@@ -10,13 +10,13 @@ export default ({
     property,
     ...rest
 }) => <Browse
-        choose={choose}
-        display={item => item.username || item.naturalPersonName}
-        filters={filters}
-        headers={headers}
-        placeholder={placeholder ?? 'user'}
-        property={property ?? 'userUuid'}
-        row={row}
-        sorts={sorts}
-        {...rest}
-    />
+    choose={choose}
+    display={item => item.username || item.naturalPersonName}
+    filters={filters}
+    headers={headers}
+    placeholder={placeholder ?? 'user'}
+    property={property ?? 'userUuid'}
+    row={row}
+    sorts={sorts}
+    {...rest}
+/>

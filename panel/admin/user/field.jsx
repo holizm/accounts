@@ -14,7 +14,7 @@ export default ({
         display={item => item.username || item.naturalPersonName}
         filters={filters}
         headers={headers}
-        placeholder={placeholder ?? 'coreUser'}
+        placeholder={placeholder ?? 'user'}
         property={property ?? 'userUuid'}
         row={row}
         sorts={sorts}

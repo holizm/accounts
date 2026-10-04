@@ -31,7 +31,7 @@ export default props => {
             inputs={inputs}
         />
         <ListAction
-            title='accountsAddFromUsers'
+            title='addFromUsers'
             icon='peopleAlt'
             onClick={() => setOpen(true)}
         />

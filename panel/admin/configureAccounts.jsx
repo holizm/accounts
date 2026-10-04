@@ -6,6 +6,6 @@ export default () => {
     return isDevOrSuperAdmin() && <AppAction
         icon='security'
         post='/accounts/configure'
-        title='accountsConfigure'
+        title='configure'
     />
 }

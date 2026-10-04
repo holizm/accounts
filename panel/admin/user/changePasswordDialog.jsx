@@ -7,8 +7,8 @@ import {
 const inputs = <>
     <Password
         confirm
-        confirmationPlaceholder='accountsPasswordConfirmation'
-        placeholder='accountsPassword'
+        confirmationPlaceholder='passwordConfirmation'
+        placeholder='password'
         property='password'
     />
 </>
@@ -27,7 +27,7 @@ export default ({
         post(`/accounts/user/changePassword?uuid=${item.uuid}`, data)
             .then(data => {
                 setProgress(false)
-                success('accountsPasswordChanged')
+                success('passwordChanged')
                 reloadItem(item)
             }, e => {
                 setProgress(false)
@@ -38,6 +38,6 @@ export default ({
     return <DialogForm
         inputs={inputs}
         okAction={changePassword}
-        title='accountsChangePassword'
+        title='changePassword'
     />
 }

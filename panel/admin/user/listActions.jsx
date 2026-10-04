@@ -3,14 +3,14 @@ import CreateUserForPersonDialog from './createUserForPersonDialog'
 
 export default <>
     <ListAction
-        title='coreSync'
+        title='sync'
         icon='syncAlt'
         post='/accounts/user/syncAll'
         notApplicableToItems
         superAdmin
     />
     <ListAction
-        title='accountsForPerson'
+        title='forPerson'
         icon='personAdd'
         dialog={CreateUserForPersonDialog}
     />

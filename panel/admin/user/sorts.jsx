@@ -1,11 +1,11 @@
 export default [
     {
-        caption: 'accountsUserNameAToZ',
+        caption: 'userNameAToZ',
         direction: 'asc',
         property: 'username',
     },
     {
-        caption: 'accountsUserNameZToA',
+        caption: 'userNameZToA',
         property: 'username',
         direction: 'desc',
     }

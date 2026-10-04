@@ -32,6 +32,6 @@ export default ({
         disableAutomaticItemLoading
         inputs={inputs}
         submitTo={apiUrl}
-        title='accountsManageRoles'
+        title='manageRoles'
     />
 }

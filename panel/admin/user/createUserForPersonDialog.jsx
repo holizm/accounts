@@ -12,12 +12,12 @@ export default () => {
         />
         <Text
             property='username'
-            placeholder='accountsUserName'
+            placeholder='userName'
         />
     </>
 
     return <DialogForm
-        title='accountsCreateUserForPerson'
+        title='createUserForPerson'
         inputs={inputs}
         submitTo='/accounts/user/createForPerson'
     />

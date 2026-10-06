@@ -1,48 +1,25 @@
 import {
     clientError,
-    getTenant,
     httpDelete,
     httpForm,
     httpGet,
     httpPost,
     httpPut,
-    providers,
-    settings,
     warning,
 } from 'core'
-import getAccountsBaseUrl from './getAccountsBaseUrl.js'
+import getIamRealm from './getIamRealm.js'
 
 const tokenCache = {}
 const realmValidationCache = {}
-
-const getRealm = params => {
-    const tenant = getTenant(params.host || providers.host)
-    const tenantSettings = settings.
-        production?.
-        adminApi?.
-        iamClientSecrets?.
-        find(
-            i => i.domain === tenant.prodDomain
-        )
-    if (!tenantSettings) clientError(`Missing IAM client secret for tenant ${tenant.prodDomain}`)
-    const realmConfiguration = {
-        baseUrl: getAccountsBaseUrl(tenant),
-        realm: tenant.id,
-        tenant,
-        tenantSettings,
-    }
-    return realmConfiguration
-}
 
 export const getAdminToken = async params => {
     const {
         baseUrl,
         realm,
-        tenant,
         tenantSettings,
-    } = getRealm(params)
+    } = getIamRealm(params)
     const now = Date.now()
-    const tenantKey = tenant.id
+    const tenantKey = `${baseUrl}/realms/${realm}`
 
     const cached = tokenCache[tenantKey]
     if (cached && cached.accessToken && cached.expiresAt > now + 1000) {
@@ -71,8 +48,8 @@ const verifyRealmOnce = async params => {
     const {
         baseUrl,
         realm,
-    } = getRealm(params)
-    const cacheKey = realm
+    } = getIamRealm(params)
+    const cacheKey = `${baseUrl}/realms/${realm}`
     if (realmValidationCache[cacheKey]) {
         return
     }
@@ -97,7 +74,7 @@ const iamApi = async (method, path, data, options) => {
     const {
         baseUrl,
         realm,
-    } = getRealm(options)
+    } = getIamRealm(options)
     const url = `${baseUrl}/admin/realms/${realm}/${path}`
     options = options || {}
     options.headers = { Authorization: `Bearer ${token}`, ...options.headers }

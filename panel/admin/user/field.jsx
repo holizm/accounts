@@ -1,8 +1,10 @@
 import { Browse } from 'form'
-import filters from './filters'
-import headers from './headers'
-import row from './row'
-import sorts from './sorts'
+import {
+    AccountsUserFilters as filters,
+    AccountsUserHeaders as headers,
+    AccountsUserRow as row,
+    AccountsUserSorts as sorts,
+} from 'accountsCommon'
 
 export default ({
     choose,

@@ -1,6 +1,6 @@
 {
     "user": {
-        "permissions": {
+        "list": {
             "authenticationRequired": true,
             "roles": [
                 "admin",
@@ -9,7 +9,79 @@
                 "manager"
             ]
         },
-        "setPermissionsOnPost": {
+        "all": {
+            "authenticationRequired": true,
+            "roles": [
+                "admin",
+                "control",
+                "superAdmin",
+                "manager"
+            ]
+        },
+        "get": {
+            "authenticationRequired": true,
+            "roles": [
+                "admin",
+                "control",
+                "superAdmin",
+                "manager"
+            ]
+        },
+        "getBySlug": {
+            "authenticationRequired": true,
+            "roles": [
+                "admin",
+                "control",
+                "superAdmin",
+                "manager"
+            ]
+        },
+        "getByMeaning": {
+            "authenticationRequired": true,
+            "roles": [
+                "admin",
+                "control",
+                "superAdmin",
+                "manager"
+            ]
+        },
+        "getOrCreateAndGet": {
+            "authenticationRequired": true,
+            "roles": [
+                "admin",
+                "control",
+                "superAdmin",
+                "manager"
+            ]
+        },
+        "random": {
+            "authenticationRequired": true,
+            "roles": [
+                "admin",
+                "control",
+                "superAdmin",
+                "manager"
+            ]
+        },
+        "actives": {
+            "authenticationRequired": true,
+            "roles": [
+                "admin",
+                "control",
+                "superAdmin",
+                "manager"
+            ]
+        },
+        "exportToSpreadsheet": {
+            "authenticationRequired": true,
+            "roles": [
+                "admin",
+                "control",
+                "superAdmin",
+                "manager"
+            ]
+        },
+        "permissions": {
             "authenticationRequired": true,
             "roles": [
                 "admin",
@@ -27,116 +99,24 @@
                 "manager"
             ]
         },
-        "assignRolesOnPost": {
+        "setPermissionsOnPost": {
             "authenticationRequired": true,
             "roles": [
                 "admin",
                 "control",
-                "superAdmin"
-            ]
-        },
-        "changePasswordOnPost": {
-            "authenticationRequired": true,
-            "roles": [
-                "admin",
-                "control",
-                "superAdmin"
-            ]
-        },
-        "syncAllOnPost": {
-            "authenticationRequired": true,
-            "roles": [
-                "admin",
-                "control",
-                "superAdmin"
-            ]
-        },
-        "createForPersonOnPost": {
-            "authenticationRequired": true,
-            "roles": [
-                "admin",
-                "control",
-                "superAdmin"
-            ]
-        },
-        "changeActivationOnPost": {
-            "authenticationRequired": true,
-            "roles": [
-                "admin",
-                "control",
-                "superAdmin"
-            ]
-        },
-        "countItemsOnPost": {
-            "authenticationRequired": true,
-            "roles": [
-                "admin",
-                "control",
-                "superAdmin"
-            ]
-        },
-        "createOnPost": {
-            "authenticationRequired": true,
-            "roles": [
-                "admin",
-                "control",
-                "superAdmin"
-            ]
-        },
-        "deleteAllOnPost": {
-            "authenticationRequired": true,
-            "roles": [
-                "admin",
-                "control",
-                "superAdmin"
-            ]
-        },
-        "deleteItemsOnPost": {
-            "authenticationRequired": true,
-            "roles": [
-                "admin",
-                "control",
-                "superAdmin"
-            ]
-        },
-        "deleteOnPost": {
-            "authenticationRequired": true,
-            "roles": [
-                "admin",
-                "control",
-                "superAdmin"
-            ]
-        },
-        "toggleBooleanOnPost": {
-            "authenticationRequired": true,
-            "roles": [
-                "admin",
-                "control",
-                "superAdmin"
-            ]
-        },
-        "updateOnPost": {
-            "authenticationRequired": true,
-            "roles": [
-                "admin",
-                "control",
-                "superAdmin"
-            ]
-        },
-        "upsertOnPost": {
-            "authenticationRequired": true,
-            "roles": [
-                "admin",
-                "control",
-                "superAdmin"
+                "superAdmin",
+                "manager"
             ]
         }
     },
     "role": {
-        "upsertAllOnPost": {
+        "all": {
             "authenticationRequired": true,
             "roles": [
-                "superAdmin"
+                "admin",
+                "control",
+                "superAdmin",
+                "manager"
             ]
         }
     }

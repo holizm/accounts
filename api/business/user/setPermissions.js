@@ -4,25 +4,23 @@ import {
     dbUpsertItems,
     generateId,
 } from 'core'
-import { getPermissionAssignments } from './getPermissionAssignments.js'
-import { getPermissionCatalog } from './getPermissionCatalog.js'
+import { getPermissionChanges } from './getPermissionChanges.js'
 
 export const setPermissions = async params => {
     const {
         assignments,
+        changes,
         permissions,
+        reviewVersion,
         user,
-    } = await getPermissionAssignments(params)
-    const catalog = await getPermissionCatalog(params)
-    const submitted = Object.entries(params.body || {}).filter(([property]) => property.startsWith('permission'))
-    const byProperty = new Map(catalog.map(entry => [entry.property, entry]))
-    if (submitted.some(([property, effect]) => !byProperty.has(property) || !['allow', 'deny', 'inherit'].includes(effect))) {
-        clientError('invalidRequest')
-    }
+    } = await getPermissionChanges(params)
+    if (params.body?.reviewVersion !== reviewVersion) clientError('invalidRequest')
     const byCondition = new Map(permissions.map(permission => [permission.condition, permission]))
     const byPermission = new Map(assignments.map(assignment => [assignment.permission, assignment]))
-    for (const [property, effect] of submitted) {
-        const { condition } = byProperty.get(property)
+    for (const {
+        condition,
+        effect,
+    } of changes) {
         let permission = byCondition.get(condition)
         const existing = byPermission.get(permission?.id)
         if (effect === 'inherit') {

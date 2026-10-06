@@ -2,16 +2,15 @@ import { List } from 'list'
 import {
     AccountsUserFilters,
     AccountsUserHeaders,
+    AccountsUserPermissionsAction,
     AccountsUserRow,
     AccountsUserSorts,
 } from 'accountsCommon'
-import form from './form'
 
 export default <List
-    create={form}
     filters={AccountsUserFilters}
-    hasDelete
     headers={AccountsUserHeaders}
+    itemActions={AccountsUserPermissionsAction}
     row={AccountsUserRow}
     sorts={AccountsUserSorts}
 />

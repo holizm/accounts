@@ -14,6 +14,7 @@ export const getRoles = async params => {
         return normalizeRoles(await iamGet('roles', params))
     }
     const user = await dbItem({
+        acrossLocales: true,
         id,
         part: 'accounts',
         type: 'user',

@@ -1,7 +1,11 @@
 import { read } from 'core'
-import { upsertAll } from 'accountsBusiness'
+import {
+    getRoleOptions,
+    upsertAll,
+} from 'accountsBusiness'
 
 export default {
     ...read,
+    all: getRoleOptions,
     upsertAllOnPost: upsertAll,
 }

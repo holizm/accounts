@@ -16,7 +16,6 @@ export default ({
             choose={item => item.name}
             itemsUrl='/accounts/user/roles'
             roles
-            show={item => item.name}
         />
     </>
 

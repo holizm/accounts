@@ -1,54 +1,21 @@
 import {
     clientError,
     httpDelete,
-    httpForm,
     httpGet,
     httpPost,
     httpPut,
     warning,
 } from 'core'
+import getAdminToken from './getAdminToken.js'
 import getIamRealm from './getIamRealm.js'
 
-const tokenCache = {}
 const realmValidationCache = {}
-
-export const getAdminToken = async params => {
-    const {
-        baseUrl,
-        realm,
-        tenantSettings,
-    } = getIamRealm(params)
-    const now = Date.now()
-    const tenantKey = `${baseUrl}/realms/${realm}`
-
-    const cached = tokenCache[tenantKey]
-    if (cached && cached.accessToken && cached.expiresAt > now + 1000) {
-        return cached.accessToken
-    }
-
-    const url = `${baseUrl}/realms/${realm}/protocol/openid-connect/token`
-    const form = {
-        grant_type: 'client_credentials',
-        client_id: 'adminApi',
-        client_secret: tenantSettings.secret,
-    }
-
-    const { responseJson } = await httpForm(url, form)
-    const expiresIn = responseJson.expires_in || 300
-
-    tokenCache[tenantKey] = {
-        accessToken: responseJson.access_token,
-        expiresAt: Date.now() + (expiresIn - 30) * 1000,
-    }
-
-    return tokenCache[tenantKey].accessToken
-}
 
 const verifyRealmOnce = async params => {
     const {
         baseUrl,
         realm,
-    } = getIamRealm(params)
+    } = await getIamRealm(params)
     const cacheKey = `${baseUrl}/realms/${realm}`
     if (realmValidationCache[cacheKey]) {
         return
@@ -74,7 +41,7 @@ const iamApi = async (method, path, data, options) => {
     const {
         baseUrl,
         realm,
-    } = getIamRealm(options)
+    } = await getIamRealm(options)
     const url = `${baseUrl}/admin/realms/${realm}/${path}`
     options = options || {}
     options.headers = { Authorization: `Bearer ${token}`, ...options.headers }
@@ -102,3 +69,5 @@ export const iamGet = (path, options) => iamApi('get', path, null, options)
 export const iamPost = (path, data, options) => iamApi('post', path, data, options)
 export const iamPut = (path, data, options) => iamApi('put', path, data, options)
 export const iamDelete = (path, data, options) => iamApi('delete', path, data, options)
+
+export { getAdminToken }

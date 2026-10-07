@@ -37,4 +37,3 @@ export default async params => {
 
     return tokenCache[tenantKey].accessToken
 }
-

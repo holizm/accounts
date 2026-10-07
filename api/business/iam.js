@@ -21,7 +21,7 @@ const verifyRealmOnce = async params => {
         return
     }
     const url = `${baseUrl}/admin/realms/${realm}`
-    const { responseJson } = await httpGet(url, {
+    const { responseJson, ...rest } = await httpGet(url, {
         headers: {
             Authorization: `Bearer ${await getAdminToken(params)}`
         }

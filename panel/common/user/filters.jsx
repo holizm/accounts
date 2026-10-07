@@ -1,16 +1,7 @@
-import {
-    Lookup,
-    Text,
-} from 'list'
+import { Lookup } from 'list'
 
-export default <>
-    <Text
-        placeholder='userName'
-        property='username'
-    />
-    <Lookup
-        placeholder='coreRoles'
-        property='role'
-        type='accounts/role'
-    />
-</>
+export default <Lookup
+    placeholder='coreRoles'
+    property='role'
+    type='accounts/role'
+/>

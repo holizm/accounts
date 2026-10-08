@@ -10,7 +10,6 @@ import getAccountsBaseUrl from './getAccountsBaseUrl.js'
 
 export default async params => {
     const tenant = getTenantIamConfiguration(params) || getTenant(params?.host || providers.host)
-    console.log(tenant)
     const realm = tenant.realm
     const secrets = settings.production?.adminApi?.iamClientSecrets || []
     const tenantSettings = secrets.find(item => item.domain === tenant.prodDomain && item.realm === realm) ||
@@ -34,7 +33,5 @@ export default async params => {
         tenantSettings,
         tokenRealm,
     }
-    console.log(configuration)
-
     return configuration
 }

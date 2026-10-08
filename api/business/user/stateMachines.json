@@ -4,63 +4,8 @@
         "title": "User Status",
         "default": true,
         "states": [
-            {
-                "title": "active",
-                "meaning": "active",
-                "initial": true,
-                "color": "#16A34A",
-                "transition": [
-                    "suspended"
-                ],
-                "translations": {
-                    "ar": "نشط",
-                    "bn": "সক্রিয়",
-                    "de": "Aktiv",
-                    "en": "Active",
-                    "es": "Activo",
-                    "fa": "فعال",
-                    "fr": "Actif",
-                    "hi": "सक्रिय",
-                    "it": "Attivo",
-                    "ja": "有効",
-                    "ko": "활성",
-                    "pt": "Ativo",
-                    "ru": "Активно",
-                    "ta": "செயலில்",
-                    "tr": "Aktif",
-                    "ur": "فعال",
-                    "vi": "Hoạt động",
-                    "zh": "有效"
-                }
-            },
-            {
-                "title": "suspended",
-                "meaning": "suspended",
-                "color": "#6B7280",
-                "transition": [
-                    "active"
-                ],
-                "translations": {
-                    "ar": "معلق",
-                    "bn": "স্থগিত",
-                    "de": "Gesperrt",
-                    "en": "Suspended",
-                    "es": "Suspendido",
-                    "fa": "تعلیق شده",
-                    "fr": "Suspendu",
-                    "hi": "निलंबित",
-                    "it": "Sospeso",
-                    "ja": "停止中",
-                    "ko": "정지됨",
-                    "pt": "Suspenso",
-                    "ru": "Приостановлено",
-                    "ta": "இடைநிறுத்தப்பட்டது",
-                    "tr": "Askıya alındı",
-                    "ur": "معطل",
-                    "vi": "Đã tạm ngưng",
-                    "zh": "已暂停"
-                }
-            }
+            "active",
+            "suspended"
         ],
         "translations": {
             "ar": "الحالة",

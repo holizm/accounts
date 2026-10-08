@@ -35,20 +35,13 @@ const getParams = async (env, url) => {
         siteUrl
     }
 
-    let tenantSettings
-    if (globalThis.settings.isDeveloping) {
-        tenantSettings = globalThis.settings.production?.site?.iamClientSecrets?.find(
-            i => i.domain === tenant.prodDomain
-        )
-    } else {
-        const { loadPrivateSettings } = await import('core')
-        const privateSettings = await loadPrivateSettings()
-        tenantSettings = privateSettings?.iamClientSecrets?.find(
-            i => i.domain === tenant.prodDomain
-        )
-        if (privateSettings.authSecret) {
-            params.authSecret = privateSettings.authSecret
-        }
+    const { loadPrivateSettings } = await import('core')
+    const privateSettings = await loadPrivateSettings()
+    const tenantSettings = privateSettings?.iamClientSecrets?.find(
+        i => i.domain === tenant.prodDomain
+    )
+    if (privateSettings.authSecret) {
+        params.authSecret = privateSettings.authSecret
     }
 
     if (tenantSettings) {

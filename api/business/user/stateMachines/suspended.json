@@ -1,0 +1,28 @@
+{
+    "title": "suspended",
+    "meaning": "suspended",
+    "color": "#6B7280",
+    "transition": [
+        "active"
+    ],
+    "translations": {
+        "ar": "معلق",
+        "bn": "স্থগিত",
+        "de": "Gesperrt",
+        "en": "Suspended",
+        "es": "Suspendido",
+        "fa": "تعلیق شده",
+        "fr": "Suspendu",
+        "hi": "निलंबित",
+        "it": "Sospeso",
+        "ja": "停止中",
+        "ko": "정지됨",
+        "pt": "Suspenso",
+        "ru": "Приостановлено",
+        "ta": "இடைநிறுத்தப்பட்டது",
+        "tr": "Askıya alındı",
+        "ur": "معطل",
+        "vi": "Đã tạm ngưng",
+        "zh": "已暂停"
+    }
+}

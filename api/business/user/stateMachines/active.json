@@ -1,0 +1,29 @@
+{
+    "title": "active",
+    "meaning": "active",
+    "initial": true,
+    "color": "#16A34A",
+    "transition": [
+        "suspended"
+    ],
+    "translations": {
+        "ar": "نشط",
+        "bn": "সক্রিয়",
+        "de": "Aktiv",
+        "en": "Active",
+        "es": "Activo",
+        "fa": "فعال",
+        "fr": "Actif",
+        "hi": "सक्रिय",
+        "it": "Attivo",
+        "ja": "有効",
+        "ko": "활성",
+        "pt": "Ativo",
+        "ru": "Активно",
+        "ta": "செயலில்",
+        "tr": "Aktif",
+        "ur": "فعال",
+        "vi": "Hoạt động",
+        "zh": "有效"
+    }
+}

@@ -43,21 +43,25 @@ const iamApi = async (method, path, data, options) => {
         realm,
     } = await getIamRealm(options)
     const url = `${baseUrl}/admin/realms/${realm}/${path}`
-    options = options || {}
-    options.headers = { Authorization: `Bearer ${token}`, ...options.headers }
+    const requestOptions = {
+        headers: {
+            Authorization: `Bearer ${token}`,
+            ...options?.headers,
+        },
+    }
     let res
     switch (method) {
         case 'get':
-            res = await httpGet(url, options)
+            res = await httpGet(url, requestOptions)
             break
         case 'post':
-            res = await httpPost(url, data, options)
+            res = await httpPost(url, data, requestOptions)
             break
         case 'put':
-            res = await httpPut(url, data, options)
+            res = await httpPut(url, data, requestOptions)
             break
         case 'delete':
-            res = await httpDelete(url, data, options)
+            res = await httpDelete(url, data, requestOptions)
             break
         default:
             throw `Unsupported method: ${method}`

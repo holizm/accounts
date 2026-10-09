@@ -1,3 +1,5 @@
+import { Image } from 'panel'
+
 export default ({
     item,
     usersPropertyName
@@ -7,9 +9,10 @@ export default ({
                 className='px-2 py-0.5 rounded-sm'
                 key={user.id}
             >
-                <img
+                <Image
+                    alt={user.naturalPersonName || user.juridicalPersonName || user.username || ''}
                     className='w-8 h-8 rounded-full object-cover'
-                    src={user.personImageUrl || user.imageUrl}
+                    source={user.personImageUrl || user.imageUrl}
                     title={user.naturalPersonName}
                 />
             </span>

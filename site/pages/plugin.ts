@@ -33,7 +33,7 @@ const getParams = async (env, url) => {
         siteUrl
     }
 
-    const { loadPrivateSettings } = await import('core')
+    const { default: loadPrivateSettings } = await import('privateSettingsLoader')
     const privateSettings = await loadPrivateSettings()
     const tenantSettings = privateSettings?.iamClientSecrets?.find(
         i => i.domain === tenant.prodDomain

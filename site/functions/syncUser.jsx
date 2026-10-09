@@ -1,4 +1,4 @@
-import { post } from 'core'
+import { post } from 'post'
 
 export default session => {
     return post('user/syncByUuid', {

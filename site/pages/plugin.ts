@@ -2,12 +2,10 @@
 import { QwikAuth$ } from '@auth/qwik'
 import type { Provider } from '@auth/auth/providers'
 import Keycloak from '@auth/qwik/providers/keycloak'
-import {
-    getFromCacheOrApi,
-    getTenant,
-    pascalize,
-    post,
-} from 'core'
+import { getFromCacheOrApi } from 'getFromCacheOrApi'
+import getTenant from 'getTenant'
+import pascalize from 'pascalize'
+import { post } from 'post'
 
 const paramsCache: Record<string, any> = {}
 

@@ -1,3 +1,3 @@
-import { Action } from 'accounts'
+import AccountsAction from 'accountsAction'
 
-export default props => <Action {...props} />
+export default props => <AccountsAction {...props} />

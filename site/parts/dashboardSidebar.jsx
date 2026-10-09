@@ -1,4 +1,4 @@
-import { SignOut } from 'accounts'
+import AccountsSignOut from 'accountsSignOut'
 
 export default ({
     menu,
@@ -19,7 +19,7 @@ export default ({
             </a>)
         }
     </nav>
-    <SignOut>
+    <AccountsSignOut>
         <button
             class='signOutAction'
             type='button'
@@ -28,5 +28,5 @@ export default ({
                 translations?.accountsSignOut
             }
         </button>
-    </SignOut>
+    </AccountsSignOut>
 </aside>

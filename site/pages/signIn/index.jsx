@@ -6,16 +6,14 @@ import {
     useStyles,
 } from '@builder.io/qwik'
 import { post } from 'post'
-import { useSeo } from 'seo'
-import {
-    loadSignIn,
-    SignInLayout,
-} from 'accounts'
+import seoUseSeo from 'seoUseSeo'
+import accountsLoadSignIn from 'accountsLoadSignIn'
+import AccountsSignInLayout from 'accountsSignInLayout'
 import { loadSignIn as runnableLoader } from 'loaders'
 import { Layout as RunnableLayout } from 'signInParts'
 
 export default component$(() => {
-    const data = loadSignIn().value
+    const data = accountsLoadSignIn().value
     const extraData = runnableLoader().value
     const phonePattern = /^\+?[0-9]{1,3}\s?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$/
     const otpLength = useSignal(1)
@@ -193,16 +191,16 @@ export default component$(() => {
         ?
         <RunnableLayout {...props} />
         :
-        <SignInLayout {...props} />
+        <AccountsSignInLayout {...props} />
 })
 
 
-export { loadSignIn }
+export { accountsLoadSignIn as loadSignIn }
 
 export { runnableLoader }
 
 const head = ({ resolveValue }) => {
-    return useSeo(loadSignIn, resolveValue)
+    return seoUseSeo(accountsLoadSignIn, resolveValue)
 }
 
 export { head }

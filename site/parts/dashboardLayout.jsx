@@ -2,14 +2,12 @@ import {
     component$,
     Slot,
 } from '@builder.io/qwik'
-import {
-    DashboardContent,
-    DashboardSidebar,
-} from 'accounts'
+import AccountsDashboardContent from 'accountsDashboardContent'
+import AccountsDashboardSidebar from 'accountsDashboardSidebar'
 
 export default component$(props => <main class='dashboard'>
-    <DashboardSidebar {...props} />
-    <DashboardContent>
+    <AccountsDashboardSidebar {...props} />
+    <AccountsDashboardContent>
         <Slot />
-    </DashboardContent>
+    </AccountsDashboardContent>
 </main>)

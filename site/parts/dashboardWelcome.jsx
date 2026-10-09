@@ -1,9 +1,7 @@
-import {
-    DashboardWelcomeDetails,
-    DashboardWelcomeHeader,
-} from 'accounts'
+import AccountsDashboardWelcomeDetails from 'accountsDashboardWelcomeDetails'
+import AccountsDashboardWelcomeHeader from 'accountsDashboardWelcomeHeader'
 
 export default props => <section class='welcome'>
-    <DashboardWelcomeHeader {...props} />
-    <DashboardWelcomeDetails {...props} />
+    <AccountsDashboardWelcomeHeader {...props} />
+    <AccountsDashboardWelcomeDetails {...props} />
 </section>

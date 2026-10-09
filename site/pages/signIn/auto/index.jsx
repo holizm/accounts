@@ -1,10 +1,10 @@
 import { component$, useVisibleTask$ } from '@builder.io/qwik'
 import { useLocation } from '@builder.io/qwik-city'
-import { useSignIn } from 'accounts'
+import accountsUseSignIn from 'accountsUseSignIn'
 
 export default component$(() => {
     const loc = useLocation()
-    const signIn = useSignIn()
+    const signIn = accountsUseSignIn()
 
     useVisibleTask$(() => {
         const redirectTo = loc.url.searchParams.get('redirectTo') || '/dashboard'

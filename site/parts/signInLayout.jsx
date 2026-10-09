@@ -1,7 +1,5 @@
-import {
-    Action,
-    Field,
-} from 'accounts'
+import AccountsAction from 'accountsAction'
+import AccountsField from 'accountsField'
 
 export default props => {
 
@@ -36,7 +34,7 @@ export default props => {
                     {translations.otpSent}
                 </span>
                 <b class='phone'>{phone}</b>
-                <Action
+                <AccountsAction
                     {...changePhoneProps}
                     text={translations.changePhone}
                 />
@@ -45,7 +43,7 @@ export default props => {
         <div class='form'>
             {
                 visiblePhone &&
-                <Field
+                <AccountsField
                     error={
                         emptyPhone
                             ?
@@ -64,7 +62,7 @@ export default props => {
             }
             {
                 visibleOtp &&
-                <Field
+                <AccountsField
                     error={
                         emptyOtp
                             ?
@@ -83,7 +81,7 @@ export default props => {
             }
             {
                 visiblePhone &&
-                <Action
+                <AccountsAction
                     {...sendOtpProps}
                     progress={sendingOtp}
                     text={
@@ -98,7 +96,7 @@ export default props => {
             {
                 visibleOtp &&
                 <div class='actions'>
-                    <Action
+                    <AccountsAction
                         {...signInProps}
                         progress={signingIn}
                         text={

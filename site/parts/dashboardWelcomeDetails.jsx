@@ -1,14 +1,14 @@
-import { UserDetail } from 'accounts'
+import AccountsUserDetail from 'accountsUserDetail'
 
 export default ({
     session,
     translations,
 }) => <dl class='details'>
-    <UserDetail
+    <AccountsUserDetail
         label={translations?.coreName}
         value={session?.value?.user?.name}
     />
-    <UserDetail
+    <AccountsUserDetail
         label={translations?.coreEmail}
         value={session?.value?.user?.email}
     />

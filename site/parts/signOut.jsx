@@ -4,14 +4,14 @@ import {
     Slot,
     useSignal,
 } from '@builder.io/qwik'
-import { useSignOut } from 'accounts'
+import accountsUseSignOut from 'accountsUseSignOut'
 
 export default component$(({
     progress: ProgressComponent,
     returnTo,
 }) => {
 
-    const signOut = useSignOut()
+    const signOut = accountsUseSignOut()
     const progress = useSignal(false)
     const handleClick = $(() => {
         progress.value = true

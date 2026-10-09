@@ -5,7 +5,7 @@ import {
     useSignal,
 } from '@builder.io/qwik'
 import { useLocation } from '@builder.io/qwik-city'
-import { useSignIn } from 'accounts'
+import accountsUseSignIn from 'accountsUseSignIn'
 
 export default component$(({
     content,
@@ -13,7 +13,7 @@ export default component$(({
     returnTo,
 }) => {
     const { url } = useLocation()
-    const signIn = useSignIn()
+    const signIn = accountsUseSignIn()
     const progress = useSignal(false)
     const handleClick = $(async () => {
         progress.value = true

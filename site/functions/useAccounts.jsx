@@ -1,8 +1,8 @@
-import { useSession } from 'accounts'
+import accountsUseSession from 'accountsUseSession'
 
 export default session => {
     if (!session) {
-        session = useSession()
+        session = accountsUseSession()
     }
     const isSignedIn =
         session &&

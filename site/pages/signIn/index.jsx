@@ -5,12 +5,12 @@ import {
     useSignal,
     useStyles,
 } from '@builder.io/qwik'
-import { post } from 'post'
+import post from 'post'
 import seoUseSeo from 'seoUseSeo'
 import accountsLoadSignIn from 'accountsLoadSignIn'
 import AccountsSignInLayout from 'accountsSignInLayout'
-import { loadSignIn as runnableLoader } from 'loaders'
-import { Layout as RunnableLayout } from 'signInParts'
+import runnableLoader from 'loadSignIn'
+import SignInPartsLayout from 'signInPartsLayout'
 
 export default component$(() => {
     const data = accountsLoadSignIn().value
@@ -187,9 +187,9 @@ export default component$(() => {
         visiblePhone: visiblePhone.value,
     }
 
-    return RunnableLayout
+    return SignInPartsLayout
         ?
-        <RunnableLayout {...props} />
+        <SignInPartsLayout {...props} />
         :
         <AccountsSignInLayout {...props} />
 })

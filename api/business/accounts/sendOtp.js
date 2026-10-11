@@ -36,13 +36,15 @@ export const sendOtp = async params => {
         password,
         user: user.uuid,
     })
-    await sendTextMessage({
-        ...params,
-        item: user,
-        phone,
-        notificationKey: 'sendOtp',
-        tokens: { otp }
-    })
+    if (!settings.isDeveloping) {
+        await sendTextMessage({
+            ...params,
+            item: user,
+            phone,
+            notificationKey: 'sendOtp',
+            tokens: { otp }
+        })
+    }
 
     await cache({
         ...scope,

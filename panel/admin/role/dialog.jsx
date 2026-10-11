@@ -10,20 +10,16 @@ export default ({
     ...rest
 }) => {
 
-    const inputs = <>
-        <Checks
-            checkedItemsUrl={`/accounts/user/assignedRoles?id=${item.id || ''}`}
-            choose={item => item.name}
-            itemsUrl='/accounts/user/roles'
-            roles
-        />
-    </>
+    const inputs = <Checks
+        checkedItemsUrl={`/accounts/user/assignedRoles?id=${item.id || ''}`}
+        choose={item => item.name}
+        itemsUrl='/accounts/user/roles'
+        roles
+    />
 
     const apiUrl = url({
         path: '/accounts/user/assignRoles',
-        query: {
-            id: item.id
-        }
+        query: { id: item.id },
     })
 
     return <DialogForm

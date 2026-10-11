@@ -8,7 +8,10 @@ import { useContactsHooksUseDefaultPersonType } from 'contacts'
 export default personType => {
 
     const defaultPersonType = useContactsHooksUseDefaultPersonType()
-    const { isJuridical, isNatural } = defaultPersonType
+    const {
+        isJuridical,
+        isNatural,
+    } = defaultPersonType
 
     const naturalFields = <>
         <Text
@@ -21,12 +24,10 @@ export default personType => {
         />
     </>
 
-    const juridicalFields = <>
-        <Text
-            name
-            required
-        />
-    </>
+    const juridicalFields = <Text
+        name
+        required
+    />
 
     return <>
         <Text

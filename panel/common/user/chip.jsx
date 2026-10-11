@@ -1,12 +1,17 @@
 import { Image } from 'panel'
+import './chip.css'
 
-export default ({ item }) => <div className='flex gap-4 items-start'>
+export default ({ item }) => <div className='userChip'>
         <Image
             alt={item.naturalPersonName || item.juridicalPersonName || item.username || ''}
-            className='w-10 h-10 rounded-full object-cover'
+            className='avatar'
             source={item.personImageUrl || item.imageUrl}
         />
-        <span className='flex gap-2 items-center'>
-            <span className='font-bold text-slate-800'>{item.naturalPersonName || item.juridicalPersonName || item.username}</span>
+        <span className='identity'>
+            <span className='name'>
+                {
+                    item.naturalPersonName || item.juridicalPersonName || item.username
+                }
+            </span>
         </span>
     </div>

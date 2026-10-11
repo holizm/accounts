@@ -4,13 +4,11 @@ import {
     Password,
 } from 'form'
 
-const inputs = <>
-    <Password
-        confirm
-        confirmationPlaceholder='passwordConfirmation'
-        password
-    />
-</>
+const inputs = <Password
+    confirm
+    confirmationPlaceholder='passwordConfirmation'
+    password
+/>
 
 export default ({
     item,

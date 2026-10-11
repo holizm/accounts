@@ -1,14 +1,16 @@
 import { useState } from 'react'
 import { DialogContext } from 'contexts'
 import { ListAction } from 'list'
-import {
-    DialogForm
-} from 'form'
+import { DialogForm } from 'form'
 import UserField from './field'
 
 export default props => {
 
     const [open, setOpen] = useState(false)
+    const contextValue = {
+        open,
+        setOpen,
+    }
 
     const inputs = <>
         <UserField
@@ -20,20 +22,15 @@ export default props => {
         }
     </>
 
-    return <DialogContext
-        value={{
-            open,
-            setOpen
-        }}
-    >
+    return <DialogContext value={contextValue}>
         <DialogForm
             {...props}
             inputs={inputs}
         />
         <ListAction
-            title='addFromUsers'
             icon='peopleAlt'
             onClick={() => setOpen(true)}
+            title='addFromUsers'
         />
     </DialogContext>
 }

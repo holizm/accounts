@@ -6,19 +6,13 @@ import {
     AccountsUserSorts as sorts,
 } from 'accountsCommon'
 
-export default ({
-    choose,
-    placeholder,
-    property,
-    ...rest
-}) => <Browse
-    choose={choose}
+export default props => <Browse
+    {...props}
     display={item => item.username || item.naturalPersonName}
     filters={filters}
     headers={headers}
-    placeholder={placeholder ?? 'user'}
-    property={property ?? 'userUuid'}
+    placeholder={props.placeholder ?? 'user'}
+    property={props.property ?? 'userUuid'}
     row={row}
     sorts={sorts}
-    {...rest}
 />

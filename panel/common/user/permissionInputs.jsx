@@ -27,11 +27,7 @@ export default () => {
             id: currentItem.id,
             search: term,
         })
-        void get(`/accounts/user/permissions?${query}`).then(data => {
-            if (active) setCatalog(data)
-        }, e => {
-            if (active) error(e)
-        })
+        void get(`/accounts/user/permissions?${query}`).then(data => active && setCatalog(data), e => active && error(e))
         return () => { active = false }
     }, [currentItem?.id, term])
     const data = catalog || currentItem

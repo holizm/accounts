@@ -8,11 +8,9 @@ export default item => <>
     <Image />
     <td>
         <ValueWithTitle
-            value={(item.naturalPersonName || item.juridicalPersonName) || item.username}
             title={item.id}
+            value={(item.naturalPersonName || item.juridicalPersonName) || item.username}
         />
     </td>
-    <DateTime
-        date={item.lastSyncDate}
-    />
+    <DateTime date={item.lastSyncDate} />
 </>

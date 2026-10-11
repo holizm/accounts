@@ -16,7 +16,7 @@
         "signIn": "Войти",
         "userName": "Имя пользователя",
         "userNameAToZ": "Имя пользователя от А до Я",
-        "userNameZToA": "Имя пользователя Z-A",
+        "userNameZToA": "Имя пользователя от Я до А",
         "userPermission": "Разрешение пользователя",
         "userPermissions": "Разрешения пользователя"
     },

@@ -26,7 +26,7 @@
         "createUserForPerson": "Créer un utilisateur pour une personne",
         "manageRoles": "Gérer les rôles",
         "permissionHelp": "Refuser est prioritaire sur Autoriser. Hériter supprime cette exception.",
-        "upsertAllRoles": "Insérer ou mettre à jour tous les rôles"
+        "upsertAllRoles": "Ajouter ou mettre à jour tous les rôles"
     },
     "site": {
         "editProfile": "Modifiez votre profil"

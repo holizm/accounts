@@ -21,7 +21,7 @@
         "userPermissions": "User permissions"
     },
     "panel": {
-        "addFromUsers": "Add From Users",
+        "addFromUsers": "Add from users",
         "configure": "Configure accounts",
         "createUserForPerson": "Create user for person",
         "manageRoles": "Manage roles",

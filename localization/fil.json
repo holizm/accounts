@@ -15,8 +15,8 @@
         "permissions": "Mga pahintulot",
         "signIn": "Mag-sign in",
         "userName": "Username",
-        "userNameAToZ": "Username A-Z",
-        "userNameZToA": "Username Z-A",
+        "userNameAToZ": "Pangalan ng gumagamit A–Z",
+        "userNameZToA": "Pangalan ng gumagamit Z–A",
         "userPermission": "Pahintulot ng gumagamit",
         "userPermissions": "Mga pahintulot ng gumagamit"
     },

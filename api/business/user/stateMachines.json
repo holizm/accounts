@@ -1,7 +1,5 @@
 [
     {
-        "meaning": "userStatus",
-        "title": "User Status",
         "default": true,
         "states": [
             "active",
@@ -11,7 +9,7 @@
             "ar": "الحالة",
             "bn": "অবস্থা",
             "de": "Status",
-            "en": "Status",
+            "en": "User Status",
             "es": "Estado",
             "fa": "وضعیت",
             "fr": "Statut",

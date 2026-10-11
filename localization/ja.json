@@ -3,6 +3,7 @@
         "accounts": "アカウント",
         "anonymous": "匿名",
         "changePassword": "パスワードを変更する",
+        "editProfile": "プロフィールを編集します",
         "forPerson": "人向け",
         "key": "キー",
         "keys": "キー",
@@ -27,8 +28,5 @@
         "manageRoles": "役割の管理",
         "permissionHelp": "拒否は許可より優先されます。継承はこの例外を削除します。",
         "upsertAllRoles": "すべてのロールを追加または更新"
-    },
-    "site": {
-        "editProfile": "プロフィールを編集します"
     }
 }

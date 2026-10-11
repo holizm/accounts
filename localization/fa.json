@@ -3,6 +3,7 @@
         "accounts": "حساب‌ها",
         "anonymous": "ناشناس",
         "changePassword": "تغییر رمز عبور",
+        "editProfile": "ویرایش پروفایل",
         "forPerson": "برای شخص",
         "key": "کلید",
         "keys": "کلیدها",
@@ -27,8 +28,5 @@
         "manageRoles": "مدیریت نقش‌ها",
         "permissionHelp": "منع بر اجازه اولویت دارد. ارث‌بری این استثنا را حذف می‌کند.",
         "upsertAllRoles": "درج یا به‌روزرسانی همه نقش‌ها"
-    },
-    "site": {
-        "editProfile": "ویرایش پروفایل"
     }
 }

@@ -3,6 +3,7 @@
         "accounts": "账户",
         "anonymous": "匿名",
         "changePassword": "更改密码",
+        "editProfile": "编辑您的个人资料",
         "forPerson": "关联人员",
         "key": "密钥",
         "keys": "密钥",
@@ -27,8 +28,5 @@
         "manageRoles": "管理角色",
         "permissionHelp": "拒绝优先于允许。继承会移除此覆盖规则。",
         "upsertAllRoles": "添加或更新所有角色"
-    },
-    "site": {
-        "editProfile": "编辑您的个人资料"
     }
 }

@@ -3,6 +3,7 @@
         "accounts": "Comptes",
         "anonymous": "Anonyme",
         "changePassword": "Changer le mot de passe",
+        "editProfile": "Modifiez votre profil",
         "forPerson": "Pour personne",
         "key": "Clé",
         "keys": "Clés",
@@ -27,8 +28,5 @@
         "manageRoles": "Gérer les rôles",
         "permissionHelp": "Refuser est prioritaire sur Autoriser. Hériter supprime cette exception.",
         "upsertAllRoles": "Ajouter ou mettre à jour tous les rôles"
-    },
-    "site": {
-        "editProfile": "Modifiez votre profil"
     }
 }

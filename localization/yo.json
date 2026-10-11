@@ -3,6 +3,7 @@
         "accounts": "Àwọn àkọọ́lẹ̀",
         "anonymous": "Àìlórúkọ",
         "changePassword": "Yí ọ̀rọ̀ aṣínà padà",
+        "editProfile": "Ṣàtúnṣe prófáìlì rẹ",
         "forPerson": "Fún ẹni",
         "key": "Kọ́kọ́rọ́",
         "keys": "Àwọn kọ́kọ́rọ́",
@@ -27,8 +28,5 @@
         "manageRoles": "Ṣàkóso àwọn ipa",
         "permissionHelp": "Kíkọ̀ ní ààyò ju fífàyè gbà lọ. Jíjogún yọ ìyàsọ́tọ̀ yìí kúrò.",
         "upsertAllRoles": "Ṣàfikún tàbí mú gbogbo ipa dojuiwọn"
-    },
-    "site": {
-        "editProfile": "Ṣàtúnṣe prófáìlì rẹ"
     }
 }

@@ -3,6 +3,7 @@
         "accounts": "Tài khoản",
         "anonymous": "Vô danh",
         "changePassword": "Đổi mật khẩu",
+        "editProfile": "Chỉnh sửa hồ sơ của bạn",
         "forPerson": "Dành cho người",
         "key": "Khóa",
         "keys": "Các khóa",
@@ -27,8 +28,5 @@
         "manageRoles": "Quản lý vai trò",
         "permissionHelp": "Từ chối được ưu tiên hơn Cho phép. Kế thừa xóa ngoại lệ này.",
         "upsertAllRoles": "Thêm hoặc cập nhật tất cả vai trò"
-    },
-    "site": {
-        "editProfile": "Chỉnh sửa hồ sơ của bạn"
     }
 }

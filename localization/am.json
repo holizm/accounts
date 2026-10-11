@@ -3,6 +3,7 @@
         "accounts": "መለያዎች",
         "anonymous": "ስም-አልባ",
         "changePassword": "የይለፍ ቃል ቀይር",
+        "editProfile": "መገለጫዎን ያርትዑ",
         "forPerson": "ለግለሰብ",
         "key": "ቁልፍ",
         "keys": "ቁልፎች",
@@ -27,8 +28,5 @@
         "manageRoles": "ሚናዎችን አስተዳድር",
         "permissionHelp": "ከልክል ከፍቀድ ይቀድማል። ውረስ ይህን ልዩ ደንብ ያስወግዳል።",
         "upsertAllRoles": "ሁሉንም ሚናዎች ያስገቡ ወይም ያዘምኑ"
-    },
-    "site": {
-        "editProfile": "መገለጫዎን ያርትዑ"
     }
 }

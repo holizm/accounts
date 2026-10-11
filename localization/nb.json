@@ -3,6 +3,7 @@
         "accounts": "Kontoer",
         "anonymous": "Anonym",
         "changePassword": "Endre passord",
+        "editProfile": "Rediger profilen din",
         "forPerson": "For person",
         "key": "Nøkkel",
         "keys": "Nøkler",
@@ -27,8 +28,5 @@
         "manageRoles": "Administrer roller",
         "permissionHelp": "Avvis har forrang over Tillat. Arv fjerner dette unntaket.",
         "upsertAllRoles": "Sett inn eller oppdater alle roller"
-    },
-    "site": {
-        "editProfile": "Rediger profilen din"
     }
 }

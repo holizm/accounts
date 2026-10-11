@@ -3,6 +3,7 @@
         "accounts": "Cuentas",
         "anonymous": "Anónimo",
         "changePassword": "Cambiar la contraseña",
+        "editProfile": "Edite su perfil",
         "forPerson": "Para persona",
         "key": "Clave",
         "keys": "Claves",
@@ -27,8 +28,5 @@
         "manageRoles": "Administrar roles",
         "permissionHelp": "Denegar tiene prioridad sobre Permitir. Heredar elimina esta excepción.",
         "upsertAllRoles": "Insertar o actualizar todos los roles"
-    },
-    "site": {
-        "editProfile": "Edite su perfil"
     }
 }

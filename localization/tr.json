@@ -3,6 +3,7 @@
         "accounts": "Hesaplar",
         "anonymous": "Anonim",
         "changePassword": "Şifre değiştir",
+        "editProfile": "Profilinizi Düzenle",
         "forPerson": "Kişi için",
         "key": "Anahtar",
         "keys": "Anahtarlar",
@@ -27,8 +28,5 @@
         "manageRoles": "Rolleri yönet",
         "permissionHelp": "Ret, izinden önceliklidir. Devralma bu istisnayı kaldırır.",
         "upsertAllRoles": "Tüm rolleri ekle veya güncelle"
-    },
-    "site": {
-        "editProfile": "Profilinizi Düzenle"
     }
 }

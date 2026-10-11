@@ -3,6 +3,7 @@
         "accounts": "Accounts",
         "anonymous": "Anoniem",
         "changePassword": "Wachtwoord wijzigen",
+        "editProfile": "Uw profiel bewerken",
         "forPerson": "Voor persoon",
         "key": "Sleutel",
         "keys": "Sleutels",
@@ -27,8 +28,5 @@
         "manageRoles": "Rollen beheren",
         "permissionHelp": "Weigeren heeft voorrang op Toestaan. Overerven verwijdert deze uitzondering.",
         "upsertAllRoles": "Alle rollen invoegen of bijwerken"
-    },
-    "site": {
-        "editProfile": "Uw profiel bewerken"
     }
 }

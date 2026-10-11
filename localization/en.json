@@ -3,6 +3,7 @@
         "accounts": "Accounts",
         "anonymous": "Anonymous",
         "changePassword": "Change password",
+        "editProfile": "Edit your profile",
         "forPerson": "For person",
         "key": "Key",
         "keys": "Keys",
@@ -27,8 +28,5 @@
         "manageRoles": "Manage roles",
         "permissionHelp": "Deny takes precedence over Allow. Inherit removes this override.",
         "upsertAllRoles": "Upsert all roles"
-    },
-    "site": {
-        "editProfile": "Edit your profile"
     }
 }

@@ -3,6 +3,7 @@
         "accounts": "Conturi",
         "anonymous": "Anonim",
         "changePassword": "Schimbă parola",
+        "editProfile": "Editează-ți profilul",
         "forPerson": "Pentru persoană",
         "key": "Cheie",
         "keys": "Chei",
@@ -27,8 +28,5 @@
         "manageRoles": "Gestionează rolurile",
         "permissionHelp": "Refuzul are prioritate. Moștenirea elimină această excepție.",
         "upsertAllRoles": "Adaugă sau actualizează toate rolurile"
-    },
-    "site": {
-        "editProfile": "Editează-ți profilul"
     }
 }

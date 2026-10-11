@@ -3,6 +3,7 @@
         "accounts": "Akaunti",
         "anonymous": "Asiyejulikana",
         "changePassword": "Badilisha nenosiri",
+        "editProfile": "Hariri wasifu wako",
         "forPerson": "Kwa ajili ya mtu",
         "key": "Ufunguo",
         "keys": "Funguo",
@@ -27,8 +28,5 @@
         "manageRoles": "Dhibiti majukumu",
         "permissionHelp": "Kukataa kunatangulia kuruhusu. Kurithi huondoa ubaguzi huu.",
         "upsertAllRoles": "Ongeza au sasisha majukumu yote"
-    },
-    "site": {
-        "editProfile": "Hariri wasifu wako"
     }
 }

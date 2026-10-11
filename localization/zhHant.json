@@ -3,6 +3,7 @@
         "accounts": "帳戶",
         "anonymous": "匿名",
         "changePassword": "變更密碼",
+        "editProfile": "編輯您的個人資料",
         "forPerson": "關聯人員",
         "key": "金鑰",
         "keys": "金鑰",
@@ -27,8 +28,5 @@
         "manageRoles": "管理角色",
         "permissionHelp": "拒絕優先於允許。繼承會移除此覆寫規則。",
         "upsertAllRoles": "新增或更新所有角色"
-    },
-    "site": {
-        "editProfile": "編輯您的個人資料"
     }
 }

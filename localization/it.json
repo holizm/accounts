@@ -3,6 +3,7 @@
         "accounts": "Conti",
         "anonymous": "Anonimo",
         "changePassword": "Cambiare la password",
+        "editProfile": "Modifica il tuo profilo",
         "forPerson": "Per persona",
         "key": "Chiave",
         "keys": "Chiavi",
@@ -27,8 +28,5 @@
         "manageRoles": "Gestire i ruoli",
         "permissionHelp": "Nega ha precedenza su Consenti. Eredita rimuove questa eccezione.",
         "upsertAllRoles": "Inserisci o aggiorna tutti i ruoli"
-    },
-    "site": {
-        "editProfile": "Modifica il tuo profilo"
     }
 }

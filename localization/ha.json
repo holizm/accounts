@@ -3,6 +3,7 @@
         "accounts": "Asusu",
         "anonymous": "Ba a san ko wanene ba",
         "changePassword": "Canja kalmar sirri",
+        "editProfile": "Gyara bayanan martabarka",
         "forPerson": "Don mutum",
         "key": "Maɓalli",
         "keys": "Maɓallai",
@@ -27,8 +28,5 @@
         "manageRoles": "Sarrafa matsayi",
         "permissionHelp": "Hani ya fi izini fifiko. Gada yana cire wannan keɓancewa.",
         "upsertAllRoles": "Ƙara ko sabunta duk matsayi"
-    },
-    "site": {
-        "editProfile": "Gyara bayanan martabarka"
     }
 }

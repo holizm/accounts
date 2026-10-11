@@ -3,6 +3,7 @@
         "accounts": "Računi",
         "anonymous": "Anonimno",
         "changePassword": "Promijeni lozinku",
+        "editProfile": "Uredite svoj profil",
         "forPerson": "Za osobu",
         "key": "Ključ",
         "keys": "Ključevi",
@@ -27,8 +28,5 @@
         "manageRoles": "Upravljaj ulogama",
         "permissionHelp": "Zabrana ima prednost pred dopuštenjem. Nasljeđivanje uklanja ovu iznimku.",
         "upsertAllRoles": "Dodaj ili ažuriraj sve uloge"
-    },
-    "site": {
-        "editProfile": "Uredite svoj profil"
     }
 }

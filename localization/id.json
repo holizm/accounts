@@ -3,6 +3,7 @@
         "accounts": "Akun",
         "anonymous": "Anonim",
         "changePassword": "Ubah kata sandi",
+        "editProfile": "Edit profil Anda",
         "forPerson": "Untuk orang",
         "key": "Kunci",
         "keys": "Kunci",
@@ -27,8 +28,5 @@
         "manageRoles": "Kelola peran",
         "permissionHelp": "Penolakan mengalahkan izin. Pewarisan menghapus pengecualian ini.",
         "upsertAllRoles": "Tambahkan atau perbarui semua peran"
-    },
-    "site": {
-        "editProfile": "Edit profil Anda"
     }
 }

@@ -3,6 +3,7 @@
         "accounts": "Tilit",
         "anonymous": "Anonyymi",
         "changePassword": "Vaihda salasana",
+        "editProfile": "Muokkaa profiiliasi",
         "forPerson": "Henkilölle",
         "key": "Avain",
         "keys": "Avaimet",
@@ -27,8 +28,5 @@
         "manageRoles": "Hallitse rooleja",
         "permissionHelp": "Esto on etusijalla sallimiseen nähden. Periminen poistaa tämän poikkeuksen.",
         "upsertAllRoles": "Lisää tai päivitä kaikki roolit"
-    },
-    "site": {
-        "editProfile": "Muokkaa profiiliasi"
     }
 }

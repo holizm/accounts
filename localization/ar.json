@@ -3,6 +3,7 @@
         "accounts": "الحسابات",
         "anonymous": "مجهول",
         "changePassword": "تغيير كلمة المرور",
+        "editProfile": "تحرير ملفك الشخصي",
         "forPerson": "للشخص",
         "key": "مفتاح",
         "keys": "مفاتيح",
@@ -27,8 +28,5 @@
         "manageRoles": "إدارة الأدوار",
         "permissionHelp": "المنع له الأولوية على السماح. التوريث يزيل هذا الاستثناء.",
         "upsertAllRoles": "إدراج أو تحديث جميع الأدوار"
-    },
-    "site": {
-        "editProfile": "تحرير ملفك الشخصي"
     }
 }

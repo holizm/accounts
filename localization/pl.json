@@ -3,6 +3,7 @@
         "accounts": "Konta",
         "anonymous": "Anonimowy",
         "changePassword": "Zmień hasło",
+        "editProfile": "Edytuj swój profil",
         "forPerson": "Dla osoby",
         "key": "Klucz",
         "keys": "Klucze",
@@ -27,8 +28,5 @@
         "manageRoles": "Zarządzaj rolami",
         "permissionHelp": "Odmowa ma pierwszeństwo. Dziedziczenie usuwa ten wyjątek.",
         "upsertAllRoles": "Dodaj lub zaktualizuj wszystkie role"
-    },
-    "site": {
-        "editProfile": "Edytuj swój profil"
     }
 }

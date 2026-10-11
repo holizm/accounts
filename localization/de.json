@@ -3,6 +3,7 @@
         "accounts": "Konten",
         "anonymous": "Anonym",
         "changePassword": "Kennwort ändern",
+        "editProfile": "Bearbeiten Sie Ihr Profil",
         "forPerson": "Für Person",
         "key": "Schlüssel",
         "keys": "Schlüssel",
@@ -27,8 +28,5 @@
         "manageRoles": "Rollen verwalten",
         "permissionHelp": "Verweigern hat Vorrang vor Erlauben. Erben entfernt diese Ausnahme.",
         "upsertAllRoles": "Alle Rollen hinzufügen oder aktualisieren"
-    },
-    "site": {
-        "editProfile": "Bearbeiten Sie Ihr Profil"
     }
 }

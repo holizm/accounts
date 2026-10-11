@@ -3,6 +3,7 @@
         "accounts": "Mga account",
         "anonymous": "Anonymous",
         "changePassword": "Palitan ang password",
+        "editProfile": "I-edit ang iyong profile",
         "forPerson": "Para sa tao",
         "key": "Susi",
         "keys": "Mga susi",
@@ -27,8 +28,5 @@
         "manageRoles": "Pamahalaan ang mga tungkulin",
         "permissionHelp": "Mas inuuna ang pagtanggi kaysa pagpayag. Inaalis ng pagmamana ang pagbubukod na ito.",
         "upsertAllRoles": "Idagdag o i-update ang lahat ng tungkulin"
-    },
-    "site": {
-        "editProfile": "I-edit ang iyong profile"
     }
 }

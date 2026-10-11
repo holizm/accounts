@@ -3,6 +3,7 @@
         "accounts": "Fiókok",
         "anonymous": "Névtelen",
         "changePassword": "Jelszó módosítása",
+        "editProfile": "Profil szerkesztése",
         "forPerson": "Személyhez",
         "key": "Kulcs",
         "keys": "Kulcsok",
@@ -27,8 +28,5 @@
         "manageRoles": "Szerepkörök kezelése",
         "permissionHelp": "A tiltás elsőbbséget élvez. Az öröklés eltávolítja ezt a kivételt.",
         "upsertAllRoles": "Az összes szerepkör hozzáadása vagy frissítése"
-    },
-    "site": {
-        "editProfile": "Profil szerkesztése"
     }
 }

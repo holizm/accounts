@@ -3,6 +3,7 @@
         "accounts": "Konti",
         "anonymous": "Anonym",
         "changePassword": "Skift adgangskode",
+        "editProfile": "Rediger din profil",
         "forPerson": "For person",
         "key": "Nøgle",
         "keys": "Nøgler",
@@ -27,8 +28,5 @@
         "manageRoles": "Administrer roller",
         "permissionHelp": "Afvis har forrang over Tillad. Arv fjerner denne undtagelse.",
         "upsertAllRoles": "Indsæt eller opdater alle roller"
-    },
-    "site": {
-        "editProfile": "Rediger din profil"
     }
 }

@@ -3,6 +3,7 @@
         "accounts": "Rekeninge",
         "anonymous": "Anoniem",
         "changePassword": "Verander wagwoord",
+        "editProfile": "Wysig jou profiel",
         "forPerson": "Vir persoon",
         "key": "Sleutel",
         "keys": "Sleutels",
@@ -27,8 +28,5 @@
         "manageRoles": "Bestuur rolle",
         "permissionHelp": "Weier geniet voorkeur bo Laat toe. Erf verwyder hierdie uitsondering.",
         "upsertAllRoles": "Voeg alle rolle in of werk dit by"
-    },
-    "site": {
-        "editProfile": "Wysig jou profiel"
     }
 }

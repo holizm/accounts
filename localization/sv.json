@@ -3,6 +3,7 @@
         "accounts": "Konton",
         "anonymous": "Anonym",
         "changePassword": "Byt lösenord",
+        "editProfile": "Redigera din profil",
         "forPerson": "För person",
         "key": "Nyckel",
         "keys": "Nycklar",
@@ -27,8 +28,5 @@
         "manageRoles": "Hantera roller",
         "permissionHelp": "Neka har företräde framför Tillåt. Ärv tar bort detta undantag.",
         "upsertAllRoles": "Infoga eller uppdatera alla roller"
-    },
-    "site": {
-        "editProfile": "Redigera din profil"
     }
 }

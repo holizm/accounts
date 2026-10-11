@@ -22,7 +22,7 @@ export default ({
             large
             noMeaning
             okAction={submission.requestReview}
-            okText='coreReview'
+            okText='review'
             title='permissions'
         />
         <ReviewDialog

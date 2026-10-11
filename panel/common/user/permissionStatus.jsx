@@ -5,7 +5,7 @@ export default ({ hasPermissionGroups }) => {
     if (hasPermissionGroups !== false) return null
     return <div className='permissionStatus'>
         {
-            t('coreNoItemsFound')
+            t('noItemsFound')
         }
     </div>
 }

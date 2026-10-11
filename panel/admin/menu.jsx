@@ -7,7 +7,7 @@ export default [
             },
             {
                 path: '/accounts/role/list',
-                title: 'coreRoles',
+                title: 'roles',
             },
         ],
         icon: 'peopleAlt',

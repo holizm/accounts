@@ -37,10 +37,10 @@ export default () => {
     const data = catalog || currentItem
     return <div className='permissions'>
         <input
-            aria-label={t('coreSearch')}
+            aria-label={t('search')}
             className='permissionSearch'
             onChange={event => setSearch(event.target.value)}
-            placeholder={t('coreSearch')}
+            placeholder={t('search')}
             type='search'
             value={search}
         />

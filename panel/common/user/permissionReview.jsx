@@ -7,17 +7,17 @@ export default ({ rows }) => {
             <tr>
                 <th>
                     {
-                        t('coreAction')
+                        t('action')
                     }
                 </th>
                 <th>
                     {
-                        t('coreFrom')
+                        t('from')
                     }
                 </th>
                 <th>
                     {
-                        t('coreTo')
+                        t('to')
                     }
                 </th>
             </tr>

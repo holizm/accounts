@@ -1,7 +1,7 @@
 import { Lookup } from 'list'
 
 export default <Lookup
-    placeholder='coreRoles'
+    placeholder='roles'
     property='role'
     type='accounts/role'
 />

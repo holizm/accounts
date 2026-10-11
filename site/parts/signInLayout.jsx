@@ -4,6 +4,7 @@ import AccountsField from 'accountsField'
 export default props => {
 
     const {
+        authError,
         changePhoneProps,
         emptyOtp,
         emptyPhone,
@@ -24,6 +25,11 @@ export default props => {
 
     return <section class='signIn'>
         <h1 class='title'>{translations.registerOrSignIn}</h1>
+        {
+            authError && <p role='alert'>
+                {translations.invalidOtp}
+            </p>
+        }
         {
             visibleOtp &&
             <div

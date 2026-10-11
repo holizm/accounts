@@ -3,21 +3,24 @@ import {
     component$,
     useComputed$,
     useSignal,
-    useStyles,
 } from '@builder.io/qwik'
+import { useLocation } from '@builder.io/qwik-city'
 import post from 'post'
 import seoUseSeo from 'seoUseSeo'
 import accountsLoadSignIn from 'accountsLoadSignIn'
+import accountsUseSignIn from 'accountsUseSignIn'
 import AccountsSignInLayout from 'accountsSignInLayout'
 import runnableLoader from 'loadSignIn'
 import SignInPartsLayout from 'signInPartsLayout'
 
 export default component$(() => {
     const data = accountsLoadSignIn().value
-    const extraData = runnableLoader().value
-    const phonePattern = /^\+?[0-9]{1,3}\s?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$/
+    runnableLoader()
+    const authSignIn = accountsUseSignIn()
+    const location = useLocation()
+    const phonePattern = /^\+?[0-9]{10,15}$/
     const otpLength = useSignal(1)
-    const otpPattern = new RegExp(`^\d{${otpLength.value}}$`)
+    const otpPattern = new RegExp(`^\\d{${otpLength.value}}$`)
     const phoneToBeChanged = useSignal('')
     const phone = useSignal('')
     const visiblePhone = useSignal(true)
@@ -62,30 +65,21 @@ export default component$(() => {
         return false
     })
     const signingIn = useSignal(false)
-    const sendOtp = $(e => {
-        if (phoneDirty.value !== true) {
-            phoneDirty.value = true
-            return
-        }
-        if (emptyPhone.value === true) {
-            return
-        }
-        if (invalidPhone.value === true) {
-            return
-        }
+    const sendOtp = $(async () => {
+        phoneDirty.value = true
+        if (!phone.value?.trim() || !phonePattern.test(phone.value)) return
         if (otpTimer.value > 0 && phoneToBeChanged.value === phone.value) {
             visibleOtp.value = true
             visiblePhone.value = false
             return
         }
-        if (signingIn.value == true) {
-            return
-        }
+        if (signingIn.value || sendingOtp.value) return
         sendingOtp.value = true
-        post(`/accounts/sendOtp?phone=${phone.value}`)
+        post('/accounts/sendOtp', { phone: phone.value })
             .then(data => {
                 sendingOtp.value = false
-                otpTimer.value = data.otpLifetimeInSeconds
+                phoneToBeChanged.value = phone.value
+                otpTimer.value = data.resendDelayInSeconds
                 otpLength.value = data.otpLength
                 if (globalThis.otpTimerInterval) {
                     clearInterval(globalThis.otpTimerInterval)
@@ -105,50 +99,51 @@ export default component$(() => {
                 sendingOtp.value = false
             })
     })
-    const changePhone = $(e => {
-        phoneToBeChanged.value = phone.value
+    const changePhone = $(() => {
         visibleOtp.value = false
         visiblePhone.value = true
     })
-    const signIn = $(e => {
-        if (otpDirty.value !== true) {
-            otpDirty.value = true
-            return
-        }
-        if (emptyOtp.value === true) {
-            return
-        }
-        if (invalidOtp.value === true) {
-            return
-        }
+    const signIn = $(async () => {
+        otpDirty.value = true
+        if (!otp.value?.trim() || !otpPattern.test(otp.value)) return
         signingIn.value = true
-        post(`/accounts/signIn?phone=${phone.value}&otp=${otp.value}`)
-            .then(data => {
-                signingIn.value = false
-                console.log(data)
-            }, error => {
-                alert(error)
-                signingIn.value = false
+        try {
+            await authSignIn.submit({
+                providerId: 'credentials',
+                options: {
+                    otp: otp.value,
+                    phone: phone.value,
+                    redirectTo: '/dashboard',
+                },
             })
+        } catch (e) {
+            alert(e)
+        } finally {
+            signingIn.value = false
+        }
     })
     const phoneProps = {
         autofocus: true,
+        autoComplete: 'tel',
         dir: 'ltr',
         disabled: sendingOtp.value,
         id: 'corePhone',
-        onClick$: $(e => visiblePhone.value != visiblePhone.value),
+        inputMode: 'tel',
         onInput$: $(e => {
             phone.value = e.target.value
             phoneDirty.value = true
         }),
+        type: 'tel',
         value: phone.value,
     }
     const otpProps = {
+        autoComplete: 'one-time-code',
         dir: 'ltr',
         disabled: signingIn.value,
         id: 'accountsOtp',
-        onClick$: $(e => visibleOtp.value != visibleOtp.value),
+        inputMode: 'numeric',
         onInput$: $(e => otp.value = e.target.value),
+        type: 'text',
         value: otp.value,
     }
     const sendOtpProps = {
@@ -168,6 +163,7 @@ export default component$(() => {
 
     const props = {
         ...data,
+        authError: location.url.searchParams.get('error') === 'CredentialsSignin',
         changePhoneProps,
         emptyOtp: emptyOtp.value,
         emptyPhone: emptyPhone.value,

@@ -1,31 +1,40 @@
 import crypto from 'crypto'
 // import otplib from 'otplib'
 import {
+    cache,
+    claimCache,
+    clientError,
     ensure,
-    error,
     settings,
 } from 'core'
 import { sendTextMessage } from 'notifications'
 import { getUserByPhone } from '../user/getByPhone.js'
-import { getKey } from '../key/getKey.js'
 import { changePassword } from '../user/changePassword.js'
+import getOtpScope from './getOtpScope.js'
 
 export const sendOtp = async params => {
-    let {
-        phone,
-        otp,
-    } = params
+    const phone = (params.body?.phone || params.phone)?.trim()
     ensure(phone).isSomething('phoneIsEmpty')
-    const user = await getUserByPhone(phone)
-    const { value } = await getKey(user.id)
-    if (!otp) {
-        otp = createTotp(value)
+    if (!/^\+?[0-9]{10,15}$/.test(phone)) clientError('invalidRequest')
+    const scope = getOtpScope({ host: params.host, phone })
+    const cooldownScope = {
+        ...scope,
+        type: 'otpCooldown',
     }
-    const password = makePasswordFromOtp(otp)
+    const now = Date.now()
+    const claimed = await claimCache({
+        ...cooldownScope,
+        data: true,
+        ttlSeconds: 60,
+    })
+    if (!claimed) clientError('invalidRequest')
+    const user = await getUserByPhone(phone)
+    const { otp, seconds } = createTotp()
+    const password = crypto.randomBytes(32).toString('hex')
     await changePassword({
         ...params,
         password,
-        user: user.id,
+        user: user.uuid,
     })
     await sendTextMessage({
         ...params,
@@ -35,9 +44,22 @@ export const sendOtp = async params => {
         tokens: { otp }
     })
 
+    await cache({
+        ...scope,
+        data: {
+            expiresAt: now + seconds * 1000,
+            hash: makePasswordFromOtp(otp),
+            password,
+            userId: user.uuid,
+        },
+        ttlSeconds: seconds,
+    })
+
     const result = {
         sent: true,
         otpLength: otp.length,
+        otpLifetimeInSeconds: seconds,
+        resendDelayInSeconds: 60,
     }
     if (settings.isDeveloping) {
         result.otp = otp
@@ -45,8 +67,8 @@ export const sendOtp = async params => {
     return result
 }
 
-const createTotp = userKey => {
-    const seconds = 60 // parseInt(CoreConfig.getSetting('otpLifetimeInSeconds') || '60', 10)
+const createTotp = () => {
+    const seconds = 300 // parseInt(CoreConfig.getSetting('otpLifetimeInSeconds') || '60', 10)
     const length = 5 // parseInt(CoreConfig.getSetting('otpLength') || '5', 10)
     // const TotpGenerator = otplib.totp
     // TotpGenerator.options = {
@@ -55,7 +77,9 @@ const createTotp = userKey => {
     //     step: seconds,
     // }
     // return TotpGenerator.generate(userKey)
-    return ''
+    const otp = String(crypto.randomInt(10 ** (length - 1), 10 ** length))
+    const code = { otp, seconds }
+    return code
 }
 
 export const makePasswordFromOtp = otp => {

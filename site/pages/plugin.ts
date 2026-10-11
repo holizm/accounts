@@ -1,6 +1,7 @@
 // @ts-nocheck
 import { QwikAuth$ } from '@auth/qwik'
 import type { Provider } from '@auth/auth/providers'
+import Credentials from '@auth/qwik/providers/credentials'
 import Keycloak from '@auth/qwik/providers/keycloak'
 import getFromCacheOrApi from 'getFromCacheOrApi'
 import getTenant from 'getTenant'
@@ -103,11 +104,13 @@ export const {
     const config = {
         secret: authSecret,
         trustHost: true,
+        pages: { signIn: '/accounts/sign-in' },
         events: {
             async signOut(message) {
                 await fetch(idpSignoutUrl)
             },
             async signIn({ profile }) {
+                if (!profile?.sub) return
                 const uuid = profile?.sub
                 const username = profile?.preferred_username
                 await post('/accounts/user/syncByUuid',
@@ -120,16 +123,22 @@ export const {
             },
         },
         callbacks: {
-            async jwt({ token, account, profile }) {
+            async jwt({ token, account, profile, user }) {
                 const nowTimeStamp = Math.floor(Date.now() / 1000)
-                if (account) {
+                if (account?.provider === 'credentials') {
+                    token.access_token = user.access_token
+                    token.id_token = user.id_token
+                    token.expires_at = nowTimeStamp + user.expires_in
+                    token.refresh_token = user.refresh_token
+                    token.userUuid = user.id
+                } else if (account) {
                     token.access_token = account.access_token
                     token.id_token = account.id_token
                     token.expires_at = account.expires_at
                     token.refresh_token = account.refresh_token
                     token.userUuid = profile.sub
                 } else {
-                    if (nowTimeStamp > token.expires_at) {
+                    if (token.expires_at && nowTimeStamp > token.expires_at) {
                         const result = await refreshAccessToken(token, env, url)
                         if (!result.access_token) {
                             return null
@@ -153,6 +162,24 @@ export const {
             },
         },
         providers: [
+            Credentials({
+                credentials: {
+                    phone: {},
+                    otp: {},
+                },
+                async authorize(credentials) {
+                    if (!credentials?.phone || !credentials?.otp) return null
+                    try {
+                        const result = await post('/accounts/signIn', {
+                            otp: credentials.otp,
+                            phone: credentials.phone,
+                        }, { url })
+                        return result?.access_token ? result : null
+                    } catch (e) {
+                        return null
+                    }
+                },
+            }),
             Keycloak({
                 clientId: accountsClient,
                 clientSecret: iamClientSecret as string,

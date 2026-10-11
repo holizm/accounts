@@ -68,8 +68,8 @@ export const sendOtp = async params => {
 }
 
 const createTotp = () => {
-    const seconds = 300 // parseInt(CoreConfig.getSetting('otpLifetimeInSeconds') || '60', 10)
-    const length = 5 // parseInt(CoreConfig.getSetting('otpLength') || '5', 10)
+    const seconds = Math.min(900, Math.max(60, Math.trunc(Number(settings.otpLifetimeInSeconds) || 300))) // parseInt(CoreConfig.getSetting('otpLifetimeInSeconds') || '60', 10)
+    const length = Math.min(8, Math.max(4, Math.trunc(Number(settings.otpLength) || 5))) // parseInt(CoreConfig.getSetting('otpLength') || '5', 10)
     // const TotpGenerator = otplib.totp
     // TotpGenerator.options = {
     //     algorithm: 'sha512',

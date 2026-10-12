@@ -1,5 +1,4 @@
 import { Image } from 'panel'
-import './chip.css'
 
 export default ({ item }) => <div className='userChip'>
         <Image

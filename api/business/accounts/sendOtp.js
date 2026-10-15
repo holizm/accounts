@@ -16,11 +16,12 @@ export const sendOtp = async params => {
     const phone = (params.body?.phone || params.phone)?.trim()
     ensure(phone).isSomething('phoneIsEmpty')
     if (!/^\+?[0-9]{10,15}$/.test(phone)) clientError('invalidRequest')
-    const scope = getOtpScope({ host: params.host, phone })
-    const cooldownScope = {
-        ...scope,
-        type: 'otpCooldown',
-    }
+    const scope = getOtpScope({
+        host: params.host,
+        phone,
+    })
+    const cooldownScope = { ...scope }
+    cooldownScope.type = 'otpCooldown'
     const now = Date.now()
     const claimed = await claimCache({
         ...cooldownScope,
@@ -29,7 +30,10 @@ export const sendOtp = async params => {
     })
     if (!claimed) clientError('invalidRequest')
     const user = await getUserByPhone(phone)
-    const { otp, seconds } = createTotp()
+    const {
+        otp,
+        seconds,
+    } = createTotp()
     const password = crypto.randomBytes(32).toString('hex')
     await changePassword({
         ...params,
@@ -40,8 +44,8 @@ export const sendOtp = async params => {
         await sendTextMessage({
             ...params,
             item: user,
-            phone,
             notificationKey: 'sendOtp',
+            phone,
             tokens: { otp }
         })
     }
@@ -58,14 +62,12 @@ export const sendOtp = async params => {
     })
 
     const result = {
-        sent: true,
         otpLength: otp.length,
         otpLifetimeInSeconds: seconds,
         resendDelayInSeconds: 60,
+        sent: true,
     }
-    if (settings.isDeveloping) {
-        result.otp = otp
-    }
+    if (settings.isDeveloping) result.otp = otp
     return result
 }
 
@@ -80,7 +82,10 @@ const createTotp = () => {
     // }
     // return TotpGenerator.generate(userKey)
     const otp = String(crypto.randomInt(10 ** (length - 1), 10 ** length))
-    const code = { otp, seconds }
+    const code = {
+        otp,
+        seconds,
+    }
     return code
 }
 

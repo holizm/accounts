@@ -5,7 +5,6 @@ import {
     claimCache,
     clientError,
     ensure,
-    isPhone,
     settings,
 } from 'core'
 import { sendTextMessage } from 'notifications'
@@ -15,8 +14,7 @@ import getOtpScope from './getOtpScope.js'
 
 export const sendOtp = async params => {
     const phone = (params.body?.phone || params.phone)?.trim()
-    ensure(phone).isSomething('phoneIsEmpty')
-    if (!isPhone(phone)) clientError('invalidRequest')
+    ensure(phone).isSomething('phoneIsEmpty').and.isPhone('invalidRequest')
     const scope = getOtpScope({
         host: params.host,
         phone,

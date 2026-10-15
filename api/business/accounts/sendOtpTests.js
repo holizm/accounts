@@ -22,11 +22,20 @@ mock.module('core', {
         claimCache,
         clientError: fail,
         ensure: value => {
-            const validation = { isSomething: code => { if (!value) fail(code) } }
+            const validation = {
+                get and() { return validation },
+                isPhone: code => {
+                    if (value === 'invalid') fail(code)
+                    return validation
+                },
+                isSomething: code => {
+                    if (!value) fail(code)
+                    return validation
+                },
+            }
             return validation
         },
         getTenant: () => ({ id: 'example' }),
-        isPhone: value => value !== 'invalid',
         settings,
     },
 })

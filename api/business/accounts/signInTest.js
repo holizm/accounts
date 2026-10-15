@@ -35,7 +35,17 @@ mock.module('core', {
             entries.delete(key(scope))
             return value
         },
-        ensure: value => ({ isSomething: code => { if (!value) fail(code) } }),
+        ensure: value => {
+            const validation = {
+                get and() { return validation },
+                isPhone: () => validation,
+                isSomething: code => {
+                    if (!value) fail(code)
+                    return validation
+                },
+            }
+            return validation
+        },
         getTenant: () => tenant,
         httpForm: async (url, form) => {
             assert.equal(form.password, password)
@@ -47,7 +57,6 @@ mock.module('core', {
             } }
             return response
         },
-        isPhone: () => true,
         settings,
     },
 })

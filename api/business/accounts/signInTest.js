@@ -47,6 +47,7 @@ mock.module('core', {
             } }
             return response
         },
+        isPhone: () => true,
         settings,
     },
 })

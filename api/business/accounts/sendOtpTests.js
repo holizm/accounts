@@ -26,6 +26,7 @@ mock.module('core', {
             return validation
         },
         getTenant: () => ({ id: 'example' }),
+        isPhone: value => value !== 'invalid',
         settings,
     },
 })

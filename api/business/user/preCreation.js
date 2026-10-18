@@ -1,4 +1,4 @@
-import { createOnPost } from 'core'
+import { create } from 'core'
 import ensureIamUser from './ensureIamUser.js'
 
 export default async params => {
@@ -7,7 +7,7 @@ export default async params => {
     if (item.person) {
         return
     }
-    const person = await createOnPost({
+    const person = await create({
         ...params,
         part: 'contacts',
         type: 'person'

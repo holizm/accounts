@@ -1,7 +1,7 @@
 
 import {
     clientError,
-    createOnPost,
+    create,
     dbItem,
     dbUpdateItem,
     providers,
@@ -19,7 +19,7 @@ export default async params => {
         type: 'user',
     })
     if (!user) {
-        user = await createOnPost({
+        user = await create({
             ...identity,
             ...params,
             defaultPersonType: params.defaultPersonType || params.query?.defaultPersonType,

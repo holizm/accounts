@@ -15,4 +15,13 @@ export default async params => {
     const { inherited, ...personData } = person
     item.contact = inherited
     item.person = personData
+    if (params.phone) {
+        await create({
+            contact: inherited.id,
+            default: true,
+            number: params.phone,
+            part: 'contacts',
+            type: 'phone',
+        })
+    }
 }

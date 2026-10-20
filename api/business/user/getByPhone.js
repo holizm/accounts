@@ -7,6 +7,7 @@ export const getUserByPhone = async phone => {
         await create({
             lastSyncDate: new Date(),
             part: 'accounts',
+            phone,
             type: 'user',
             username: phone,
         })

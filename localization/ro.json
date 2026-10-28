@@ -19,7 +19,9 @@
         "userNameAToZ": "Nume utilizator A-Z",
         "userNameZToA": "Nume utilizator Z-A",
         "userPermission": "Permisiune de utilizator",
-        "userPermissions": "Permisiuni de utilizator"
+        "userPermissions": "Permisiuni de utilizator",
+        "visibilityGrant": "Permisiune de acces la date",
+        "visibilityGrants": "Permisiuni de acces la date"
     },
     "panel": {
         "addFromUsers": "Adaugă din utilizatori",

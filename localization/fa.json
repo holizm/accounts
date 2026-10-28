@@ -19,7 +19,9 @@
         "userNameAToZ": "نام کاربری الف-ی",
         "userNameZToA": "نام کاربری ی-الف",
         "userPermission": "مجوز کاربر",
-        "userPermissions": "مجوزهای کاربر"
+        "userPermissions": "مجوزهای کاربر",
+        "visibilityGrant": "مجوز دسترسی به داده",
+        "visibilityGrants": "مجوزهای دسترسی به داده"
     },
     "panel": {
         "addFromUsers": "افزودن از کاربران",

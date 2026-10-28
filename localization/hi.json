@@ -19,7 +19,9 @@
         "userNameAToZ": "उपयोक्तानाम A-Z",
         "userNameZToA": "उपयोक्तानाम Z-A",
         "userPermission": "उपयोगकर्ता अनुमति",
-        "userPermissions": "उपयोगकर्ता अनुमतियाँ"
+        "userPermissions": "उपयोगकर्ता अनुमतियाँ",
+        "visibilityGrant": "डेटा पहुँच अनुमति",
+        "visibilityGrants": "डेटा पहुँच अनुमतियाँ"
     },
     "panel": {
         "addFromUsers": "उपयोगकर्ताओं से जोड़ें",

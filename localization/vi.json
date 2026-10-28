@@ -19,7 +19,9 @@
         "userNameAToZ": "Tên người dùng A-Z",
         "userNameZToA": "Tên người dùng Z-A",
         "userPermission": "Quyền người dùng",
-        "userPermissions": "Các quyền người dùng"
+        "userPermissions": "Các quyền người dùng",
+        "visibilityGrant": "Quyền truy cập dữ liệu",
+        "visibilityGrants": "Các quyền truy cập dữ liệu"
     },
     "panel": {
         "addFromUsers": "Thêm từ người dùng",

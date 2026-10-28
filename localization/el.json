@@ -19,7 +19,9 @@
         "userNameAToZ": "Όνομα χρήστη Α-Ω",
         "userNameZToA": "Όνομα χρήστη Ω-Α",
         "userPermission": "Δικαίωμα χρήστη",
-        "userPermissions": "Δικαιώματα χρήστη"
+        "userPermissions": "Δικαιώματα χρήστη",
+        "visibilityGrant": "Άδεια πρόσβασης σε δεδομένα",
+        "visibilityGrants": "Άδειες πρόσβασης σε δεδομένα"
     },
     "panel": {
         "addFromUsers": "Προσθήκη από χρήστες",

@@ -19,7 +19,9 @@
         "userNameAToZ": "ಬಳಕೆದಾರ ಹೆಸರು A-Z",
         "userNameZToA": "ಬಳಕೆದಾರ ಹೆಸರು Z-A",
         "userPermission": "ಬಳಕೆದಾರರ ಅನುಮತಿ",
-        "userPermissions": "ಬಳಕೆದಾರರ ಅನುಮತಿಗಳು"
+        "userPermissions": "ಬಳಕೆದಾರರ ಅನುಮತಿಗಳು",
+        "visibilityGrant": "ಡೇಟಾ ಪ್ರವೇಶ ಅನುಮತಿ",
+        "visibilityGrants": "ಡೇಟಾ ಪ್ರವೇಶ ಅನುಮತಿಗಳು"
     },
     "panel": {
         "addFromUsers": "ಬಳಕೆದಾರರಿಂದ ಸೇರಿಸಿ",

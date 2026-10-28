@@ -19,7 +19,9 @@
         "userNameAToZ": "Sunan mai amfani A-Z",
         "userNameZToA": "Sunan mai amfani Z-A",
         "userPermission": "Izinin mai amfani",
-        "userPermissions": "Izinan mai amfani"
+        "userPermissions": "Izinan mai amfani",
+        "visibilityGrant": "Izinin samun bayanai",
+        "visibilityGrants": "Izinin samun bayanai"
     },
     "panel": {
         "addFromUsers": "Ƙara daga masu amfani",

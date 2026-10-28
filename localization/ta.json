@@ -19,7 +19,9 @@
         "userNameAToZ": "பயனர்பெயர் A-Z",
         "userNameZToA": "பயனர் பெயர் Z-A",
         "userPermission": "பயனர் அனுமதி",
-        "userPermissions": "பயனர் அனுமதிகள்"
+        "userPermissions": "பயனர் அனுமதிகள்",
+        "visibilityGrant": "தரவு அணுகல் அனுமதி",
+        "visibilityGrants": "தரவு அணுகல் அனுமதிகள்"
     },
     "panel": {
         "addFromUsers": "பயனர்களிடமிருந்து சேர்",

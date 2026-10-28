@@ -19,7 +19,9 @@
         "userNameAToZ": "Användarnamn A–Ö",
         "userNameZToA": "Användarnamn Ö–A",
         "userPermission": "Användarbehörighet",
-        "userPermissions": "Användarbehörigheter"
+        "userPermissions": "Användarbehörigheter",
+        "visibilityGrant": "Behörighet till data",
+        "visibilityGrants": "Behörigheter till data"
     },
     "panel": {
         "addFromUsers": "Lägg till från användare",

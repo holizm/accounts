@@ -19,7 +19,9 @@
         "userNameAToZ": "ব্যবহারকারীর নাম A-Z",
         "userNameZToA": "ব্যবহারকারীর নাম Z-A",
         "userPermission": "ব্যবহারকারীর অনুমতি",
-        "userPermissions": "ব্যবহারকারীর অনুমতিসমূহ"
+        "userPermissions": "ব্যবহারকারীর অনুমতিসমূহ",
+        "visibilityGrant": "তথ্য প্রবেশাধিকার",
+        "visibilityGrants": "তথ্য প্রবেশাধিকারসমূহ"
     },
     "panel": {
         "addFromUsers": "ব্যবহারকারীদের থেকে যোগ করুন",

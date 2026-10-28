@@ -19,7 +19,9 @@
         "userNameAToZ": "שם משתמש א-ת",
         "userNameZToA": "שם משתמש ת-א",
         "userPermission": "הרשאת משתמש",
-        "userPermissions": "הרשאות משתמש"
+        "userPermissions": "הרשאות משתמש",
+        "visibilityGrant": "הרשאת גישה לנתונים",
+        "visibilityGrants": "הרשאות גישה לנתונים"
     },
     "panel": {
         "addFromUsers": "הוספה ממשתמשים",

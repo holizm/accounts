@@ -19,7 +19,9 @@
         "userNameAToZ": "ഉപയോക്തൃനാമം A-Z",
         "userNameZToA": "ഉപയോക്തൃനാമം Z-A",
         "userPermission": "ഉപയോക്തൃ അനുമതി",
-        "userPermissions": "ഉപയോക്തൃ അനുമതികൾ"
+        "userPermissions": "ഉപയോക്തൃ അനുമതികൾ",
+        "visibilityGrant": "ഡാറ്റാ പ്രവേശന അനുമതി",
+        "visibilityGrants": "ഡാറ്റാ പ്രവേശന അനുമതികൾ"
     },
     "panel": {
         "addFromUsers": "ഉപയോക്താക്കളിൽ നിന്ന് ചേർക്കുക",

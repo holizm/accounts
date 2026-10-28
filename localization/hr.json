@@ -19,7 +19,9 @@
         "userNameAToZ": "Korisničko ime A-Ž",
         "userNameZToA": "Korisničko ime Ž-A",
         "userPermission": "Korisničko dopuštenje",
-        "userPermissions": "Korisnička dopuštenja"
+        "userPermissions": "Korisnička dopuštenja",
+        "visibilityGrant": "Dopuštenje za pristup podacima",
+        "visibilityGrants": "Dopuštenja za pristup podacima"
     },
     "panel": {
         "addFromUsers": "Dodaj iz korisnika",

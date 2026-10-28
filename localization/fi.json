@@ -19,7 +19,9 @@
         "userNameAToZ": "Käyttäjänimi A–Ö",
         "userNameZToA": "Käyttäjänimi Ö–A",
         "userPermission": "Käyttäjän käyttöoikeus",
-        "userPermissions": "Käyttäjän käyttöoikeudet"
+        "userPermissions": "Käyttäjän käyttöoikeudet",
+        "visibilityGrant": "Tietojen käyttöoikeus",
+        "visibilityGrants": "Tietojen käyttöoikeudet"
     },
     "panel": {
         "addFromUsers": "Lisää käyttäjistä",

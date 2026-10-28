@@ -19,7 +19,9 @@
         "userNameAToZ": "Orúkọ olùlò A-Z",
         "userNameZToA": "Orúkọ olùlò Z-A",
         "userPermission": "Ìyọ̀nda aṣàmúlò",
-        "userPermissions": "Àwọn ìyọ̀nda aṣàmúlò"
+        "userPermissions": "Àwọn ìyọ̀nda aṣàmúlò",
+        "visibilityGrant": "Àṣẹ láti wọlé sí dátà",
+        "visibilityGrants": "Àwọn àṣẹ láti wọlé sí dátà"
     },
     "panel": {
         "addFromUsers": "Ṣàfikún láti ọ̀dọ̀ àwọn olùlò",

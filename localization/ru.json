@@ -19,7 +19,9 @@
         "userNameAToZ": "Имя пользователя от А до Я",
         "userNameZToA": "Имя пользователя от Я до А",
         "userPermission": "Разрешение пользователя",
-        "userPermissions": "Разрешения пользователя"
+        "userPermissions": "Разрешения пользователя",
+        "visibilityGrant": "Разрешение на доступ к данным",
+        "visibilityGrants": "Разрешения на доступ к данным"
     },
     "panel": {
         "addFromUsers": "Добавить от пользователей",

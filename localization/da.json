@@ -19,7 +19,9 @@
         "userNameAToZ": "Brugernavn A-Å",
         "userNameZToA": "Brugernavn Å-A",
         "userPermission": "Brugertilladelse",
-        "userPermissions": "Brugertilladelser"
+        "userPermissions": "Brugertilladelser",
+        "visibilityGrant": "Dataadgangstilladelse",
+        "visibilityGrants": "Dataadgangstilladelser"
     },
     "panel": {
         "addFromUsers": "Tilføj fra brugere",

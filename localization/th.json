@@ -19,7 +19,9 @@
         "userNameAToZ": "ชื่อผู้ใช้ ก-ฮ",
         "userNameZToA": "ชื่อผู้ใช้ ฮ-ก",
         "userPermission": "สิทธิ์ผู้ใช้",
-        "userPermissions": "สิทธิ์ผู้ใช้"
+        "userPermissions": "สิทธิ์ผู้ใช้",
+        "visibilityGrant": "สิทธิ์เข้าถึงข้อมูล",
+        "visibilityGrants": "สิทธิ์เข้าถึงข้อมูล"
     },
     "panel": {
         "addFromUsers": "เพิ่มจากผู้ใช้",

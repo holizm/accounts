@@ -19,7 +19,9 @@
         "userNameAToZ": "Nama pengguna A-Z",
         "userNameZToA": "Nama pengguna Z-A",
         "userPermission": "Kebenaran pengguna",
-        "userPermissions": "Kebenaran pengguna"
+        "userPermissions": "Kebenaran pengguna",
+        "visibilityGrant": "Kebenaran akses data",
+        "visibilityGrants": "Kebenaran akses data"
     },
     "panel": {
         "addFromUsers": "Tambah daripada pengguna",

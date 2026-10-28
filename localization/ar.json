@@ -19,7 +19,9 @@
         "userNameAToZ": "اسم المستخدم أ-ي",
         "userNameZToA": "اسم المستخدم ي-أ",
         "userPermission": "صلاحية المستخدم",
-        "userPermissions": "صلاحيات المستخدم"
+        "userPermissions": "صلاحيات المستخدم",
+        "visibilityGrant": "إذن الوصول إلى البيانات",
+        "visibilityGrants": "أذونات الوصول إلى البيانات"
     },
     "panel": {
         "addFromUsers": "إضافة من المستخدمين",

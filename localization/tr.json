@@ -19,7 +19,9 @@
         "userNameAToZ": "Kullanıcı adı A'dan Z'ye",
         "userNameZToA": "Kullanıcı adı Z-A",
         "userPermission": "Kullanıcı izni",
-        "userPermissions": "Kullanıcı izinleri"
+        "userPermissions": "Kullanıcı izinleri",
+        "visibilityGrant": "Veri erişim izni",
+        "visibilityGrants": "Veri erişim izinleri"
     },
     "panel": {
         "addFromUsers": "Kullanıcılardan Ekle",

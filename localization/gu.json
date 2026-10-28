@@ -19,7 +19,9 @@
         "userNameAToZ": "વપરાશકર્તા નામ A-Z",
         "userNameZToA": "વપરાશકર્તા નામ Z-A",
         "userPermission": "વપરાશકર્તાની પરવાનગી",
-        "userPermissions": "વપરાશકર્તાની પરવાનગીઓ"
+        "userPermissions": "વપરાશકર્તાની પરવાનગીઓ",
+        "visibilityGrant": "ડેટા ઍક્સેસ પરવાનગી",
+        "visibilityGrants": "ડેટા ઍક્સેસ પરવાનગીઓ"
     },
     "panel": {
         "addFromUsers": "વપરાશકર્તાઓમાંથી ઉમેરો",

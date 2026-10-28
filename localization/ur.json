@@ -19,7 +19,9 @@
         "userNameAToZ": "صارف نام A-Z",
         "userNameZToA": "صارف نام Z-A",
         "userPermission": "صارف کی اجازت",
-        "userPermissions": "صارف کی اجازتیں"
+        "userPermissions": "صارف کی اجازتیں",
+        "visibilityGrant": "ڈیٹا تک رسائی کی اجازت",
+        "visibilityGrants": "ڈیٹا تک رسائی کی اجازتیں"
     },
     "panel": {
         "addFromUsers": "صارفین سے شامل کریں۔",

@@ -19,7 +19,9 @@
         "userNameAToZ": "वापरकर्तानाव A-Z",
         "userNameZToA": "वापरकर्तानाव Z-A",
         "userPermission": "वापरकर्त्याची परवानगी",
-        "userPermissions": "वापरकर्त्याच्या परवानग्या"
+        "userPermissions": "वापरकर्त्याच्या परवानग्या",
+        "visibilityGrant": "डेटा प्रवेश परवानगी",
+        "visibilityGrants": "डेटा प्रवेश परवानग्या"
     },
     "panel": {
         "addFromUsers": "वापरकर्त्यांमधून जोडा",

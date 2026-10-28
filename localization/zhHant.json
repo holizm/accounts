@@ -19,7 +19,9 @@
         "userNameAToZ": "使用者名稱 A-Z",
         "userNameZToA": "使用者名稱 Z-A",
         "userPermission": "使用者權限",
-        "userPermissions": "使用者權限"
+        "userPermissions": "使用者權限",
+        "visibilityGrant": "資料存取授權",
+        "visibilityGrants": "資料存取授權"
     },
     "panel": {
         "addFromUsers": "從使用者新增",

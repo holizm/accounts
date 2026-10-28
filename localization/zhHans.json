@@ -19,7 +19,9 @@
         "userNameAToZ": "用户名 A-Z",
         "userNameZToA": "用户名 Z-A",
         "userPermission": "用户权限",
-        "userPermissions": "用户权限"
+        "userPermissions": "用户权限",
+        "visibilityGrant": "数据访问授权",
+        "visibilityGrants": "数据访问授权"
     },
     "panel": {
         "addFromUsers": "从用户中添加",

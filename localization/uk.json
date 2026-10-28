@@ -19,7 +19,9 @@
         "userNameAToZ": "Ім’я користувача А-Я",
         "userNameZToA": "Ім’я користувача Я-А",
         "userPermission": "Дозвіл користувача",
-        "userPermissions": "Дозволи користувача"
+        "userPermissions": "Дозволи користувача",
+        "visibilityGrant": "Дозвіл на доступ до даних",
+        "visibilityGrants": "Дозволи на доступ до даних"
     },
     "panel": {
         "addFromUsers": "Додати з користувачів",

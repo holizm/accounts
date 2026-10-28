@@ -19,7 +19,9 @@
         "userNameAToZ": "Uživatelské jméno A–Z",
         "userNameZToA": "Uživatelské jméno Z–A",
         "userPermission": "Uživatelské oprávnění",
-        "userPermissions": "Uživatelská oprávnění"
+        "userPermissions": "Uživatelská oprávnění",
+        "visibilityGrant": "Oprávnění k přístupu k datům",
+        "visibilityGrants": "Oprávnění k přístupu k datům"
     },
     "panel": {
         "addFromUsers": "Přidat z uživatelů",

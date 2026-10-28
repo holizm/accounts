@@ -19,7 +19,9 @@
         "userNameAToZ": "የተጠቃሚ ስም A-Z",
         "userNameZToA": "የተጠቃሚ ስም Z-A",
         "userPermission": "የተጠቃሚ ፈቃድ",
-        "userPermissions": "የተጠቃሚ ፈቃዶች"
+        "userPermissions": "የተጠቃሚ ፈቃዶች",
+        "visibilityGrant": "የውሂብ መዳረሻ ፈቃድ",
+        "visibilityGrants": "የውሂብ መዳረሻ ፈቃዶች"
     },
     "panel": {
         "addFromUsers": "ከተጠቃሚዎች አክል",

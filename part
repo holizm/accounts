@@ -19,3 +19,8 @@ userPermission
 role deterministicIdentifiers
     name unique
     sharedTenancy
+visibilityGrant
+    user
+    item optional
+    tenantWide yesNo optional
+    unique user item

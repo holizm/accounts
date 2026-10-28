@@ -19,7 +19,9 @@
         "userNameAToZ": "Pangalan ng gumagamit A–Z",
         "userNameZToA": "Pangalan ng gumagamit Z–A",
         "userPermission": "Pahintulot ng gumagamit",
-        "userPermissions": "Mga pahintulot ng gumagamit"
+        "userPermissions": "Mga pahintulot ng gumagamit",
+        "visibilityGrant": "Pahintulot sa pag-access ng datos",
+        "visibilityGrants": "Mga pahintulot sa pag-access ng datos"
     },
     "panel": {
         "addFromUsers": "Idagdag mula sa mga user",

@@ -19,7 +19,9 @@
         "userNameAToZ": "Felhasználónév A–Z",
         "userNameZToA": "Felhasználónév Z–A",
         "userPermission": "Felhasználói jogosultság",
-        "userPermissions": "Felhasználói jogosultságok"
+        "userPermissions": "Felhasználói jogosultságok",
+        "visibilityGrant": "Adathozzáférési engedély",
+        "visibilityGrants": "Adathozzáférési engedélyek"
     },
     "panel": {
         "addFromUsers": "Hozzáadás a felhasználókból",

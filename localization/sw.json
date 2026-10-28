@@ -19,7 +19,9 @@
         "userNameAToZ": "Jina la mtumiaji A-Z",
         "userNameZToA": "Jina la mtumiaji Z-A",
         "userPermission": "Ruhusa ya mtumiaji",
-        "userPermissions": "Ruhusa za mtumiaji"
+        "userPermissions": "Ruhusa za mtumiaji",
+        "visibilityGrant": "Ruhusa ya kufikia data",
+        "visibilityGrants": "Ruhusa za kufikia data"
     },
     "panel": {
         "addFromUsers": "Ongeza kutoka kwa watumiaji",

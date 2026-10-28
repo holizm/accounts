@@ -1,5 +1,10 @@
-import { configure } from 'accountsBusiness'
-
+import {
+    configure,
+    getRecordVisibility,
+    setRecordVisibility,
+} from 'accountsBusiness'
 export default {
-    configureOnPost: configure
+    configureOnPost: configure,
+    recordVisibility: getRecordVisibility,
+    setRecordVisibilityOnPost: setRecordVisibility
 }

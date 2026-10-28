@@ -1,143 +1,47 @@
 {
     "user": {
-        "permissions": {
-            "authenticationRequired": true,
-            "roles": [
-                "admin",
-                "control",
-                "superAdmin",
-                "manager"
-            ]
-        },
-        "setPermissionsOnPost": {
-            "authenticationRequired": true,
-            "roles": [
-                "admin",
-                "control",
-                "superAdmin",
-                "manager"
-            ]
-        },
-        "previewPermissionsOnPost": {
-            "authenticationRequired": true,
-            "roles": [
-                "admin",
-                "control",
-                "superAdmin",
-                "manager"
-            ]
-        },
-        "assignRolesOnPost": {
-            "authenticationRequired": true,
-            "roles": [
-                "admin",
-                "control",
-                "superAdmin"
-            ]
-        },
-        "changePasswordOnPost": {
-            "authenticationRequired": true,
-            "roles": [
-                "admin",
-                "control",
-                "superAdmin"
-            ]
-        },
-        "syncAllOnPost": {
-            "authenticationRequired": true,
-            "roles": [
-                "admin",
-                "control",
-                "superAdmin"
-            ]
-        },
-        "createForPersonOnPost": {
-            "authenticationRequired": true,
-            "roles": [
-                "admin",
-                "control",
-                "superAdmin"
-            ]
-        },
-        "changeActivationOnPost": {
-            "authenticationRequired": true,
-            "roles": [
-                "admin",
-                "control",
-                "superAdmin"
-            ]
-        },
-        "countItemsOnPost": {
-            "authenticationRequired": true,
-            "roles": [
-                "admin",
-                "control",
-                "superAdmin"
-            ]
-        },
-        "createOnPost": {
-            "authenticationRequired": true,
-            "roles": [
-                "admin",
-                "control",
-                "superAdmin"
-            ]
-        },
-        "deleteAllOnPost": {
-            "authenticationRequired": true,
-            "roles": [
-                "admin",
-                "control",
-                "superAdmin"
-            ]
-        },
-        "deleteItemsOnPost": {
-            "authenticationRequired": true,
-            "roles": [
-                "admin",
-                "control",
-                "superAdmin"
-            ]
-        },
-        "deleteOnPost": {
-            "authenticationRequired": true,
-            "roles": [
-                "admin",
-                "control",
-                "superAdmin"
-            ]
-        },
-        "toggleBooleanOnPost": {
-            "authenticationRequired": true,
-            "roles": [
-                "admin",
-                "control",
-                "superAdmin"
-            ]
-        },
-        "updateOnPost": {
-            "authenticationRequired": true,
-            "roles": [
-                "admin",
-                "control",
-                "superAdmin"
-            ]
-        },
-        "upsertOnPost": {
-            "authenticationRequired": true,
-            "roles": [
-                "admin",
-                "control",
-                "superAdmin"
-            ]
-        }
+        "permissions": {"authenticationRequired":true,"roles":["admin","control","superAdmin","manager"]},
+        "setPermissionsOnPost": {"authenticationRequired":true,"roles":["admin","control","superAdmin","manager"]},
+        "previewPermissionsOnPost": {"authenticationRequired":true,"roles":["admin","control","superAdmin","manager"]},
+        "assignRolesOnPost": {"authenticationRequired":true,"roles":["admin","control","superAdmin"]},
+        "changePasswordOnPost": {"authenticationRequired":true,"roles":["admin","control","superAdmin"]},
+        "syncAllOnPost": {"authenticationRequired":true,"roles":["admin","control","superAdmin"]},
+        "createForPersonOnPost": {"authenticationRequired":true,"roles":["admin","control","superAdmin"]},
+        "changeActivationOnPost": {"authenticationRequired":true,"roles":["admin","control","superAdmin"]},
+        "countItemsOnPost": {"authenticationRequired":true,"roles":["admin","control","superAdmin"]},
+        "createOnPost": {"authenticationRequired":true,"roles":["admin","control","superAdmin"]},
+        "deleteAllOnPost": {"authenticationRequired":true,"roles":["admin","control","superAdmin"]},
+        "deleteItemsOnPost": {"authenticationRequired":true,"roles":["admin","control","superAdmin"]},
+        "deleteOnPost": {"authenticationRequired":true,"roles":["admin","control","superAdmin"]},
+        "toggleBooleanOnPost": {"authenticationRequired":true,"roles":["admin","control","superAdmin"]},
+        "updateOnPost": {"authenticationRequired":true,"roles":["admin","control","superAdmin"]},
+        "upsertOnPost": {"authenticationRequired":true,"roles":["admin","control","superAdmin"]}
     },
     "role": {
-        "upsertAllOnPost": {
-            "authenticationRequired": true,
-            "roles": [
-                "superAdmin"
-            ]
-        }
+        "upsertAllOnPost": {"authenticationRequired":true,"roles":["superAdmin"]}
+    },
+    "accounts": {
+        "recordVisibility": {"authenticationRequired":true,"roles":["admin","control","superAdmin"]},
+        "setRecordVisibilityOnPost": {"authenticationRequired":true,"roles":["admin","control","superAdmin"]}
+    },
+    "visibilityGrant": {
+        "actives": {"authenticationRequired":true,"roles":["admin","control","superAdmin"]},
+        "all": {"authenticationRequired":true,"roles":["admin","control","superAdmin"]},
+        "exportToSpreadsheet": {"authenticationRequired":true,"roles":["admin","control","superAdmin"]},
+        "get": {"authenticationRequired":true,"roles":["admin","control","superAdmin"]},
+        "getByMeaning": {"authenticationRequired":true,"roles":["admin","control","superAdmin"]},
+        "getBySlug": {"authenticationRequired":true,"roles":["admin","control","superAdmin"]},
+        "getOrCreateAndGet": {"authenticationRequired":true,"roles":["admin","control","superAdmin"]},
+        "list": {"authenticationRequired":true,"roles":["admin","control","superAdmin"]},
+        "random": {"authenticationRequired":true,"roles":["admin","control","superAdmin"]},
+        "changeActivationOnPost": {"authenticationRequired":true,"roles":["admin","control","superAdmin"]},
+        "countItemsOnPost": {"authenticationRequired":true,"roles":["admin","control","superAdmin"]},
+        "createOnPost": {"authenticationRequired":true,"roles":["admin","control","superAdmin"]},
+        "deleteAllOnPost": {"authenticationRequired":true,"roles":["admin","control","superAdmin"]},
+        "deleteItemsOnPost": {"authenticationRequired":true,"roles":["admin","control","superAdmin"]},
+        "deleteOnPost": {"authenticationRequired":true,"roles":["admin","control","superAdmin"]},
+        "toggleBooleanOnPost": {"authenticationRequired":true,"roles":["admin","control","superAdmin"]},
+        "updateOnPost": {"authenticationRequired":true,"roles":["admin","control","superAdmin"]},
+        "upsertOnPost": {"authenticationRequired":true,"roles":["admin","control","superAdmin"]}
     }
 }

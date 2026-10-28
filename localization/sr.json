@@ -19,7 +19,9 @@
         "userNameAToZ": "Корисничко име А-Ш",
         "userNameZToA": "Корисничко име Ш-А",
         "userPermission": "Корисничка дозвола",
-        "userPermissions": "Корисничке дозволе"
+        "userPermissions": "Корисничке дозволе",
+        "visibilityGrant": "Дозвола за приступ подацима",
+        "visibilityGrants": "Дозволе за приступ подацима"
     },
     "panel": {
         "addFromUsers": "Додај из корисника",

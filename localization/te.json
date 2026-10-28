@@ -19,7 +19,9 @@
         "userNameAToZ": "వినియోగదారు పేరు A-Z",
         "userNameZToA": "వినియోగదారు పేరు Z-A",
         "userPermission": "వినియోగదారు అనుమతి",
-        "userPermissions": "వినియోగదారు అనుమతులు"
+        "userPermissions": "వినియోగదారు అనుమతులు",
+        "visibilityGrant": "డేటా ప్రాప్యత అనుమతి",
+        "visibilityGrants": "డేటా ప్రాప్యత అనుమతులు"
     },
     "panel": {
         "addFromUsers": "వినియోగదారుల నుండి జోడించండి",

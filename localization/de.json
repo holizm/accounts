@@ -19,7 +19,9 @@
         "userNameAToZ": "Benutzername A-Z",
         "userNameZToA": "Benutzername Z-A",
         "userPermission": "Benutzerberechtigung",
-        "userPermissions": "Benutzerberechtigungen"
+        "userPermissions": "Benutzerberechtigungen",
+        "visibilityGrant": "Datenzugriffsberechtigung",
+        "visibilityGrants": "Datenzugriffsberechtigungen"
     },
     "panel": {
         "addFromUsers": "Von Benutzern hinzufügen",

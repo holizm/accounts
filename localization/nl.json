@@ -19,7 +19,9 @@
         "userNameAToZ": "Gebruikersnaam A-Z",
         "userNameZToA": "Gebruikersnaam Z-A",
         "userPermission": "Gebruikersmachtiging",
-        "userPermissions": "Gebruikersmachtigingen"
+        "userPermissions": "Gebruikersmachtigingen",
+        "visibilityGrant": "Toestemming voor gegevenstoegang",
+        "visibilityGrants": "Toestemmingen voor gegevenstoegang"
     },
     "panel": {
         "addFromUsers": "Toevoegen vanuit gebruikers",

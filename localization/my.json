@@ -19,7 +19,9 @@
         "userNameAToZ": "အသုံးပြုသူအမည် A-Z",
         "userNameZToA": "အသုံးပြုသူအမည် Z-A",
         "userPermission": "အသုံးပြုသူ ခွင့်ပြုချက်",
-        "userPermissions": "အသုံးပြုသူ ခွင့်ပြုချက်များ"
+        "userPermissions": "အသုံးပြုသူ ခွင့်ပြုချက်များ",
+        "visibilityGrant": "ဒေတာအသုံးပြုခွင့်",
+        "visibilityGrants": "ဒေတာအသုံးပြုခွင့်များ"
     },
     "panel": {
         "addFromUsers": "အသုံးပြုသူများမှ ထည့်ရန်",

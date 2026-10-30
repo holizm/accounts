@@ -1,16 +1,19 @@
 import { createHash } from 'crypto'
-import { httpForm } from 'core'
+import {
+    httpForm,
+    serverError,
+} from 'core'
 import getIamRealm from './getIamRealm.js'
 
 const tokenCache = {}
 
-export default async params => {
+const getAdminToken = async (params, useAutomation = false) => {
     const {
         baseUrl,
         clientId,
         secret,
         tokenRealm,
-    } = await getIamRealm(params)
+    } = await getIamRealm(params, useAutomation)
     const now = Date.now()
     const credentialHash = createHash('sha256').update(secret).digest('hex')
     const tenantKey = `${baseUrl}/${tokenRealm}/${clientId}/${credentialHash}`
@@ -27,7 +30,16 @@ export default async params => {
         client_secret: secret,
     }
 
-    const { responseJson } = await httpForm(url, form)
+    const {
+        responseJson,
+        responseStatus,
+    } = await httpForm(url, form)
+    if (!responseJson?.access_token) {
+        const rejectedClient = responseStatus === 401 &&
+            ['invalid_client', 'unauthorized_client'].includes(responseJson?.error)
+        if (clientId === 'adminApi' && rejectedClient) return getAdminToken(params, true)
+        serverError('coreApiRoleAccessFailed')
+    }
     const expiresIn = responseJson.expires_in || 300
 
     tokenCache[tenantKey] = {
@@ -37,3 +49,5 @@ export default async params => {
 
     return tokenCache[tenantKey].accessToken
 }
+
+export default getAdminToken

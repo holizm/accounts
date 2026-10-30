@@ -8,14 +8,14 @@ import {
 import { getTenantIamConfiguration } from './tenantIamOptions.js'
 import getAccountsBaseUrl from './getAccountsBaseUrl.js'
 
-export default async params => {
+export default async (params, useAutomation = false) => {
     const tenant = getTenantIamConfiguration(params) || getTenant(params?.host || providers.host)
     const realm = tenant.realm
     const secrets = settings.production?.adminApi?.iamClientSecrets || []
     const tenantSettings = secrets.find(item => item.domain === tenant.prodDomain && item.realm === realm) ||
         secrets.find(item => item.domain === tenant.prodDomain && !item.realm)
     const baseUrl = getAccountsBaseUrl(tenant)
-    let secret = tenantSettings?.secret
+    let secret = useAutomation ? undefined : tenantSettings?.secret
     let clientId = 'adminApi'
     let tokenRealm = realm
     if (!secret) {

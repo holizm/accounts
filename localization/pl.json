@@ -22,7 +22,8 @@
         "userPermission": "Uprawnienie użytkownika",
         "userPermissions": "Uprawnienia użytkownika",
         "visibilityGrant": "Uprawnienie dostępu do danych",
-        "visibilityGrants": "Uprawnienia dostępu do danych"
+        "visibilityGrants": "Uprawnienia dostępu do danych",
+        "impersonate": "Zaloguj się jako użytkownik"
     },
     "panel": {
         "addFromUsers": "Dodaj z użytkowników",

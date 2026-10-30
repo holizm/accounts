@@ -22,7 +22,8 @@
         "userPermission": "பயனர் அனுமதி",
         "userPermissions": "பயனர் அனுமதிகள்",
         "visibilityGrant": "தரவு அணுகல் அனுமதி",
-        "visibilityGrants": "தரவு அணுகல் அனுமதிகள்"
+        "visibilityGrants": "தரவு அணுகல் அனுமதிகள்",
+        "impersonate": "இந்தப் பயனராக உள்நுழைக"
     },
     "panel": {
         "addFromUsers": "பயனர்களிடமிருந்து சேர்",

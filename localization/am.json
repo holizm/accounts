@@ -22,7 +22,8 @@
         "userPermission": "የተጠቃሚ ፈቃድ",
         "userPermissions": "የተጠቃሚ ፈቃዶች",
         "visibilityGrant": "የውሂብ መዳረሻ ፈቃድ",
-        "visibilityGrants": "የውሂብ መዳረሻ ፈቃዶች"
+        "visibilityGrants": "የውሂብ መዳረሻ ፈቃዶች",
+        "impersonate": "በተጠቃሚው ስም ግባ"
     },
     "panel": {
         "addFromUsers": "ከተጠቃሚዎች አክል",

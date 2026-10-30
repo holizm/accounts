@@ -22,7 +22,8 @@
         "userPermission": "उपयोगकर्ता अनुमति",
         "userPermissions": "उपयोगकर्ता अनुमतियाँ",
         "visibilityGrant": "डेटा पहुँच अनुमति",
-        "visibilityGrants": "डेटा पहुँच अनुमतियाँ"
+        "visibilityGrants": "डेटा पहुँच अनुमतियाँ",
+        "impersonate": "इस उपयोगकर्ता के रूप में प्रवेश करें"
     },
     "panel": {
         "addFromUsers": "उपयोगकर्ताओं से जोड़ें",

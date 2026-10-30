@@ -22,7 +22,8 @@
         "userPermission": "ユーザー権限",
         "userPermissions": "ユーザー権限",
         "visibilityGrant": "データアクセス権限",
-        "visibilityGrants": "データアクセス権限"
+        "visibilityGrants": "データアクセス権限",
+        "impersonate": "このユーザーとしてログイン"
     },
     "panel": {
         "addFromUsers": "ユーザーから追加",

@@ -22,7 +22,8 @@
         "userPermission": "Kullanıcı izni",
         "userPermissions": "Kullanıcı izinleri",
         "visibilityGrant": "Veri erişim izni",
-        "visibilityGrants": "Veri erişim izinleri"
+        "visibilityGrants": "Veri erişim izinleri",
+        "impersonate": "Kullanıcı olarak oturum aç"
     },
     "panel": {
         "addFromUsers": "Kullanıcılardan Ekle",

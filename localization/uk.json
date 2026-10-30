@@ -22,7 +22,8 @@
         "userPermission": "Дозвіл користувача",
         "userPermissions": "Дозволи користувача",
         "visibilityGrant": "Дозвіл на доступ до даних",
-        "visibilityGrants": "Дозволи на доступ до даних"
+        "visibilityGrants": "Дозволи на доступ до даних",
+        "impersonate": "Увійти як користувач"
     },
     "panel": {
         "addFromUsers": "Додати з користувачів",

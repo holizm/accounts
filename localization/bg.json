@@ -22,7 +22,8 @@
         "userPermission": "Потребителско разрешение",
         "userPermissions": "Потребителски разрешения",
         "visibilityGrant": "Разрешение за достъп до данни",
-        "visibilityGrants": "Разрешения за достъп до данни"
+        "visibilityGrants": "Разрешения за достъп до данни",
+        "impersonate": "Вход като потребителя"
     },
     "panel": {
         "addFromUsers": "Добавяне от потребители",

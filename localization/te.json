@@ -22,7 +22,8 @@
         "userPermission": "వినియోగదారు అనుమతి",
         "userPermissions": "వినియోగదారు అనుమతులు",
         "visibilityGrant": "డేటా ప్రాప్యత అనుమతి",
-        "visibilityGrants": "డేటా ప్రాప్యత అనుమతులు"
+        "visibilityGrants": "డేటా ప్రాప్యత అనుమతులు",
+        "impersonate": "ఈ వినియోగదారుగా ప్రవేశించండి"
     },
     "panel": {
         "addFromUsers": "వినియోగదారుల నుండి జోడించండి",

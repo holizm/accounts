@@ -22,7 +22,8 @@
         "userPermission": "Käyttäjän käyttöoikeus",
         "userPermissions": "Käyttäjän käyttöoikeudet",
         "visibilityGrant": "Tietojen käyttöoikeus",
-        "visibilityGrants": "Tietojen käyttöoikeudet"
+        "visibilityGrants": "Tietojen käyttöoikeudet",
+        "impersonate": "Kirjaudu käyttäjänä"
     },
     "panel": {
         "addFromUsers": "Lisää käyttäjistä",

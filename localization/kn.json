@@ -22,7 +22,8 @@
         "userPermission": "ಬಳಕೆದಾರರ ಅನುಮತಿ",
         "userPermissions": "ಬಳಕೆದಾರರ ಅನುಮತಿಗಳು",
         "visibilityGrant": "ಡೇಟಾ ಪ್ರವೇಶ ಅನುಮತಿ",
-        "visibilityGrants": "ಡೇಟಾ ಪ್ರವೇಶ ಅನುಮತಿಗಳು"
+        "visibilityGrants": "ಡೇಟಾ ಪ್ರವೇಶ ಅನುಮತಿಗಳು",
+        "impersonate": "ಈ ಬಳಕೆದಾರರಾಗಿ ಪ್ರವೇಶಿಸಿ"
     },
     "panel": {
         "addFromUsers": "ಬಳಕೆದಾರರಿಂದ ಸೇರಿಸಿ",

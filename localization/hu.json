@@ -22,7 +22,8 @@
         "userPermission": "Felhasználói jogosultság",
         "userPermissions": "Felhasználói jogosultságok",
         "visibilityGrant": "Adathozzáférési engedély",
-        "visibilityGrants": "Adathozzáférési engedélyek"
+        "visibilityGrants": "Adathozzáférési engedélyek",
+        "impersonate": "Bejelentkezés a felhasználóként"
     },
     "panel": {
         "addFromUsers": "Hozzáadás a felhasználókból",

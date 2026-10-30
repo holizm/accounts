@@ -22,7 +22,8 @@
         "userPermission": "Brugertilladelse",
         "userPermissions": "Brugertilladelser",
         "visibilityGrant": "Dataadgangstilladelse",
-        "visibilityGrants": "Dataadgangstilladelser"
+        "visibilityGrants": "Dataadgangstilladelser",
+        "impersonate": "Log ind som brugeren"
     },
     "panel": {
         "addFromUsers": "Tilføj fra brugere",

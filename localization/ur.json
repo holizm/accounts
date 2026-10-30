@@ -22,7 +22,8 @@
         "userPermission": "صارف کی اجازت",
         "userPermissions": "صارف کی اجازتیں",
         "visibilityGrant": "ڈیٹا تک رسائی کی اجازت",
-        "visibilityGrants": "ڈیٹا تک رسائی کی اجازتیں"
+        "visibilityGrants": "ڈیٹا تک رسائی کی اجازتیں",
+        "impersonate": "اس صارف کے طور پر داخل ہوں"
     },
     "panel": {
         "addFromUsers": "صارفین سے شامل کریں۔",

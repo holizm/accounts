@@ -22,7 +22,8 @@
         "userPermission": "Корисничка дозвола",
         "userPermissions": "Корисничке дозволе",
         "visibilityGrant": "Дозвола за приступ подацима",
-        "visibilityGrants": "Дозволе за приступ подацима"
+        "visibilityGrants": "Дозволе за приступ подацима",
+        "impersonate": "Пријави се као корисник"
     },
     "panel": {
         "addFromUsers": "Додај из корисника",

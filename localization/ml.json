@@ -22,7 +22,8 @@
         "userPermission": "ഉപയോക്തൃ അനുമതി",
         "userPermissions": "ഉപയോക്തൃ അനുമതികൾ",
         "visibilityGrant": "ഡാറ്റാ പ്രവേശന അനുമതി",
-        "visibilityGrants": "ഡാറ്റാ പ്രവേശന അനുമതികൾ"
+        "visibilityGrants": "ഡാറ്റാ പ്രവേശന അനുമതികൾ",
+        "impersonate": "ഈ ഉപയോക്താവായി പ്രവേശിക്കുക"
     },
     "panel": {
         "addFromUsers": "ഉപയോക്താക്കളിൽ നിന്ന് ചേർക്കുക",

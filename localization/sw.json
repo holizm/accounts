@@ -22,7 +22,8 @@
         "userPermission": "Ruhusa ya mtumiaji",
         "userPermissions": "Ruhusa za mtumiaji",
         "visibilityGrant": "Ruhusa ya kufikia data",
-        "visibilityGrants": "Ruhusa za kufikia data"
+        "visibilityGrants": "Ruhusa za kufikia data",
+        "impersonate": "Ingia kama mtumiaji"
     },
     "panel": {
         "addFromUsers": "Ongeza kutoka kwa watumiaji",

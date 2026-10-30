@@ -22,7 +22,8 @@
         "userPermission": "Gebruikersmachtiging",
         "userPermissions": "Gebruikersmachtigingen",
         "visibilityGrant": "Toestemming voor gegevenstoegang",
-        "visibilityGrants": "Toestemmingen voor gegevenstoegang"
+        "visibilityGrants": "Toestemmingen voor gegevenstoegang",
+        "impersonate": "Aanmelden als gebruiker"
     },
     "panel": {
         "addFromUsers": "Toevoegen vanuit gebruikers",

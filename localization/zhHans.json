@@ -22,7 +22,8 @@
         "userPermission": "用户权限",
         "userPermissions": "用户权限",
         "visibilityGrant": "数据访问授权",
-        "visibilityGrants": "数据访问授权"
+        "visibilityGrants": "数据访问授权",
+        "impersonate": "以此用户身份登录"
     },
     "panel": {
         "addFromUsers": "从用户中添加",

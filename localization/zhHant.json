@@ -22,7 +22,8 @@
         "userPermission": "使用者權限",
         "userPermissions": "使用者權限",
         "visibilityGrant": "資料存取授權",
-        "visibilityGrants": "資料存取授權"
+        "visibilityGrants": "資料存取授權",
+        "impersonate": "以此使用者身分登入"
     },
     "panel": {
         "addFromUsers": "從使用者新增",

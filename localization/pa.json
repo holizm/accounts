@@ -22,7 +22,8 @@
         "userPermission": "ਵਰਤੋਂਕਾਰ ਦੀ ਇਜਾਜ਼ਤ",
         "userPermissions": "ਵਰਤੋਂਕਾਰ ਦੀਆਂ ਇਜਾਜ਼ਤਾਂ",
         "visibilityGrant": "ਡਾਟਾ ਪਹੁੰਚ ਦੀ ਇਜਾਜ਼ਤ",
-        "visibilityGrants": "ਡਾਟਾ ਪਹੁੰਚ ਦੀਆਂ ਇਜਾਜ਼ਤਾਂ"
+        "visibilityGrants": "ਡਾਟਾ ਪਹੁੰਚ ਦੀਆਂ ਇਜਾਜ਼ਤਾਂ",
+        "impersonate": "ਇਸ ਵਰਤੋਂਕਾਰ ਵਜੋਂ ਪ੍ਰਵੇਸ਼ ਕਰੋ"
     },
     "panel": {
         "addFromUsers": "ਵਰਤੋਂਕਾਰਾਂ ਤੋਂ ਸ਼ਾਮਲ ਕਰੋ",

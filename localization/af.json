@@ -22,7 +22,8 @@
         "userPermission": "Gebruikertoestemming",
         "userPermissions": "Gebruikertoestemmings",
         "visibilityGrant": "Datatoegangstoekenning",
-        "visibilityGrants": "Datatoegangstoekennings"
+        "visibilityGrants": "Datatoegangstoekennings",
+        "impersonate": "Tree op as gebruiker"
     },
     "panel": {
         "addFromUsers": "Voeg vanaf gebruikers by",

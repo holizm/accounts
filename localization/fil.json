@@ -22,7 +22,8 @@
         "userPermission": "Pahintulot ng gumagamit",
         "userPermissions": "Mga pahintulot ng gumagamit",
         "visibilityGrant": "Pahintulot sa pag-access ng datos",
-        "visibilityGrants": "Mga pahintulot sa pag-access ng datos"
+        "visibilityGrants": "Mga pahintulot sa pag-access ng datos",
+        "impersonate": "Mag-sign in bilang user"
     },
     "panel": {
         "addFromUsers": "Idagdag mula sa mga user",

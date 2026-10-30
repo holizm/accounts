@@ -22,7 +22,8 @@
         "userPermission": "အသုံးပြုသူ ခွင့်ပြုချက်",
         "userPermissions": "အသုံးပြုသူ ခွင့်ပြုချက်များ",
         "visibilityGrant": "ဒေတာအသုံးပြုခွင့်",
-        "visibilityGrants": "ဒေတာအသုံးပြုခွင့်များ"
+        "visibilityGrants": "ဒေတာအသုံးပြုခွင့်များ",
+        "impersonate": "ဤအသုံးပြုသူအဖြစ် ဝင်ရောက်ပါ"
     },
     "panel": {
         "addFromUsers": "အသုံးပြုသူများမှ ထည့်ရန်",

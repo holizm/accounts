@@ -22,7 +22,8 @@
         "userPermission": "वापरकर्त्याची परवानगी",
         "userPermissions": "वापरकर्त्याच्या परवानग्या",
         "visibilityGrant": "डेटा प्रवेश परवानगी",
-        "visibilityGrants": "डेटा प्रवेश परवानग्या"
+        "visibilityGrants": "डेटा प्रवेश परवानग्या",
+        "impersonate": "या वापरकर्त्याच्या रूपात प्रवेश करा"
     },
     "panel": {
         "addFromUsers": "वापरकर्त्यांमधून जोडा",

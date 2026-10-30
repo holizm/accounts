@@ -22,7 +22,8 @@
         "userPermission": "Uživatelské oprávnění",
         "userPermissions": "Uživatelská oprávnění",
         "visibilityGrant": "Oprávnění k přístupu k datům",
-        "visibilityGrants": "Oprávnění k přístupu k datům"
+        "visibilityGrants": "Oprávnění k přístupu k datům",
+        "impersonate": "Přihlásit se jako uživatel"
     },
     "panel": {
         "addFromUsers": "Přidat z uživatelů",

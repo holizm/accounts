@@ -22,7 +22,8 @@
         "userPermission": "مجوز کاربر",
         "userPermissions": "مجوزهای کاربر",
         "visibilityGrant": "مجوز دسترسی به داده",
-        "visibilityGrants": "مجوزهای دسترسی به داده"
+        "visibilityGrants": "مجوزهای دسترسی به داده",
+        "impersonate": "ورود به‌جای کاربر"
     },
     "panel": {
         "addFromUsers": "افزودن از کاربران",

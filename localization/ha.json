@@ -22,7 +22,8 @@
         "userPermission": "Izinin mai amfani",
         "userPermissions": "Izinan mai amfani",
         "visibilityGrant": "Izinin samun bayanai",
-        "visibilityGrants": "Izinin samun bayanai"
+        "visibilityGrants": "Izinin samun bayanai",
+        "impersonate": "Shiga a matsayin mai amfani"
     },
     "panel": {
         "addFromUsers": "Ƙara daga masu amfani",

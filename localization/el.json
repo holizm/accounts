@@ -22,7 +22,8 @@
         "userPermission": "Δικαίωμα χρήστη",
         "userPermissions": "Δικαιώματα χρήστη",
         "visibilityGrant": "Άδεια πρόσβασης σε δεδομένα",
-        "visibilityGrants": "Άδειες πρόσβασης σε δεδομένα"
+        "visibilityGrants": "Άδειες πρόσβασης σε δεδομένα",
+        "impersonate": "Σύνδεση ως χρήστης"
     },
     "panel": {
         "addFromUsers": "Προσθήκη από χρήστες",

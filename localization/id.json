@@ -22,7 +22,8 @@
         "userPermission": "Izin pengguna",
         "userPermissions": "Izin pengguna",
         "visibilityGrant": "Izin akses data",
-        "visibilityGrants": "Izin akses data"
+        "visibilityGrants": "Izin akses data",
+        "impersonate": "Masuk sebagai pengguna"
     },
     "panel": {
         "addFromUsers": "Tambahkan dari pengguna",

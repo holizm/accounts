@@ -22,7 +22,8 @@
         "userPermission": "Autorisation utilisateur",
         "userPermissions": "Autorisations utilisateur",
         "visibilityGrant": "Autorisation d’accès aux données",
-        "visibilityGrants": "Autorisations d’accès aux données"
+        "visibilityGrants": "Autorisations d’accès aux données",
+        "impersonate": "Se connecter comme cet utilisateur"
     },
     "panel": {
         "addFromUsers": "Ajouter depuis les utilisateurs",

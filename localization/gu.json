@@ -22,7 +22,8 @@
         "userPermission": "વપરાશકર્તાની પરવાનગી",
         "userPermissions": "વપરાશકર્તાની પરવાનગીઓ",
         "visibilityGrant": "ડેટા ઍક્સેસ પરવાનગી",
-        "visibilityGrants": "ડેટા ઍક્સેસ પરવાનગીઓ"
+        "visibilityGrants": "ડેટા ઍક્સેસ પરવાનગીઓ",
+        "impersonate": "આ વપરાશકર્તા તરીકે પ્રવેશ કરો"
     },
     "panel": {
         "addFromUsers": "વપરાશકર્તાઓમાંથી ઉમેરો",

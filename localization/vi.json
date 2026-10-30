@@ -22,7 +22,8 @@
         "userPermission": "Quyền người dùng",
         "userPermissions": "Các quyền người dùng",
         "visibilityGrant": "Quyền truy cập dữ liệu",
-        "visibilityGrants": "Các quyền truy cập dữ liệu"
+        "visibilityGrants": "Các quyền truy cập dữ liệu",
+        "impersonate": "Đăng nhập với tư cách người dùng"
     },
     "panel": {
         "addFromUsers": "Thêm từ người dùng",

@@ -22,7 +22,8 @@
         "userPermission": "User permission",
         "userPermissions": "User permissions",
         "visibilityGrant": "Data access grant",
-        "visibilityGrants": "Data access grants"
+        "visibilityGrants": "Data access grants",
+        "impersonate": "Impersonate"
     },
     "panel": {
         "addFromUsers": "Add from users",

@@ -1,6 +1,7 @@
 import {
     getCollection,
     parseId,
+    settings,
 } from 'core'
 
 export default async (reference, tenant, options = {}) => {
@@ -57,7 +58,7 @@ export default async (reference, tenant, options = {}) => {
                 lastName,
                 name: name || item.displayName || contact?.displayName || item.meaning,
                 person: item,
-                sample: item.meaning?.startsWith('sample') === true,
+                sample: (settings.roleUserSampleMeaningPrefixes || ['sample']).some(prefix => item.meaning?.startsWith(prefix)),
             }
             return result
         }

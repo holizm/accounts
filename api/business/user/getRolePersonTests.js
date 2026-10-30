@@ -19,6 +19,7 @@ const records = {
     },
 }
 let hasEmployee = true
+const settings = {}
 mock.module('core', { namedExports: {
     getCollection: async (part, type) => {
         const collection = { findOne: async query => {
@@ -36,6 +37,7 @@ mock.module('core', { namedExports: {
         }
         return parsed
     },
+    settings,
 } })
 const { default: getRolePerson } = await import('./getRolePerson.js')
 test('employee, natural-person and embedded person references reuse one existing person', async () => {
@@ -57,4 +59,15 @@ test('employee-only sources cannot provision an unrelated customer person', asyn
     hasEmployee = false
     assert.equal(await getRolePerson('person', 'target', { employeeRequired: true }), null)
     hasEmployee = true
+})
+
+test('only configured generated datasets receive sample profile defaults', async () => {
+    records.person.meaning = 'historyOctober2026employeePerson17'
+    assert.equal((await getRolePerson('employee', 'target')).sample, false)
+    settings.roleUserSampleMeaningPrefixes = ['sample', 'historyOctober2026employeePerson']
+    assert.equal((await getRolePerson('employee', 'target')).sample, true)
+    records.person.meaning = 'employeePerson17'
+    assert.equal((await getRolePerson('employee', 'target')).sample, false)
+    records.person.meaning = 'sampleEmployeePerson'
+    delete settings.roleUserSampleMeaningPrefixes
 })

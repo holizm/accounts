@@ -8,6 +8,7 @@ let account = null
 let saved
 let writes = 0
 const grants = []
+const updates = []
 mock.module('./ensureRealmUserLinks.js', { exports: { default: async () => {} } })
 mock.module('./addRealmRole.js', { exports: { addRealmRole: async value => grants.push(value) } })
 mock.module('../iam.js', { exports: {
@@ -19,7 +20,10 @@ mock.module('../iam.js', { exports: {
             id: 'existingUuid',
         }
     },
-    iamPut: async () => { throw new Error('Unexpected profile overwrite') },
+    iamPut: async (path, profile) => {
+        updates.push(profile)
+        account = profile
+    },
 } })
 mock.module('core', { exports: {
     clientError: code => { throw new Error(code) },
@@ -83,4 +87,16 @@ test('synthetic records can satisfy IAM profile requirements without inventing r
     })
     assert.match(account.email, /@example\.invalid$/)
     assert.equal(account.emailVerified, false)
+})
+
+test('existing managed sample accounts are repaired without replacing identities or existing email', async () => {
+    delete account.email
+    const count = writes
+    await ensure({ candidate: { ...candidate, sample: true }, role: 'staff', target })
+    assert.deepEqual([writes, account.id, account.emailVerified], [count, 'existingUuid', false])
+    assert.match(account.email, /@example\.invalid$/)
+    account.email = 'existing@example.com'
+    await ensure({ candidate: { ...candidate, sample: true }, role: 'staff', target })
+    assert.equal(updates.length, 1)
+    assert.equal(account.email, 'existing@example.com')
 })

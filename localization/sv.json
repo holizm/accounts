@@ -1,0 +1,36 @@
+{
+    "common": {
+        "accounts": "Konton",
+        "anonymous": "Anonym",
+        "changePassword": "Byt lösenord",
+        "editProfile": "Redigera din profil",
+        "forPerson": "För person",
+        "impersonation": "Logga in som en annan användare",
+        "key": "Nyckel",
+        "keys": "Nycklar",
+        "lastSyncDate": "Datum för senaste synkronisering",
+        "otp": "Kod",
+        "password": "Lösenord",
+        "passwordChanged": "Lösenordet har ändrats",
+        "passwordConfirmation": "Bekräfta lösenord",
+        "permission": "Behörighet",
+        "permissions": "Behörigheter",
+        "signIn": "Logga in",
+        "userName": "Användarnamn",
+        "userNameAToZ": "Användarnamn A–Ö",
+        "userNameZToA": "Användarnamn Ö–A",
+        "userPermission": "Användarbehörighet",
+        "userPermissions": "Användarbehörigheter",
+        "visibilityGrant": "Behörighet till data",
+        "visibilityGrants": "Behörigheter till data",
+        "impersonate": "Logga in som användaren"
+    },
+    "panel": {
+        "addFromUsers": "Lägg till från användare",
+        "configure": "Konfigurera konton",
+        "createUserForPerson": "Skapa användare för person",
+        "manageRoles": "Hantera roller",
+        "permissionHelp": "Neka har företräde framför Tillåt. Ärv tar bort detta undantag.",
+        "upsertAllRoles": "Infoga eller uppdatera alla roller"
+    }
+}

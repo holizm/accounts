@@ -1,0 +1,36 @@
+{
+    "common": {
+        "accounts": "Àwọn àkọọ́lẹ̀",
+        "anonymous": "Àìlórúkọ",
+        "changePassword": "Yí ọ̀rọ̀ aṣínà padà",
+        "editProfile": "Ṣàtúnṣe prófáìlì rẹ",
+        "forPerson": "Fún ẹni",
+        "impersonation": "Wọlé gẹ́gẹ́ bí aṣàmúlò mìíràn",
+        "key": "Kọ́kọ́rọ́",
+        "keys": "Àwọn kọ́kọ́rọ́",
+        "lastSyncDate": "Ọjọ́ ìmúdójúìwọ̀n tó kẹ́yìn",
+        "otp": "Kóòdù",
+        "password": "Ọ̀rọ̀ aṣínà",
+        "passwordChanged": "A ti yí ọ̀rọ̀ aṣínà padà",
+        "passwordConfirmation": "Ìjẹ́rìísí ọ̀rọ̀ aṣínà",
+        "permission": "Ìyọ̀nda",
+        "permissions": "Àwọn ìyọ̀nda",
+        "signIn": "Wọlé",
+        "userName": "Orúkọ olùlò",
+        "userNameAToZ": "Orúkọ olùlò A-Z",
+        "userNameZToA": "Orúkọ olùlò Z-A",
+        "userPermission": "Ìyọ̀nda aṣàmúlò",
+        "userPermissions": "Àwọn ìyọ̀nda aṣàmúlò",
+        "visibilityGrant": "Àṣẹ láti wọlé sí dátà",
+        "visibilityGrants": "Àwọn àṣẹ láti wọlé sí dátà",
+        "impersonate": "Wọlé gẹ́gẹ́ bí aṣàmúlò"
+    },
+    "panel": {
+        "addFromUsers": "Ṣàfikún láti ọ̀dọ̀ àwọn olùlò",
+        "configure": "Ṣètò àwọn àkọọ́lẹ̀",
+        "createUserForPerson": "Ṣẹ̀dá olùlò fún ẹni",
+        "manageRoles": "Ṣàkóso àwọn ipa",
+        "permissionHelp": "Kíkọ̀ ní ààyò ju fífàyè gbà lọ. Jíjogún yọ ìyàsọ́tọ̀ yìí kúrò.",
+        "upsertAllRoles": "Ṣàfikún tàbí mú gbogbo ipa dojuiwọn"
+    }
+}

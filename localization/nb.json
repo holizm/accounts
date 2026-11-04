@@ -1,0 +1,36 @@
+{
+    "common": {
+        "accounts": "Kontoer",
+        "anonymous": "Anonym",
+        "changePassword": "Endre passord",
+        "editProfile": "Rediger profilen din",
+        "forPerson": "For person",
+        "impersonation": "Logg inn som en annen bruker",
+        "key": "Nøkkel",
+        "keys": "Nøkler",
+        "lastSyncDate": "Dato for siste synkronisering",
+        "otp": "Kode",
+        "password": "Passord",
+        "passwordChanged": "Passordet er endret",
+        "passwordConfirmation": "Bekreft passord",
+        "permission": "Tillatelse",
+        "permissions": "Tillatelser",
+        "signIn": "Logg inn",
+        "userName": "Brukernavn",
+        "userNameAToZ": "Brukernavn A–Å",
+        "userNameZToA": "Brukernavn Å–A",
+        "userPermission": "Brukertillatelse",
+        "userPermissions": "Brukertillatelser",
+        "visibilityGrant": "Datatilgangstillatelse",
+        "visibilityGrants": "Datatilgangstillatelser",
+        "impersonate": "Logg inn som brukeren"
+    },
+    "panel": {
+        "addFromUsers": "Legg til fra brukere",
+        "configure": "Konfigurer kontoer",
+        "createUserForPerson": "Opprett bruker for person",
+        "manageRoles": "Administrer roller",
+        "permissionHelp": "Avvis har forrang over Tillat. Arv fjerner dette unntaket.",
+        "upsertAllRoles": "Sett inn eller oppdater alle roller"
+    }
+}

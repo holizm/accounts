@@ -1,0 +1,36 @@
+{
+    "common": {
+        "accounts": "Akaunti",
+        "anonymous": "Asiyejulikana",
+        "changePassword": "Badilisha nenosiri",
+        "editProfile": "Hariri wasifu wako",
+        "forPerson": "Kwa ajili ya mtu",
+        "impersonation": "Kuingia kama mtumiaji mwingine",
+        "key": "Ufunguo",
+        "keys": "Funguo",
+        "lastSyncDate": "Tarehe ya mwisho ya ulandanishi",
+        "otp": "Msimbo",
+        "password": "Nenosiri",
+        "passwordChanged": "Nenosiri limebadilishwa",
+        "passwordConfirmation": "Uthibitisho wa nenosiri",
+        "permission": "Ruhusa",
+        "permissions": "Ruhusa",
+        "signIn": "Ingia",
+        "userName": "Jina la mtumiaji",
+        "userNameAToZ": "Jina la mtumiaji A-Z",
+        "userNameZToA": "Jina la mtumiaji Z-A",
+        "userPermission": "Ruhusa ya mtumiaji",
+        "userPermissions": "Ruhusa za mtumiaji",
+        "visibilityGrant": "Ruhusa ya kufikia data",
+        "visibilityGrants": "Ruhusa za kufikia data",
+        "impersonate": "Ingia kama mtumiaji"
+    },
+    "panel": {
+        "addFromUsers": "Ongeza kutoka kwa watumiaji",
+        "configure": "Sanidi akaunti",
+        "createUserForPerson": "Unda mtumiaji kwa ajili ya mtu",
+        "manageRoles": "Dhibiti majukumu",
+        "permissionHelp": "Kukataa kunatangulia kuruhusu. Kurithi huondoa ubaguzi huu.",
+        "upsertAllRoles": "Ongeza au sasisha majukumu yote"
+    }
+}

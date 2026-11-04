@@ -1,0 +1,36 @@
+{
+    "common": {
+        "accounts": "Akun",
+        "anonymous": "Anonim",
+        "changePassword": "Ubah kata sandi",
+        "editProfile": "Edit profil Anda",
+        "forPerson": "Untuk orang",
+        "impersonation": "Masuk sebagai pengguna lain",
+        "key": "Kunci",
+        "keys": "Kunci",
+        "lastSyncDate": "Tanggal sinkronisasi terakhir",
+        "otp": "Kode",
+        "password": "Kata sandi",
+        "passwordChanged": "Kata sandi diubah",
+        "passwordConfirmation": "Konfirmasi kata sandi",
+        "permission": "Izin",
+        "permissions": "Izin",
+        "signIn": "Masuk",
+        "userName": "Nama pengguna",
+        "userNameAToZ": "Nama pengguna A-Z",
+        "userNameZToA": "Nama pengguna Z-A",
+        "userPermission": "Izin pengguna",
+        "userPermissions": "Izin pengguna",
+        "visibilityGrant": "Izin akses data",
+        "visibilityGrants": "Izin akses data",
+        "impersonate": "Masuk sebagai pengguna"
+    },
+    "panel": {
+        "addFromUsers": "Tambahkan dari pengguna",
+        "configure": "Konfigurasikan akun",
+        "createUserForPerson": "Buat pengguna untuk orang",
+        "manageRoles": "Kelola peran",
+        "permissionHelp": "Penolakan mengalahkan izin. Pewarisan menghapus pengecualian ini.",
+        "upsertAllRoles": "Tambahkan atau perbarui semua peran"
+    }
+}

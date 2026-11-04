@@ -1,0 +1,36 @@
+{
+    "common": {
+        "accounts": "መለያዎች",
+        "anonymous": "ስም-አልባ",
+        "changePassword": "የይለፍ ቃል ቀይር",
+        "editProfile": "መገለጫዎን ያርትዑ",
+        "forPerson": "ለግለሰብ",
+        "impersonation": "በሌላ ተጠቃሚ ስም መግባት",
+        "key": "ቁልፍ",
+        "keys": "ቁልፎች",
+        "lastSyncDate": "የመጨረሻ ማመሳሰል ቀን",
+        "otp": "ኮድ",
+        "password": "የይለፍ ቃል",
+        "passwordChanged": "የይለፍ ቃል ተቀይሯል",
+        "passwordConfirmation": "የይለፍ ቃል ማረጋገጫ",
+        "permission": "ፈቃድ",
+        "permissions": "ፈቃዶች",
+        "signIn": "ግባ",
+        "userName": "የተጠቃሚ ስም",
+        "userNameAToZ": "የተጠቃሚ ስም A-Z",
+        "userNameZToA": "የተጠቃሚ ስም Z-A",
+        "userPermission": "የተጠቃሚ ፈቃድ",
+        "userPermissions": "የተጠቃሚ ፈቃዶች",
+        "visibilityGrant": "የውሂብ መዳረሻ ፈቃድ",
+        "visibilityGrants": "የውሂብ መዳረሻ ፈቃዶች",
+        "impersonate": "በተጠቃሚው ስም ግባ"
+    },
+    "panel": {
+        "addFromUsers": "ከተጠቃሚዎች አክል",
+        "configure": "መለያዎችን አዋቅር",
+        "createUserForPerson": "ለግለሰብ ተጠቃሚ ፍጠር",
+        "manageRoles": "ሚናዎችን አስተዳድር",
+        "permissionHelp": "ከልክል ከፍቀድ ይቀድማል። ውረስ ይህን ልዩ ደንብ ያስወግዳል።",
+        "upsertAllRoles": "ሁሉንም ሚናዎች ያስገቡ ወይም ያዘምኑ"
+    }
+}

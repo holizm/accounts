@@ -1,0 +1,36 @@
+{
+    "common": {
+        "accounts": "Облікові записи",
+        "anonymous": "Анонімний",
+        "changePassword": "Змінити пароль",
+        "editProfile": "Редагувати свій профіль",
+        "forPerson": "Для особи",
+        "impersonation": "Вхід від імені іншого користувача",
+        "key": "Ключ",
+        "keys": "Ключі",
+        "lastSyncDate": "Дата останньої синхронізації",
+        "otp": "Код",
+        "password": "Пароль",
+        "passwordChanged": "Пароль змінено",
+        "passwordConfirmation": "Підтвердження пароля",
+        "permission": "Дозвіл",
+        "permissions": "Дозволи",
+        "signIn": "Увійти",
+        "userName": "Ім’я користувача",
+        "userNameAToZ": "Ім’я користувача А-Я",
+        "userNameZToA": "Ім’я користувача Я-А",
+        "userPermission": "Дозвіл користувача",
+        "userPermissions": "Дозволи користувача",
+        "visibilityGrant": "Дозвіл на доступ до даних",
+        "visibilityGrants": "Дозволи на доступ до даних",
+        "impersonate": "Увійти як користувач"
+    },
+    "panel": {
+        "addFromUsers": "Додати з користувачів",
+        "configure": "Налаштувати облікові записи",
+        "createUserForPerson": "Створити користувача для особи",
+        "manageRoles": "Керувати ролями",
+        "permissionHelp": "Заборона має пріоритет. Успадкування видаляє цей виняток.",
+        "upsertAllRoles": "Додати або оновити всі ролі"
+    }
+}

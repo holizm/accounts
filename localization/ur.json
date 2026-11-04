@@ -1,0 +1,36 @@
+{
+    "common": {
+        "accounts": "اکاؤنٹس",
+        "anonymous": "گمنام",
+        "changePassword": "پاس ورڈ تبدیل کریں",
+        "editProfile": "اپنے پروفائل میں ترمیم کریں",
+        "forPerson": "شخص کے لیے",
+        "impersonation": "دوسرے صارف کے طور پر داخل ہوں",
+        "key": "کلید",
+        "keys": "کلیدیں",
+        "lastSyncDate": "مطابقت پذیری کی آخری تاریخ",
+        "otp": "کوڈ",
+        "password": "پاس ورڈ",
+        "passwordChanged": "پاس ورڈ بدل گیا۔",
+        "passwordConfirmation": "پاسورڈ کی تو ثیق",
+        "permission": "اجازت",
+        "permissions": "اجازتیں",
+        "signIn": "سائن ان",
+        "userName": "صارف کا نام",
+        "userNameAToZ": "صارف نام A-Z",
+        "userNameZToA": "صارف نام Z-A",
+        "userPermission": "صارف کی اجازت",
+        "userPermissions": "صارف کی اجازتیں",
+        "visibilityGrant": "ڈیٹا تک رسائی کی اجازت",
+        "visibilityGrants": "ڈیٹا تک رسائی کی اجازتیں",
+        "impersonate": "اس صارف کے طور پر داخل ہوں"
+    },
+    "panel": {
+        "addFromUsers": "صارفین سے شامل کریں۔",
+        "configure": "اکاؤنٹس کو ترتیب دیں۔",
+        "createUserForPerson": "فرد کے لیے صارف بنائیں",
+        "manageRoles": "کرداروں کا نظم کریں۔",
+        "permissionHelp": "منع کو اجازت پر ترجیح حاصل ہے۔ وراثت یہ استثنا ہٹاتی ہے۔",
+        "upsertAllRoles": "تمام کردار شامل یا اپ ڈیٹ کریں"
+    }
+}

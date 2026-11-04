@@ -1,0 +1,36 @@
+{
+    "common": {
+        "accounts": "Λογαριασμοί",
+        "anonymous": "Ανώνυμος",
+        "changePassword": "Αλλαγή κωδικού πρόσβασης",
+        "editProfile": "Επεξεργασία του προφίλ σας",
+        "forPerson": "Για άτομο",
+        "impersonation": "Σύνδεση ως άλλος χρήστης",
+        "key": "Κλειδί",
+        "keys": "Κλειδιά",
+        "lastSyncDate": "Ημερομηνία τελευταίου συγχρονισμού",
+        "otp": "Κωδικός",
+        "password": "Κωδικός πρόσβασης",
+        "passwordChanged": "Ο κωδικός πρόσβασης άλλαξε",
+        "passwordConfirmation": "Επιβεβαίωση κωδικού πρόσβασης",
+        "permission": "Δικαίωμα",
+        "permissions": "Δικαιώματα",
+        "signIn": "Σύνδεση",
+        "userName": "Όνομα χρήστη",
+        "userNameAToZ": "Όνομα χρήστη Α-Ω",
+        "userNameZToA": "Όνομα χρήστη Ω-Α",
+        "userPermission": "Δικαίωμα χρήστη",
+        "userPermissions": "Δικαιώματα χρήστη",
+        "visibilityGrant": "Άδεια πρόσβασης σε δεδομένα",
+        "visibilityGrants": "Άδειες πρόσβασης σε δεδομένα",
+        "impersonate": "Σύνδεση ως χρήστης"
+    },
+    "panel": {
+        "addFromUsers": "Προσθήκη από χρήστες",
+        "configure": "Ρύθμιση λογαριασμών",
+        "createUserForPerson": "Δημιουργία χρήστη για άτομο",
+        "manageRoles": "Διαχείριση ρόλων",
+        "permissionHelp": "Η απαγόρευση υπερισχύει της άδειας. Η κληρονόμηση αφαιρεί αυτή την εξαίρεση.",
+        "upsertAllRoles": "Εισαγωγή ή ενημέρωση όλων των ρόλων"
+    }
+}

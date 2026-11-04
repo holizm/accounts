@@ -1,0 +1,36 @@
+{
+    "common": {
+        "accounts": "Accounts",
+        "anonymous": "Anoniem",
+        "changePassword": "Wachtwoord wijzigen",
+        "editProfile": "Uw profiel bewerken",
+        "forPerson": "Voor persoon",
+        "impersonation": "Aanmelden als een andere gebruiker",
+        "key": "Sleutel",
+        "keys": "Sleutels",
+        "lastSyncDate": "Datum laatste synchronisatie",
+        "otp": "Code",
+        "password": "Wachtwoord",
+        "passwordChanged": "Wachtwoord gewijzigd",
+        "passwordConfirmation": "Wachtwoordbevestiging",
+        "permission": "Machtiging",
+        "permissions": "Machtigingen",
+        "signIn": "Aanmelden",
+        "userName": "Gebruikersnaam",
+        "userNameAToZ": "Gebruikersnaam A-Z",
+        "userNameZToA": "Gebruikersnaam Z-A",
+        "userPermission": "Gebruikersmachtiging",
+        "userPermissions": "Gebruikersmachtigingen",
+        "visibilityGrant": "Toestemming voor gegevenstoegang",
+        "visibilityGrants": "Toestemmingen voor gegevenstoegang",
+        "impersonate": "Aanmelden als gebruiker"
+    },
+    "panel": {
+        "addFromUsers": "Toevoegen vanuit gebruikers",
+        "configure": "Accounts configureren",
+        "createUserForPerson": "Gebruiker voor persoon maken",
+        "manageRoles": "Rollen beheren",
+        "permissionHelp": "Weigeren heeft voorrang op Toestaan. Overerven verwijdert deze uitzondering.",
+        "upsertAllRoles": "Alle rollen invoegen of bijwerken"
+    }
+}

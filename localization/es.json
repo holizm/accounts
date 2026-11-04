@@ -1,0 +1,36 @@
+{
+    "common": {
+        "accounts": "Cuentas",
+        "anonymous": "Anónimo",
+        "changePassword": "Cambiar la contraseña",
+        "editProfile": "Edite su perfil",
+        "forPerson": "Para persona",
+        "impersonation": "Acceso como otro usuario",
+        "key": "Clave",
+        "keys": "Claves",
+        "lastSyncDate": "Fecha de la última sincronización",
+        "otp": "Código",
+        "password": "Contraseña",
+        "passwordChanged": "Contraseña cambiada",
+        "passwordConfirmation": "Confirmación de contraseña",
+        "permission": "Permiso",
+        "permissions": "Permisos",
+        "signIn": "Iniciar sesión",
+        "userName": "Nombre de usuario",
+        "userNameAToZ": "Nombre de usuario A-Z",
+        "userNameZToA": "Nombre de usuario Z-A",
+        "userPermission": "Permiso de usuario",
+        "userPermissions": "Permisos de usuario",
+        "visibilityGrant": "Permiso de acceso a datos",
+        "visibilityGrants": "Permisos de acceso a datos",
+        "impersonate": "Suplantar usuario"
+    },
+    "panel": {
+        "addFromUsers": "Agregar de usuarios",
+        "configure": "Configurar cuentas",
+        "createUserForPerson": "Crear usuario para persona",
+        "manageRoles": "Administrar roles",
+        "permissionHelp": "Denegar tiene prioridad sobre Permitir. Heredar elimina esta excepción.",
+        "upsertAllRoles": "Insertar o actualizar todos los roles"
+    }
+}

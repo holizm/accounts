@@ -1,0 +1,36 @@
+{
+    "common": {
+        "accounts": "Konti",
+        "anonymous": "Anonym",
+        "changePassword": "Skift adgangskode",
+        "editProfile": "Rediger din profil",
+        "forPerson": "For person",
+        "impersonation": "Log ind som en anden bruger",
+        "key": "Nøgle",
+        "keys": "Nøgler",
+        "lastSyncDate": "Seneste synkroniseringsdato",
+        "otp": "Kode",
+        "password": "Adgangskode",
+        "passwordChanged": "Adgangskoden er ændret",
+        "passwordConfirmation": "Bekræft adgangskode",
+        "permission": "Tilladelse",
+        "permissions": "Tilladelser",
+        "signIn": "Log ind",
+        "userName": "Brugernavn",
+        "userNameAToZ": "Brugernavn A-Å",
+        "userNameZToA": "Brugernavn Å-A",
+        "userPermission": "Brugertilladelse",
+        "userPermissions": "Brugertilladelser",
+        "visibilityGrant": "Dataadgangstilladelse",
+        "visibilityGrants": "Dataadgangstilladelser",
+        "impersonate": "Log ind som brugeren"
+    },
+    "panel": {
+        "addFromUsers": "Tilføj fra brugere",
+        "configure": "Konfigurer konti",
+        "createUserForPerson": "Opret bruger for person",
+        "manageRoles": "Administrer roller",
+        "permissionHelp": "Afvis har forrang over Tillad. Arv fjerner denne undtagelse.",
+        "upsertAllRoles": "Indsæt eller opdater alle roller"
+    }
+}

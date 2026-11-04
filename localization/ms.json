@@ -1,0 +1,36 @@
+{
+    "common": {
+        "accounts": "Akaun",
+        "anonymous": "Tanpa nama",
+        "changePassword": "Tukar kata laluan",
+        "editProfile": "Edit profil anda",
+        "forPerson": "Untuk individu",
+        "impersonation": "Log masuk sebagai pengguna lain",
+        "key": "Kunci",
+        "keys": "Kunci",
+        "lastSyncDate": "Tarikh penyegerakan terakhir",
+        "otp": "Kod",
+        "password": "Kata laluan",
+        "passwordChanged": "Kata laluan telah ditukar",
+        "passwordConfirmation": "Pengesahan kata laluan",
+        "permission": "Kebenaran",
+        "permissions": "Kebenaran",
+        "signIn": "Log masuk",
+        "userName": "Nama pengguna",
+        "userNameAToZ": "Nama pengguna A-Z",
+        "userNameZToA": "Nama pengguna Z-A",
+        "userPermission": "Kebenaran pengguna",
+        "userPermissions": "Kebenaran pengguna",
+        "visibilityGrant": "Kebenaran akses data",
+        "visibilityGrants": "Kebenaran akses data",
+        "impersonate": "Log masuk sebagai pengguna"
+    },
+    "panel": {
+        "addFromUsers": "Tambah daripada pengguna",
+        "configure": "Konfigurasikan akaun",
+        "createUserForPerson": "Cipta pengguna untuk individu",
+        "manageRoles": "Urus peranan",
+        "permissionHelp": "Penolakan mengatasi kebenaran. Pewarisan membuang pengecualian ini.",
+        "upsertAllRoles": "Tambah atau kemas kini semua peranan"
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "common": {
+        "accounts": "Conturi",
+        "anonymous": "Anonim",
+        "changePassword": "Schimbă parola",
+        "editProfile": "Editează-ți profilul",
+        "forPerson": "Pentru persoană",
+        "impersonation": "Autentificare ca alt utilizator",
+        "key": "Cheie",
+        "keys": "Chei",
+        "lastSyncDate": "Data ultimei sincronizări",
+        "otp": "Cod",
+        "password": "Parolă",
+        "passwordChanged": "Parola a fost schimbată",
+        "passwordConfirmation": "Confirmarea parolei",
+        "permission": "Permisiune",
+        "permissions": "Permisiuni",
+        "signIn": "Autentificare",
+        "userName": "Nume de utilizator",
+        "userNameAToZ": "Nume utilizator A-Z",
+        "userNameZToA": "Nume utilizator Z-A",
+        "userPermission": "Permisiune de utilizator",
+        "userPermissions": "Permisiuni de utilizator",
+        "visibilityGrant": "Permisiune de acces la date",
+        "visibilityGrants": "Permisiuni de acces la date",
+        "impersonate": "Autentificare ca utilizator"
+    },
+    "panel": {
+        "addFromUsers": "Adaugă din utilizatori",
+        "configure": "Configurează conturile",
+        "createUserForPerson": "Creează utilizator pentru persoană",
+        "manageRoles": "Gestionează rolurile",
+        "permissionHelp": "Refuzul are prioritate. Moștenirea elimină această excepție.",
+        "upsertAllRoles": "Adaugă sau actualizează toate rolurile"
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "common": {
+        "accounts": "Conti",
+        "anonymous": "Anonimo",
+        "changePassword": "Cambiare la password",
+        "editProfile": "Modifica il tuo profilo",
+        "forPerson": "Per persona",
+        "impersonation": "Accesso come altro utente",
+        "key": "Chiave",
+        "keys": "Chiavi",
+        "lastSyncDate": "Data dell'ultima sincronizzazione",
+        "otp": "Codice",
+        "password": "Password",
+        "passwordChanged": "Password cambiata",
+        "passwordConfirmation": "Conferma password",
+        "permission": "Autorizzazione",
+        "permissions": "Autorizzazioni",
+        "signIn": "Accedi",
+        "userName": "Nome utente",
+        "userNameAToZ": "Nome utente dalla A alla Z",
+        "userNameZToA": "Nome utente Z-A",
+        "userPermission": "Autorizzazione utente",
+        "userPermissions": "Autorizzazioni utente",
+        "visibilityGrant": "Autorizzazione di accesso ai dati",
+        "visibilityGrants": "Autorizzazioni di accesso ai dati",
+        "impersonate": "Accedi come utente"
+    },
+    "panel": {
+        "addFromUsers": "Aggiungi dagli utenti",
+        "configure": "Configura gli account",
+        "createUserForPerson": "Crea utente per persona",
+        "manageRoles": "Gestire i ruoli",
+        "permissionHelp": "Nega ha precedenza su Consenti. Eredita rimuove questa eccezione.",
+        "upsertAllRoles": "Inserisci o aggiorna tutti i ruoli"
+    }
+}

@@ -1,5 +1,5 @@
 import { iamGet } from '../iam.js'
-import syncUserByUuid from './syncUserByUuid.js'
+import { syncUserByUuid } from './syncUserByUuid.js'
 
 export default async params => {
     const users = await iamGet('users', params)

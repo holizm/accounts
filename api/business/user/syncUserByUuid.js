@@ -7,7 +7,7 @@ import {
     providers,
 } from 'core'
 
-export default async params => {
+export const syncUserByUuid = async params => {
     const identity = params.identity || providers.identity
     const uuid = params?.body?.uuid || identity?.uuid
     if (!uuid) {

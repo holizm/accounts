@@ -1,6 +1,6 @@
 import assert from 'assert/strict'
 import test from 'node:test'
-import fixture from './verificationFixtureTests.js'
+import fixture from '../../testing/business/accounts/verificationMockProvider.js'
 const { consumeVerificationCode } = await import('./consumeVerificationCode.js')
 const { issueVerificationCode } = await import('./issueVerificationCode.js')
 

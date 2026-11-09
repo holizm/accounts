@@ -1,5 +1,5 @@
 import test from 'node:test'
-import verify from '../../../../panel/test/verifyRecordViewTests.js'
+import verify from '../../../../panel/testing/verifyRecordView.js'
 
 const record = {
     userName: 'Staff member',

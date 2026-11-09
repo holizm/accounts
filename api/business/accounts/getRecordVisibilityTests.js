@@ -3,7 +3,7 @@ import {
     mock,
     test,
 } from 'node:test'
-import fixtures from '../visibilityFixturesTests.js'
+import fixtures from '../../testing/business/visibilityEnvironmentProvider.js'
 const fixture = await fixtures()
 const ids = [fixture.ids.branchA, fixture.ids.branchB]
 mock.module('../user/getVisibilityRecord.js', {

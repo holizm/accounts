@@ -1,7 +1,7 @@
 import assert from 'assert/strict'
 import test from 'node:test'
 import getVisibilityVersion from './getVisibilityVersion.js'
-import fixtures from '../visibilityFixturesTests.js'
+import fixtures from '../../testing/business/visibilityEnvironmentProvider.js'
 const fixture = await fixtures()
 test('the review version changes when visibility changes and distinguishes missing from private-empty records', () => {
     assert.equal(getVisibilityVersion([fixture.ids.branchA]), getVisibilityVersion([fixture.ids.branchA]))

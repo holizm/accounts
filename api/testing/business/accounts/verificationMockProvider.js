@@ -40,7 +40,7 @@ mock.module('core', {
         providers,
     },
 })
-mock.module('./sendOtp.js', { namedExports: { makePasswordFromOtp: value => createHash('sha256').update(value).digest('hex') } })
+mock.module('../../../business/accounts/sendOtp.js', { namedExports: { makePasswordFromOtp: value => createHash('sha256').update(value).digest('hex') } })
 export default {
     claims,
     providers,

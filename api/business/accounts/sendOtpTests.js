@@ -1,7 +1,7 @@
 import assert from 'assert/strict'
 import { createHash } from 'crypto'
 import test from 'node:test'
-import fixtures from './otpFixturesTests.js'
+import fixtures from '../../testing/business/accounts/otpMockProvider.js'
 
 const {
     cache,

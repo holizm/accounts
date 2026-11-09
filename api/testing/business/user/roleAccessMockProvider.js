@@ -1,4 +1,4 @@
-import { getTenantIamConfiguration } from '../../tenantIamOptions.js'
+import { getTenantIamConfiguration } from '../../../business/tenantIamOptions.js'
 
 export default () => {
     const state = {

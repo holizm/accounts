@@ -35,8 +35,8 @@ mock.module('core', {
     },
 })
 mock.module('notifications', { exports: { sendTextMessage } })
-mock.module('../user/getByPhone.js', { exports: { getUserByPhone } })
-mock.module('../user/changePassword.js', { exports: { changePassword } })
+mock.module('../../../business/user/getByPhone.js', { exports: { getUserByPhone } })
+mock.module('../../../business/user/changePassword.js', { exports: { changePassword } })
 
 export default {
     cache,

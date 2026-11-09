@@ -3,7 +3,7 @@ import {
     mock,
     test,
 } from 'node:test'
-import fixtures from '../visibilityFixturesTests.js'
+import fixtures from '../../testing/business/visibilityEnvironmentProvider.js'
 import getVisibilityVersion from '../user/getVisibilityVersion.js'
 const fixture = await fixtures()
 let write

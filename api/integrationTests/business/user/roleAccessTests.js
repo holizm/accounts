@@ -3,19 +3,19 @@ import {
     mock,
     test,
 } from 'node:test'
-import roleAccessHarness from './test/roleAccessHarnessTest.js'
+import roleAccessHarness from '../../../testing/business/user/roleAccessMockProvider.js'
 
 const harness = roleAccessHarness()
 mock.module('core', { exports: { clientError: code => { throw new Error(code) } } })
-mock.module('../iam.js', {
+mock.module('../../../business/iam.js', {
     exports: {
         iamGet: harness.iamGet,
         iamPost: harness.iamPost,
         iamPut: harness.iamPut,
     },
 })
-const { ensureRoleAccessUser } = await import('./ensureRoleAccessUser.js')
-const { addRealmRole } = await import('./addRealmRole.js')
+const { ensureRoleAccessUser } = await import('../../../business/user/ensureRoleAccessUser.js')
+const { addRealmRole } = await import('../../../business/user/addRealmRole.js')
 const sourceTenant = {
     accountsOrigin: 'https://accounts.example.com',
     realm: 'source',

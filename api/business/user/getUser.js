@@ -8,13 +8,17 @@ import {
 export const getUser = async requestedUserUuid => {
     const uuid = providers.user || requestedUserUuid
 
-    ensure(uuid).isSomething('invalidRequest')
+    ensure(uuid).satisfies(value => typeof value === 'string' && value.length > 0, 'invalidRequest')
     const user = await getByFilter(
         {
+            acrossLocales: true,
             part: 'accounts',
             type: 'user',
         },
-        { uuid: uuid }
+        {
+            tenant: providers.tenant,
+            uuid,
+        }
     )
     if (!user) {
         notFound()

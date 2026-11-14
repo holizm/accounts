@@ -1,7 +1,8 @@
-user searchable
+user sharedAcrossLocales searchable
     uuid
     username
     lastSyncDate
+    unique uuid perTenant
     person
     contact
     uses

@@ -2,9 +2,9 @@ user sharedAcrossLocales searchable
     uuid
     username
     lastSyncDate
-    unique uuid perTenant
     person
     contact
+    unique uuid perTenant
     uses
         contacts
 key

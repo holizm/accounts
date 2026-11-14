@@ -3,82 +3,10 @@ import { QwikAuth$ } from '@auth/qwik'
 import type { Provider } from '@auth/auth/providers'
 import Credentials from '@auth/qwik/providers/credentials'
 import Keycloak from '@auth/qwik/providers/keycloak'
-import getFromCacheOrApi from 'getFromCacheOrApi'
-import getTenant from 'getTenant'
-import pascalize from 'pascalize'
-import post from 'post'
-
-const paramsCache: Record<string, any> = {}
-
-const getParams = async (env, url) => {
-    const host = url.hostname
-    if (paramsCache[host]) {
-        return paramsCache[host]
-    }
-    const tenant = getTenant(host)
-    const currentTenant = await getFromCacheOrApi('/tenant', { url: { hostname: host } })
-    const accountsUrl = currentTenant?.accountsOrigin
-    const accountsRealm = currentTenant?.realm || 'dev'
-    const iamClientSecret = globalThis.settings.iamClientSecret || env.get('iamClientSecret')
-    const authSecret = globalThis.settings.authSecret || env.get('authSecret')
-    const siteUrl = currentTenant?.prodDomain || currentTenant?.devDomain
-    const accountsClient = globalThis.settings.accounts?.client ?? 'site'
-
-    const params = {
-        accountsClient,
-        accountsRealm,
-        accountsUrl,
-        authSecret,
-        host,
-        iamClientSecret,
-        siteUrl
-    }
-
-    const { default: loadPrivateSettings } = await import('privateSettingsLoader')
-    const privateSettings = await loadPrivateSettings()
-    const tenantSettings = privateSettings?.iamClientSecrets?.find(
-        i => i.domain === tenant.prodDomain
-    )
-    if (privateSettings.authSecret) {
-        params.authSecret = privateSettings.authSecret
-    }
-
-    if (tenantSettings) {
-        params.iamClientSecret = tenantSettings.secret
-    }
-    paramsCache[host] = params
-    return params
-}
-
-const refreshAccessToken = async (token, env, url) => {
-    const {
-        accountsClient,
-        accountsRealm,
-        accountsUrl,
-        authSecret,
-        iamClientSecret,
-        siteUrl,
-    } = await getParams(env, url)
-    const tokenUrl = `${accountsUrl}/realms/${accountsRealm}/protocol/openid-connect/token`
-
-    const resp = await fetch(tokenUrl, {
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams({
-            client_id: accountsClient,
-            client_secret: iamClientSecret,
-            grant_type: 'refresh_token',
-            refresh_token: token.refresh_token,
-        }),
-        method: 'POST',
-    })
-    const refreshToken = await resp.json()
-    return {
-        access_token: refreshToken.access_token,
-        id_token: refreshToken.id_token,
-        expires_at: Math.floor(Date.now() / 1000) + refreshToken.expires_in,
-        refresh_token: refreshToken.refresh_token,
-    }
-}
+import authorizeCredentials from 'accountsAuthorizeCredentials'
+import getAuthenticationParameters from 'accountsGetAuthenticationParameters'
+import refreshAccessToken from 'accountsRefreshAccessToken'
+import syncSignedInUser from 'accountsSyncSignedInUser'
 
 export const {
     onRequest,
@@ -89,7 +17,7 @@ export const {
     env,
     url,
 }) => {
-    const params = await getParams(env, url)
+    const params = await getAuthenticationParameters(env, url)
     const {
         accountsClient,
         accountsRealm,
@@ -109,17 +37,8 @@ export const {
             async signOut(message) {
                 await fetch(idpSignoutUrl)
             },
-            async signIn({ profile }) {
-                if (!profile?.sub) return
-                const uuid = profile?.sub
-                const username = profile?.preferred_username
-                await post('/accounts/user/syncByUuid',
-                    {
-                        username: username,
-                        uuid: uuid,
-                    },
-                    { url }
-                )
+            async signIn(message) {
+                await syncSignedInUser(message, { url })
             },
         },
         callbacks: {
@@ -168,16 +87,7 @@ export const {
                     otp: {},
                 },
                 async authorize(credentials) {
-                    if (!credentials?.phone || !credentials?.otp) return null
-                    try {
-                        const result = await post('/accounts/signIn', {
-                            otp: credentials.otp,
-                            phone: credentials.phone,
-                        }, { url })
-                        return result?.access_token ? result : null
-                    } catch (e) {
-                        return null
-                    }
+                    return await authorizeCredentials(credentials, { url })
                 },
             }),
             Keycloak({

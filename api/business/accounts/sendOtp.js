@@ -10,6 +10,7 @@ import {
 import { sendTextMessage } from 'notifications'
 import { getUserByPhone } from '../user/getByPhone.js'
 import { changePassword } from '../user/changePassword.js'
+import runUserSyncAugmenters from '../user/runUserSyncAugmenters.js'
 import getOtpScope from './getOtpScope.js'
 
 export const sendOtp = async params => {
@@ -59,6 +60,8 @@ export const sendOtp = async params => {
         },
         ttlSeconds: seconds,
     })
+
+    await runUserSyncAugmenters(user, 'otpRequest')
 
     const result = {
         otpLength: otp.length,

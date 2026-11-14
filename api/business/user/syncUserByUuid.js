@@ -52,6 +52,6 @@ export const syncUserByUuid = async params => {
             type: 'user',
         })
     }
-    await runUserSyncAugmenters(user)
+    await runUserSyncAugmenters(user, 'userSync')
     return user
 }

@@ -9,7 +9,9 @@ const {
     claimCache,
     getUserByPhone,
     sendTextMessage,
-    settings,} = fixtures
+    settings,
+    userSyncAugmenter,
+} = fixtures
 const { sendOtp } = await import('./sendOtp.js')
 const params = {
     body: { phone: ' +15550001111 ' },
@@ -64,4 +66,23 @@ test('invalid phones and cooldown rejection do not change passwords or send mess
     await assert.rejects(sendOtp(params), /invalidRequest/)
     assert.equal(changePassword.mock.callCount(), changes)
     assert.equal(sendTextMessage.mock.callCount(), messages)
+})
+
+test('runs optional user augmentation after the OTP challenge is ready', async () => {
+    const previousCaches = cache.mock.callCount()
+    const previousChanges = changePassword.mock.callCount()
+    userSyncAugmenter.mock.mockImplementationOnce(async ({
+        trigger,
+        user,
+    }) => {
+        assert.equal(trigger, 'otpRequest')
+        assert.equal(user.uuid, 'testUser')
+        assert.equal(cache.mock.callCount(), previousCaches + 1)
+        assert.equal(changePassword.mock.callCount(), previousChanges + 1)
+    })
+    await sendOtp(params)
+    const augmentations = userSyncAugmenter.mock.callCount()
+    changePassword.mock.mockImplementationOnce(async () => { throw new Error('passwordFailed') })
+    await assert.rejects(sendOtp(params), /passwordFailed/)
+    assert.equal(userSyncAugmenter.mock.callCount(), augmentations)
 })

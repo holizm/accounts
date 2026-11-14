@@ -47,6 +47,7 @@ mock.module('core', {
             return validation
         },
         getTenant: () => tenant,
+        loadGlobalModifiers: async () => [],
         httpForm: async (url, form) => {
             assert.equal(form.password, password)
             assert.equal(form.client_secret, 'testSecret')

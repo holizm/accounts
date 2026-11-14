@@ -9,6 +9,7 @@ const cache = mock.fn(async () => {})
 const claimCache = mock.fn(async () => true)
 const changePassword = mock.fn(async () => {})
 const getUserByPhone = mock.fn(async () => ({ uuid: 'testUser' }))
+const userSyncAugmenter = mock.fn(async () => {})
 const sendTextMessage = mock.fn(async () => {})
 const fail = code => { throw new Error(code) }
 mock.module('core', {
@@ -30,6 +31,7 @@ mock.module('core', {
             }
             return validation
         },
+        loadGlobalModifiers: async () => [{ method: userSyncAugmenter }],
         getTenant: () => ({ id: 'example' }),
         settings,
     },
@@ -45,4 +47,5 @@ export default {
     getUserByPhone,
     sendTextMessage,
     settings,
+    userSyncAugmenter,
 }

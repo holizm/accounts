@@ -5,11 +5,12 @@ const paramsCache = {}
 
 export default async (env, url) => {
     const host = url.hostname
-    if (paramsCache[host]) {
-        return paramsCache[host]
+    const cacheKey = globalThis.settings?.themeContentSource === 'local' && url.searchParams.has('theme') ? url.href : host
+    if (paramsCache[cacheKey]) {
+        return paramsCache[cacheKey]
     }
     const tenant = getTenant(host)
-    const currentTenant = await getFromCacheOrApi('/tenant', { url: { hostname: host } })
+    const currentTenant = await getFromCacheOrApi('/tenant', { url })
     const accountsUrl = currentTenant?.accountsOrigin
     const accountsRealm = currentTenant?.realm || 'dev'
     const iamClientSecret = globalThis.settings.iamClientSecret || env.get('iamClientSecret')
@@ -39,6 +40,6 @@ export default async (env, url) => {
     if (tenantSettings) {
         params.iamClientSecret = tenantSettings.secret
     }
-    paramsCache[host] = params
+    paramsCache[cacheKey] = params
     return params
 }
